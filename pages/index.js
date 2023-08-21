@@ -1,4 +1,5 @@
 import HeaderComp from '@/components/HeaderComp'
+import ServicesComp from '@/components/ServicesComp'
 import Head from 'next/head'
 
 export default function Home() {
@@ -15,7 +16,8 @@ export default function Home() {
         <link rel="icon" href="/images/favicon.png" />
       </Head>
       <main>
-       <HeaderComp/>
+        <HeaderComp />
+        {/* <ServicesComp/> */}
     </main>
     </>
   )
