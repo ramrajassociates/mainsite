@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 function NavbarComp() {
   return (
-    <div className="md:h-[10vh] w-[100vw] grid grid-cols-12  absolute top-0 z-10 ">
+    <div className="md:h-[10vh] w-[100vw] grid grid-cols-12 absolute top-0 z-10 ">
         <Link href={'/'} className="col-span-3 mx-auto"><Image alt="Image..." src={'/images/logo.png'} width={120} height={120}></Image></Link>
         <Link href={'/'} className="col-span-1 font-thin  col-start-6 text-center hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action text-main   "><span>Home</span></Link>
         <Link href={'/aboutus'} className="col-span-1 font-thin  text-center hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action text-main   "><span>About Us</span></Link>

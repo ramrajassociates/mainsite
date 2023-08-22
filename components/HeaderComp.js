@@ -6,10 +6,11 @@ import { Carousel } from 'flowbite-react';
 import {BsArrowRight} from 'react-icons/bs';
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
+import ServicesComp from "./ServicesComp";
 function HeaderComp() {
   const [reveal, setReveal] = useState(true);
   return (
-    <div className="w-[100vw] h-[100vh]" >
+    <div className="w-[100vw] h-[100vh] " >
      
 <div id="dropdownHover" class="md:w-[30vw] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow  dark:bg-gray-700">
     <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
@@ -22,7 +23,7 @@ function HeaderComp() {
      
     </ul>
 </div>
-      <div className="md:w-[100vw] md:h-[100vh] absolute top-0  ">
+      <div className="md:w-[100vw] md:h-[100vh]">
         <Carousel
           indicators={false}
           slideInterval={7000}
@@ -41,9 +42,9 @@ function HeaderComp() {
               layout="fill"
               objectFit="cover"
               objectPosition="center"
+              className="filter brightness-50"
             ></Image>
 
-            <div className="md:w-[100vw] md:h-[100vh] absolute top-0 bg-black bg-opacity-50"></div> 
             <Fade bottom spy={reveal} appear={true} delay={500}>
             <div className="md:w-[40vw] w-[70vw] h-[70vh] md:h-[70vh] mt-20 md:ml-32 ml-10  flex flex-col justify-center  items-start space-y-3">
               
@@ -51,7 +52,7 @@ function HeaderComp() {
                 <div className="relative h-[20vh]">
 
               <span className="text-xl text-white font-thin mt-8 ml-10">Grow, Lead and Win with Ramraj</span>
-              <Link href={'/contactus'} className=" text-main ml-10 w-fit flex flex-row justify-center items-center bg-action mt-4 text-s font-thin py-1 px-3 ">Contact Us <BsArrowRight className="ml-2"></BsArrowRight></Link>
+              <Link href={'/contactus'} className=" text-main ml-10 w-fit flex flex-row justify-center items-center bg-action mt-4 text-s font-thin py-1 px-3 ">Contact Us   <Fade right cascade spy={reveal} appear={true} delay={100} ><BsArrowRight className="ml-2"></BsArrowRight> </Fade>  </Link>
               <Fade bottom spy={reveal} appear={true} delay={1200} >
                     <span className="border-l-2 border-action h-[11vh] absolute left-5 top-0"></span>
                     </Fade>
@@ -65,11 +66,10 @@ function HeaderComp() {
               layout="fill"
               objectFit="cover"
               objectPosition="center"
-
+              className="filter brightness-50"
          
             ></Image>
 
-            <div className="md:w-[100vw] md:h-[100vh] absolute top-0 bg-black bg-opacity-50"></div> 
             <Fade bottom spy={reveal} appear={true} delay={500}>
             <div className="md:w-[40vw] w-[70vw] h-[70vh] md:h-[70vh] mt-20 md:ml-32 ml-10  flex flex-col justify-center  items-start space-y-3">
               
@@ -87,6 +87,7 @@ function HeaderComp() {
           </div>
           </Carousel>
       </div>
+      <ServicesComp className="space-x-5 justify-center bg-gray-400 h-fit py-5"/>
     </div>
   );
 }

@@ -15,9 +15,8 @@ export default function Home() {
         <meta property="og:title" content="Leading IT Solutions and Consultation firm India | RamRaj Associates"/>
         <link rel="icon" href="/images/favicon.png" />
       </Head>
-      <main>
+      <main className='overflow-x-hidden'>
         <HeaderComp />
-        {/* <ServicesComp/> */}
     </main>
     </>
   )
