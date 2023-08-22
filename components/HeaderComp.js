@@ -7,6 +7,7 @@ import {BsArrowRight} from 'react-icons/bs';
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
 import ServicesComp from "./ServicesComp";
+import AboutComp from "./AboutComp";
 function HeaderComp() {
   const [reveal, setReveal] = useState(true);
   return (
@@ -87,7 +88,8 @@ function HeaderComp() {
           </div>
           </Carousel>
       </div>
-      <ServicesComp className="space-x-5 justify-center bg-gray-400 h-fit py-5"/>
+      <ServicesComp className="space-x-5 justify-center bg-gray-300 h-fit py-5" />
+      <AboutComp/>
     </div>
   );
 }
