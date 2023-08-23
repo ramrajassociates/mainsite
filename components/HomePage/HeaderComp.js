@@ -24,7 +24,7 @@ function HeaderComp() {
      
     </ul>
 </div>
-      <div className="md:w-[100vw] md:h-[100vh] realtive">
+      <div className="md:w-[100vw] h-[100vh] realtive">
         <Carousel
           indicators={false}
           slideInterval={7000}
@@ -37,7 +37,7 @@ function HeaderComp() {
             }
          }}
         >
-          <div className="md:w-[100vw] md:h-[100vh] ">
+          <div className="w-[100vw] h-[100vh] ">
             <Image alt="Image..."
               src={"/images/banner.jpg"}
               layout="fill"
@@ -47,50 +47,50 @@ function HeaderComp() {
             ></Image>
 
             <Fade bottom spy={reveal} appear={true} delay={500}>
-            <div className="md:w-[40vw] w-[70vw] h-[70vh] md:h-[70vh] mt-20 md:ml-32 ml-10  flex flex-col justify-center  items-start space-y-3">
+            <div className="md:w-[40vw] w-[70vw] h-[100vh] md:h-[70vh] md:mt-20 md:ml-32 ml-14  flex flex-col justify-center  items-start space-y-3">
               
                 <span className="text-5xl text-white font-bold">India's Best IT Solutions Providers</span> 
-                <div className="relative h-[20vh]">
+                <div className="relative h-fit">
 
-              <span className="text-xl text-white font-thin mt-8 ml-10">Grow, Lead and Win with Ramraj</span>
-              <Link href={'/contactus'} className=" text-main ml-10 w-fit flex flex-row justify-center items-center bg-action mt-4 text-s font-thin py-1 px-3 ">Contact Us   <Fade right cascade spy={reveal} appear={true} delay={100} ><BsArrowRight className="ml-2"></BsArrowRight> </Fade>  </Link>
+              <p className="md:text-xl text-white md:font-thin  ml-10 text-md font-normal">Grow, Lead and Win with Ramraj</p>
+              <Link href={'/contactus'} className=" text-main ml-10 w-fit flex flex-row justify-center items-center bg-action mt-4 text-s md:font-thin font-semibold py-1 px-3 ">Contact Us   <Fade right cascade spy={reveal} appear={true} delay={100} ><BsArrowRight className="ml-2"></BsArrowRight> </Fade>  </Link>
               <Fade bottom spy={reveal} appear={true} delay={1200} >
-                    <span className="border-l-2 border-action h-[11vh] absolute left-5 top-0"></span>
+                    <span className="md:border-l-2 border-l border-action h-full absolute left-5 top-0"></span>
                     </Fade>
                 </div>
               </div>
               </Fade>
           </div>
-          <div className="md:w-[100vw] md:h-[100vh]">
+          <div className="w-[100vw] h-[100vh] ">
             <Image alt="Image..."
               src={"/images/banner2.jpg"}
               layout="fill"
               objectFit="cover"
               objectPosition="center"
               className="filter brightness-50"
-         
             ></Image>
 
             <Fade bottom spy={reveal} appear={true} delay={500}>
-            <div className="md:w-[40vw] w-[70vw] h-[70vh] md:h-[70vh] mt-20 md:ml-32 ml-10  flex flex-col justify-center  items-start space-y-3">
+            <div className="md:w-[40vw] w-[70vw] h-[100vh] md:h-[70vh] md:mt-20 md:ml-32 ml-14  flex flex-col justify-center  items-start space-y-3">
               
                 <span className="text-5xl text-white font-bold">Complete IT Solution & Marketing Consultant</span> 
-                <div className="relative h-[20vh]">
+                <div className="relative h-fit">
 
-              <span className="text-xl text-white font-thin mt-8 ml-10">Build your business to new heights with us</span>
-              <Link href={'/contactus'} className=" text-main ml-10 w-fit flex flex-row justify-center items-center bg-action mt-4 text-s font-thin py-1 px-3 ">Contact Us <BsArrowRight className="ml-2"></BsArrowRight></Link>
+              <p className="md:text-xl text-white md:font-thin  ml-10 text-md font-normal">Build your business to new heights with us</p>
+              <Link href={'/contactus'} className=" text-main ml-10 w-fit flex flex-row justify-center items-center bg-action mt-4 text-s md:font-thin font-semibold py-1 px-3 ">Contact Us   <Fade right cascade spy={reveal} appear={true} delay={100} ><BsArrowRight className="ml-2"></BsArrowRight> </Fade>  </Link>
               <Fade bottom spy={reveal} appear={true} delay={1200} >
-                    <span className="border-l-2 border-action h-[11vh] absolute left-5 top-0"></span>
+                    <span className="md:border-l-2 border-l border-action h-full absolute left-5 top-0"></span>
                     </Fade>
                 </div>
               </div>
               </Fade>
           </div>
+          
         </Carousel>
       </div>
 
       <ServicesComp className="space-x-5 justify-center bg-gray-300 h-fit py-5 " />
-      <AboutComp className="h-[100vh] "/>
+      <AboutComp className=" "/>
     </div>
   );
 }
