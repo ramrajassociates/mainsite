@@ -1,5 +1,5 @@
-import HeaderComp from '@/components/HeaderComp'
-import ServicesComp from '@/components/ServicesComp'
+import HeaderComp from '@/components/HomePage/HeaderComp'
+import ServicesComp from '@/components/HomePage/ServicesComp'
 import Head from 'next/head'
 
 export default function Home() {

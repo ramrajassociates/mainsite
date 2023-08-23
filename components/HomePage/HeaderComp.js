@@ -5,14 +5,14 @@ import Link from "next/link";
 import { Carousel } from 'flowbite-react';
 import {BsArrowRight} from 'react-icons/bs';
 import Fade from 'react-reveal/Fade';
-import Bounce from 'react-reveal/Bounce';
 import ServicesComp from "./ServicesComp";
 import AboutComp from "./AboutComp";
+import NavbarComp from "../NavbarComp";
 function HeaderComp() {
   const [reveal, setReveal] = useState(true);
   return (
-    <div className="w-[100vw] h-[100vh] " >
-     
+    <div className="relative" >
+     <NavbarComp/>
 <div id="dropdownHover" class="md:w-[30vw] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow  dark:bg-gray-700">
     <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
       <li>
@@ -24,7 +24,7 @@ function HeaderComp() {
      
     </ul>
 </div>
-      <div className="md:w-[100vw] md:h-[100vh]">
+      <div className="md:w-[100vw] md:h-[100vh] realtive">
         <Carousel
           indicators={false}
           slideInterval={7000}
@@ -86,10 +86,11 @@ function HeaderComp() {
               </div>
               </Fade>
           </div>
-          </Carousel>
+        </Carousel>
       </div>
-      <ServicesComp className="space-x-5 justify-center bg-gray-300 h-fit py-5" />
-      <AboutComp/>
+
+      <ServicesComp className="space-x-5 justify-center bg-gray-300 h-fit py-5 " />
+      <AboutComp className="h-[100vh] "/>
     </div>
   );
 }

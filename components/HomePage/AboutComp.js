@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect,useRef,useState} from 'react'
 import Image from 'next/image';
 import { Slide } from 'react-reveal';
 import { FaUserCheck ,FaPlay} from 'react-icons/fa';
@@ -7,12 +7,19 @@ import Link from 'next/link';
 import { Fade } from 'react-reveal';
 import { BsArrowRight } from 'react-icons/bs';
 import {FiPhoneCall} from 'react-icons/fi';
+import NavbarComp from '../NavbarComp';
 function AboutComp(props) {
     const { className } = props;
-  return (
-      <div className={`${className} flex flex-row px-24 space-x-32 justify-center items-center w-full py-10`}>
+    const Currentref = useRef(null);
+    
+    
+    return (<>
+      <div className={`${className} flex flex-row px-24 space-x-32 justify-center items-center w-full py-10`} ref={Currentref}>
           <div className='relative p-10 w-1/2 flex flex-row justify-center '>
+              <Fade bottom delay={200}>
+                  
               <Image src={'/images/who_we_are.jpg'} width={350} height={350}></Image>
+              </Fade>
               <Slide forever left cascade reverse >
               <Image src={'/images/h2-video-shape1.png'}  width={250} height={250} className='absolute -z-10 top-0 right-0'></Image>
                   
@@ -55,7 +62,8 @@ Based Solutions</span>
                <p className='text-xl text-action font-semibold '>   (+91) 94140 01803</p>
               </div>
           </div>
-    </div>
+      </div>
+      </>
   )
 }
 
