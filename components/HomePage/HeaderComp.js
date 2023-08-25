@@ -8,6 +8,7 @@ import Fade from 'react-reveal/Fade';
 import ServicesComp from "./ServicesComp";
 import AboutComp from "./AboutComp";
 import NavbarComp from "../NavbarComp";
+import ServiceCarousel from "./ServiceCarousel";
 function HeaderComp() {
   const [reveal, setReveal] = useState(true);
   return (
@@ -90,7 +91,8 @@ function HeaderComp() {
       </div>
 
       <ServicesComp className="space-x-5 justify-center bg-gray-300 h-fit py-5 " />
-      <AboutComp className=" "/>
+      <AboutComp className=" " />
+      <ServiceCarousel className="" />
     </div>
   );
 }
