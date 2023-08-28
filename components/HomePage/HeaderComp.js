@@ -14,13 +14,13 @@ function HeaderComp() {
   return (
     <div className="relative" >
      <NavbarComp/>
-<div id="dropdownHover" class="md:w-[30vw] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow  dark:bg-gray-700">
-    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+<div id="dropdownHover" className="md:w-[30vw] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow  dark:bg-gray-700">
+    <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
       <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Digital Marketing Services</a>
+        <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Digital Marketing Services</a>
       </li>
       <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">CCTV camera installation services Jaipur</a>
+        <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">CCTV camera installation services Jaipur</a>
       </li>
      
     </ul>
@@ -54,9 +54,9 @@ function HeaderComp() {
                 <div className="relative h-fit">
 
               <p className="md:text-xl text-white md:font-thin  ml-10 text-md font-normal">Grow, Lead and Win with Ramraj</p>
-              <Link href={'/contactus'} className=" text-main ml-10 w-fit flex flex-row justify-center items-center bg-action mt-4 text-s md:font-thin font-semibold py-1 px-3 ">Contact Us   <Fade right cascade spy={reveal} appear={true} delay={100} ><BsArrowRight className="ml-2"></BsArrowRight> </Fade>  </Link>
+              <Link href={'/contactus'} className=" text-main ml-10 w-fit flex flex-row justify-center items-center bg-action-900 mt-4 text-s md:font-thin font-semibold py-1 px-3 ">Contact Us   <Fade right cascade spy={reveal} appear={true} delay={100} ><BsArrowRight className="ml-2"></BsArrowRight> </Fade>  </Link>
               <Fade bottom spy={reveal} appear={true} delay={1200} >
-                    <span className="md:border-l-2 border-l border-action h-full absolute left-5 top-0"></span>
+                    <span className="md:border-l-2 border-l border-action-900 h-full absolute left-5 top-0"></span>
                     </Fade>
                 </div>
               </div>
@@ -78,9 +78,9 @@ function HeaderComp() {
                 <div className="relative h-fit">
 
               <p className="md:text-xl text-white md:font-thin  ml-10 text-md font-normal">Build your business to new heights with us</p>
-              <Link href={'/contactus'} className=" text-main ml-10 w-fit flex flex-row justify-center items-center bg-action mt-4 text-s md:font-thin font-semibold py-1 px-3 ">Contact Us   <Fade right cascade spy={reveal} appear={true} delay={100} ><BsArrowRight className="ml-2"></BsArrowRight> </Fade>  </Link>
+              <Link href={'/contactus'} className=" text-main ml-10 w-fit flex flex-row justify-center items-center bg-action-900 mt-4 text-s md:font-thin font-semibold py-1 px-3 ">Contact Us   <Fade right cascade spy={reveal} appear={true} delay={100} ><BsArrowRight className="ml-2"></BsArrowRight> </Fade>  </Link>
               <Fade bottom spy={reveal} appear={true} delay={1200} >
-                    <span className="md:border-l-2 border-l border-action h-full absolute left-5 top-0"></span>
+                    <span className="md:border-l-2 border-l border-action-900 h-full absolute left-5 top-0"></span>
                     </Fade>
                 </div>
               </div>

@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+[data-carousel-slide-to][aria-current="true"]:not(:disabled) {
+   @apply -translate-y-3;
+   @apply [&>*:nth-child(2)]:brightness-50;
+   @apply [&>*]:block;
+   @apply [&>*:nth-child(1)]:-translate-y-3;
+
+  }
+  body{
+      @apply bg-[#f3f3f5];
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Raleway:wght@200&display=swap');
