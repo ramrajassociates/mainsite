@@ -32,7 +32,7 @@ expertise in Digital Marketing</p>
            </div>
           </div>
         <div className="hidden duration-700 ease-in-out relative" data-carousel-item>
-            <Image src={'/images/2.jpg'} width={1920} height={1080} alt='image...' className='absolute block w-full -translate-x-1/2  top-1/2 left-1/2 brightness-50'  ></Image>
+            <Image src={'/images/cp.jpg'} width={1920} height={1080} alt='image...' className='absolute block w-full -translate-x-1/2  top-1/2 left-1/2 brightness-50'  ></Image>
             <div className='absolute top-0 w-full h-full z-30 md:p-48 '>
               <span className='font-semibold text-action-900 px-3 py-1 bg-gray-100 text-center w-fit '>Computer & Peripherals</span>
               <p className='text-main font-thin pt-5 pl-5 text-xl '>We identify the problems and
@@ -62,7 +62,7 @@ Consultancy</p>
            </div>
           </div>
         <div className="hidden duration-700 ease-in-out relative" data-carousel-item>
-            <Image src={'/images/2.jpg'} width={1920} height={1080} alt='image...' className='absolute block w-full -translate-x-1/2  top-1/2 left-1/2 brightness-50'  ></Image>
+            <Image src={'/images/sur.jpg'} width={1920} height={1080} alt='image...' className='absolute block w-full -translate-x-1/2  top-1/2 left-1/2 brightness-50'  ></Image>
             <div className='absolute top-0 w-full h-full z-30 md:p-48 '>
               <span className='font-semibold text-action-900 px-3 py-1 bg-gray-100 text-center w-fit '>Surveillance Services</span>
               <p className='text-main font-thin pt-5 pl-5 text-xl '>We have deep rooted
@@ -87,7 +87,7 @@ Consultancy</p>
         </div>
           <div  className="sm:w-48 sm:h-24 w-32 h-24 group cursor-pointer object-contain relative hover:-translate-y-3 transition-all duration-500" aria-current="true" aria-label="Slide 3" data-carousel-slide-to="2">
             <Image src={'uparrow.svg'} width={50} height={100} className='absolute w-full brightness-50 group-hover:-translate-y-3 hidden group-hover:block'></Image>
-            <Image src={'/images/2.jpg'} width={1920} height={1080} className='h-full w-full group-hover:brightness-50' alt='image...' ></Image> 
+            <Image src={'/images/cp.jpg'} width={1920} height={1080} className='h-full w-full group-hover:brightness-50' alt='image...' ></Image> 
             <p className='text-main text-sm absolute text-center z-40 top-0 p-10 hidden group-hover:block font-semibold'>Computer & Peripherals</p>
         </div>
           <div  className="sm:w-48 sm:h-24 w-32 h-24 group cursor-pointer object-contain relative hover:-translate-y-3 transition-all duration-500" aria-current="true" aria-label="Slide 4" data-carousel-slide-to="3">
@@ -102,7 +102,7 @@ Consultancy</p>
         </div>
           <div  className="sm:w-48 sm:h-24 w-32 h-24 group cursor-pointer object-contain relative hover:-translate-y-3 transition-all duration-500" aria-current="true" aria-label="Slide 5" data-carousel-slide-to="5">
             <Image src={'uparrow.svg'} width={50} height={100} className='absolute w-full brightness-50 group-hover:-translate-y-3 hidden group-hover:block'></Image>
-            <Image src={'/images/2.jpg'} width={1920} height={1080} className='h-full w-full group-hover:brightness-50' alt='image...' ></Image> 
+            <Image src={'/images/sur.jpg'} width={1920} height={1080} className='h-full w-full group-hover:brightness-50' alt='image...' ></Image> 
             <p className='text-main text-sm absolute text-center z-40 top-0 p-10 hidden group-hover:block font-semibold'>Surveillance Services</p>
         </div>
         

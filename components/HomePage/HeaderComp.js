@@ -14,17 +14,7 @@ function HeaderComp() {
   return (
     <div className="relative" >
      <NavbarComp/>
-<div id="dropdownHover" className="md:w-[30vw] z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow  dark:bg-gray-700">
-    <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
-      <li>
-        <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Digital Marketing Services</a>
-      </li>
-      <li>
-        <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">CCTV camera installation services Jaipur</a>
-      </li>
-     
-    </ul>
-</div>
+    
       <div className="md:w-[100vw] h-[100vh] realtive">
         <Carousel
           indicators={false}
@@ -40,15 +30,22 @@ function HeaderComp() {
         >
           <div className="w-[100vw] h-[100vh] ">
             <Image alt="Image..."
-              src={"/images/banner.jpg"}
+              src={"/images/bg1.jpg"}
               layout="fill"
               objectFit="cover"
               objectPosition="center"
-              className="filter brightness-50"
+              className="filter contrast-100 brightness-50"
+            ></Image>
+            <Image alt="Image..."
+              src={"/images/bg-dotted.png"}
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+              className=" z-10 absolute top-10 "
             ></Image>
 
             <Fade bottom spy={reveal} appear={true} delay={500}>
-            <div className="md:w-[40vw] w-[70vw] h-[100vh] md:h-[70vh] md:mt-20 md:ml-32 ml-14  flex flex-col justify-center  items-start space-y-3">
+            <div className="md:w-[40vw] w-[70vw] h-[100vh] md:h-[70vh] md:mt-20 md:ml-32 ml-14  flex flex-col justify-center  items-start space-y-3 z-20 absolute">
               
                 <span className="text-5xl text-white font-bold">India's Best IT Solutions Providers</span> 
                 <div className="relative h-fit">
@@ -64,15 +61,21 @@ function HeaderComp() {
           </div>
           <div className="w-[100vw] h-[100vh] ">
             <Image alt="Image..."
-              src={"/images/banner2.jpg"}
+              src={"/images/bg2.jpg"}
               layout="fill"
               objectFit="cover"
               objectPosition="center"
               className="filter brightness-50"
             ></Image>
-
+     <Image alt="Image..."
+              src={"/images/bg-dotted.png"}
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+              className=" z-10 absolute top-10 "
+            ></Image>
             <Fade bottom spy={reveal} appear={true} delay={500}>
-            <div className="md:w-[40vw] w-[70vw] h-[100vh] md:h-[70vh] md:mt-20 md:ml-32 ml-14  flex flex-col justify-center  items-start space-y-3">
+            <div className="md:w-[40vw] w-[70vw] h-[100vh] md:h-[70vh] md:mt-20 md:ml-32 ml-14  flex flex-col justify-center  items-start space-y-3 z-20 absolute">
               
                 <span className="text-5xl text-white font-bold">Complete IT Solution & Marketing Consultant</span> 
                 <div className="relative h-fit">
