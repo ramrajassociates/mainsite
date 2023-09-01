@@ -21,7 +21,8 @@ module.exports = {
           700: '#744b3e',
           800: '#5d3d33',
           900: '#c5925a',
-        }
+        },
+        'footerColor':'#0d4970',
       },
       // applying a global font
       typography: {
