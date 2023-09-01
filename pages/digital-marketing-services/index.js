@@ -7,7 +7,7 @@ function index() {
             <NavbarComp />
         <div className=''>
             <div className='object-contain h-[100vh] relative !snap-center '>
-        <Image src={'/images/digi.jpg'} width={1920} height={1080} className='w-full h-full object-cover sm:object-top object-center  '></Image>
+        <Image src={'/Images/digi.jpg'} width={1920} height={1080} className='w-full h-full object-cover sm:object-top object-center  '></Image>
                 <div className='bg-gray-600 sm:backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10 w-96 bg-opacity-20 sm:left-24 top-32 sm:max-w-[30vw] '>
                     <p className='text-main bg-footerColor px-2 py-1 absolute -top-2 -left-2'>Services</p>
                     <p className='text-main font-bold text-2xl pt-5'>Digital Marketing Service</p>
@@ -27,7 +27,7 @@ function index() {
     <div class="flex flex-wrap -m-4">
       <div class="xl:w-1/4 md:w-1/2 p-4">
         <div class="bg-gray-100 p-6 rounded-lg">
-          <Image class="h-40 rounded w-full object-cover object-center mb-6" src={'/images/2.jpg'} alt="content" width={520} height={500}></Image>
+          <Image class="h-40 rounded w-full object-cover object-center mb-6" src={'/Images/2.jpg'} alt="content" width={520} height={500}></Image>
          
           <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Search Engine Optimization</h2>
           <p class="leading-relaxed text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quis sint accusantium, odit rerum similique consequatur natus, fugit non, velit mollitia temporibus necessitatibus excepturi..</p>
@@ -35,7 +35,7 @@ function index() {
       </div>
       <div class="xl:w-1/4 md:w-1/2 p-4">
         <div class="bg-gray-100 p-6 rounded-lg">
-          <Image class="h-40 rounded w-full object-cover object-center mb-6" src={'/images/2.jpg'} alt="content" width={520} height={500}></Image>
+          <Image class="h-40 rounded w-full object-cover object-center mb-6" src={'/Images/2.jpg'} alt="content" width={520} height={500}></Image>
           
           <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Social Media Optimization</h2>
           <p class="leading-relaxed text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus quia harum, neque obcaecati, repudiandae natus quaerat corrupti cupiditate minima saepe libero sapiente aperiam praesentium!</p>
@@ -43,7 +43,7 @@ function index() {
       </div>
       <div class="xl:w-1/4 md:w-1/2 p-4">
         <div class="bg-gray-100 p-6 rounded-lg">
-          <Image class="h-40 rounded w-full object-cover object-center mb-6" src={'/images/2.jpg'} alt="content" width={520} height={500}></Image>
+          <Image class="h-40 rounded w-full object-cover object-center mb-6" src={'/Images/2.jpg'} alt="content" width={520} height={500}></Image>
           
           <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Content Writing </h2>
           <p class="leading-relaxed text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, a voluptas! Pariatur cum explicabo laborum modi reiciendis ea placeat dignissimos dolore veniam. Sunt, nostrum?</p>
@@ -51,7 +51,7 @@ function index() {
       </div>
       <div class="xl:w-1/4 md:w-1/2 p-4">
         <div class="bg-gray-100 p-6 rounded-lg">
-          <Image class="h-40 rounded w-full object-cover object-center mb-6" src={'/images/2.jpg'} alt="content" width={520} height={500}></Image>
+          <Image class="h-40 rounded w-full object-cover object-center mb-6" src={'/Images/2.jpg'} alt="content" width={520} height={500}></Image>
           
           <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Web Development</h2>
           <p class="leading-relaxed text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vitae nemo ducimus numquam beatae labore iure modi recusandae, hic ex accusantium! Exercitationem, ipsam corporis?</p>
@@ -59,7 +59,7 @@ function index() {
       </div>
       <div class="xl:w-1/4 md:w-1/2 p-4">
         <div class="bg-gray-100 p-6 rounded-lg">
-          <Image class="h-40 rounded w-full object-cover object-center mb-6" src={'/images/2.jpg'} alt="content" width={520} height={500}></Image>
+          <Image class="h-40 rounded w-full object-cover object-center mb-6" src={'/Images/2.jpg'} alt="content" width={520} height={500}></Image>
           
           <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Search Engine Marketing</h2>
           <p class="leading-relaxed text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vitae nemo ducimus numquam beatae labore iure modi recusandae, hic ex accusantium! Exercitationem, ipsam corporis?</p>
@@ -67,7 +67,7 @@ function index() {
       </div>
       <div class="xl:w-1/4 md:w-1/2 p-4">
         <div class="bg-gray-100 p-6 rounded-lg">
-          <Image class="h-40 rounded w-full object-cover object-center mb-6" src={'/images/2.jpg'} alt="content" width={520} height={500}></Image>
+          <Image class="h-40 rounded w-full object-cover object-center mb-6" src={'/Images/2.jpg'} alt="content" width={520} height={500}></Image>
           
           <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Social Media Marketing</h2>
           <p class="leading-relaxed text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vitae nemo ducimus numquam beatae labore iure modi recusandae, hic ex accusantium! Exercitationem, ipsam corporis?</p>
@@ -75,7 +75,7 @@ function index() {
       </div>
       <div class="xl:w-1/4 md:w-1/2 p-4">
         <div class="bg-gray-100 p-6 rounded-lg">
-          <Image class="h-40 rounded w-full object-cover object-center mb-6" src={'/images/2.jpg'} alt="content" width={520} height={500}></Image>
+          <Image class="h-40 rounded w-full object-cover object-center mb-6" src={'/Images/2.jpg'} alt="content" width={520} height={500}></Image>
           
           <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Photo & Videography</h2>
           <p class="leading-relaxed text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vitae nemo ducimus numquam beatae labore iure modi recusandae, hic ex accusantium! Exercitationem, ipsam corporis?</p>
@@ -83,7 +83,7 @@ function index() {
       </div>
       <div class="xl:w-1/4 md:w-1/2 p-4">
         <div class="bg-gray-100 p-6 rounded-lg">
-          <Image class="h-40 rounded w-full object-cover object-center mb-6" src={'/images/2.jpg'} alt="content" width={520} height={500}></Image>
+          <Image class="h-40 rounded w-full object-cover object-center mb-6" src={'/Images/2.jpg'} alt="content" width={520} height={500}></Image>
           
           <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Graphic Desing</h2>
           <p class="leading-relaxed text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vitae nemo ducimus numquam beatae labore iure modi recusandae, hic ex accusantium! Exercitationem, ipsam corporis?</p>

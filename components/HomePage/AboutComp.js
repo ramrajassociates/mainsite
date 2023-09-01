@@ -17,7 +17,7 @@ function AboutComp(props) {
             <div className='grid sm:grid-cols-3 grid-rows-5 sm:grid-rows-2 sm:h-[100vh] sm:gap-5 space-y-3 '>
     <div class="max-w-sm bg-white border border-gray-200 shadow-xl dark:bg-gray-800 dark:border-gray-700 sm:col-start-1 sm:row-span-2 row-span-2 row-start-1">
         <a href="#">
-            <Image src={'/images/cs1.jpg'} width={500} height={500}></Image>
+            <Image src={'/Images/cs1.jpg'} width={500} height={500}></Image>
         </a>
         <div class="p-10 sm:mt-20">
             <a href="#">

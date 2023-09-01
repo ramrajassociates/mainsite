@@ -12,7 +12,7 @@ function NavbarComp(props) {
   
   return (<>
     <div className={`md:h-[10vh] w-full hidden sm:grid grid-cols-12 ${position?position:'absolute'} top-0 z-10 bg-${bgColor?bgColor:'transparent'} ${className}`} >
-        <Link href={'/'} className="col-span-3 mx-auto"><Image alt="Image..." src={'/images/logow.png'} width={120} height={120}></Image></Link>
+        <Link href={'/'} className="col-span-3 mx-auto"><Image alt="Image..." src={'/Images/logow.png'} width={120} height={120}></Image></Link>
         <Link href={'/'} className={`col-span-1 font-thin  col-start-6 text-center hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action-900 text-${textColor?textColor:'main'}   `}><span>Home</span></Link>
         <Link href={'/aboutus'} className={`col-span-1 font-thin  text-center hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action-900 text-${textColor?textColor:'main'}   `}><span>About Us</span></Link>
         <div className={`col-span-1 font-thin cursor-pointer text-center hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action-900  text-${textColor?textColor:'main'} group  `} >Services
@@ -35,7 +35,7 @@ function NavbarComp(props) {
     </div>
     {/* Mobile Menu */}
     <div className={`h-[10vh] grid sm:hidden grid-cols-12 w-full absolute top-0 z-10 bg-${bgColor?bgColor:'transparent'} `} >
-        <Link href={'/'} className="col-span-3 mx-auto"><Image alt="Image..." src={'/images/logow.png'} width={120} height={120}></Image></Link>
+        <Link href={'/'} className="col-span-3 mx-auto"><Image alt="Image..." src={'/Images/logow.png'} width={120} height={120}></Image></Link>
       
       <div className=' col-span-2 col-start-11'>
       {CloseMenu ?<IoCloseOutline className='text-white absolute top-4 right-4 z-10' size={25} onClick={()=>setCloseMenu(e=>!e)} ></IoCloseOutline>:<FiMenu className={`text-white absolute top-4 right-4 z-10 `} size={25} onClick={()=>setCloseMenu(e=>!e)} ></FiMenu>}

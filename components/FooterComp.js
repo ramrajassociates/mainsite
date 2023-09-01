@@ -16,7 +16,7 @@ function FooterComp() {
            
       </ul>
      </div>
-        <Image src={'/images/logo.png'} width={400} height={400}></Image>
+        <Image src={'/Images/logo.png'} width={400} height={400}></Image>
       </div>
       <div className='flex flex-col space-y-4 pt-10 md:w-1/3 w-full  '>
         <h1 className='text-2xl text-footerColor text-start font-semibold '> Official Info :</h1>

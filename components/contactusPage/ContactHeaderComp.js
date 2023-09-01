@@ -27,14 +27,14 @@ function ContactHeaderComp() {
     }
   return (<>
     <div className='object-contain sm:h-[80vh] h-[30vh] relative'>
-        <Image src={'/images/contactus1.jpg'} width={1920} height={1080} className='w-full h-full object-cover sm:object-top   '></Image>
+        <Image src={'/Images/contactus1.jpg'} width={1920} height={1080} className='w-full h-full object-cover sm:object-top   '></Image>
       <div className='bg-gray-600 sm:backdrop-blur rounded-lg absolute h-32 gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-5 w-96 bg-opacity-20 sm:left-24 top-20'>
         <p className='text-main font-bold text-4xl'>Contact Us</p>
       </div>
     </div>
     <div className='py-5'>
     <div className="content mx-auto sm:px-24 realtive w-full flex md:flex-row flex-col-reverse justify-around gap-4">
-      <Image src={'/images/ctbg1.jpg'} width={1920} height={1080} className='absolute  -z-10 opacity-20 object-cover object-bottom h-full'></Image>
+      <Image src={'/Images/ctbg1.jpg'} width={1920} height={1080} className='absolute  -z-10 opacity-20 object-cover object-bottom h-full'></Image>
         <div className='flex flex-col gap-2 px-2'>
           
 <div className="flex flex-col justify-center items-start max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ">

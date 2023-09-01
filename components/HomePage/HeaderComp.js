@@ -30,14 +30,14 @@ function HeaderComp() {
         >
           <div className="w-[100vw] h-[100vh] ">
             <Image alt="Image..."
-              src={"/images/bg1.jpg"}
+              src={"/Images/bg1.jpg"}
               layout="fill"
               objectFit="cover"
               objectPosition="center"
               className="filter contrast-100 brightness-50"
             ></Image>
             <Image alt="Image..."
-              src={"/images/bg-dotted.png"}
+              src={"/Images/bg-dotted.png"}
               layout="fill"
               objectFit="cover"
               objectPosition="center"
@@ -61,14 +61,14 @@ function HeaderComp() {
           </div>
           <div className="w-[100vw] h-[100vh] ">
             <Image alt="Image..."
-              src={"/images/bg2.jpg"}
+              src={"/Images/bg2.jpg"}
               layout="fill"
               objectFit="cover"
               objectPosition="center"
               className="filter brightness-50"
             ></Image>
      <Image alt="Image..."
-              src={"/images/bg-dotted.png"}
+              src={"/Images/bg-dotted.png"}
               layout="fill"
               objectFit="cover"
               objectPosition="center"
