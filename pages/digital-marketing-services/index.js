@@ -5,7 +5,7 @@ import { Fade } from 'react-reveal'
 function index() {
     return (<>
             <NavbarComp />
-        <div className=''>
+        <div >
             <div className='object-contain h-[100vh] relative !snap-center '>
         <Image src={'/Images/digi.jpg'} width={1920} height={1080} className='w-full h-full object-cover sm:object-top object-center  '></Image>
                 <div className='bg-gray-600 sm:backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10  bg-opacity-20 sm:left-24 w-10/12 m-3 top-1/3 sm:max-w-[30vw] '>

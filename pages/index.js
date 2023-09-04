@@ -1,5 +1,7 @@
 import HeaderComp from '@/components/HomePage/HeaderComp'
-import ServicesComp from '@/components/HomePage/ServicesComp'
+import ServicesComp from '@/components/HomePage/ServicesComp';
+import NavbarComp from '@/components/NavbarComp';
+
 import Head from 'next/head'
 export default function Home() {
 
@@ -16,6 +18,8 @@ export default function Home() {
         <meta property="og:title" content="Leading IT Solutions and Consultation firm India | RamRaj Associates"/>
         <link rel="icon" href="/Images/favicon.png" />
       </Head>
+     <NavbarComp/>
+
       <main className='overflow-x-hidden'>
         <HeaderComp />
     </main>

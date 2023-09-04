@@ -7,13 +7,11 @@ import {BsArrowRight} from 'react-icons/bs';
 import Fade from 'react-reveal/Fade';
 import ServicesComp from "./ServicesComp";
 import AboutComp from "./AboutComp";
-import NavbarComp from "../NavbarComp";
 import ServiceCarousel from "./ServiceCarousel";
 function HeaderComp() {
   const [reveal, setReveal] = useState(true);
   return (
     <div className="relative" >
-     <NavbarComp/>
     
       <div className="md:w-[100vw] h-[100vh] realtive">
         <Carousel

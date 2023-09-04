@@ -4,12 +4,13 @@ import NavbarComp from '@/components/NavbarComp'
 import React from 'react'
 
 function index() {
-  return (
-      <div className='overflow-x-hidden'>
+  return (<>
           <NavbarComp  />
+      <div className='overflow-x-hidden'>
       <AboutHeaderComp />
       <TimeLine/>
     </div >
+    </>
   )
 }
 

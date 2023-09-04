@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import { IoIosArrowDown } from 'react-icons/io';
 import Link from "next/link";
 import Image from 'next/image';
@@ -8,10 +8,25 @@ function NavbarComp(props) {
   const {textColor,bgColor,position,className} = props;
   const [CloseMenu, setCloseMenu] = useState(false);
   const [open, setOpen] = useState(false);
+  const [isSticky, setSticky] = useState(false);
+  const [isCollapsed, setCollapsed] = useState(null);
+  const handleScroll = () => {
+    if (window.scrollY > 80) {
+      setSticky(true)
+    } else {
+      setSticky(false)
+    }
+  }
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }, [])
   
   
   return (<>
-    <div className={`md:h-[10vh] w-full hidden sm:grid grid-cols-12 ${position?position:'absolute'} top-0 z-10 bg-${bgColor?bgColor:'transparent'} ${className}`} >
+    <div className={`md:h-[10vh] w-full hidden sm:grid grid-cols-12 ${isSticky?'sticky bg-gray-700 backdrop-blur bg-opacity-75 [&>*]:text-main':'absolute'} top-0 z-[50]  ${className}  transition-all duration-500 ease-in-out`} >
         <Link href={'/'} className="col-span-3 mx-auto"><Image alt="Image..." src={'/Images/logow.png'} width={120} height={120}></Image></Link>
         <Link href={'/'} className={`col-span-1 font-thin  col-start-6 text-center hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action-900 text-${textColor?textColor:'main'}   `}><span>Home</span></Link>
         <Link href={'/aboutus'} className={`col-span-1 font-thin  text-center hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action-900 text-${textColor?textColor:'main'}   `}><span>About Us</span></Link>
@@ -32,7 +47,7 @@ function NavbarComp(props) {
       
     </div>
     {/* Mobile Menu */}
-    <div className={`h-[10vh] grid sm:hidden grid-cols-12 w-full absolute top-0 z-10 bg-${bgColor?bgColor:'transparent'} `} >
+    <div className={`h-[10vh] grid sm:hidden grid-cols-12 w-full ${isSticky?'sticky bg-gray-700 backdrop-blur bg-opacity-75 [&>*]:text-main':'absolute'} top-0 z-10  `} >
         <Link href={'/'} className="col-span-3 mx-auto"><Image alt="Image..." src={'/Images/logow.png'} width={120} height={120}></Image></Link>
       
       <div className=' col-span-2 col-start-11'>
