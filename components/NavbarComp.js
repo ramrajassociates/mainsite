@@ -47,7 +47,7 @@ function NavbarComp(props) {
       
     </div>
     {/* Mobile Menu */}
-    <div className={`h-[10vh] grid sm:hidden grid-cols-12 w-full ${isSticky?'sticky bg-gray-700 backdrop-blur bg-opacity-75 [&>*]:text-main':'absolute'} top-0 z-10  `} >
+    <div className={`h-[7vh] grid sm:hidden grid-cols-12 w-full ${isSticky?'fixed bg-gray-700 backdrop-blur bg-opacity-75 [&>*]:text-main':'absolute'} top-0 z-[100]  `} >
         <Link href={'/'} className="col-span-3 mx-auto"><Image alt="Image..." src={'/Images/logow.png'} width={120} height={120}></Image></Link>
       
       <div className=' col-span-2 col-start-11'>
