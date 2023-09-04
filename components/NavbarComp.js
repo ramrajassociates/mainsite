@@ -22,9 +22,7 @@ function NavbarComp(props) {
       <li>
         <Link href={'/digital-marketing-services'} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Digital Marketing Services</Link>
       </li>
-      <li>
-        <Link href={'/digital-marketing-services'} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">CCTV camera installation services Jaipur</Link>
-      </li>
+     
      
     </ul>
 </div>
@@ -51,9 +49,7 @@ function NavbarComp(props) {
       <li>
         <Link href={'/digital-marketing-services'} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Digital Marketing Services</Link>
       </li>
-      <li>
-        <Link href={'/digital-marketing-services'} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">CCTV camera installation services Jaipur</Link>
-      </li>
+     
      
     </ul>
         <Link href={'/contactus'} className={` border-b border-action-900 w-full  pb-4 font-thin text-center flex items-center  hover:decoration-action-900  text-${textColor?textColor:'main'}  `}> <span>Contact Us</span></Link>
