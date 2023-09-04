@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import Image from 'next/image';
-import { MdShareLocation, MdPhoneInTalk } from 'react-icons/md';
+import { MdShareLocation, MdPhoneInTalk ,MdMarkEmailUnread} from 'react-icons/md';
+import { HiBuildingOffice2 } from 'react-icons/hi2';
 import axios from 'axios';
 function ContactHeaderComp() {
     const [name, setName] = useState('');
@@ -37,20 +38,20 @@ function ContactHeaderComp() {
       <Image src={'/Images/ctbg1.jpg'} width={1920} height={1080} className='absolute  -z-10 opacity-20 object-cover object-bottom h-full'></Image>
         <div className='flex flex-col gap-2 px-2'>
           
-<div className="flex flex-col justify-center items-start max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ">
-  <MdShareLocation size={30}></MdShareLocation>
+<div className="flex flex-col justify-center items-start max-w-sm p-6 bg-[#d1d5db] rounded-lg shadow ">
+  <HiBuildingOffice2 size={30}></HiBuildingOffice2>
     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Office Address</h5>
     <p className="font-normal text-gray-700 dark:text-gray-400">32, Shastri Nagar, Jaipur</p>
 </div>
-<div className="flex flex-col justify-center items-start max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ">
+<div className="flex flex-col justify-center items-start max-w-sm p-6 bg-[#307fe2] text-main rounded-lg shadow  ">
   <MdPhoneInTalk size={30}></MdPhoneInTalk>
-    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Telephone number</h5>
-    <p className="font-normal text-gray-700 dark:text-gray-400">+91-9116145123</p>
+    <h5 className="mb-2 text-2xl font-bold tracking-tight text-main">Telephone number</h5>
+    <p className="font-normal text-main">+91-9116145123</p>
 </div>
-<div className="flex flex-col justify-center items-start max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ">
-  <MdShareLocation size={30}></MdShareLocation>
-    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Mail address</h5>
-    <p className="font-normal text-gray-700 dark:text-gray-400">info@ramrajassociates.com</p>
+<div className="flex flex-col justify-center items-start max-w-sm p-6 text-gray-600 bg-yellow-300 rounded-lg shadow ">
+  <MdMarkEmailUnread size={30}></MdMarkEmailUnread>
+    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-600">Mail address</h5>
+    <p className="font-normal text-gray-600">info@ramrajassociates.com</p>
 </div>
 
       </div>

@@ -9,9 +9,9 @@ function FooterComp() {
       <div className='md:w-1/3 w-full flex flex-col-reverse md:flex-col space-y-5 md:border-l md:border-footerColor md:pl-10 justify-center items-center'>
       <div >
           <ul className='[&>*]:text-footerColor text-md gap-4 flex flex-row [&>*]:cursor-pointer justify-center pt-10 space-x-6'>
-            <li><Link href={'#'} className='  '><FaInstagram className='hover:text-pink-600 hover:-translate-y-2 hover:shadow-lg transition-all duration-300 ' size={25}></FaInstagram></Link></li>
-            <li><Link href={'#'} className='  '><FaFacebookF className='hover:text-blue-600 hover:-translate-y-2 hover:shadow-lg transition-all duration-300 ' size={25}></FaFacebookF></Link></li>
-            <li><Link href={'#'} className='  '><FaTwitter className='hover:text-blue-600 hover:-translate-y-2 hover:shadow-lg transition-all duration-300 ' size={25}></FaTwitter></Link></li>
+            <li><Link href={'https://www.instagram.com/ramraj_associates/'} className='  '><FaInstagram className='hover:text-pink-600 hover:-translate-y-2 hover:shadow-lg transition-all duration-300 ' size={25}></FaInstagram></Link></li>
+            <li><Link href={'https://www.facebook.com/RamRaj-Associates'} className='  '><FaFacebookF className='hover:text-blue-600 hover:-translate-y-2 hover:shadow-lg transition-all duration-300 ' size={25}></FaFacebookF></Link></li>
+            <li><Link href={'https://twitter.com/ramrajassociate'} className='  '><FaTwitter className='hover:text-blue-600 hover:-translate-y-2 hover:shadow-lg transition-all duration-300 ' size={25}></FaTwitter></Link></li>
             <li><Link href={'#'} className='  '><FaLinkedinIn className='hover:text-blue-600 hover:-translate-y-2 hover:shadow-lg transition-all duration-300 ' size={25}></FaLinkedinIn></Link></li>
            
       </ul>

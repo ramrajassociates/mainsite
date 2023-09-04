@@ -32,7 +32,7 @@ At Ramraj Associates, we're dedicated to delivering innovative IT solutions for 
     <div class="flex flex-col justify-between p-4 leading-normal">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Our Vision</h5>
         <p class="mb-3  text-gray-700 dark:text-gray-400 font-thin text-xl p-5">
-At Ramraj Associates, we're dedicated to delivering innovative IT solutions for businesses of all sizes. Our focus is on tailoring high-quality solutions to our clients' needs, aiming to exceed expectations in every project. We prioritize trust, transparency, and communication, fostering strong client relationships. Our experienced team ensures exceptional service and results, while staying updated with industry trends. Through a culture of innovation, we're committed to being a trusted global partner, empowering businesses with technology to succeed. Your satisfaction drives our passion and commitment.</p>
+        At Ramraj Associates, we aspire to be a globally renowned IT firm recognized for our innovative, reliable, and effective solutions. We aim to be trusted partners for businesses, helping them thrive through cutting-edge technology. We prioritize staying ahead in IT trends, investing in our team's expertise. Client relationships are paramount, and we're committed to excellence, professionalism, and integrity in our pursuit of industry leadership, setting high standards for service, innovation, and customer satisfaction.</p>
     </div>
 </div>
 <div  class="flex flex-col items-center  md:flex-row gap-5 sm:max-w-full  ">
@@ -40,7 +40,17 @@ At Ramraj Associates, we're dedicated to delivering innovative IT solutions for 
     <div class="flex flex-col justify-between p-4 leading-normal">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Our Value</h5>
         <p class="mb-3  text-gray-700 dark:text-gray-400 font-thin  text-xl p-5">
-At Ramraj Associates, we're dedicated to delivering innovative IT solutions for businesses of all sizes. Our focus is on tailoring high-quality solutions to our clients' needs, aiming to exceed expectations in every project. We prioritize trust, transparency, and communication, fostering strong client relationships. Our experienced team ensures exceptional service and results, while staying updated with industry trends. Through a culture of innovation, we're committed to being a trusted global partner, empowering businesses with technology to succeed. Your satisfaction drives our passion and commitment.</p>
+        At Ramraj Associates, we are committed to four key principles:
+
+<strong> Integrity:</strong> We are honest, transparent, and accountable. <br />
+
+<strong>Professionalism:</strong> We provide exceptional service and quality. <br />
+
+<strong>Innovation:</strong> We stay at the forefront of IT trends. <br />
+
+<strong>Customer-Centric:</strong> We tailor solutions to our clients' needs. <br /> <br />
+
+Our unwavering commitment to excellence guides us in building lasting client relationships, making us a leading IT firm.</p>
     </div>
 </div>
 
