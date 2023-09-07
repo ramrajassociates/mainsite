@@ -9,7 +9,9 @@ import { BsArrowRight } from 'react-icons/bs';
 import {FiPhoneCall} from 'react-icons/fi';
 import NavbarComp from '../NavbarComp';
 import { Carousel } from 'flowbite-react';
-
+import {AiOutlineTeam} from 'react-icons/ai';
+import { FaAward, FaHandshake } from 'react-icons/fa';
+import {MdOutlineReviews} from 'react-icons/md';
 
 function AboutComp(props) {
     const { className } = props;
@@ -137,30 +139,35 @@ business for us by creating awareness about yoga and its benefits."</p>
   <div class="mx-auto flex flex-row flex-wrap space-y-3 sm:space-y-0 [&>*]:py-1 text-center w-full h-full">
   
       <div class="sm:w-1/2 w-full border border-gray-200 rounded-lg sm:rounded-none sm:border-none p-2  ">
-        <div class=" h-full">
-          <Image src={'/Images/team.png'} width={50} height={50} className='mx-auto'></Image>
+        <div class=" h-full text-center">
+                                {/* <Image src={'/Images/team.png'} width={50} height={50} className='mx-auto'></Image> */}
+                                <AiOutlineTeam className='mx-auto text-5xl text-footerColor' size={40} color='#0d4970'></AiOutlineTeam>
           <h2 class="title-font font-medium sm;text-md  md:text-xl text-gray-900">105+</h2>
           <p class="leading-relaxed sm:text-sm">Members</p>
         </div>
       </div>
       <div class="sm:w-1/2 w-full border border-gray-200 rounded-lg sm:rounded-none sm:border-none p-2  ">
-        <div class=" h-full">
-        <Image src={'/Images/award.png'} width={50} height={50} className='mx-auto'></Image>
+        <div class=" h-full text-center">
+                                {/* <Image src={'/Images/award.png'} width={50} height={50} className='mx-auto'></Image> */}
+                                <FaAward className='mx-auto text-5xl text-footerColor' size={40} color='#0d4970'></FaAward>
+                                
           <h2 class="title-font font-medium sm;text-md  md:text-xl text-gray-900">15+</h2>
           <p class="leading-relaxed sm:text-sm">Winning Awards</p>
         </div>
       </div>
       <div class="sm:w-1/2 w-full border border-gray-200 rounded-lg sm:rounded-none sm:border-none p-2  ">
-        <div class=" h-full">
-        <Image src={'/Images/project.png'} width={50} height={50} className='mx-auto'></Image>
+        <div class=" h-full text-center">
+        {/* <Image src={'/Images/project.png'} width={50} height={50} className='mx-auto'></Image> */}
+                                <FaHandshake className='mx-auto text-5xl text-footerColor' size={40} color='#0d4970'></FaHandshake>
 
           <h2 class="title-font font-medium sm;text-md  md:text-xl text-gray-900">10k+</h2>
           <p class="leading-relaxed sm:text-sm">Completed Projects</p>
         </div>
       </div>
       <div class="sm:w-1/2 w-full border border-gray-200 rounded-lg sm:rounded-none sm:border-none p-2  ">
-        <div class=" h-full">
-        <Image src={'/Images/reviews.png'} width={50} height={50} className='mx-auto'></Image>
+        <div class=" h-full text-center">
+        {/* <Image src={'/Images/reviews.png'} width={50} height={50} className='mx-auto'></Image> */}
+                                <MdOutlineReviews className='mx-auto text-5xl text-footerColor' size={40} color='#0d4970'></MdOutlineReviews>
 
           <h2 class="title-font font-medium sm;text-md  md:text-xl text-gray-900">850+</h2>
           <p class="leading-relaxed sm:text-sm">Client's Reviews</p>
