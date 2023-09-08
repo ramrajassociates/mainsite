@@ -10,7 +10,7 @@ function ContactHeaderComp() {
     const [message, setMessage] = useState('');
     const SumbitForm = (e) => {
       e.preventDefault();
-      console.log(name, email, service, message);
+      // console.log(name, email, service, message);
       setName('');
       setEmail('');
       setService('');
@@ -21,21 +21,21 @@ function ContactHeaderComp() {
         service: service,
         message: message
       }).then((res) => {
-        console.log(res);
+        // console.log(res);
       }).catch((err) => {
-        console.log(err);
+        // console.log(err);
       })
     }
   return (<>
     <div className='object-contain sm:h-[80vh] h-[30vh] relative'>
-        <Image src={'/Images/contactus.jpg'} width={1920} height={1080} className='w-full h-full object-cover sm:object-top   '></Image>
+        <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images/contactus.jpg'} width={1920} height={1080} className='w-full h-full object-cover sm:object-top   '></Image>
       <div className='bg-gray-600 sm:backdrop-blur rounded-lg absolute sm:h-32 h-fit py-5 gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-5 sm:w-96 w-11/12  bg-opacity-20 sm:left-24 top-20'>
         <p className='text-main font-bold text-4xl'>Contact Us</p>
       </div>
     </div>
     <div className='py-5'>
     <div className="content mx-auto sm:px-24 realtive w-full flex md:flex-row flex-col-reverse justify-around gap-4">
-      <Image src={'/Images/ctbg1.jpg'} width={1920} height={1080} className='absolute  -z-10 opacity-20 object-cover object-bottom h-full'></Image>
+      <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images/ctbg1.jpg'} width={1920} height={1080} className='absolute  -z-10 opacity-20 object-cover object-bottom h-full'></Image>
         <div className='flex flex-col gap-2 px-2'>
           
 <div className="flex flex-col justify-center items-start max-w-sm p-6 bg-[#d1d5db] rounded-lg shadow ">
