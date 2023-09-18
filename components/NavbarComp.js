@@ -26,13 +26,13 @@ function NavbarComp(props) {
   
   
   return (<>
-    <div className={`md:h-[10vh] w-full hidden sm:grid grid-cols-12 ${isSticky?'sticky bg-gray-700 backdrop-blur bg-opacity-75 [&>*]:text-main':'absolute'} top-0 z-[50]  ${className}  transition-all duration-500 ease-in-out`} >
-        <Link href={'/'} className="col-span-3 mx-auto"><Image alt="Image..." src={'https://d1efbx4910ct8i.cloudfront.net/Images/logow.png'} width={120} height={120}></Image></Link>
-        <Link href={'/'} className={`col-span-1 font-thin  col-start-6 text-center hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action-900 text-${textColor?textColor:'main'}   `}><span>Home</span></Link>
+    <div className={`md:h-[10vh] md:min-h-fit w-full hidden sm:grid grid-cols-12 ${isSticky?'sticky bg-gray-700 backdrop-blur bg-opacity-75 [&>*]:text-main':'absolute'} top-0 z-[50]  ${className}  transition-all duration-500 ease-in-out`} >
+        <a href={'/'} className="col-span-3 mx-auto"><Image alt="Image..." src={'https://d1efbx4910ct8i.cloudfront.net/Images2/logow.webp'} width={120} height={120}></Image></a>
+        <a href={'/'} className={`col-span-1 font-thin  col-start-6 text-center hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action-900 text-${textColor?textColor:'main'}   `}><span>Home</span></a>
         <Link href={'/aboutus'} className={`col-span-1 font-thin  text-center hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action-900 text-${textColor?textColor:'main'}   `}><span>About Us</span></Link>
         <div className={`col-span-1 font-thin cursor-pointer text-center hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action-900  text-${textColor?textColor:'main'} group  `} >Services
         <IoIosArrowDown className="ml-1"></IoIosArrowDown> 
-        <div id="dropdownHover" className="md:w-[30vw] z-10 !absolute !top-20 !left-1/2 hidden group-hover:block bg-white divide-y divide-gray-100 rounded-lg shadow  dark:bg-gray-700">
+        <div id="dropdownHover" className="md:w-[30vw] z-40 !absolute !top-20 !left-1/2 hidden group-hover:block bg-white divide-y divide-gray-100 rounded-lg shadow  dark:bg-gray-700">
     <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" >
       <li>
         <Link href={'/digital-marketing-services'} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Digital Marketing Services</Link>
@@ -48,7 +48,7 @@ function NavbarComp(props) {
     </div>
     {/* Mobile Menu */}
     <div className={`h-[7vh] grid sm:hidden grid-cols-12 w-full ${isSticky?'fixed bg-gray-700 backdrop-blur bg-opacity-75 [&>*]:text-main':'absolute'} top-0 z-[100]  `} >
-        <Link href={'/'} className="col-span-3 mx-auto"><Image alt="Image..." src={'https://d1efbx4910ct8i.cloudfront.net/Images/logow.png'} width={120} height={120}></Image></Link>
+        <a href={'/'} className="col-span-3 mx-auto"><Image alt="Image..." src={'https://d1efbx4910ct8i.cloudfront.net/Images2/logow.webp'} width={120} height={120}></Image></a>
       
       <div className=' col-span-2 col-start-11'>
      <FiMenu className={`text-white absolute top-4 right-4  `} size={25} onClick={()=>setCloseMenu(e=>!e)} ></FiMenu>
@@ -56,7 +56,7 @@ function NavbarComp(props) {
        </div>
       <div className={`  ${!CloseMenu ? 'translate-x-96' : 'translate-x-0'} transition-all duration-700  flex flex-col fixed right-0 space-y-5 h-[100vh] w-[50vw] top-0 justify-start items-start [&>*]: pl-5 [&>*]:!text-lg  p-1 bg-black `}>
       <IoCloseOutline className='text-white absolute top-4 right-4 z-10' size={25} onClick={()=>setCloseMenu(e=>!e)} ></IoCloseOutline>
-      <Link href={'/'} className={` border-b border-action-900 w-full  pb-4  font-thin text-center !mt-36 flex items-center  hover:decoration-action-900 text-${textColor?textColor:'main'}   `}><span>Home</span></Link>
+      <a href={'/'} className={` border-b border-action-900 w-full  pb-4  font-thin text-center !mt-36 flex items-center  hover:decoration-action-900 text-${textColor?textColor:'main'}   `}><span>Home</span></a>
         <Link href={'/aboutus'} className={` border-b border-action-900 w-full  pb-4  font-thin  text-center flex items-center  hover:decoration-action-900 text-${textColor?textColor:'main'}   `}><span>About Us</span></Link>
         <div className={`  border-b border-action-900 w-full  pb-4 font-thin cursor-pointer text-center flex items-center  hover:decoration-action-900  text-${textColor?textColor:'main'}  `} data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" onClick={()=>setOpen(e=>!e)}>Services
           <IoIosArrowDown className="ml-1"></IoIosArrowDown>

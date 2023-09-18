@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="canonical" href="https://ramrajassociates.com/">
         </link>
         <meta property="og:title" content="Leading IT Solutions and Consultation firm India | RamRaj Associates"/>
-        <link rel="icon" href="https://d1efbx4910ct8i.cloudfront.net/Images/favicon.png" />
+        <link rel="icon" href="https://d1efbx4910ct8i.cloudfront.net/Images2/favicon.png" />
       </Head>
      <NavbarComp/>
 

@@ -22,7 +22,7 @@ function AboutComp(props) {
             <div className='sm:grid sm:grid-cols-3 flex flex-row flex-wrap sm:grid-rows-2 sm:h-[100vh] sm:gap-5 space-y-3 '>
     <div class="w-11/12 sm:max-w-sm mx-auto bg-white border border-gray-200 shadow-xl dark:bg-gray-800 dark:border-gray-700 sm:col-start-1 sm:row-span-2 row-span-2 row-start-1">
         <a href="#">
-            <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images/cs1.jpg'} width={500} height={500}></Image>
+            <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/cs1.webp'} width={500} height={500}></Image>
         </a>
         <div class="p-5 lg:mt-20 mt-5">
             <a href="#">
@@ -60,7 +60,7 @@ quality of service. All phone calls and emails are answered very
 professionally. "</p>
           </blockquote>
           <figcaption class="flex items-center justify-center mt-6 space-x-3">
-              {/* <Image class="w-6 h-6 rounded-full" src={"https://d1efbx4910ct8i.cloudfront.net/Images/abt1.png"} width={50} height={50} alt="profile picture"></Image> */}
+              {/* <Image class="w-6 h-6 rounded-full" src={"https://d1efbx4910ct8i.cloudfront.net/Images2/abt1.webp"} width={50} height={50} alt="profile picture"></Image> */}
               <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                   <div class="pr-3 font-medium text-gray-900 dark:text-white">Sailesh Shukla</div>
                   <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Business Head</div>
@@ -80,7 +80,7 @@ professionally. "</p>
 am getting good outcomes for my social campaigns"</p>
           </blockquote>
           <figcaption class="flex items-center justify-center mt-6 space-x-3">
-              {/* <Image class="w-6 h-6 rounded-full" src={"https://d1efbx4910ct8i.cloudfront.net/Images/abt1.png"} width={50} height={50} alt="profile picture"></Image> */}
+              {/* <Image class="w-6 h-6 rounded-full" src={"https://d1efbx4910ct8i.cloudfront.net/Images2/abt1.webp"} width={50} height={50} alt="profile picture"></Image> */}
               <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                   <div class="pr-3 font-medium text-gray-900 dark:text-white">Kuldeep Singh</div>
                   <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Jan Sewak</div>
@@ -101,7 +101,7 @@ hard 24X7 to deliver value for us and we are so delighted with their
 handwork, now we are getting desired outcomes"</p>
           </blockquote>
           <figcaption class="flex items-center justify-center mt-6 space-x-3">
-              {/* <Image class="w-6 h-6 rounded-full" src={"https://d1efbx4910ct8i.cloudfront.net/Images/abt1.png"} width={50} height={50} alt="profile picture"></Image> */}
+              {/* <Image class="w-6 h-6 rounded-full" src={"https://d1efbx4910ct8i.cloudfront.net/Images2/abt1.webp"} width={50} height={50} alt="profile picture"></Image> */}
               <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                   <div class="pr-3 font-medium text-gray-900 dark:text-white">Himanshu Sharma</div>
                   <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Project Head</div>
@@ -121,7 +121,7 @@ handwork, now we are getting desired outcomes"</p>
 business for us by creating awareness about yoga and its benefits."</p>
           </blockquote>
           <figcaption class="flex items-center justify-center mt-6 space-x-3">
-              {/* <Image class="w-6 h-6 rounded-full" src={"https://d1efbx4910ct8i.cloudfront.net/Images/abt1.png"} width={50} height={50} alt="profile picture"></Image> */}
+              {/* <Image class="w-6 h-6 rounded-full" src={"https://d1efbx4910ct8i.cloudfront.net/Images2/abt1.webp"} width={50} height={50} alt="profile picture"></Image> */}
               <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                   <div class="pr-3 font-medium text-gray-900 dark:text-white">Dhakaram (Yogapeace)</div>
                   <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Yogacharya</div>
@@ -140,7 +140,7 @@ business for us by creating awareness about yoga and its benefits."</p>
   
       <div class="sm:w-1/2 w-full border border-gray-200 rounded-lg sm:rounded-none sm:border-none p-2  ">
         <div class=" h-full text-center">
-                                {/* <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images/team.png'} width={50} height={50} className='mx-auto'></Image> */}
+                                {/* <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/team.webp'} width={50} height={50} className='mx-auto'></Image> */}
                                 <AiOutlineTeam className='mx-auto text-5xl text-footerColor' size={40} color='#0d4970'></AiOutlineTeam>
           <h2 class="title-font font-medium sm;text-md  md:text-xl text-gray-900">105+</h2>
           <p class="leading-relaxed sm:text-sm">Members</p>
@@ -148,7 +148,7 @@ business for us by creating awareness about yoga and its benefits."</p>
       </div>
       <div class="sm:w-1/2 w-full border border-gray-200 rounded-lg sm:rounded-none sm:border-none p-2  ">
         <div class=" h-full text-center">
-                                {/* <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images/award.png'} width={50} height={50} className='mx-auto'></Image> */}
+                                {/* <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/award.webp'} width={50} height={50} className='mx-auto'></Image> */}
                                 <FaAward className='mx-auto text-5xl text-footerColor' size={40} color='#0d4970'></FaAward>
                                 
           <h2 class="title-font font-medium sm;text-md  md:text-xl text-gray-900">15+</h2>
@@ -157,7 +157,7 @@ business for us by creating awareness about yoga and its benefits."</p>
       </div>
       <div class="sm:w-1/2 w-full border border-gray-200 rounded-lg sm:rounded-none sm:border-none p-2  ">
         <div class=" h-full text-center">
-        {/* <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images/project.png'} width={50} height={50} className='mx-auto'></Image> */}
+        {/* <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/project.webp'} width={50} height={50} className='mx-auto'></Image> */}
                                 <FaHandshake className='mx-auto text-5xl text-footerColor' size={40} color='#0d4970'></FaHandshake>
 
           <h2 class="title-font font-medium sm;text-md  md:text-xl text-gray-900">10k+</h2>
@@ -166,7 +166,7 @@ business for us by creating awareness about yoga and its benefits."</p>
       </div>
       <div class="sm:w-1/2 w-full border border-gray-200 rounded-lg sm:rounded-none sm:border-none p-2  ">
         <div class=" h-full text-center">
-        {/* <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images/reviews.png'} width={50} height={50} className='mx-auto'></Image> */}
+        {/* <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/reviews.webp'} width={50} height={50} className='mx-auto'></Image> */}
                                 <MdOutlineReviews className='mx-auto text-5xl text-footerColor' size={40} color='#0d4970'></MdOutlineReviews>
 
           <h2 class="title-font font-medium sm;text-md  md:text-xl text-gray-900">850+</h2>
@@ -180,16 +180,16 @@ business for us by creating awareness about yoga and its benefits."</p>
                     <div className='bg-gray-400 px-2 py-1 absolute -left-3 -top-3 text-main'>Follow Us</div>
                     <div className='w-full h-full grid grid-cols-2 grid-rows-2'>
                         <Link href={'https://www.facebook.com/RamRaj-Associates/'} className='flex flex-row justify-end items-end row-span-1 cursor-pointer  col-span-1 col-start-1 row-start-1 border-l border-b p-3'>
-                            <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images/face.png'} width={120} height={150} className='hover:rotate-12 transform transition-transform duration-300 ease-in-out'></Image>
+                            <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/face.webp'} width={120} height={150} className='hover:rotate-12 transform transition-transform duration-300 ease-in-out'></Image>
                         </Link>
                         <Link href={'https://www.instagram.com/ramraj_associates/'} className='flex flex-row justify-start items-end row-span-1 cursor-pointer  col-span-1 col-start-2 row-start-1 border-l border-b p-3'>
-                            <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images/insta.png'} width={120} height={150} className='hover:rotate-12 transform transition-transform duration-300 ease-in-out'></Image>
+                            <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/insta.webp'} width={120} height={150} className='hover:rotate-12 transform transition-transform duration-300 ease-in-out'></Image>
                         </Link>
                         <Link href={'https://twitter.com/ramrajassociate'} className='flex flex-row justify-end items-start row-span-1 cursor-pointer  col-span-1 col-start-1 row-start-2 border-l border-b p-3'>
-                            <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images/twit.png'} width={120} height={150} className='hover:rotate-12 transform transition-transform duration-300 ease-in-out'></Image>
+                            <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/twit.webp'} width={120} height={150} className='hover:rotate-12 transform transition-transform duration-300 ease-in-out'></Image>
                         </Link>
                         <Link href={'#'} className='flex flex-row justify-start items-start row-span-1 cursor-pointer  col-span-1 col-start-2 row-start-2 border-l border-b p-3'>
-                            <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images/linked.png'} width={120} height={150} className='hover:rotate-12 transform transition-transform duration-300 ease-in-out'></Image>
+                            <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/linked.webp'} width={120} height={150} className='hover:rotate-12 transform transition-transform duration-300 ease-in-out'></Image>
                         </Link>
                     </div>
                 </div>
