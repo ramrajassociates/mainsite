@@ -10,6 +10,7 @@ function index() {
   return (<>
     <Head>
       <title>Digital Marketing Services | Digital Marketing Agency in India</title>
+      <link rel="icon" href="https://d1efbx4910ct8i.cloudfront.net/Images2/favicon.png" />
       <meta name="description" content="We offer a wide range of digital services in India including Social Media Marketing, Search Engine Optimization, Email Marketing, Graphic Design, Content Writing, Content Marketing, Website Design & Development, Application Development, Paid Marketing, Corporate Photoshoot and Others." />
       <meta name="keywords" content="digital marketing services, digital marketing agency in india, digital marketing company in india, digital marketing services in india, digital marketing agency in delhi, digital marketing company in delhi, digital marketing services in delhi, digital marketing agency in noida, digital marketing company in noida, digital marketing services in noida, digital marketing agency in gurgaon, digital marketing company in gurgaon, digital marketing services in gurgaon, digital marketing agency in faridabad, digital marketing company in faridabad, digital marketing services in faridabad, digital marketing agency in ghaziabad, digital marketing company in ghaziabad, digital marketing services in jaipur" />
       <meta property="og:title" content="Digital Marketing Services | Digital Marketing Agency in India" />
