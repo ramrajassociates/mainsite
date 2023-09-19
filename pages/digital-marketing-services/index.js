@@ -41,7 +41,7 @@ function index() {
       </Head>
             <NavbarComp />
         <div >
-            <div className='object-contain  relative  '>
+            <div className='object-contain  relative h-[100vh]  '>
         <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp'} width={1920} height={1080} className='w-full h-full object-cover sm:object-top object-center  '></Image>
                 <div className='bg-gray-600 sm:backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10  bg-opacity-20 sm:left-24 w-10/12 m-3 top-1/3 sm:max-w-[30vw] '>
                     <p className='text-main bg-footerColor px-2 py-1 absolute -top-2 -left-2'>Services</p>
