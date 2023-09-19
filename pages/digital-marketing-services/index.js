@@ -56,7 +56,7 @@ function index() {
             <div className='sm:px-24 px-1 py-5'>
         <div className={`sm:grid sm:grid-cols-3 ${show?'sm:grid-rows-4':'sm:grid-rows-2'} gap-5 flex flex-row flex-wrap mt-10`}>
 
-        <section className='ImageWithContent col-span-2 col-start-1 row-start-1 flex sm:flex-row flex-col sm:min-h-full h-full w-full'>
+        <section className='shadow-xl ImageWithContent col-span-2 col-start-1 row-start-1 flex sm:flex-row flex-col sm:min-h-full h-full w-full'>
             <div className='Image object-cover sm:w-1/2 w-full !min-h-full '>
               <Image className='w-full h-full object-cover'src={'https://d1efbx4910ct8i.cloudfront.net/Images2/seo.webp'} alt="Search engine optimization" width={520} height={500} ></Image>
             </div>
@@ -74,10 +74,10 @@ function index() {
                         </Fade>
                                   </div>
                                   </div>
-            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'/Images/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
+            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
             </div>
         </section>
-          <section className='Normal col-span-1 col-start-3  row-start-1 w-full sm:h-full h-56 object-cover relative'>
+          <section className='shadow-xl Normal col-span-1 col-start-3  row-start-1 w-full sm:h-full h-56 object-cover relative'>
             <Image className="absolute w-full h-full object-cover object-center " src={'https://d1efbx4910ct8i.cloudfront.net/Images2/c-w.webp'} alt="content" width={520} height={500}></Image>
             <div className='absolute w-full h-full z-0 bg-black bg-opacity-50'></div>
             <div className='sm:p-10 p-5 absolute top-0 z-10'>
@@ -94,10 +94,10 @@ function index() {
                         </Fade>
                                   </div>
                                   </div>
-            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'/Images/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
+            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
             </div>
         </section>
-          <section className='Normal col-span-1 col-start-1 row-start-2   w-full sm:h-full h-56 object-cover relative bg-main'>
+          <section className='shadow-xl Normal col-span-1 col-start-1 row-start-2   w-full sm:h-full h-56 object-cover relative bg-main'>
             <div className='sm:p-10 p-5 '>
 
         <h2 className='text-xl font-semibold text-gray-700'>Social Media Optimization</h2>
@@ -112,10 +112,10 @@ function index() {
                         </Fade>
                                   </div>
                                   </div>
-            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'/Images/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
+            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
             </div>
         </section>
-        <section className='ImageWithContent col-span-2 col-start-2 row-start-2 flex sm:flex-row flex-col sm:min-h-full h-full w-full'>
+        <section className='shadow-xl ImageWithContent col-span-2 col-start-2 row-start-2 flex sm:flex-row flex-col sm:min-h-full h-full w-full'>
             <div className='Image object-cover sm:w-1/2 w-full !min-h-full '>
               <Image className='w-full h-full object-cover'src={'https://d1efbx4910ct8i.cloudfront.net/Images2/w-d.webp'} alt="Search engine optimization" width={520} height={500} ></Image>
             </div>
@@ -133,10 +133,10 @@ function index() {
                         </Fade>
                                   </div>
                                   </div>
-            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'/Images/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
+            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
             </div>
         </section>
-        <section className={`ImageWithContent col-span-2 col-start-1 row-start-3 flex sm:flex-row flex-col sm:min-h-full h-full w-full ${show?'block':'hidden'}`}>
+        <section className={`shadow-xl ImageWithContent col-span-2 col-start-1 row-start-3 flex sm:flex-row flex-col sm:min-h-full h-full w-full ${show?'block':'hidden'}`}>
             <div className='Image object-cover sm:w-1/2 w-full !min-h-full '>
               <Image className='w-full h-full object-cover'src={'https://d1efbx4910ct8i.cloudfront.net/Images2/p-a-v.webp'} alt="Search engine optimization" width={520} height={500} ></Image>
             </div>
@@ -154,10 +154,10 @@ function index() {
                         </Fade>
                                   </div>
                                   </div>
-            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'/Images/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
+            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
             </div>
         </section>
-          <section className={`Normal col-span-1 col-start-3  row-start-3 w-full sm:h-full h-56 object-cover relative ${show?'block':'hidden'}`}>
+          <section className={`shadow-xl Normal col-span-1 col-start-3  row-start-3 w-full sm:h-full h-56 object-cover relative ${show?'block':'hidden'}`}>
             <Image className="absolute w-full h-full object-cover object-center " src={'https://d1efbx4910ct8i.cloudfront.net/Images2/g-d.webp'} alt="content" width={520} height={500}></Image>
             <div className='absolute w-full h-full z-0 bg-black bg-opacity-50'></div>
             <div className='sm:p-10 p-5 absolute top-0 z-10'>
@@ -174,10 +174,10 @@ function index() {
                         </Fade>
                                   </div>
                                   </div>
-            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'/Images/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
+            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
             </div>
         </section>
-          <section className={`Normal col-span-1 col-start-1 row-start-4  w-full sm:h-full h-56  object-cover relative bg-main  ${show?'block':'hidden'}`}>
+          <section className={`shadow-xl Normal col-span-1 col-start-1 row-start-4  w-full sm:h-full h-56  object-cover relative bg-main  ${show?'block':'hidden'}`}>
             
 
             <div className='sm:p-10 p-5 '>
@@ -194,10 +194,10 @@ function index() {
                         </Fade>
                                   </div>
                                   </div>
-            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'/Images/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
+            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
             </div>
         </section>
-        <section className={`ImageWithContent col-span-2 col-start-2 row-start-4 flex sm:flex-row flex-col sm:min-h-full h-full w-full ${show?'block':'hidden'}`}>
+        <section className={`shadow-xl ImageWithContent col-span-2 col-start-2 row-start-4 flex sm:flex-row flex-col sm:min-h-full h-full w-full ${show?'block':'hidden'}`}>
             <div className='Image object-cover sm:w-1/2 w-full !min-h-full '>
               <Image className='w-full h-full object-cover'src={'https://d1efbx4910ct8i.cloudfront.net/Images2/s-e-m.webp'} alt="Search engine optimization" width={520} height={500} ></Image>
             </div>
@@ -215,7 +215,7 @@ function index() {
                         </Fade>
                                   </div>
                                   </div>
-            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'/Images/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
+            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
             </div>
         </section>
         </div>

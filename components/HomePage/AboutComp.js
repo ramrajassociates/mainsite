@@ -178,8 +178,8 @@ business for us by creating awareness about yoga and its benefits."</p>
   </div>
 </div>
 
-                <div className='sm:col-start-2 w-11/12 sm:w-full mx-auto sm:row-start-2 sm:col-span-1 sm:row-span-1 row-start-4  shadow-xl relative'>
-                    <div className='bg-gray-400 px-2 py-1 absolute -left-3 -top-3 text-main'>Follow Us</div>
+                <div className='sm:col-start-2 w-11/12 sm:w-full mx-auto sm:row-start-2 sm:col-span-1 sm:row-span-1 row-start-4 relative'>
+                    <div className='bg-gray-400 px-2 py-1 absolute -left-3 -top-4 text-main'>Follow Us</div>
                     <div className='w-full h-full grid grid-cols-2 grid-rows-2 gap-2'>
                         <Link href={'https://www.facebook.com/RamRaj-Associates/'} className='hover:!shadow-inner-lg group flex flex-col justify-center items-start row-span-1 cursor-pointer gap-5 col-span-1 col-start-1 row-start-2 border-l border-b p-5 bg-[#585caa]'>
                             <FiFacebook className='text-white text-start  text-4xl group-hover:text-white transition-all duration-300  ease-in-out'>
