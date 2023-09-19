@@ -11,7 +11,9 @@ import NavbarComp from '../NavbarComp';
 import { Carousel } from 'flowbite-react';
 import {AiOutlineTeam} from 'react-icons/ai';
 import { FaAward, FaHandshake } from 'react-icons/fa';
-import {MdOutlineReviews} from 'react-icons/md';
+import { MdOutlineReviews } from 'react-icons/md';
+import { BsInstagram } from 'react-icons/bs';
+import {FiTwitter,FiFacebook} from 'react-icons/fi';
 
 function AboutComp(props) {
     const { className } = props;
@@ -26,7 +28,7 @@ function AboutComp(props) {
         </a>
         <div class="p-5 lg:mt-20 mt-5">
             <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Our Lagacy</h5>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Our Legacy</h5>
             </a>
             <p class="mb-3 font-thin text-gray-700 dark:text-gray-400">Our mission is to be a trusted partner for businesses worldwide, providing them with the technology solutions they need to grow their businesses and achieve their goals. We are passionate about our work and are committed to providing the highest level of customer satisfaction in everything we do.</p>
             <Link href={'/aboutus'} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center bg-action-900 text-main">
@@ -176,21 +178,48 @@ business for us by creating awareness about yoga and its benefits."</p>
   </div>
 </div>
 
-                <div className='sm:col-start-2 w-11/12 sm:w-full mx-auto sm:row-start-2 sm:col-span-1 sm:row-span-1 row-start-4 bg-main shadow-xl relative'>
+                <div className='sm:col-start-2 w-11/12 sm:w-full mx-auto sm:row-start-2 sm:col-span-1 sm:row-span-1 row-start-4  shadow-xl relative'>
                     <div className='bg-gray-400 px-2 py-1 absolute -left-3 -top-3 text-main'>Follow Us</div>
-                    <div className='w-full h-full grid grid-cols-2 grid-rows-2'>
-                        <Link href={'https://www.facebook.com/RamRaj-Associates/'} className='flex flex-row justify-end items-end row-span-1 cursor-pointer  col-span-1 col-start-1 row-start-1 border-l border-b p-3'>
-                            <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/face.webp'} width={120} height={150} className='hover:rotate-12 transform transition-transform duration-300 ease-in-out'></Image>
+                    <div className='w-full h-full grid grid-cols-2 grid-rows-2 gap-2'>
+                        <Link href={'https://www.facebook.com/RamRaj-Associates/'} className='hover:!shadow-inner-lg group flex flex-col justify-center items-start row-span-1 cursor-pointer gap-5 col-span-1 col-start-1 row-start-2 border-l border-b p-5 bg-[#585caa]'>
+                            <FiFacebook className='text-white text-start  text-4xl group-hover:text-white transition-all duration-300  ease-in-out'>
+                                
+                            </FiFacebook>
+                            <div className="w-full h-full relative overflow-hidden flex justify-center items-center ">
+                                  
+                                <p className="text-main font-thin text-xs  dark:text-gray-400 pl-5 overflow-y-scroll scrollbar-hidden">
+                                Stay connected with us on Facebook for the latest marketing insights and innovative software solutions. 
+                              </p>
+                              <Fade bottom delay={1200} >
+                    <span className=" border-l border-main h-full  absolute left-2 top-0 "></span>
+                    </Fade>
+                              </div>
                         </Link>
-                        <Link href={'https://www.instagram.com/ramraj_associates/'} className='flex flex-row justify-start items-end row-span-1 cursor-pointer  col-span-1 col-start-2 row-start-1 border-l border-b p-3'>
-                            <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/insta.webp'} width={120} height={150} className='hover:rotate-12 transform transition-transform duration-300 ease-in-out'></Image>
+                        <Link href={'https://www.instagram.com/ramraj_associates/'} className='hover:!shadow-inner-lg group flex flex-col justify-center items-start row-span-1 cursor-pointer  col-span-2 col-start-1 row-start-1 border-l border-b p-5 bg-gradient-to-r to-indigo-600 gap-2  from-orange-500'>
+                            <BsInstagram className='text-white text-4xl group-hover:text-white transition-all duration-300  ease-in-out' ></BsInstagram>
+                            <div className="w-fit h-full relative overflow-hidden flex justify-center items-center">
+                                  
+                                <p className="text-main font-thin text-xs  dark:text-gray-400 pl-5 overflow-y-scroll scrollbar-hidden">
+                                Explore our world of marketing creativity and cutting-edge software solutions. Follow us on Instagram for a visual journey: @RamrajAssociates.
+                                  </p>
+                                  <Fade bottom delay={1200} >
+                        <span className=" border-l border-main h-full  absolute left-2 top-0 "></span>
+                        </Fade>
+                                  </div>
                         </Link>
-                        <Link href={'https://twitter.com/ramrajassociate'} className='flex flex-row justify-end items-start row-span-1 cursor-pointer  col-span-1 col-start-1 row-start-2 border-l border-b p-3'>
-                            <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/twit.webp'} width={120} height={150} className='hover:rotate-12 transform transition-transform duration-300 ease-in-out'></Image>
+                        <Link href={'https://twitter.com/ramrajassociate'} className='hover:!shadow-inner-lg group flex flex-col justify-center items-start row-span-1 cursor-pointer gap-2  col-span-1 col-start-2 row-start-2 border-l border-b p-5 bg-[#307fe2]'>
+                            <FiTwitter className='text-white text-4xl group-hover:text-white transition-all duration-300  ease-in-out'></FiTwitter>
+                            <div className="w-full h-full relative overflow-hidden flex justify-center items-center">
+                                  
+                                <p className="text-main font-thin text-xs  dark:text-gray-400 pl-5 overflow-y-scroll scrollbar-hidden">
+                                Join the conversation! Follow us on Twitter for real-time updates on marketing trends and software innovations.
+                                  </p>
+                                  <Fade bottom delay={1200} >
+                        <span className=" border-l border-main h-full  absolute left-2 top-0 "></span>
+                        </Fade>
+                                  </div>
                         </Link>
-                        <Link href={'#'} className='flex flex-row justify-start items-start row-span-1 cursor-pointer  col-span-1 col-start-2 row-start-2 border-l border-b p-3'>
-                            <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/linked.webp'} width={120} height={150} className='hover:rotate-12 transform transition-transform duration-300 ease-in-out'></Image>
-                        </Link>
+                        
                     </div>
                 </div>
             

@@ -7,7 +7,12 @@ module.exports = {
   theme: {
   
     extend: {
-      
+      boxShadow: {
+        'inner-lg': `inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7)
+        `, 
+                      
+      },
       colors: {
         'main': '#ffffff',
         'action': {

@@ -14,3 +14,13 @@
   }
   @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Raleway:wght@200&display=swap');
+
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hidden {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}

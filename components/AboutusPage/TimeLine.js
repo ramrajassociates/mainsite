@@ -2,9 +2,10 @@ import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { HiOutlineLightBulb } from 'react-icons/hi';
-function TimeLine() {
+function TimeLine(props) {
+    const { className } = props;
   return (
-      <>
+      <div className={`${className}`}>
           <h1 className='text-center sm:text-3xl text-xl font-bold py-5'>Our History</h1>
           <VerticalTimeline>
               <VerticalTimelineElement
@@ -85,7 +86,7 @@ function TimeLine() {
               </VerticalTimelineElement>
             
           </VerticalTimeline>
-      </>
+      </div>
   )
 }
 

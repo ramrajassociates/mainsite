@@ -8,6 +8,7 @@ import Fade from 'react-reveal/Fade';
 import ServicesComp from "./ServicesComp";
 import AboutComp from "./AboutComp";
 import ServiceCarousel from "./ServiceCarousel";
+import TimeLine from "../AboutusPage/TimeLine";
 function HeaderComp() {
   const [reveal, setReveal] = useState(true);
   return (
@@ -91,7 +92,10 @@ function HeaderComp() {
         </Carousel>
       </div>
 
-      <ServicesComp className="space-x-5 justify-center bg-gray-300 h-fit py-5 " />
+      {/* <ServicesComp className="space-x-5 justify-center bg-gray-300 h-fit py-5 " /> */}
+      <main className="overflow-x-hidden">
+        <TimeLine className="bg-gray-200" />
+      </main>
       <AboutComp className=" " />
       <ServiceCarousel className="" />
     </div>
