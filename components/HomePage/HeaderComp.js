@@ -9,6 +9,7 @@ import ServicesComp from "./ServicesComp";
 import AboutComp from "./AboutComp";
 import ServiceCarousel from "./ServiceCarousel";
 import TimeLine from "../AboutusPage/TimeLine";
+import ServiceCompParent from "./ServiceCompParent";
 function HeaderComp() {
   const [reveal, setReveal] = useState(true);
   return (
@@ -93,9 +94,10 @@ function HeaderComp() {
       </div>
 
       {/* <ServicesComp className="space-x-5 justify-center bg-gray-300 h-fit py-5 " /> */}
-      <main className="overflow-x-hidden">
+      <ServiceCompParent />
+      {/* <main className="overflow-x-hidden">
         <TimeLine className="bg-gray-200" />
-      </main>
+      </main> */}
       <AboutComp className=" " />
       <ServiceCarousel className="" />
     </div>
