@@ -36,6 +36,8 @@ function NavbarComp(props) {
     <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" >
       <li>
         <Link href={'/digital-marketing-services'} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Digital Marketing Services</Link>
+        <Link href={'/web-design-and-development'} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web design and development</Link>
+        <Link href={'/surveillance-services'} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Surveillance services</Link>
       </li>
      
      
@@ -63,7 +65,9 @@ function NavbarComp(props) {
         </div>
     <ul className={`py-2 text-sm text-main ${open?'block':'hidden'} transition-all duration-500`}  >
       <li>
-        <Link href={'/digital-marketing-services'} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Digital Marketing Services</Link>
+            <Link href={'/digital-marketing-services'} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Digital Marketing Services</Link>
+            <Link href={'/web-design-and-development'} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web design and development</Link>
+        <Link href={'/surveillance-services'} className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Surveillance services</Link>
       </li>
      
      
