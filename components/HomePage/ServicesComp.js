@@ -48,7 +48,7 @@ function ServicesComp(props) {
               {
                   data[itemNumber].map((item, index) => {
                       return (
-                        <Pulse key={index}>
+                        <Pulse key={index} spy={itemNumber+1} appear={true} >
                           
                         <div className='bg-gray-200 px-3 py-7 shadow-lg relative '>
                             <div className="flex justify-center items-center mb-4 w-10 h-10 absolute -top-5  rounded-full bg-gray-200 lg:h-12 lg:w-12 dark:bg-primary-900">
