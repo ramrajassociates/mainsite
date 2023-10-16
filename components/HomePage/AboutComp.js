@@ -21,25 +21,8 @@ function AboutComp(props) {
     
     return (<>
         <div className="relative lg:px-32 sm:px-10 px-0 py-5" >
-            <div className='sm:grid sm:grid-cols-3 flex flex-row flex-wrap sm:grid-rows-2 sm:h-[100vh] sm:gap-5 space-y-3 '>
-    <div class="w-11/12 sm:max-w-sm mx-auto bg-white border border-gray-200 shadow-xl dark:bg-gray-800 dark:border-gray-700 sm:col-start-1 sm:row-span-2 row-span-2 row-start-1">
-        <a href="#">
-            <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/cs1.webp'} width={500} height={500}></Image>
-        </a>
-        <div class="p-5 lg:mt-20 mt-5">
-            <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Our Legacy</h5>
-            </a>
-            <p class="mb-3 font-thin text-gray-700 dark:text-gray-400">Our mission is to be a trusted partner for businesses worldwide, providing them with the technology solutions they need to grow their businesses and achieve their goals. We are passionate about our work and are committed to providing the highest level of customer satisfaction in everything we do.</p>
-            <Link href={'/aboutus'} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center bg-action-900 text-main">
-                Read more
-                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </Link>
-                        </div>
-                </div>
-                <div className='sm:col-start-2 w-11/12 sm:w-full mx-auto sm:row-start-1 sm:col-span-2 sm:row-span-1 shadow-xl relative bg-green-200 '>
+            <div className='sm:grid sm:grid-cols-2 flex flex-row flex-wrap sm:grid-rows-2 sm:h-[100vh] sm:gap-5 space-y-3 '>
+                <div className='sm:col-start-2 w-11/12 sm:w-full mx-auto sm:row-start-2 sm:col-span-1 sm:row-span-1 shadow-xl relative bg-green-200 '>
                 <div className='bg-gray-400 px-2 py-1 absolute -left-3 -top-3 text-main z-10'>Testimonials</div>
                     <Carousel
                         // indicators={false}
@@ -136,11 +119,11 @@ business for us by creating awareness about yoga and its benefits."</p>
                         </Carousel>
                     
                 </div>       
-<div class="w-11/12 mx-auto p-4 sm:w-full bg-white border border-gray-200 relative  shadow-xl dark:bg-gray-800 dark:border-gray-700 sm:col-start-3 sm:col-span-1 sm:row-span-1 sm:row-start-2">
+<div class="w-11/12 mx-auto sm:w-full bg-white border  border-gray-200 relative  shadow-xl dark:bg-gray-800 dark:border-gray-700 sm:col-start-1 sm:col-span-2 sm:row-span-1 sm:row-start-1">
                     <div className='bg-gray-400 px-2 py-1 absolute -left-3 -top-3 text-main'>By Numbers</div>
-  <div class="mx-auto flex flex-row flex-wrap space-y-3 sm:space-y-0 [&>*]:py-1 text-center w-full h-full">
+  <div class="mx-auto flex flex-row items-center flex-wrap space-y-3 sm:space-y-0 [&>*]:py-1 text-center w-full h-full">
   
-      <div class="sm:w-1/2 w-full border border-gray-200 rounded-lg sm:rounded-none sm:border-none p-2  ">
+      <div class="sm:w-1/4 w-full border border-gray-200 rounded-lg sm:rounded-none sm:border-none p-2  ">
         <div class=" h-full text-center">
                                 {/* <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/team.webp'} width={50} height={50} className='mx-auto'></Image> */}
                                 <AiOutlineTeam className='mx-auto text-5xl text-footerColor' size={40} color='#0d4970'></AiOutlineTeam>
@@ -148,7 +131,7 @@ business for us by creating awareness about yoga and its benefits."</p>
           <p class="leading-relaxed sm:text-sm">Members</p>
         </div>
       </div>
-      <div class="sm:w-1/2 w-full border border-gray-200 rounded-lg sm:rounded-none sm:border-none p-2  ">
+      <div class="sm:w-1/4 w-full border border-gray-200 rounded-lg sm:rounded-none sm:border-none p-2  ">
         <div class=" h-full text-center">
                                 {/* <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/award.webp'} width={50} height={50} className='mx-auto'></Image> */}
                                 <FaAward className='mx-auto text-5xl text-footerColor' size={40} color='#0d4970'></FaAward>
@@ -157,7 +140,7 @@ business for us by creating awareness about yoga and its benefits."</p>
           <p class="leading-relaxed sm:text-sm">Winning Awards</p>
         </div>
       </div>
-      <div class="sm:w-1/2 w-full border border-gray-200 rounded-lg sm:rounded-none sm:border-none p-2  ">
+      <div class="sm:w-1/4 w-full border border-gray-200 rounded-lg sm:rounded-none sm:border-none p-2  ">
         <div class=" h-full text-center">
         {/* <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/project.webp'} width={50} height={50} className='mx-auto'></Image> */}
                                 <FaHandshake className='mx-auto text-5xl text-footerColor' size={40} color='#0d4970'></FaHandshake>
@@ -166,7 +149,7 @@ business for us by creating awareness about yoga and its benefits."</p>
           <p class="leading-relaxed sm:text-sm">Completed Projects</p>
         </div>
       </div>
-      <div class="sm:w-1/2 w-full border border-gray-200 rounded-lg sm:rounded-none sm:border-none p-2  ">
+      <div class="sm:w-1/4 w-full border border-gray-200 rounded-lg sm:rounded-none sm:border-none p-2  ">
         <div class=" h-full text-center">
         {/* <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/reviews.webp'} width={50} height={50} className='mx-auto'></Image> */}
                                 <MdOutlineReviews className='mx-auto text-5xl text-footerColor' size={40} color='#0d4970'></MdOutlineReviews>
@@ -178,7 +161,7 @@ business for us by creating awareness about yoga and its benefits."</p>
   </div>
 </div>
 
-                <div className='sm:col-start-2 w-11/12 sm:w-full mx-auto sm:row-start-2 sm:col-span-1 sm:row-span-1 row-start-4 relative'>
+                <div className='sm:col-start-1 w-11/12 sm:w-full mx-auto sm:row-start-2 sm:col-span-1 sm:row-span-1 row-start-4 relative'>
                     <div className='bg-gray-400 px-2 py-1 absolute -left-3 -top-4 text-main'>Follow Us</div>
                     <div className='w-full h-full grid grid-cols-2 grid-rows-2 gap-2'>
                         <Link href={'https://www.facebook.com/RamRaj-Associates/'} className='hover:!shadow-inner-lg group flex flex-col justify-center items-start row-span-1 cursor-pointer gap-5 col-span-1 col-start-1 row-start-2 border-l border-b p-5 bg-[#585caa]'>
