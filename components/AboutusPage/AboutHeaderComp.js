@@ -6,11 +6,11 @@ function AboutHeaderComp() {
     <div>
     <div className='object-contain h-[100vh] relative !snap-center'>
         <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/abtbg.webp'} width={1920} height={1080} className='w-full h-full object-cover sm:object-top   '></Image>
-                <div className='bg-gray-600 sm:backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10 bg-opacity-20 sm:left-24  w-10/12 m-3 top-1/3   sm:max-w-[30vw] '>
+                <div className='bg-gray-600 backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10 bg-opacity-20 sm:left-24  w-10/12 m-3 top-1/3   sm:max-w-[30vw] '>
                     <p className='text-main bg-footerColor px-2 py-1 absolute -top-2 -left-2'>About Us</p>
                     <p className='text-main font-bold text-2xl pt-5'>Ramraj Associates</p>
                     <div className='relative h-fit pl-5'>
-<p className='text-xs text-main'>We offer a wide range of digital services in India including Social Media Marketing, Search Engine Optimization, Email Marketing, Graphic Design, Content Writing, Content Marketing, Website Design & Development, Application Development, Paid Marketing, Corporate Photoshoot and Others.</p>
+<p className='text-xs text-main'>At Ramraj Associates, we are your trusted partner in the world of IT. Our journey began with a vision to provide innovative and effective IT solutions to businesses of all sizes, helping them achieve their goals and improve their operations. With a focus on excellence, we have carved a niche for ourselves in the industry by consistently delivering high-quality solutions tailored to our clients' specific needs.</p>
                     <Fade bottom delay={1200} >
                     <span className="md:border-l-2 border-l border-action-900 h-full absolute left-2 top-0"></span>
                     </Fade>

@@ -29,7 +29,7 @@ function ContactHeaderComp() {
   return (<>
     <div className='object-contain sm:h-[80vh] h-[30vh] relative'>
         <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/contactus.webp'} width={1920} height={1080} className='w-full h-full object-cover sm:object-top   '></Image>
-      <div className='bg-gray-600 sm:backdrop-blur rounded-lg absolute sm:h-32 h-fit py-5 gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-5 sm:w-96 w-11/12  bg-opacity-20 sm:left-24 top-20'>
+      <div className='bg-gray-600 backdrop-blur rounded-lg absolute sm:h-32 h-fit py-5 gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-5 sm:w-96 w-11/12  bg-opacity-20 sm:left-24 top-20'>
         <p className='text-main font-bold text-4xl'>Contact Us</p>
       </div>
     </div>

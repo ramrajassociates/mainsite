@@ -16,8 +16,8 @@ function index() {
 <NavbarComp />
         <div >
             <div className='object-contain  relative h-[100vh]  '>
-        <Image src={'/Images2/web-design-and-development.webp'} width={1920} height={1080} className='w-full h-full object-cover sm:object-top object-center  '></Image>
-                <div className='bg-gray-600 sm:backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10  bg-opacity-20 lg:left-24 w-10/12 m-3 top-1/3 lg:max-w-[30vw] '>
+        <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/web-design-and-development.webp'} width={1920} height={1080} className='w-full h-full object-cover sm:object-top object-center  '></Image>
+                <div className='bg-gray-600 backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10  bg-opacity-20 lg:left-24 w-10/12 m-3 top-1/3 lg:max-w-[30vw] '>
                     <p className='text-main bg-footerColor px-2 py-1 absolute -top-2 -left-2'>Services</p>
                     <p className='text-main font-bold text-2xl pt-5'>Web Design And Development</p>
                     <div className='relative h-fit pl-5'>
