@@ -36,12 +36,12 @@ Sunday: Closed</p>
       
      <div>
           <ul className='[&>*]:text-footerColor text-md space-y-2'>
-            <li><Link href={'#'}>Digital Maketing</Link></li>
-            <li><Link href={'#'}>Web Development</Link></li>
-            <li><Link href={'#'}>Tele Communication</Link></li>
-            <li><Link href={'#'}>Computer Peripherals</Link></li>
-            <li><Link href={'#'}>Business Planning</Link></li>
-            <li><Link href={'#'}>Surveillance Services</Link></li>
+            <li><Link href={'/digital-marketing-services'}>Digital Maketing</Link></li>
+            <li><Link href={'/digital-marketing-services/seo'}>Search Engine Optimization</Link></li>
+            <li><Link href={'/web-design-and-development'}>Web Development</Link></li>
+            <li><Link href={'/web-design-and-development/wordpress-development'}>Wordpress Development</Link></li>
+            <li><Link href={'/web-design-and-development/custom-web-development'}>Custom Web Development</Link></li>
+            <li><Link href={'/surveillance-services'}>Surveillance Services</Link></li>
       </ul>
      </div>
       
