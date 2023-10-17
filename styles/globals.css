@@ -18,9 +18,21 @@
   .scrollbar-hidden::-webkit-scrollbar {
     display: none;
 }
-
+#MobileMenu::-webkit-scrollbar {
+    display: none;
+}
 /* Hide scrollbar for IE, Edge and Firefox */
 .scrollbar-hidden {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+
+/* Carousel Control buttons */
+@media (max-width: 1023px) {
+    button[data-testid="carousel-left-control"] {
+      display: none;
+    }
+    button[data-testid="carousel-right-control"] {
+      display: none;
+    }
+  }

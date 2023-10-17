@@ -9,9 +9,9 @@ function index() {
   const [show, setShow] = useState(false);
     return (
         <>
-              <Head>
+        <Head>
 
-</Head>
+        </Head>
 <NavbarComp />
 <NavbarComp />
         <div >

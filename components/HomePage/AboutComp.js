@@ -21,7 +21,7 @@ function AboutComp(props) {
     
     return (<>
         <div className="relative lg:px-32 sm:px-10 px-0 py-5" >
-            <div className='sm:grid sm:grid-cols-2 flex flex-row flex-wrap sm:grid-rows-2 sm:h-[100vh] sm:gap-5 space-y-3 '>
+            <div className='sm:grid sm:grid-cols-2 flex flex-row flex-wrap sm:grid-rows-2 sm:h-[100vh] sm:gap-5 space-y-5 '>
                 <div className='sm:col-start-2 w-11/12 sm:w-full mx-auto sm:row-start-2 sm:col-span-1 sm:row-span-1 shadow-xl relative bg-green-200 '>
                 <div className='bg-gray-400 px-2 py-1 absolute -left-3 -top-3 text-main z-10'>Testimonials</div>
                     <Carousel
@@ -119,7 +119,7 @@ business for us by creating awareness about yoga and its benefits."</p>
                         </Carousel>
                     
                 </div>       
-<div class="w-11/12 mx-auto sm:w-full bg-white border  border-gray-200 relative  shadow-xl dark:bg-gray-800 dark:border-gray-700 sm:col-start-1 sm:col-span-2 sm:row-span-1 sm:row-start-1">
+<div class="w-11/12 mx-auto sm:w-full bg-white border  border-gray-200 relative  shadow-xl dark:bg-gray-800 dark:border-gray-700 sm:col-start-1 sm:col-span-2 sm:row-span-1 sm:row-start-1 p-4 pt-8 sm:p-auto">
                     <div className='bg-gray-400 px-2 py-1 absolute -left-3 -top-3 text-main'>By Numbers</div>
   <div class="mx-auto flex flex-row items-center flex-wrap space-y-3 sm:space-y-0 [&>*]:py-1 text-center w-full h-full">
   
