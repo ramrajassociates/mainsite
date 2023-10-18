@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { FaLocationDot,FaInstagram,FaFacebookF,FaTwitter,FaLinkedinIn } from 'react-icons/fa6';
 import {IoCall} from 'react-icons/io5'
 function FooterComp() {
-  return (<div className='md:h-[70vh] bg-gray-300 md:px-24 px-5 pt-10 relative'>
+  return (<div className='md:h-[70vh] bg-gray-300 md:px-24 px-5 pt-10 relative '>
     <div className='flex md:flex-row-reverse flex-col-reverse  w-full  sm:justify-around '>
       <div className='md:w-1/3 w-full flex flex-col-reverse md:flex-col space-y-5 md:border-l md:border-footerColor md:pl-10 justify-center items-center'>
       <div >

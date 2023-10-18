@@ -1,11 +1,9 @@
 import HeaderComp from '@/components/HomePage/HeaderComp'
 import ServicesComp from '@/components/HomePage/ServicesComp';
 import NavbarComp from '@/components/NavbarComp';
-
 import Head from 'next/head'
 export default function Home() {
 
-  
   return (
     <>
       <Head>
@@ -22,7 +20,7 @@ export default function Home() {
 
       <main className='overflow-x-hidden'>
         <HeaderComp />
-    </main>
+      </main>
     </>
   )
 }

@@ -1,3 +1,4 @@
+import CallToActionComp from '@/components/CallToActionComp';
 import FooterComp from '@/components/FooterComp';
 import '@/styles/globals.css'
 import 'flowbite';
@@ -11,6 +12,7 @@ export default function App({ Component, pageProps }) {
   return <>
     {/* <NavbarComp/> */}
     <Component {...pageProps} />
+    <CallToActionComp/>
     <FooterComp/>
     </>
 }

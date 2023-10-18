@@ -1,5 +1,5 @@
 import React, { useEffect, useRef ,useState} from "react";
-import Router from "next/router";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 import { Carousel } from 'flowbite-react';
@@ -10,6 +10,7 @@ import AboutComp from "./AboutComp";
 import ServiceCarousel from "./ServiceCarousel";
 import TimeLine from "../AboutusPage/TimeLine";
 import ServiceCompParent from "./ServiceCompParent";
+
 function HeaderComp() {
   const [reveal, setReveal] = useState(true);
   return (
