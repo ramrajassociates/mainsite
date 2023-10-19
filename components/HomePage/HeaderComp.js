@@ -10,6 +10,7 @@ import AboutComp from "./AboutComp";
 import ServiceCarousel from "./ServiceCarousel";
 import TimeLine from "../AboutusPage/TimeLine";
 import ServiceCompParent from "./ServiceCompParent";
+import AboutComp2 from "./AboutComp2";
 
 function HeaderComp() {
   const [reveal, setReveal] = useState(true);
@@ -100,7 +101,9 @@ function HeaderComp() {
         <TimeLine className="bg-gray-200" />
       </main> */}
       <AboutComp className=" " />
+      <AboutComp2 />
       <ServiceCarousel className="" />
+      
     </div>
   );
 }

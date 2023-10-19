@@ -3,7 +3,14 @@ import TimeLine from '@/components/AboutusPage/TimeLine'
 import NavbarComp from '@/components/NavbarComp'
 import React from 'react'
 import Head from 'next/head'
-function index() {
+import axios from 'axios';
+function index({ data }) {
+  if (data) {
+    
+    console.log("Data from about us page", data)
+  } else {
+    console.log("Something went wrong");
+  }
   return (<>
     <Head>
       <title>About Us</title>
@@ -47,3 +54,13 @@ function index() {
 }
 
 export default index
+
+export async function getStaticProps() {
+  const data = await axios.get(process.env.NEXT_PUBLIC_ADMIN_URL+'/api/about-us');
+  return {
+    props: {
+      data: data.data
+    },
+    // revalidate: 1
+  }
+}
