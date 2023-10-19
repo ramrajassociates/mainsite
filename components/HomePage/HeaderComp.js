@@ -11,9 +11,13 @@ import ServiceCarousel from "./ServiceCarousel";
 import TimeLine from "../AboutusPage/TimeLine";
 import ServiceCompParent from "./ServiceCompParent";
 import AboutComp2 from "./AboutComp2";
+import BlogAndTeamComponent from "./BlogAndTeamComponent";
+import FaqsSectionComp from "../FAQS/FaqsSectionComp";
+import axios from "axios";
 
-function HeaderComp() {
+function HeaderComp({faqs}) {
   const [reveal, setReveal] = useState(true);
+  // console.log("Faqs from HeaderComp",faqs)
   return (
     <div className="relative" >
     
@@ -103,9 +107,13 @@ function HeaderComp() {
       <AboutComp className=" " />
       <AboutComp2 />
       <ServiceCarousel className="" />
-      
+      <BlogAndTeamComponent />
+      <FaqsSectionComp faqs={faqs}/>
     </div>
   );
 }
 
 export default HeaderComp;
+
+
+

@@ -2,8 +2,9 @@ import HeaderComp from '@/components/HomePage/HeaderComp'
 import ServicesComp from '@/components/HomePage/ServicesComp';
 import NavbarComp from '@/components/NavbarComp';
 import Head from 'next/head'
-export default function Home() {
-
+import axios from 'axios';
+export default function Home({data}) {
+  // console.log("data from HomePage", data);
   return (
     <>
       <Head>
@@ -19,8 +20,29 @@ export default function Home() {
       <NavbarComp />
 
       <main className='overflow-x-hidden'>
-        <HeaderComp />
+        <HeaderComp faqs={data?data.attributes.faqs.questionAnswer:[]}/>
       </main>
     </>
   )
+}
+
+
+export async function getStaticProps() {
+  try {
+    const res = await axios.get(process.env.NEXT_PUBLIC_ADMIN_URL + "/api/home-page");
+    const data = res.data;
+    
+    return {
+      props: {
+        data:data.data,
+      },
+    };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return {
+      props: {
+        data: null, // You can handle this in your component if data is null
+      },
+    };
+  }
 }

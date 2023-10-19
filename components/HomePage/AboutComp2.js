@@ -37,7 +37,7 @@ function AboutComp2() {
       <div className="flex lg:flex-row flex-col lg:min-h-[100vh] bg-gray-900 gap-5 items-start lg:pt-20 pt-5">
         <div className="headingwithImage flex flex-col lg:w-1/2 justify-center items-start gap-5 p-4 ">
           <div className="heading underline underline-offset-4 px-4 decoration-action-900">
-            <h2 className="text-4xl text-main">Our Vision</h2>
+            <h2 className="text-4xl text-main">Best Solution Provider</h2>
           </div>
           <div className="image ">
             <img

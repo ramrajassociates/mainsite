@@ -12,7 +12,7 @@ function FaqsComp({ faqs,Activeindex}) {
         const active = index === activeIndex ? 'active' : '';
 
         return (
-            <li key={index} className={`transition-all duration-300  ${active ?'bg-gray-800 rounded-lg p-4':''}`} >
+            <li key={index} className={`cursor-pointer transition-all duration-300  ${active ?'bg-gray-800 rounded-lg p-4':''}`} >
                 <div className={`question py-4 transition-all duration-300 ${!active?'bg-action-900  rounded-lg my-1 px-4':'bg-transparent '} flex justify-between items-center` } onClick={() => onQuestionClick(index)}>
                     {faq.question}
                     <span className='transition duration-300'>
