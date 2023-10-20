@@ -1,6 +1,7 @@
 import React,{useState,useRef} from 'react'
 import ServicesComp from './ServicesComp'
-
+import Link from 'next/link'
+import { LiaExternalLinkAltSolid } from 'react-icons/lia';
 function ServiceCompParent() {
     const [itemNumber, setItemNumber] = useState(0)
     const [showMobileMenu, setShowMobileMenu] = useState(0)
@@ -13,8 +14,14 @@ function ServiceCompParent() {
       </div>
           <div className='flex flex-row gap-4 '>
               <div className='flex flex-col lg:w-1/3 w-full gap-2'>
-                  <div className={`menuItems select-none cursor-pointer flex justify-between ${(itemNumber===0)?('bg-footerColor text-main'):(' text-active bg-white')} p-5 hover:bg-footerColor hover:text-main`} onClick={()=>{setItemNumber(0)}}>
-                      Digital Marketing Services
+                  <div className={`menuItems select-none cursor-pointer flex justify-between ${(itemNumber === 0) ? ('bg-footerColor text-main') : (' text-active bg-white')} p-5 hover:bg-footerColor hover:text-main`} onClick={() => { setItemNumber(0) }}>
+                      <div className="flex gap-2">
+                          
+                      Digital Marketing Services <Link href={'/digital-marketing-services'}>
+                                      
+                                      <LiaExternalLinkAltSolid className='text-main' size={25} />
+                                                </Link>
+                      </div>
                       <span onClick={() => setShowMobileMenu(prevState => (prevState === 0 ? 1 : 0))} className='cursor-pointer lg:hidden block select-none'>
                          { (showMobileMenu === 1) ? '-' : '+'}
                       </span>
@@ -23,7 +30,13 @@ function ServiceCompParent() {
                   {showMobileMenu!=0 && <ServicesComp itemNumber={showMobileMenu-1} />}
                   </div>
                   <div className={`menuItems select-none cursor-pointer flex justify-between ${(itemNumber===1)?('bg-footerColor text-main'):(' text-active bg-white')} p-5 hover:bg-footerColor hover:text-main`} onClick={()=>{setItemNumber(1)}}>
+                      <div className="flex gap-2">
                       Web development
+                      <Link href={'/web-design-and-development'}>
+                                      
+                                      <LiaExternalLinkAltSolid className='text-main' size={25} />
+                                                </Link>
+                      </div>
                       <span onClick={() => setShowMobileMenu(prevState => (prevState === 0 ? 2 : 0))} className='cursor-pointer lg:hidden block select-none'>
                       { (showMobileMenu === 2) ? '-' : '+'}
                       </span>
@@ -32,7 +45,13 @@ function ServiceCompParent() {
                   {showMobileMenu!=0 && <ServicesComp itemNumber={showMobileMenu-1} />}
                   </div>
                   <div className={`menuItems select-none cursor-pointer flex justify-between  ${(itemNumber===2)?('bg-footerColor text-main'):(' text-active bg-white')} p-5 hover:bg-footerColor hover:text-main`} onClick={()=>{setItemNumber(2)}}>
+                      <div className="flex gap-2">
                       Surveillance services
+                      <Link href={'/surveillance-services'}>
+                                      
+                                      <LiaExternalLinkAltSolid className='text-main' size={25} />
+                                                </Link>
+                      </div>
                       <span onClick={() => setShowMobileMenu(prevState => (prevState === 0 ? 3 : 0))} className='cursor-pointer lg:hidden block select-none'>
                       { (showMobileMenu === 3) ? '-' : '+'}
                       </span>

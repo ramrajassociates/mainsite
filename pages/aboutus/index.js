@@ -56,11 +56,24 @@ function index({ data }) {
 export default index
 
 export async function getStaticProps() {
-  const data = await axios.get(process.env.NEXT_PUBLIC_ADMIN_URL+'/api/about-us');
-  return {
-    props: {
-      data: data.data
-    },
-    // revalidate: 1
+  try {
+    const res = await axios.get(process.env.NEXT_PUBLIC_ADMIN_URL + "/api/about-us");
+    const data = res.data;
+    const seoInformation = data.data.attributes.seoInformation;
+    const faqs = data.data.attributes.faqs.questionAnswer;
+    return {
+      props: {
+        seoInformation,
+        faqs
+      },
+    };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return {
+      props: {
+        seoInformation:null,
+        faqs:null
+      },
+    };
   }
 }

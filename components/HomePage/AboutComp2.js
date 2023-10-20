@@ -1,6 +1,6 @@
 import React from "react";
 import { Tabs, Carousel } from "flowbite-react";
-import FaqsComp from "../FAQS/faqsComp";
+import FaqsComp from "../FAQS/FaqsComp";
 function AboutComp2() {
         const who_we_are = [
             {
@@ -20,16 +20,13 @@ function AboutComp2() {
             },
             {
                 question: "Do you offer any additional services?",
-                answer: "Yes, we offer property management services to help our clients manage their properties."
+                answer: "Yes, we offer servillance services for property protection."
             },
             {
                 question: "What areas do you serve?",
-                answer: "We serve the entire state of California."
-            },
-            {
-                question: "Do you offer financing options?",
-                answer: "Yes, we work with a variety of lenders to help our clients secure financing for their properties."
+                answer: "We serve globally. Also we have a team of experienced professionals who are dedicated to providing exceptional service to our clients"
             }
+           
         ];
     
   return (

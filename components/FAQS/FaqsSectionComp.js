@@ -1,5 +1,5 @@
 import React from 'react'
-import FaqsComp from './faqsComp';
+import FaqsComp from './FaqsComp';
 
 
 function FaqsSectionComp({ faqs }) {
