@@ -24,10 +24,23 @@
 #FaqsSection::-webkit-scrollbar {
     display: none;
 }
+/* #mainDivHomaPage::-webkit-scrollbar {
+    display: none;
+} */
 /* Hide scrollbar for IE, Edge and Firefox */
 .scrollbar-hidden {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* Optional: Hide the scroll bar track */
+.no-scrollbar::-webkit-scrollbar-track {
+  display: none !important;
 }
 
 /* Carousel Control buttons */

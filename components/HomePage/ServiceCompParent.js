@@ -6,7 +6,7 @@ function ServiceCompParent() {
     const [itemNumber, setItemNumber] = useState(0)
     const [showMobileMenu, setShowMobileMenu] = useState(0)
   return (
-      <div className="mx-auto lg:min-h-[80vh]  overflow-x-hidden lg:px-36 px-10 py-10 " id='Services'>
+      <div className="mx-auto overflow-x-hidden lg:px-36 px-10 pt-24 w-screen min-h-screen snap-start " id='Services'>
           {/* <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6"> */}
       <div className="max-w-screen-md mb-8 lg:mb-16">
           <h2 className="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Our Services</h2>

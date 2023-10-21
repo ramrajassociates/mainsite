@@ -19,9 +19,9 @@ function AboutComp(props) {
     const { className } = props;
     
     
-    return (<>
-        <div className="relative lg:px-32 sm:px-10 px-0 py-5" >
-            <div className='sm:grid sm:grid-cols-2 flex flex-row flex-wrap sm:grid-rows-2 sm:h-[100vh] sm:gap-5 space-y-5 '>
+    return (
+        <div className="relative lg:px-32 sm:px-10 px-0 py-10 w-screen min-h-screen snap-start snap-always" >
+            <div className='sm:grid sm:grid-cols-2 flex flex-row flex-wrap sm:grid-rows-2 sm:gap-5 space-y-5 '>
                 <div className='sm:col-start-2 w-11/12 sm:w-full mx-auto sm:row-start-2 sm:col-span-1 sm:row-span-1 shadow-xl relative bg-green-200 '>
                 <div className='bg-gray-400 px-2 py-1 absolute -left-3 -top-3 text-main z-10'>Testimonials</div>
                     <Carousel
@@ -210,7 +210,7 @@ business for us by creating awareness about yoga and its benefits."</p>
 
         
         </div>
-      </>
+    
   )
 }
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef ,useState} from "react";
+import React, { useEffect, useRef ,useState,useMemo} from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,22 +6,40 @@ import { Carousel } from 'flowbite-react';
 import {BsArrowRight} from 'react-icons/bs';
 import Fade from 'react-reveal/Fade';
 import ServicesComp from "./ServicesComp";
-import AboutComp from "./AboutComp";
-import ServiceCarousel from "./ServiceCarousel";
-import TimeLine from "../AboutusPage/TimeLine";
-import ServiceCompParent from "./ServiceCompParent";
-import AboutComp2 from "./AboutComp2";
-import BlogAndTeamComponent from "./BlogAndTeamComponent";
-import FaqsSectionComp from "../FAQS/FaqsSectionComp";
+import { Slide } from "react-reveal";
 import axios from "axios";
 
-function HeaderComp({faqs}) {
+
+function HeaderComp() {
   const [reveal, setReveal] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
+  const Currentref = useRef();
+  const handleScroll = () => {
+    if (Currentref.current) {
+      const divTop = Currentref.current.getBoundingClientRect().top;
+      if(divTop==0 && render==false)
+            setIsVisible(true); // Check if top is at least 50px away
+      else 
+          setIsVisible(false);
+        console.log("div top -> ", divTop, "render -> ");
+    }
+  };
+  useEffect(() => {
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+    
+}, [])
+
   // console.log("Faqs from HeaderComp",faqs)
   return (
-    <div className="relative" >
-    
-      <div className="md:w-[100vw] h-[100vh] realtive">
+    <div className="relative w-screen min-h-screen snap-start snap-always"  ref={Currentref}>
+      {/* <Slide top spy={isVisible } appear>
+          <h1 className="absolute top-0 z-10">React Reveal</h1>
+        </Slide> */}
+      <div className="relative h-[100vh]">
         <Carousel
           indicators={false}
           slideInterval={7000}
@@ -98,22 +116,13 @@ function HeaderComp({faqs}) {
           
         </Carousel>
       </div>
-
-      {/* <ServicesComp className="space-x-5 justify-center bg-gray-300 h-fit py-5 " /> */}
-      <ServiceCompParent />
-      {/* <main className="overflow-x-hidden">
-        <TimeLine className="bg-gray-200" />
-      </main> */}
-      <AboutComp className=" " />
-      <AboutComp2 />
-      <ServiceCarousel className="" />
-      <BlogAndTeamComponent />
-      <FaqsSectionComp faqs={faqs}/>
     </div>
   );
 }
 
 export default HeaderComp;
+
+
 
 
 

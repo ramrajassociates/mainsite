@@ -8,11 +8,11 @@ function ServiceCarousel(props) {
   const { className } = props;
  
   return (
-       <>
-<div  className="relative w-full sm:h-[100vh] h-[30vh] " data-carousel="slide">
-    <div className="relative overflow-hidden h-full ">
-        <div className="hidden duration-700 ease-in-out relative" data-carousel-item>
-            <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/tele.webp'} width={1920} height={1080} alt='image...' className='absolute block w-full -translate-x-1/2  top-1/2 left-1/2 brightness-50'  ></Image>
+       
+<div  className="relative w-screen lg:min-h-screen lg:snap-start lg:snap-always hidden" data-carousel="slide">
+    <div className="relative overflow-hidden lg:h-[100vh] h:[30vh] ">
+        <div className="hidden duration-700 ease-in-out relative object-cover" data-carousel-item>
+            <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/tele.webp'} width={1920} height={1080} alt='image...' className='absolute block w-full -translate-x-1/2  top-1/2 left-1/2 brightness-50 object-cover object-center !h-full'  ></Image>
             <div className='absolute top-0 w-full h-full z-30 md:p-48 '>
               <span className='font-semibold text-action-900 px-3 py-1 bg-gray-100 text-center w-fit '>Tele Communication</span>
               <p className='text-main font-thin pt-5 pl-5 sm:text-xl text-sm '>We have deep rooted
@@ -113,7 +113,7 @@ Consultancy</p>
 
    
 </div>
-</>
+
   )
 }
 

@@ -1,9 +1,18 @@
+import { useState, useEffect, useRef } from 'react';
 import HeaderComp from '@/components/HomePage/HeaderComp'
 import ServicesComp from '@/components/HomePage/ServicesComp';
 import NavbarComp from '@/components/NavbarComp';
 import Head from 'next/head'
 import axios from 'axios';
 import SeoComp from '@/components/SeoComp';
+import AboutComp from "@components/HomePage/AboutComp";
+import ServiceCarousel from "@components/HomePage/ServiceCarousel";
+import ServiceCompParent from "@components/HomePage/ServiceCompParent";
+import AboutComp2 from "@components/HomePage/AboutComp2";
+import BlogAndTeamComponent from "@components/HomePage/BlogAndTeamComponent";
+import FaqsSectionComp from "@components/FAQS/FaqsSectionComp";
+import FooterCompWithCta from '@/components/HomePage/FooterCompWithCta';
+import { Main } from 'next/document';
 export default function Home({seoInformation,faqs}) {
   const serviceFaqs = [
     {
@@ -27,9 +36,27 @@ export default function Home({seoInformation,faqs}) {
       answer: 'Our commitment to quality, innovation, and client satisfaction sets us apart. We work closely with our clients to deliver customized solutions, staying at the forefront of industry trends and technologies.'
     }
   ];
-  
+  // For Navbar
+  const MainDivRef=useRef(null);
+  const [isSticky, setIsSticky] = useState(false);
+  const handleScroll = () => {
+    // console.log("Scrolling inside div , height :", MainDivRef.current.scrollTop);
+    if (MainDivRef.current.scrollTop > 50) {
+      setIsSticky(true);
+    }
+    else {
+      setIsSticky(false);
+    }
+  }
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, []);
+  // For Navbar
   return (
-    <>
+    <div>
       <SeoComp seoInformation={seoInformation}>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://ramrajassociates.com/">
@@ -37,12 +64,19 @@ export default function Home({seoInformation,faqs}) {
         <meta property="og:title" content="Leading IT Solutions and Consultation firm India | RamRaj Associates"/>
         <link rel="icon" href="https://d1efbx4910ct8i.cloudfront.net/Images2/favicon.png" />
       </SeoComp>
-      <NavbarComp />
 
-      <main className='overflow-x-hidden'>
-        <HeaderComp faqs={faqs?faqs:[]}/>
+      <main className='w-screen h-screen snap-y snap-proximity overflow-y-scroll overflow-x-hidden ' ref={MainDivRef} onScroll={handleScroll}>
+        <NavbarComp position={isSticky} />
+        <HeaderComp/>
+        <ServiceCompParent />
+       <AboutComp className=" " />
+        <AboutComp2 />
+        <ServiceCarousel className="" />
+        <BlogAndTeamComponent />
+        <FaqsSectionComp faqs={faqs} className="w-screen lg:min-h-screen snap-start" />
+        <FooterCompWithCta/>
       </main>
-    </>
+    </div>
   )
 }
 

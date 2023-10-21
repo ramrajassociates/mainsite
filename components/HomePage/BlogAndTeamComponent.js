@@ -3,8 +3,7 @@ import React from "react";
 
 function BlogAndTeamComponent() {
   return (
-    <div className="relative bg-gradient-to-r from-action-700 to-action-900 text-white py-16 ">
-      <div className="container mx-auto">
+    <div className="relative bg-gradient-to-r from-action-700 to-action-900 text-white py-16 w-screen min-h-screen snap-start snap-always ">
         <div className="flex flex-col lg:flex-row">
           {/* Blog Section */}
           <div className="w-full lg:w-1/2 p-4">
@@ -42,7 +41,6 @@ function BlogAndTeamComponent() {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 }
