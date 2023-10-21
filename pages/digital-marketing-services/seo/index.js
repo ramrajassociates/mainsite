@@ -4,14 +4,15 @@ import Image from 'next/image'
 import { Fade } from 'react-reveal'
 import Head from 'next/head';
 import Link from 'next/link';
-import { BiSolidLeftArrow} from 'react-icons/bi';
-function index() {
+import { BiSolidLeftArrow } from 'react-icons/bi';
+import SeoComp from '@/components/SeoComp';
+function index({seoInformation,faqs}) {
   const [show, setShow] = useState(false);
     return (
         <>
-              <Head>
+           <SeoComp seoInformation={seoInformation}>
 
-</Head>
+</SeoComp>
 <NavbarComp />
 <NavbarComp />
         <div >

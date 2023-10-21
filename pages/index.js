@@ -30,11 +30,6 @@ export default function Home({seoInformation,faqs}) {
   
   return (
     <>
-      {/* <Head>
-      <title>{seoInformation.Title ? seoInformation.Title : 'title'}</title>
-      <meta name="description" content={seoInformation.meta_description ? seoInformation.meta_description : 'description'} />
-        
-      </Head> */}
       <SeoComp seoInformation={seoInformation}>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://ramrajassociates.com/">
