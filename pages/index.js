@@ -41,7 +41,6 @@ export default function Home({seoInformation,faqs}) {
 
       <main className='overflow-x-hidden'>
         <HeaderComp faqs={faqs?faqs:[]}/>
-        {/* <HeaderComp faqs={serviceFaqs } /> */}
       </main>
     </>
   )

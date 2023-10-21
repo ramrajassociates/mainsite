@@ -7,6 +7,8 @@ import Link from 'next/link';
 import { BiSolidLeftArrow } from 'react-icons/bi';
 import SeoComp from '@/components/SeoComp';
 import FaqsSectionComp from '@/components/FAQS/FaqsSectionComp';
+import axios from 'axios'
+
 function index({seoInformation,faqs}) {
   const [show, setShow] = useState(false);
   return (<>
@@ -37,8 +39,8 @@ function index({seoInformation,faqs}) {
       <meta name="revisit-after" content="7 days" />
       <meta name="language" content="English" />
       </SeoComp>
-            <NavbarComp />
-        <div >
+<NavbarComp />
+        <div>
             <div className='object-contain  relative h-[100vh]  '>
         <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp'} width={1920} height={1080} className='w-full h-full object-cover sm:object-top object-center  '></Image>
                 <div className='bg-gray-600 backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10 p-4  bg-opacity-20 lg:left-24 w-10/12 m-3 top-1/3 lg:max-w-[30vw] '>

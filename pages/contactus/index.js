@@ -3,7 +3,9 @@ import ContactHeaderComp from '@/components/contactusPage/ContactHeaderComp'
 import React from 'react'
 import SeoComp from '@/components/SeoComp'
 import FaqsSectionComp from '@/components/FAQS/FaqsSectionComp'
-function index({seoInformation,faqs}) {
+import axios from 'axios'
+function index({ seoInformation, faqs }) {
+  console.log("Data from contactus page", seoInformation, faqs)
   return (
     <div>
       <SeoComp seoInformation={seoInformation}> 

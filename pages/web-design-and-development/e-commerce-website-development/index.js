@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { BiSolidLeftArrow } from 'react-icons/bi';
 import SeoComp from '@/components/SeoComp';
 import FaqsSectionComp from '@/components/FAQS/FaqsSectionComp';
+import axios from 'axios'
 function index({seoInformation,faqs}) {
   const [show, setShow] = useState(false);
     return (
