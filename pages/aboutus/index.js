@@ -5,6 +5,7 @@ import React from 'react'
 import Head from 'next/head'
 import axios from 'axios';
 import SeoComp from '@/components/SeoComp';
+import FaqsSectionComp from '@/components/FAQS/FaqsSectionComp'
 function index({ data,seoInformation,faqs }) {
   if (data) {
     
@@ -44,7 +45,8 @@ function index({ data,seoInformation,faqs }) {
           <NavbarComp  />
       <div className='overflow-x-hidden'>
       <AboutHeaderComp />
-      <TimeLine/>
+      <TimeLine />
+      <FaqsSectionComp faqs={faqs?faqs:[]}/>
     </div >
     </>
   )

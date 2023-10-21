@@ -15,7 +15,7 @@ function FaqsSectionComp({ faqs }) {
           </div>
         </div>
         <div className="lg:w-1/2 p-4 min-h-full w-full">
-             <FaqsComp faqs={faqs} Activeindex={0} />
+          {faqs && <FaqsComp faqs={faqs} Activeindex={0} />}
            
         </div>
       </div>
