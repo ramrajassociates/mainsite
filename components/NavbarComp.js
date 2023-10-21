@@ -91,7 +91,7 @@ hover:decoration-action-900">Social media marketing</Link></li>
       
     </div>
     {/* Mobile Menu */}
-    <div className={`h-[7vh] grid sm:hidden grid-cols-12 w-full ${isSticky?'fixed bg-gray-700 backdrop-blur bg-opacity-75 [&>*]:text-main':'absolute'} top-0 z-[100]  `} >
+    <div className={`h-[7vh] grid sm:hidden grid-cols-12 w-full ${(isSticky || position)?'fixed bg-gray-700 backdrop-blur bg-opacity-75 [&>*]:text-main':'absolute'} top-0 z-[100]  `} >
         <a href={'/'} className="col-span-3 mx-auto"><Image alt="Image..." src={'https://d1efbx4910ct8i.cloudfront.net/Images2/logow.webp'} width={120} height={120}></Image></a>
       
       <div className=' col-span-2 col-start-11'>
