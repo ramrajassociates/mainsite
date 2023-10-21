@@ -3,6 +3,7 @@ import ServicesComp from '@/components/HomePage/ServicesComp';
 import NavbarComp from '@/components/NavbarComp';
 import Head from 'next/head'
 import axios from 'axios';
+import SeoComp from '@/components/SeoComp';
 export default function Home({seoInformation,faqs}) {
   const serviceFaqs = [
     {
@@ -29,15 +30,18 @@ export default function Home({seoInformation,faqs}) {
   
   return (
     <>
-      <Head>
+      {/* <Head>
       <title>{seoInformation.Title ? seoInformation.Title : 'title'}</title>
       <meta name="description" content={seoInformation.meta_description ? seoInformation.meta_description : 'description'} />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+      </Head> */}
+      <SeoComp seoInformation={seoInformation}>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://ramrajassociates.com/">
         </link>
         <meta property="og:title" content="Leading IT Solutions and Consultation firm India | RamRaj Associates"/>
         <link rel="icon" href="https://d1efbx4910ct8i.cloudfront.net/Images2/favicon.png" />
-      </Head>
+      </SeoComp>
       <NavbarComp />
 
       <main className='overflow-x-hidden'>

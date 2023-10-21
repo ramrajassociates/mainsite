@@ -4,7 +4,8 @@ import NavbarComp from '@/components/NavbarComp'
 import React from 'react'
 import Head from 'next/head'
 import axios from 'axios';
-function index({ data }) {
+import SeoComp from '@/components/SeoComp';
+function index({ data,seoInformation,faqs }) {
   if (data) {
     
     console.log("Data from about us page", data)
@@ -12,11 +13,7 @@ function index({ data }) {
     console.log("Something went wrong");
   }
   return (<>
-    <Head>
-      <title>About Us</title>
-      <meta name="description" content="Ramraj Associates is a leading digital marketing agency in India. We offer a wide range of digital services in India including Social Media Marketing, Search Engine Optimization, Email Marketing, Graphic Design, Content Writing, Content Marketing, Website Design & Development, Application Development, Paid Marketing, Corporate Photoshoot and Others." />
-      <link rel="icon" href="https://d1efbx4910ct8i.cloudfront.net/Images2/favicon.png" />
-      <meta name="keywords" content="digital marketing services, digital marketing agency in india, digital marketing company in india, digital marketing services in india, digital marketing agency in delhi, digital marketing company in delhi, digital marketing services in delhi, digital marketing agency in noida, digital marketing company in noida, digital marketing services in noida, digital marketing agency in gurgaon, digital marketing company in gurgaon, digital marketing services in gurgaon, digital marketing agency in faridabad, digital marketing company in faridabad, digital marketing services in faridabad, digital marketing agency in ghaziabad, digital marketing company in ghaziabad, digital marketing services in jaipur" />
+    <SeoComp seoInformation={seoInformation}>
       <meta property="og:title" content="Digital Marketing Services | Digital Marketing Agency in India" />
       <meta property="og:description" content="We offer a wide range of digital services in India including Social Media Marketing, Search Engine Optimization, Email Marketing, Graphic Design, Content Writing, Content Marketing, Website Design & Development, Application Development, Paid Marketing, Corporate Photoshoot and Others." />
       <meta property="og:url" content="https://www.ramrajassociates.com/aboutus" />
@@ -43,7 +40,7 @@ function index({ data }) {
       <meta name="revisit-after" content="7 days" />
       <meta name="language" content="English" />
       
-    </Head>
+    </SeoComp>
           <NavbarComp  />
       <div className='overflow-x-hidden'>
       <AboutHeaderComp />
