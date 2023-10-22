@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
 
-function BlogAndTeamComponent() {
+function BlogAndTeamComponent({BlogAndTeamComponentRef}) {
   return (
-    <div className="relative bg-gradient-to-r from-action-700 to-action-900 text-white py-16 w-screen min-h-screen snap-start snap-always ">
+    <div className="relative bg-gradient-to-r from-action-700 to-action-900 text-white py-16 w-screen min-h-screen snap-start snap-always " ref={BlogAndTeamComponentRef}>
         <div className="flex flex-col lg:flex-row">
           {/* Blog Section */}
           <div className="w-full lg:w-1/2 p-4">

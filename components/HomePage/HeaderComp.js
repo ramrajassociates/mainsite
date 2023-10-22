@@ -10,32 +10,13 @@ import { Slide } from "react-reveal";
 import axios from "axios";
 
 
-function HeaderComp() {
+function HeaderComp({HeaderCompRef,height}) {
   const [reveal, setReveal] = useState(true);
   const [isVisible, setIsVisible] = useState(false);
-  const Currentref = useRef();
-  const handleScroll = () => {
-    if (Currentref.current) {
-      const divTop = Currentref.current.getBoundingClientRect().top;
-      if(divTop==0 && render==false)
-            setIsVisible(true); // Check if top is at least 50px away
-      else 
-          setIsVisible(false);
-        console.log("div top -> ", divTop, "render -> ");
-    }
-  };
-  useEffect(() => {
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-    
-}, [])
-
+  
   // console.log("Faqs from HeaderComp",faqs)
   return (
-    <div className="relative w-screen min-h-screen snap-start snap-always"  ref={Currentref}>
+    <div className="relative w-screen min-h-screen snap-start snap-always"  ref={HeaderCompRef}>
       {/* <Slide top spy={isVisible } appear>
           <h1 className="absolute top-0 z-10">React Reveal</h1>
         </Slide> */}

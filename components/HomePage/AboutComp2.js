@@ -1,7 +1,7 @@
 import React from "react";
 import { Tabs, Carousel } from "flowbite-react";
 import FaqsComp from "../FAQS/FaqsComp";
-function AboutComp2() {
+function AboutComp2({AboutComp2Ref}) {
         const who_we_are = [
             {
                 question: "What is Ramraj Associates?",
@@ -31,7 +31,7 @@ function AboutComp2() {
     
   return (
   
-      <div className="flex lg:flex-row flex-col  bg-gray-900 gap-5 items-start lg:py-20 py-5 w-screen min-h-screen snap-start snap-normal">
+      <div className="flex lg:flex-row flex-col  bg-gray-900 gap-5 items-start lg:py-20 py-5 w-screen min-h-screen snap-start snap-normal" ref={AboutComp2Ref}>
         <div className="headingwithImage flex flex-col lg:w-1/2 justify-center items-start gap-5 p-4 ">
           <div className="heading underline underline-offset-4 px-4 decoration-action-900">
             <h2 className="text-4xl text-main">Best Solution Provider</h2>

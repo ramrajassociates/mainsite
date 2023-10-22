@@ -5,11 +5,11 @@ import 'flowbite';
 import Fade from 'react-reveal/Fade';
 import Image from 'next/image';
 function ServiceCarousel(props) {
-  const { className } = props;
+  const { className,ServiceCarouselRef } = props;
  
   return (
        
-<div  className="relative w-screen lg:min-h-screen lg:snap-start lg:snap-always hidden lg:block" data-carousel="slide">
+<div  className="relative w-screen lg:min-h-screen lg:snap-start lg:snap-always hidden lg:block" data-carousel="slide" ref={ServiceCarouselRef}>
     <div className="relative overflow-hidden lg:h-[100vh] h:[30vh] ">
         <div className="hidden duration-700 ease-in-out relative object-cover" data-carousel-item>
             <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/tele.webp'} width={1920} height={1080} alt='image...' className='absolute block w-full -translate-x-1/2  top-1/2 left-1/2 brightness-50 object-cover object-center !h-full'  ></Image>

@@ -1,12 +1,27 @@
-import React,{useState,useRef} from 'react'
+import React,{useState,useEffect} from 'react'
 import ServicesComp from './ServicesComp'
 import Link from 'next/link'
 import { LiaExternalLinkAltSolid } from 'react-icons/lia';
-function ServiceCompParent() {
+import { Slide } from 'react-reveal';
+import { Navbar } from 'flowbite-react';
+import NavbarComp from '../NavbarComp';
+function ServiceCompParent({ServiceCompRef,height}) {
     const [itemNumber, setItemNumber] = useState(0)
     const [showMobileMenu, setShowMobileMenu] = useState(0)
+const [animate, setanimate] = useState(false)
+    useEffect(() => {
+        if (height <=0 && height >=-50) {
+            setanimate(true);
+        } else {
+            setanimate(false);
+        }
+    }, [height])
+    
   return (
-      <div className="mx-auto overflow-x-hidden lg:px-36 px-10 pt-24 w-screen min-h-screen snap-start " id='Services'>
+      <div className="mx-auto overflow-x-hidden lg:px-36 px-10 pt-24 w-screen min-h-screen snap-start " id='Services' ref={ServiceCompRef}>
+         {animate && <Slide top spy={animate} appear>
+              <p className='text-black font-bold text-center'> Navbar </p>
+        </Slide>}
           {/* <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6"> */}
       <div className="max-w-screen-md mb-8 lg:mb-16">
           <h2 className="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Our Services</h2>
