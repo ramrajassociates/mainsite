@@ -48,7 +48,7 @@ function AboutComp2({AboutComp2Ref,height}) {
                    {/* <p>tect</p> */}
              </Slide>}
                </div>
-      <div className="flex lg:flex-row flex-col gap-5 items-start lg:py-0  py-5 w-full h-[90vh]">
+      <div className="flex lg:flex-row flex-col gap-5 items-start lg:py-0  py-20 w-full lg:h-[90vh]">
 
         <div className="headingwithImage flex flex-col lg:w-1/2 justify-center items-start gap-5 p-4 ">
           <div className="heading underline underline-offset-4 px-4 decoration-action-900">

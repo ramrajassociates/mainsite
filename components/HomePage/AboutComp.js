@@ -35,7 +35,7 @@ function AboutComp(props) {
                    {/* <p>tect</p> */}
              </Slide>}
                </div>
-            <div className='lg:px-32 h-[80vh] sm:px-10 px-0 sm:grid sm:grid-cols-2 flex flex-row flex-wrap sm:grid-rows-2 sm:gap-5 space-y-5 '>
+            <div className='lg:px-32 lg:h-[80vh] py-20 lg:py-0 sm:px-10 px-0 sm:grid sm:grid-cols-2 flex flex-row flex-wrap sm:grid-rows-2 sm:gap-5 space-y-5 '>
                 <div className='sm:col-start-2 w-11/12 sm:w-full mx-auto sm:row-start-2 sm:col-span-1 sm:row-span-1 shadow-xl relative bg-green-200 '>
                 <div className='bg-gray-400 px-2 py-1 absolute -left-3 -top-3 text-main z-10'>Testimonials</div>
                     <Carousel

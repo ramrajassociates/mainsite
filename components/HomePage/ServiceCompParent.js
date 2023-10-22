@@ -25,7 +25,7 @@ const [animate, setanimate] = useState(false)
               {/* <p>tect</p> */}
         </Slide>}
           </div>
-          <div className='Content mx-auto overflow-x-hidden lg:px-36 px-10'>
+          <div className='Content mx-auto overflow-x-hidden lg:px-36 px-10 py-24 lg:py-0'>
               
          
       <div className="max-w-screen-md mb-8 lg:mb-16">
