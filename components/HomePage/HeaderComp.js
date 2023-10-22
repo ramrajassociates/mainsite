@@ -7,19 +7,29 @@ import {BsArrowRight} from 'react-icons/bs';
 import Fade from 'react-reveal/Fade';
 import ServicesComp from "./ServicesComp";
 import { Slide } from "react-reveal";
-import axios from "axios";
+import NavbarCompHomePage from './NavBarCompHomePage';
 
 
 function HeaderComp({HeaderCompRef,height}) {
   const [reveal, setReveal] = useState(true);
-  const [isVisible, setIsVisible] = useState(false);
-  
-  // console.log("Faqs from HeaderComp",faqs)
+  const [animate, setanimate] = useState(false)
+  useEffect(() => {
+      if (height <=0 && height >=-50) {
+          setanimate(true);
+      } else {
+          setanimate(false);
+      }
+  }, [height])
   return (
     <div className="relative w-screen min-h-screen snap-start snap-always"  ref={HeaderCompRef}>
-      {/* <Slide top spy={isVisible } appear>
-          <h1 className="absolute top-0 z-10">React Reveal</h1>
-        </Slide> */}
+    
+       <div className='NavbarComp lg:block hidden absolute top-0 z-50 w-full'>
+              
+              {animate && <Slide top spy={animate} appear duration={700}>
+                   <NavbarCompHomePage theme='dark' textColor='main' />
+                   {/* <p>tect</p> */}
+             </Slide>}
+               </div>
       <div className="relative h-[100vh]">
         <Carousel
           indicators={false}

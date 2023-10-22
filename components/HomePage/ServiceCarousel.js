@@ -1,15 +1,28 @@
-import React, { useEffect } from 'react'
+import React, { useEffect ,useState} from 'react'
 import Link from "next/link";
 import {BsArrowRight} from 'react-icons/bs';
 import 'flowbite';
-import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
+import NavbarCompHomePage from './NavBarCompHomePage';
 import Image from 'next/image';
 function ServiceCarousel(props) {
-  const { className,ServiceCarouselRef } = props;
- 
+  const { className,ServiceCarouselRef,height } = props;
+  const [animate, setanimate] = useState(false)
+  useEffect(() => {
+      if (height <=10 && height >=-50) {
+          setanimate(true);
+      } else {
+          setanimate(false);
+    }
+  }, [height])
   return (
        
-<div  className="relative w-screen lg:min-h-screen lg:snap-start lg:snap-always hidden lg:block" data-carousel="slide" ref={ServiceCarouselRef}>
+    <div className="relative w-screen lg:min-h-screen lg:snap-start lg:snap-always hidden lg:block" data-carousel="slide" ref={ServiceCarouselRef}>
+       <div className='min-h-[110px] NavbarComp lg:block hidden absolute top-0 z-[30] w-full'>
+            {animate && <Slide top spy={animate} appear duration={700}>
+              <NavbarCompHomePage theme='dark' textColor='main' />
+          </Slide>}
+               </div>
     <div className="relative overflow-hidden lg:h-[100vh] h:[30vh] ">
         <div className="hidden duration-700 ease-in-out relative object-cover" data-carousel-item>
             <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/tele.webp'} width={1920} height={1080} alt='image...' className='absolute block w-full -translate-x-1/2  top-1/2 left-1/2 brightness-50 object-cover object-center !h-full'  ></Image>

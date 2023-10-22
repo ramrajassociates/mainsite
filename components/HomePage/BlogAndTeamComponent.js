@@ -1,10 +1,25 @@
 import Image from "next/image";
-import React from "react";
+import React,{useState,useEffect} from "react";
+import { Slide } from "react-reveal";
+import NavbarCompHomePage from "./NavBarCompHomePage";
+function BlogAndTeamComponent({ BlogAndTeamComponentRef, height }) {
+  const [animate, setanimate] = useState(false)
 
-function BlogAndTeamComponent({BlogAndTeamComponentRef}) {
+  useEffect(() => {
+      if (height <=10 && height >=-50) {
+          setanimate(true);
+      } else {
+          setanimate(false);
+    }
+  }, [height])
   return (
     <div className="relative bg-gradient-to-r from-action-700 to-action-900 text-white py-16 w-screen min-h-screen snap-start snap-always " ref={BlogAndTeamComponentRef}>
-        <div className="flex flex-col lg:flex-row">
+       <div className='min-h-[110px] NavbarComp lg:block hidden absolute top-0 z-[30] w-full'>
+            {animate && <Slide top spy={animate} appear duration={700}>
+              <NavbarCompHomePage theme='dark' textColor='main' />
+          </Slide>}
+               </div>
+        <div className="flex flex-col lg:flex-row ">
           {/* Blog Section */}
           <div className="w-full lg:w-1/2 p-4">
             <div className="bg-white bg-opacity-20 p-6 ">

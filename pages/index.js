@@ -51,6 +51,7 @@ export default function Home({ seoInformation, faqs }) {
   const [ServiceCarouselHeight, setServiceCarouselHeight] = useState(0);
   const [BlogAndTeamComponentHeight, setBlogAndTeamComponentHeight] = useState(0);
   const [FaqsSectionCompHeight, setFaqsSectionCompHeight] = useState(0);
+  const [FooterCompWithCtaHeight, setFooterCompWithCtaHeight] = useState(0);
   const HeaderCompRef = useRef();
   const ServiceCompRef = useRef();
   const AboutCompRef = useRef();
@@ -58,6 +59,7 @@ export default function Home({ seoInformation, faqs }) {
   const ServiceCarouselRef = useRef();
   const BlogAndTeamComponentRef = useRef();
   const FaqsSectionCompRef = useRef();
+  const FooterCompWithCtaRef = useRef();
   const handleScroll = () => {
     // console.log("Scrolling inside div , height :", MainDivRef.current.scrollTop);
     // ================== Example ====================
@@ -72,6 +74,7 @@ export default function Home({ seoInformation, faqs }) {
     setServiceCarouselHeight(ServiceCarouselRef.current.getBoundingClientRect().top);
     setBlogAndTeamComponentHeight(BlogAndTeamComponentRef.current.getBoundingClientRect().top);
     setFaqsSectionCompHeight(FaqsSectionCompRef.current.getBoundingClientRect().top);
+    setFooterCompWithCtaHeight(FooterCompWithCtaRef.current.getBoundingClientRect().top);
     console.log("Service comp height", ServiceCompHeight);
     if (MainDivRef.current.scrollTop > 50) {
       setIsSticky(true);
@@ -107,7 +110,7 @@ export default function Home({ seoInformation, faqs }) {
         ref={MainDivRef}
         onScroll={handleScroll}
       >
-        {/* <NavbarComp position={isSticky} /> */}
+        <NavbarComp position={isSticky} className="lg:hidden sm:grid lg:grid-cols-12 sm:grid-cols-7 hidden" />
         <HeaderComp HeaderCompRef={HeaderCompRef} height={ HeaderCompHeight} />
         <ServiceCompParent ServiceCompRef={ServiceCompRef} height={ ServiceCompHeight}/>
         <AboutComp className=" " AboutCompRef={AboutCompRef} height={ AboutCompHeight}/>
@@ -121,9 +124,11 @@ export default function Home({ seoInformation, faqs }) {
           faqs={faqs}
           className="w-screen lg:min-h-screen snap-start"
           FaqsSectionCompRef={FaqsSectionCompRef}
-          height={ FaqsSectionCompHeight}
+          height={FaqsSectionCompHeight}
+          SlideNavbarComp={true}
         />
-        <FooterCompWithCta />
+        <FooterCompWithCta   FooterCompWithCtaRef={FooterCompWithCtaRef}
+          height={FooterCompWithCtaHeight} />
       </main>
     </div>
   );

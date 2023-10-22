@@ -25,7 +25,7 @@ function NavbarComp(props) {
   
   
   return (<>
-    <div className={`w-full hidden sm:grid lg:grid-cols-12 sm:grid-cols-7 ${(isSticky || position)?'sticky bg-gray-700 backdrop-blur bg-opacity-75 [&>*]:text-main':'absolute'} top-0 z-[50]  ${className?className:''}  transition-all duration-500 ease-in-out`} >
+    <div className={`w-full ${(isSticky || position)?'sticky bg-gray-700 backdrop-blur bg-opacity-75 [&>*]:text-main':'absolute'} top-0 z-[50]  ${className?className:'hidden sm:grid lg:grid-cols-12 sm:grid-cols-7'}  transition-all duration-500 ease-in-out`} >
         <a href={'/'} className="lg:col-span-3 sm:col-span-2 mx-auto"><Image alt="Image..." src={'https://d1efbx4910ct8i.cloudfront.net/Images2/logow.webp'} width={120} height={120}></Image></a>
         <a href={'/'} className={`col-span-1 font-thin sm:col-start-3  lg:col-start-6 mx-auto hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action-900 text-${textColor?textColor:'main'}   `}><span>Home</span></a>
         <Link href={'/aboutus'} className={`col-span-1 font-thin  mx-auto hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action-900 text-${textColor?textColor:'main'}   `}><span>About Us</span></Link>
@@ -67,16 +67,6 @@ hover:decoration-action-900">Wordpress Development</Link></li>
               <li>
                 <Link href={'/surveillance-services'} className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900">Servilance services </Link>
-                {/* <ul className="list-decimal pl-6">
-                  <li>  <Link href={'/digital-marketing-services/seo'} className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
-hover:decoration-action-900">Search Engine Optimization</Link></li>
-                  <li>  <Link href={'/digital-marketing-services/graphic-design'} className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
-hover:decoration-action-900">Graphics Design</Link></li>
-                  <li>  <Link href={'/digital-marketing-services/ppc-marketing'} className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
-hover:decoration-action-900">PPC marketing</Link></li>
-                  <li>  <Link href={'/digital-marketing-services/social-media-marketing'} className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
-hover:decoration-action-900">Social media marketing</Link></li>
-                </ul> */}
               </li>
             </ul>
            

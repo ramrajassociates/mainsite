@@ -14,14 +14,28 @@ import { FaAward, FaHandshake } from 'react-icons/fa';
 import { MdOutlineReviews } from 'react-icons/md';
 import { BsInstagram } from 'react-icons/bs';
 import {FiTwitter,FiFacebook} from 'react-icons/fi';
-
+import NavbarCompHomePage from './NavBarCompHomePage';
 function AboutComp(props) {
-    const { className,AboutCompRef } = props;
-    
+    const { className,AboutCompRef,height } = props;
+    const [animate, setanimate] = useState(false)
+    useEffect(() => {
+        if (height <=0 && height >=-50) {
+            setanimate(true);
+        } else {
+            setanimate(false);
+        }
+    }, [height])
     
     return (
-        <div className="relative lg:px-32 sm:px-10 px-0 py-10 w-screen min-h-screen snap-start snap-always" ref={ AboutCompRef}>
-            <div className='sm:grid sm:grid-cols-2 flex flex-row flex-wrap sm:grid-rows-2 sm:gap-5 space-y-5 '>
+        <div className=" w-screen min-h-screen snap-start snap-always relative" ref={AboutCompRef}>
+              <div className='min-h-[110px] NavbarComp lg:block hidden sticky top-0 z-40'>
+              
+              {animate && <Slide top spy={animate} appear duration={700}>
+                   <NavbarCompHomePage theme='light' textColor='gray-900' />
+                   {/* <p>tect</p> */}
+             </Slide>}
+               </div>
+            <div className='lg:px-32 h-[80vh] sm:px-10 px-0 sm:grid sm:grid-cols-2 flex flex-row flex-wrap sm:grid-rows-2 sm:gap-5 space-y-5 '>
                 <div className='sm:col-start-2 w-11/12 sm:w-full mx-auto sm:row-start-2 sm:col-span-1 sm:row-span-1 shadow-xl relative bg-green-200 '>
                 <div className='bg-gray-400 px-2 py-1 absolute -left-3 -top-3 text-main z-10'>Testimonials</div>
                     <Carousel

@@ -3,8 +3,7 @@ import ServicesComp from './ServicesComp'
 import Link from 'next/link'
 import { LiaExternalLinkAltSolid } from 'react-icons/lia';
 import { Slide } from 'react-reveal';
-import { Navbar } from 'flowbite-react';
-import NavbarComp from '../NavbarComp';
+import NavbarCompHomePage from './NavBarCompHomePage';
 function ServiceCompParent({ServiceCompRef,height}) {
     const [itemNumber, setItemNumber] = useState(0)
     const [showMobileMenu, setShowMobileMenu] = useState(0)
@@ -18,11 +17,17 @@ const [animate, setanimate] = useState(false)
     }, [height])
     
   return (
-      <div className="mx-auto overflow-x-hidden lg:px-36 px-10 pt-24 w-screen min-h-screen snap-start " id='Services' ref={ServiceCompRef}>
-         {animate && <Slide top spy={animate} appear>
-              <p className='text-black font-bold text-center'> Navbar </p>
+      <div className=" min-h-screen  w-screen snap-start relative" id='Services' ref={ServiceCompRef}>
+          <div className='min-h-[110px] NavbarComp lg:block hidden sticky top-0 z-40'>
+              
+         {animate && <Slide top spy={animate} appear duration={700}>
+              <NavbarCompHomePage theme='light' textColor='gray-900' />
+              {/* <p>tect</p> */}
         </Slide>}
-          {/* <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6"> */}
+          </div>
+          <div className='Content mx-auto overflow-x-hidden lg:px-36 px-10'>
+              
+         
       <div className="max-w-screen-md mb-8 lg:mb-16">
           <h2 className="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Our Services</h2>
           <p className="text-gray-500 sm:text-md dark:text-gray-400">Discover a diverse range of services tailored to meet your business needs. From marketing prowess to legal expertise, we provide comprehensive solutions to drive your success.</p>
@@ -80,7 +85,8 @@ const [animate, setanimate] = useState(false)
                   <ServicesComp itemNumber={itemNumber} />
         </div>
       </div>
-      </div>
+          </div>
+          </div>
   )
 }
 
