@@ -13,13 +13,13 @@ function BlogAndTeamComponent({ BlogAndTeamComponentRef, height }) {
     }
   }, [height])
   return (
-    <div className="relative bg-gradient-to-r from-action-700 to-action-900 text-white py-16 w-screen min-h-screen snap-start snap-always " ref={BlogAndTeamComponentRef}>
-       <div className='min-h-[110px] NavbarComp lg:block hidden absolute top-0 z-[30] w-full'>
+    <div className="relative bg-gradient-to-r from-action-700 to-action-900 text-white  w-screen min-h-screen snap-start snap-always " ref={BlogAndTeamComponentRef}>
+       <div className='min-h-[110px] NavbarComp lg:block hidden w-full'>
             {animate && <Slide top spy={animate} appear duration={700}>
               <NavbarCompHomePage theme='dark' textColor='main' />
           </Slide>}
                </div>
-        <div className="flex flex-col lg:flex-row ">
+        <div className="flex flex-col lg:flex-row  ">
           {/* Blog Section */}
           <div className="w-full lg:w-1/2 p-4">
             <div className="bg-white bg-opacity-20 p-6 ">

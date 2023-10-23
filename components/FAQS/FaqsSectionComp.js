@@ -14,12 +14,12 @@ function FaqsSectionComp({ faqs,className ,FaqsSectionCompRef,SlideNavbarComp,he
     }, [height])
     return (
       <div className={` lg:min-h-[100vh] bg-gray-200 overflow-y-scroll ${className}`} id='FaqsSection' ref={FaqsSectionCompRef}>
- <div className='min-h-[110px] NavbarComp lg:block hidden absolute top-0 z-[30] w-full'>
+ <div className='min-h-[110px] NavbarComp lg:block hidden  w-full'>
             {animate && <Slide top spy={animate} appear duration={700}>
               <NavbarCompHomePage theme='light' textColor='gray-900' />
           </Slide>}
                </div>
-        <div className="content flex lg:flex-row flex-col gap-5 items-start lg:pt-20 pt-5  ">
+        <div className="content flex lg:flex-row flex-col gap-5 items-start  pt-5  ">
 
       <div className="headingwithImage flex flex-col lg:w-1/2 justify-center items-start gap-5 p-4 ">
         <div className="heading ">

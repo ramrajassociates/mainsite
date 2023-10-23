@@ -7,7 +7,7 @@ import NavbarCompHomePage from './NavBarCompHomePage';
 import Image from 'next/image';
 function ServiceCarousel(props) {
   const { className,ServiceCarouselRef,height } = props;
-  const [animate, setanimate] = useState(false)
+  const [animate, setanimate] = useState(false);
   useEffect(() => {
       if (height <=10 && height >=-50) {
           setanimate(true);
@@ -18,7 +18,7 @@ function ServiceCarousel(props) {
   return (
        
     <div className="relative w-screen lg:min-h-screen lg:snap-start lg:snap-always hidden lg:block" data-carousel="slide" ref={ServiceCarouselRef}>
-       <div className='min-h-[110px] NavbarComp lg:block hidden absolute top-0 z-[30] w-full'>
+       <div className='min-h-[110px] NavbarComp lg:block hidden absolute top-0 z-[50] w-full'>
             {animate && <Slide top spy={animate} appear duration={700}>
               <NavbarCompHomePage theme='dark' textColor='main' />
           </Slide>}
