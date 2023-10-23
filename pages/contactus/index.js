@@ -38,7 +38,7 @@ function index({ seoInformation, faqs }) {
       <meta name="language" content="English" />
         
         </SeoComp>
-          <NavbarComp bgColor="black" position="sticky"/>
+          <NavbarComp />
       <ContactHeaderComp />
       <FaqsSectionComp faqs={faqs?faqs:[]}/>
     </div>
