@@ -19,7 +19,7 @@ function FaqsSectionComp({ faqs,className ,FaqsSectionCompRef,SlideNavbarComp,he
               <NavbarCompHomePage theme='light' textColor='gray-900' />
           </Slide>}
                </div>
-        <div className="content flex lg:flex-row flex-col gap-5 items-start  pt-5  ">
+        <div className="content flex lg:flex-row flex-col gap-5 items-start  pt-5 lg:px-10 px-5 ">
 
       <div className="headingwithImage flex flex-col lg:w-1/2 justify-center items-start gap-5 p-4 ">
         <div className="heading ">

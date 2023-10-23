@@ -106,7 +106,7 @@ export default function Home({ seoInformation, faqs }) {
       </SeoComp>
 
       <main
-        className="w-screen h-screen snap-y snap-proximity overflow-y-scroll overflow-x-hidden "
+        className="w-screen h-screen snap-y lg:snap-mandatory snap-proximity overflow-y-scroll overflow-x-hidden "
         ref={MainDivRef}
         onScroll={handleScroll}
       >
