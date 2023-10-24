@@ -10,6 +10,7 @@ import FaqsSectionComp from '@/components/FAQS/FaqsSectionComp';
 import axios from 'axios'
 import ContentComp1 from '@/components/ContentComp1';
 import ClientComponent from '@/components/ClientComponent';
+import ProgressSteps from '@/components/ProgreeSteps';
 
 function index({seoInformation,faqs}) {
   const [show, setShow] = useState(false);
@@ -18,6 +19,18 @@ function index({seoInformation,faqs}) {
     Bigtitle: 'SOLUTIONS FOR INCREASED TRAFFIC AND HIGHER SALES',
     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore accusamus suscipit ut reiciendis similique quod reprehenderit, hic numquam dignissimos nihil fugit voluptas, unde a!'
   }
+  const stepsContent = [
+    {
+      title: 'CLIENT KICK-OFF',
+      description: 'We spend dedicated time getting to know you and your team, your organization, and the products or services you offer.',
+      imageUrl:'https://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp'
+    },
+    {
+      title: 'CLIENT KICK-OFF',
+      description: 'We spend dedicated time getting to know you and your team, your organization, and the products or services you offer.',
+      imageUrl:'https://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp'
+    }
+  ]
   return (<>
     <SeoComp seoInformation={seoInformation}>
       <meta property="og:title" content="Digital Marketing Services | Digital Marketing Agency in India" />
@@ -85,108 +98,8 @@ function index({seoInformation,faqs}) {
                                   </div>
             <Link href={'/digital-marketing-services/seo'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
             </div>
-        </section>
-          <section className='shadow-xl Normal col-span-1 col-start-3  row-start-1 w-full sm:h-full h-64 object-cover relative'>
-            <Image className="absolute w-full h-full object-cover object-center " src={'https://d1efbx4910ct8i.cloudfront.net/Images2/c-w.webp'} alt="content" width={520} height={500}></Image>
-            <div className='absolute w-full h-full z-0 bg-black bg-opacity-50'></div>
-            <div className='sm:p-10 p-5 absolute top-0 z-10'>
-
-        <h2 className='text-xl font-semibold text-main'>Content Writing</h2>
-              <div className='w-full py-3'>
-              <div className="w-full h-fit relative overflow-hidden flex justify-center items-center ">
-                                    
-                                    <p className=" font-thin text-sm  pl-5 overflow-y-scroll scrollbar-hidden text-main">
-                                    Boost your online presence with our SEO expertise. We optimize your website, improve search engine rankings, and drive organic traffic to enhance your digital visibility. Stay ahead in the digital landscape with our proven SEO strategies.
-                                  </p>
-                                  <Fade bottom delay={1200} >
-                        <span className=" border-l border-action-900 h-full  absolute left-2 top-0 "></span>
-                        </Fade>
-                                  </div>
-                                  </div>
-            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
-            </div>
-        </section>
-          <section className='shadow-xl Normal col-span-1 col-start-1 row-start-2   w-full sm:h-full h-64 object-cover relative bg-main'>
-            <div className='sm:p-10 p-5 '>
-
-        <h2 className='text-xl font-semibold text-gray-700'>Social Media Optimization</h2>
-              <div className='w-full py-3'>
-              <div className="w-full h-fit relative overflow-hidden flex justify-center items-center ">
-                                    
-                                    <p className=" font-thin text-sm  pl-5 overflow-y-scroll scrollbar-hidden text-gray-700">
-                                    Elevate your brand's social media presence with our SMO services. We craft compelling content, engage your audience, and enhance your social media profiles to increase brand awareness. Harness the power of social media for business growth with our tailored SMO strategies.
-                                  </p>
-                                  <Fade bottom delay={1200} >
-                        <span className=" border-l border-action-900 h-full  absolute left-2 top-0 "></span>
-                        </Fade>
-                                  </div>
-                                  </div>
-            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
-            </div>
-        </section>
-        <section className='shadow-xl ImageWithContent col-span-2 col-start-2 row-start-2 flex sm:flex-row flex-col sm:min-h-full h-full w-full'>
-            <div className='Image object-cover sm:w-1/2 w-full !min-h-full '>
-              <Image className='w-full h-full object-cover'src={'https://d1efbx4910ct8i.cloudfront.net/Images2/ppc-marketing.webp'} alt="ppc marketing" width={520} height={500} ></Image>
-            </div>
-            <div className='content sm:w-1/2 w-full relative bg-main hover:bg-gray-200 transition-all duration-300 group sm:p-10 p-5 !min-h-full'>
-              <BiSolidLeftArrow className='text-main group-hover:text-gray-200 absolute transition-all duration-300  sm:-left-8 sm:top-10 left-10 -top-8 rotate-90 sm:rotate-0 ' size={50}></BiSolidLeftArrow>
-              <h2 className='text-xl font-semibold'>PPC Marketing</h2>
-              <div className='w-full py-3'>
-              <div className="w-full h-fit relative overflow-hidden flex justify-center items-center ">
-                                    
-                                    <p className=" font-thin text-sm  pl-5 overflow-y-scroll scrollbar-hidden">
-                                    PPC marketing is a highly effective online advertising strategy where advertisers pay a fee each time their ad is clicked. This model is commonly used on search engines and social media platforms. It offers businesses the opportunity to display their ads to a highly targeted audience, ensuring that they only pay when their ad is clicked, making it a cost-effective and measurable method of driving traffic to websites and achieving marketing goals.
-                                  </p>
-                                  <Fade bottom delay={1200} >
-                        <span className=" border-l border-action-900 h-full  absolute left-2 top-0 "></span>
-                        </Fade>
-                                  </div>
-                                  </div>
-            <Link href={'/web-design-and-development'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
-            </div>
-        </section>
-        <section className={`shadow-xl ImageWithContent col-span-2 col-start-1 row-start-3 flex sm:flex-row flex-col sm:min-h-full h-full w-full ${show?'block':'hidden'}`}>
-            <div className='Image object-cover sm:w-1/2 w-full !min-h-full '>
-              <Image className='w-full h-full object-cover'src={'https://d1efbx4910ct8i.cloudfront.net/Images2/p-a-v.webp'} alt="Search engine optimization" width={520} height={500} ></Image>
-            </div>
-            <div className='content sm:w-1/2 w-full relative bg-main hover:bg-gray-200 transition-all duration-300 group sm:p-10 p-5 !min-h-full'>
-              <BiSolidLeftArrow className='text-main group-hover:text-gray-200 absolute transition-all duration-300  sm:-left-8 sm:top-10 left-10 -top-8 rotate-90 sm:rotate-0 ' size={50}></BiSolidLeftArrow>
-              <h2 className='text-xl font-semibold'>Photo & Videography</h2>
-              <div className='w-full py-3'>
-              <div className="w-full h-fit relative overflow-hidden flex justify-center items-center ">
-                                    
-                                    <p className=" font-thin text-sm  pl-5 overflow-y-scroll scrollbar-hidden">
-                                    Bring your brand to life with captivating visuals. Our expert photographers and videographers capture the essence of your business, products, and services. From stunning images to compelling videos, we create content that resonates with your audience. Whether it's for marketing campaigns, events, or your website, let us tell your story through the lens.
-                                  </p>
-                                  <Fade bottom delay={1200} >
-                        <span className=" border-l border-action-900 h-full  absolute left-2 top-0 "></span>
-                        </Fade>
-                                  </div>
-                                  </div>
-            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
-            </div>
-        </section>
-          <section className={`shadow-xl Normal col-span-1 col-start-3  row-start-3 w-full sm:h-full h-64 object-cover relative ${show?'block':'hidden'}`}>
-            <Image className="absolute w-full h-full object-cover object-center " src={'https://d1efbx4910ct8i.cloudfront.net/Images2/g-d.webp'} alt="content" width={520} height={500}></Image>
-            <div className='absolute w-full h-full z-0 bg-black bg-opacity-50'></div>
-            <div className='sm:p-10 p-5 absolute top-0 z-10'>
-
-        <h2 className='text-xl font-semibold text-main'>Graphic Design</h2>
-              <div className='w-full py-3'>
-              <div className="w-full h-fit relative overflow-hidden flex justify-center items-center ">
-                                    
-                                    <p className=" font-thin text-sm  pl-5 overflow-y-scroll scrollbar-hidden text-main">
-                                    Make a lasting impression with eye-catching visuals. Our talented graphic designers transform ideas into striking designs that communicate your brand's identity. From logos and branding materials to marketing collateral and digital graphics, we craft designs that leave a mark. Elevate your brand's aesthetics with our creative expertise in graphic design.
-                                  </p>
-                                  <Fade bottom delay={1200} >
-                        <span className=" border-l border-action-900 h-full  absolute left-2 top-0 "></span>
-                        </Fade>
-                                  </div>
-                                  </div>
-            <Link href={'/digital-marketing-services/graphic-design'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
-            </div>
-        </section>
-          <section className={`shadow-xl Normal col-span-1 col-start-1 row-start-4  w-full sm:h-full h-64  object-cover relative bg-main  ${show?'block':'hidden'}`}>
+          </section>
+          <section className={`shadow-xl Normal col-span-1   w-full sm:h-full h-64  object-cover relative bg-main  `}>
             
 
             <div className='sm:p-10 p-5 '>
@@ -206,7 +119,109 @@ function index({seoInformation,faqs}) {
             <Link href={'/digital-marketing-services/social-media-marketing'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
             </div>
         </section>
-        <section className={`shadow-xl ImageWithContent col-span-2 col-start-2 row-start-4 flex sm:flex-row flex-col sm:min-h-full h-full w-full ${show?'block':'hidden'}`}>
+          {/* <section className='shadow-xl Normal col-span-1 col-start-3  row-start-1 w-full sm:h-full h-64 object-cover relative'>
+            <Image className="absolute w-full h-full object-cover object-center " src={'https://d1efbx4910ct8i.cloudfront.net/Images2/c-w.webp'} alt="content" width={520} height={500}></Image>
+            <div className='absolute w-full h-full z-0 bg-black bg-opacity-50'></div>
+            <div className='sm:p-10 p-5 absolute top-0 z-10'>
+
+        <h2 className='text-xl font-semibold text-main'>Content Writing</h2>
+              <div className='w-full py-3'>
+              <div className="w-full h-fit relative overflow-hidden flex justify-center items-center ">
+                                    
+                                    <p className=" font-thin text-sm  pl-5 overflow-y-scroll scrollbar-hidden text-main">
+                                    Boost your online presence with our SEO expertise. We optimize your website, improve search engine rankings, and drive organic traffic to enhance your digital visibility. Stay ahead in the digital landscape with our proven SEO strategies.
+                                  </p>
+                                  <Fade bottom delay={1200} >
+                        <span className=" border-l border-action-900 h-full  absolute left-2 top-0 "></span>
+                        </Fade>
+                                  </div>
+                                  </div>
+            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
+            </div>
+        </section> */}
+          {/* <section className='shadow-xl Normal col-span-1   w-full sm:h-full h-64 object-cover relative bg-main'>
+            <div className='sm:p-10 p-5 '>
+
+        <h2 className='text-xl font-semibold text-gray-700'>Social Media Optimization</h2>
+              <div className='w-full py-3'>
+              <div className="w-full h-fit relative overflow-hidden flex justify-center items-center ">
+                                    
+                                    <p className=" font-thin text-sm  pl-5 overflow-y-scroll scrollbar-hidden text-gray-700">
+                                    Elevate your brand's social media presence with our SMO services. We craft compelling content, engage your audience, and enhance your social media profiles to increase brand awareness. Harness the power of social media for business growth with our tailored SMO strategies.
+                                  </p>
+                                  <Fade bottom delay={1200} >
+                        <span className=" border-l border-action-900 h-full  absolute left-2 top-0 "></span>
+                        </Fade>
+                                  </div>
+                                  </div>
+            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
+            </div>
+          </section> */}
+          <section className={`shadow-xl Normal col-span-1 w-full sm:h-full h-64 object-cover relative `}>
+            <Image className="absolute w-full h-full object-cover object-center " src={'https://d1efbx4910ct8i.cloudfront.net/Images2/g-d.webp'} alt="content" width={520} height={500}></Image>
+            <div className='absolute w-full h-full z-0 bg-black bg-opacity-50'></div>
+            <div className='sm:p-10 p-5 absolute top-0 z-10'>
+
+        <h2 className='text-xl font-semibold text-main'>Graphic Design</h2>
+              <div className='w-full py-3'>
+              <div className="w-full h-fit relative overflow-hidden flex justify-center items-center ">
+                                    
+                                    <p className=" font-thin text-sm  pl-5 overflow-y-scroll scrollbar-hidden text-main">
+                                    Make a lasting impression with eye-catching visuals. Our talented graphic designers transform ideas into striking designs that communicate your brand's identity. From logos and branding materials to marketing collateral and digital graphics, we craft designs that leave a mark. Elevate your brand's aesthetics with our creative expertise in graphic design.
+                                  </p>
+                                  <Fade bottom delay={1200} >
+                        <span className=" border-l border-action-900 h-full  absolute left-2 top-0 "></span>
+                        </Fade>
+                                  </div>
+                                  </div>
+            <Link href={'/digital-marketing-services/graphic-design'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
+            </div>
+        </section>
+        <section className='shadow-xl ImageWithContent col-span-2 flex sm:flex-row flex-col sm:min-h-full h-full w-full'>
+            <div className='Image object-cover sm:w-1/2 w-full !min-h-full '>
+              <Image className='w-full h-full object-cover'src={'https://d1efbx4910ct8i.cloudfront.net/Images2/ppc-marketing.webp'} alt="ppc marketing" width={520} height={500} ></Image>
+            </div>
+            <div className='content sm:w-1/2 w-full relative bg-main hover:bg-gray-200 transition-all duration-300 group sm:p-10 p-5 !min-h-full'>
+              <BiSolidLeftArrow className='text-main group-hover:text-gray-200 absolute transition-all duration-300  sm:-left-8 sm:top-10 left-10 -top-8 rotate-90 sm:rotate-0 ' size={50}></BiSolidLeftArrow>
+              <h2 className='text-xl font-semibold'>PPC Marketing</h2>
+              <div className='w-full py-3'>
+              <div className="w-full h-fit relative overflow-hidden flex justify-center items-center ">
+                                    
+                                    <p className=" font-thin text-sm  pl-5 overflow-y-scroll scrollbar-hidden">
+                                    PPC marketing is a highly effective online advertising strategy where advertisers pay a fee each time their ad is clicked. This model is commonly used on search engines and social media platforms. It offers businesses the opportunity to display their ads to a highly targeted audience, ensuring that they only pay when their ad is clicked, making it a cost-effective and measurable method of driving traffic to websites and achieving marketing goals.
+                                  </p>
+                                  <Fade bottom delay={1200} >
+                        <span className=" border-l border-action-900 h-full  absolute left-2 top-0 "></span>
+                        </Fade>
+                                  </div>
+                                  </div>
+            <Link href={'/digital-marketing-services/ppc-marketing'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
+            </div>
+        </section>
+        {/* <section className={`shadow-xl ImageWithContent col-span-2  flex sm:flex-row flex-col sm:min-h-full h-full w-full ${show?'block':'hidden'}`}>
+            <div className='Image object-cover sm:w-1/2 w-full !min-h-full '>
+              <Image className='w-full h-full object-cover'src={'https://d1efbx4910ct8i.cloudfront.net/Images2/p-a-v.webp'} alt="Search engine optimization" width={520} height={500} ></Image>
+            </div>
+            <div className='content sm:w-1/2 w-full relative bg-main hover:bg-gray-200 transition-all duration-300 group sm:p-10 p-5 !min-h-full'>
+              <BiSolidLeftArrow className='text-main group-hover:text-gray-200 absolute transition-all duration-300  sm:-left-8 sm:top-10 left-10 -top-8 rotate-90 sm:rotate-0 ' size={50}></BiSolidLeftArrow>
+              <h2 className='text-xl font-semibold'>Photo & Videography</h2>
+              <div className='w-full py-3'>
+              <div className="w-full h-fit relative overflow-hidden flex justify-center items-center ">
+                                    
+                                    <p className=" font-thin text-sm  pl-5 overflow-y-scroll scrollbar-hidden">
+                                    Bring your brand to life with captivating visuals. Our expert photographers and videographers capture the essence of your business, products, and services. From stunning images to compelling videos, we create content that resonates with your audience. Whether it's for marketing campaigns, events, or your website, let us tell your story through the lens.
+                                  </p>
+                                  <Fade bottom delay={1200} >
+                        <span className=" border-l border-action-900 h-full  absolute left-2 top-0 "></span>
+                        </Fade>
+                                  </div>
+                                  </div>
+            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
+            </div>
+        </section> */}
+         
+      
+        <section className={`shadow-xl ImageWithContent col-span-2 flex sm:flex-row flex-col sm:min-h-full h-full w-full ${show?'block':'hidden'}`}>
             <div className='Image object-cover sm:w-1/2 w-full !min-h-full '>
               <Image className='w-full h-full object-cover'src={'https://d1efbx4910ct8i.cloudfront.net/Images2/s-e-m.webp'} alt="Search engine optimization" width={520} height={500} ></Image>
             </div>
@@ -228,13 +243,27 @@ function index({seoInformation,faqs}) {
             </div>
         </section>
         </div>
-          <div className="flex flex-row justify-center items-center py-4 w-full cursor-pointer ">
+          {/* <div className="flex flex-row justify-center items-center py-4 w-full cursor-pointer ">
           <span className='bg-action-900 text-main px-2 py-1 font-thin text-sm' onClick={()=>setShow(e=>!e)}>{show ?'Load less':'Load more'}</span>
-          </div>
+          </div> */}
          
             </div>
     </div>
-    <ClientComponent />
+    <div className='lg:px-24 px-5 space-y-7 flex lg:flex-row bg-gray-900 flex-col items-center lg:min-h-screen  '>
+      <div className='lg:w-1/3 w-full space-y-7 p-4 '>
+        <h1 className='text-6xl font-extrabold text-gray-200'>Digital Marketing Process</h1>
+        <p className='text-gray-200'>When you work with a top-tier digital advertising company like Lounge Lizard, your business becomes an essential collaborator in the design and creation of your digital marketing services. We make sure that you and your new website have our entire attention from the very beginning to every last detail.</p>
+        <div>
+
+        <Link href={'/contactus'} className='px-6 py-2 border border-action-900 transition-all duration-300 hover:bg-action-900  text-main '>Getting started !</Link>
+        </div>
+    </div>
+      <div className='lg:w-2/3 w-full' >
+    <ProgressSteps content={stepsContent}/>
+        
+    </div>
+    </div>
+  <ClientComponent />
 <FaqsSectionComp faqs={faqs?faqs:[]}/>
             </>
   )

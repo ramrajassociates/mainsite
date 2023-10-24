@@ -9,6 +9,8 @@ import SeoComp from '@/components/SeoComp';
 import FaqsSectionComp from '@/components/FAQS/FaqsSectionComp';
 import ContentComp1 from '@/components/ContentComp1';
 import axios from 'axios'
+import ClientComponent from '@/components/ClientComponent';
+import ProgressSteps from '@/components/ProgreeSteps';
 function index({seoInformation,faqs}) {
   const [show, setShow] = useState(false);
   const ContentComp = {
@@ -16,6 +18,18 @@ function index({seoInformation,faqs}) {
     Bigtitle: 'SOLUTIONS FOR INCREASED TRAFFIC AND HIGHER SALES',
     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore accusamus suscipit ut reiciendis similique quod reprehenderit, hic numquam dignissimos nihil fugit voluptas, unde a!'
   }
+  const stepsContent = [
+    {
+      title: 'CLIENT KICK-OFF',
+      description: 'We spend dedicated time getting to know you and your team, your organization, and the products or services you offer.',
+      imageUrl:'https://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp'
+    },
+    {
+      title: 'CLIENT KICK-OFF',
+      description: 'We spend dedicated time getting to know you and your team, your organization, and the products or services you offer.',
+      imageUrl:'https://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp'
+    }
+  ]
     return (
         <>
               <SeoComp seoInformation={seoInformation}>
@@ -44,64 +58,64 @@ function index({seoInformation,faqs}) {
 
         <section className='shadow-xl ImageWithContent col-span-2 col-start-1 row-start-1 flex sm:flex-row flex-col sm:min-h-full h-full w-full'>
             <div className='Image object-cover sm:w-1/2 w-full !min-h-full '>
-              <Image className='w-full h-full object-cover'src={'https://d1efbx4910ct8i.cloudfront.net/Images2/seo.webp'} alt="Search engine optimization" width={520} height={500} ></Image>
+              <Image className='w-full h-full object-cover'src={'https://d1efbx4910ct8i.cloudfront.net/Images2/cs1.webp'} alt="Custom web development" width={520} height={500} ></Image>
             </div>
             <div className='content sm:w-1/2 w-full relative bg-main hover:bg-gray-200 transition-all duration-300 group sm:p-10 p-5 !min-h-full'>
               <BiSolidLeftArrow className='text-main group-hover:text-gray-200 absolute transition-all duration-300  sm:-left-8 sm:top-10 left-10 -top-8 rotate-90 sm:rotate-0 ' size={50}></BiSolidLeftArrow>
-              <h2 className='text-xl font-semibold'>Search Engine Optimization</h2>
+              <h2 className='text-xl font-semibold'>Custom Web development</h2>
               <div className='w-full py-3'>
               <div className="w-full h-fit relative overflow-hidden flex justify-center items-center ">
                                     
                                     <p className=" font-thin text-sm  pl-5 overflow-y-scroll scrollbar-hidden">
-                                    Boost your online presence with our SEO expertise. We optimize your website, improve search engine rankings, and drive organic traffic to enhance your digital visibility. Stay ahead in the digital landscape with our proven SEO strategies.
+                                    Custom web development involves creating unique, tailor-made websites from the ground up. Our expert developers work closely with clients to understand their specific needs, goals, and branding, resulting in a fully customized web solution. We utilize the latest technologies and best practices to build websites that are not only visually stunning but also highly functional and user-friendly.
                                   </p>
                                   <Fade bottom delay={1200} >
                         <span className=" border-l border-action-900 h-full  absolute left-2 top-0 "></span>
                         </Fade>
                                   </div>
                                   </div>
-            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
+            <Link href={'/web-design-and-development/custom-web-development'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
             </div>
         </section>
           <section className='shadow-xl Normal col-span-1 col-start-3  row-start-1 w-full sm:h-full h-64 object-cover relative'>
-            <Image className="absolute w-full h-full object-cover object-center " src={'https://d1efbx4910ct8i.cloudfront.net/Images2/c-w.webp'} alt="content" width={520} height={500}></Image>
+            <Image className="absolute w-full h-full object-cover object-center " src={'https://d1efbx4910ct8i.cloudfront.net/Images2/e-comm.webp'} alt="content" width={520} height={500}></Image>
             <div className='absolute w-full h-full z-0 bg-black bg-opacity-50'></div>
             <div className='sm:p-10 p-5 absolute top-0 z-10'>
 
-        <h2 className='text-xl font-semibold text-main'>Content Writing</h2>
+        <h2 className='text-xl font-semibold text-main'>E-commerce website</h2>
               <div className='w-full py-3'>
               <div className="w-full h-fit relative overflow-hidden flex justify-center items-center ">
                                     
                                     <p className=" font-thin text-sm  pl-5 overflow-y-scroll scrollbar-hidden text-main">
-                                    Boost your online presence with our SEO expertise. We optimize your website, improve search engine rankings, and drive organic traffic to enhance your digital visibility. Stay ahead in the digital landscape with our proven SEO strategies.
+                                    E-commerce development focuses on creating online stores and marketplaces. We design and develop robust e-commerce solutions that offer a seamless shopping experience for customers. From product listings to secure payment processing, we cover every aspect of online selling.
                                   </p>
                                   <Fade bottom delay={1200} >
                         <span className=" border-l border-action-900 h-full  absolute left-2 top-0 "></span>
                         </Fade>
                                   </div>
                                   </div>
-            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
+            <Link href={'/web-design-and-development/e-commerce-website-development'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
             </div>
         </section>
           <section className='shadow-xl Normal col-span-1 col-start-1 row-start-2   w-full sm:h-full h-64 object-cover relative bg-main'>
             <div className='sm:p-10 p-5 '>
 
-        <h2 className='text-xl font-semibold text-gray-700'>Social Media Optimization</h2>
+        <h2 className='text-xl font-semibold text-gray-700'>Wordpress Development</h2>
               <div className='w-full py-3'>
               <div className="w-full h-fit relative overflow-hidden flex justify-center items-center ">
                                     
                                     <p className=" font-thin text-sm  pl-5 overflow-y-scroll scrollbar-hidden text-gray-700">
-                                    Elevate your brand's social media presence with our SMO services. We craft compelling content, engage your audience, and enhance your social media profiles to increase brand awareness. Harness the power of social media for business growth with our tailored SMO strategies.
+                                    WordPress development leverages the power of the world's most popular content management system. We create custom WordPress websites, themes, and plugins to meet your specific needs. Whether it's a blog, portfolio, or corporate site, our experts craft WordPress solutions that are highly functional and visually appealing.
                                   </p>
                                   <Fade bottom delay={1200} >
                         <span className=" border-l border-action-900 h-full  absolute left-2 top-0 "></span>
                         </Fade>
                                   </div>
                                   </div>
-            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
+            <Link href={'/web-design-and-development/wordpress-development'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
             </div>
         </section>
-        <section className='shadow-xl ImageWithContent col-span-2 col-start-2 row-start-2 flex sm:flex-row flex-col sm:min-h-full h-full w-full'>
+        {/* <section className='shadow-xl ImageWithContent col-span-2 col-start-2 row-start-2 flex sm:flex-row flex-col sm:min-h-full h-full w-full'>
             <div className='Image object-cover sm:w-1/2 w-full !min-h-full '>
               <Image className='w-full h-full object-cover'src={'https://d1efbx4910ct8i.cloudfront.net/Images2/w-d.webp'} alt="Search engine optimization" width={520} height={500} ></Image>
             </div>
@@ -121,96 +135,30 @@ function index({seoInformation,faqs}) {
                                   </div>
             <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
             </div>
-        </section>
-        <section className={`shadow-xl ImageWithContent col-span-2 col-start-1 row-start-3 flex sm:flex-row flex-col sm:min-h-full h-full w-full ${show?'block':'hidden'}`}>
-            <div className='Image object-cover sm:w-1/2 w-full !min-h-full '>
-              <Image className='w-full h-full object-cover'src={'https://d1efbx4910ct8i.cloudfront.net/Images2/p-a-v.webp'} alt="Search engine optimization" width={520} height={500} ></Image>
-            </div>
-            <div className='content sm:w-1/2 w-full relative bg-main hover:bg-gray-200 transition-all duration-300 group sm:p-10 p-5 !min-h-full'>
-              <BiSolidLeftArrow className='text-main group-hover:text-gray-200 absolute transition-all duration-300  sm:-left-8 sm:top-10 left-10 -top-8 rotate-90 sm:rotate-0 ' size={50}></BiSolidLeftArrow>
-              <h2 className='text-xl font-semibold'>Photo & Videography</h2>
-              <div className='w-full py-3'>
-              <div className="w-full h-fit relative overflow-hidden flex justify-center items-center ">
-                                    
-                                    <p className=" font-thin text-sm  pl-5 overflow-y-scroll scrollbar-hidden">
-                                    Bring your brand to life with captivating visuals. Our expert photographers and videographers capture the essence of your business, products, and services. From stunning images to compelling videos, we create content that resonates with your audience. Whether it's for marketing campaigns, events, or your website, let us tell your story through the lens.
-                                  </p>
-                                  <Fade bottom delay={1200} >
-                        <span className=" border-l border-action-900 h-full  absolute left-2 top-0 "></span>
-                        </Fade>
-                                  </div>
-                                  </div>
-            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
-            </div>
-        </section>
-          <section className={`shadow-xl Normal col-span-1 col-start-3  row-start-3 w-full sm:h-full h-64 object-cover relative ${show?'block':'hidden'}`}>
-            <Image className="absolute w-full h-full object-cover object-center " src={'https://d1efbx4910ct8i.cloudfront.net/Images2/g-d.webp'} alt="content" width={520} height={500}></Image>
-            <div className='absolute w-full h-full z-0 bg-black bg-opacity-50'></div>
-            <div className='sm:p-10 p-5 absolute top-0 z-10'>
-
-        <h2 className='text-xl font-semibold text-main'>Graphic Design</h2>
-              <div className='w-full py-3'>
-              <div className="w-full h-fit relative overflow-hidden flex justify-center items-center ">
-                                    
-                                    <p className=" font-thin text-sm  pl-5 overflow-y-scroll scrollbar-hidden text-main">
-                                    Make a lasting impression with eye-catching visuals. Our talented graphic designers transform ideas into striking designs that communicate your brand's identity. From logos and branding materials to marketing collateral and digital graphics, we craft designs that leave a mark. Elevate your brand's aesthetics with our creative expertise in graphic design.
-                                  </p>
-                                  <Fade bottom delay={1200} >
-                        <span className=" border-l border-action-900 h-full  absolute left-2 top-0 "></span>
-                        </Fade>
-                                  </div>
-                                  </div>
-            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
-            </div>
-        </section>
-          <section className={`shadow-xl Normal col-span-1 col-start-1 row-start-4  w-full sm:h-full h-64  object-cover relative bg-main  ${show?'block':'hidden'}`}>
-            
-
-            <div className='sm:p-10 p-5 '>
-
-        <h2 className='text-xl font-semibold text-gray-700'>Social Media Marketing</h2>
-              <div className='w-full py-3'>
-              <div className="w-full h-fit relative overflow-hidden flex justify-center items-center ">
-                                    
-                                    <p className=" font-thin text-sm  pl-5 overflow-y-scroll scrollbar-hidden text-gray-700">
-                                    Boost your brand's online presence and engagement through strategic social media marketing. We create data-driven campaigns on platforms like Facebook, Instagram, and Twitter to reach your target audience. Our team crafts compelling content, runs targeted ads, and analyzes results to maximize ROI and drive business growth.
-                                  </p>
-                                  <Fade bottom delay={1200} >
-                        <span className=" border-l border-action-900 h-full  absolute left-2 top-0 "></span>
-                        </Fade>
-                                  </div>
-                                  </div>
-            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
-            </div>
-        </section>
-        <section className={`shadow-xl ImageWithContent col-span-2 col-start-2 row-start-4 flex sm:flex-row flex-col sm:min-h-full h-full w-full ${show?'block':'hidden'}`}>
-            <div className='Image object-cover sm:w-1/2 w-full !min-h-full '>
-              <Image className='w-full h-full object-cover'src={'https://d1efbx4910ct8i.cloudfront.net/Images2/s-e-m.webp'} alt="Search engine optimization" width={520} height={500} ></Image>
-            </div>
-            <div className='content sm:w-1/2 w-full relative bg-main hover:bg-gray-200 transition-all duration-300 group sm:p-10 p-5 !min-h-full'>
-              <BiSolidLeftArrow className='text-main group-hover:text-gray-200 absolute transition-all duration-300  sm:-left-8 sm:top-10 left-10 -top-8 rotate-90 sm:rotate-0 ' size={50}></BiSolidLeftArrow>
-              <h2 className='text-xl font-semibold'>Search Engine Marketing</h2>
-              <div className='w-full py-3'>
-              <div className="w-full h-fit relative overflow-hidden flex justify-center items-center ">
-                                    
-                                    <p className=" font-thin text-sm  pl-5 overflow-y-scroll scrollbar-hidden">
-                                    Elevate your online visibility and reach your target audience with our results-driven Search Engine Marketing strategies. We specialize in pay-per-click (PPC) advertising, optimizing your ad campaigns to deliver maximum ROI. Harness the power of search engines to drive qualified traffic and boost your business. Stay ahead of the competition and achieve measurable results with our SEM solutions.
-                                  </p>
-                                  <Fade bottom delay={1200} >
-                        <span className=" border-l border-action-900 h-full  absolute left-2 top-0 "></span>
-                        </Fade>
-                                  </div>
-                                  </div>
-            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
-            </div>
-        </section>
+        </section> */}
+      
         </div>
-          <div className="flex flex-row justify-center items-center py-4 w-full cursor-pointer ">
+          {/* <div className="flex flex-row justify-center items-center py-4 w-full cursor-pointer ">
           <span className='bg-action-900 text-main px-2 py-1 font-thin text-sm' onClick={()=>setShow(e=>!e)}>{show ?'Load less':'Load more'}</span>
-          </div>
+          </div> */}
          
             </div>
         </div>
+        <div className='lg:px-24 px-5 space-y-7 flex lg:flex-row bg-gray-900 flex-col items-center lg:min-h-screen  '>
+      <div className='lg:w-1/3 w-full space-y-7 p-4 '>
+        <h1 className='text-6xl font-extrabold text-gray-200'>Website Development Process</h1>
+        <p className='text-gray-200'>Website development involves a series of steps that are essential to creating a functional and visually appealing website. The first step is planning, where the website's purpose, target audience, and content are determined. This is followed by designing the website's layout, including the color scheme, typography, and overall look and feel.</p>
+        <div>
+
+        <Link href={'/contactus'} className='px-6 py-2 border border-action-900 transition-all duration-300 hover:bg-action-900  text-main '>Getting started !</Link>
+        </div>
+    </div>
+      <div className='lg:w-2/3 w-full' >
+    <ProgressSteps content={stepsContent}/>
+        
+    </div>
+        </div>
+        <ClientComponent/>
         <FaqsSectionComp faqs={faqs?faqs:[]}/>
       </>
   )
@@ -231,7 +179,7 @@ export async function getStaticProps() {
       },
     };
   } catch (error) {
-    console.error("Error fetching data:", error);
+    // console.error("Error fetching data:", error);
     return {
       props: {
         seoInformation:null,

@@ -24,7 +24,7 @@ function index({seoInformation,faqs}) {
               <p className='text-main bg-footerColor px-2 py-1 absolute -top-2 -left-2'>Services{' > '}Web Design And Development</p>
                     <p className='text-main font-bold text-2xl pt-5'>Wordpress Development</p>
                     <div className='relative h-fit pl-5'>
-<p className='text-xs text-main'>E-commerce development focuses on creating online stores and marketplaces. We design and develop robust e-commerce solutions that offer a seamless shopping experience for customers. From product listings to secure payment processing, we cover every aspect of online selling.</p>
+<p className='text-xs text-main'>WordPress development leverages the power of the world's most popular content management system. We create custom WordPress websites, themes, and plugins to meet your specific needs. Whether it's a blog, portfolio, or corporate site, our experts craft WordPress solutions that are highly functional and visually appealing.</p>
                     <Fade bottom delay={1200} >
                     <span className="md:border-l-2 border-l border-action-900 h-full absolute left-2 top-0"></span>
                     </Fade>
