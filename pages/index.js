@@ -149,7 +149,7 @@ export async function getStaticProps() {
       },
     };
   } catch (error) {
-    console.error("Error fetching data:", error);
+    // console.error("Error fetching data:", error);
     return {
       props: {
         data: null, // You can handle this in your component if data is null

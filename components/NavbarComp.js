@@ -27,7 +27,7 @@ function NavbarComp(props) {
   return (<>
     <div className={`w-full ${(isSticky || position)?'sticky bg-gray-700 backdrop-blur bg-opacity-75 [&>*]:text-main':'absolute'} top-0 z-[50]  ${className?className:'hidden sm:grid lg:grid-cols-12 sm:grid-cols-7'}  transition-all duration-500 ease-in-out`} >
         <a href={'/'} className="lg:col-span-3 sm:col-span-2 mx-auto"><Image alt="Image..." src={'https://d1efbx4910ct8i.cloudfront.net/Images2/logow.webp'} width={120} height={120}></Image></a>
-        <a href={'/'} className={`col-span-1 font-thin sm:col-start-3  lg:col-start-6 mx-auto hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action-900 text-${textColor?textColor:'main'}   `}><span>Home</span></a>
+        <a href={'/'} className={`col-span-1 font-thin sm:col-start-3  lg:col-start-7 mx-auto hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action-900 text-${textColor?textColor:'main'}   `}><span>Home</span></a>
         <Link href={'/aboutus'} className={`col-span-1 font-thin  mx-auto hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action-900 text-${textColor?textColor:'main'}   `}><span>About Us</span></Link>
         <div className={`col-span-1 font-thin cursor-pointer mx-auto hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action-900  text-${textColor?textColor:'main'} group  `} >Services
         <IoIosArrowDown className="ml-1 group-hover:rotate-180 transition-all transform duration-300"></IoIosArrowDown> 
@@ -77,7 +77,7 @@ hover:decoration-action-900">Servilance services </Link>
 </div>
         </div>
         <Link href={'/contactus'} className={`col-span-1 font-thin mx-auto hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action-900  text-${textColor?textColor:'main'}  `}> <span>Contact Us</span></Link>
-      <Link href={'/contactus'} className={`col-span-1 font-thin mx-auto hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action-900 text-${textColor ? textColor : 'main'}   `}> <span>Get a Quote now</span></Link>
+      {/* <Link href={'/contactus'} className={`col-span-1 font-thin mx-auto hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action-900 text-${textColor ? textColor : 'main'}   `}> <span>Get a Quote now</span></Link> */}
       
     </div>
     {/* Mobile Menu */}
@@ -126,7 +126,7 @@ hover:decoration-action-900">Surveillance services</Link>
      
     </ul>
         <Link href={'/contactus'} className={` border-b border-action-900 w-full  pb-4 font-thin text-center flex items-center  hover:decoration-action-900  text-${textColor?textColor:'main'}  `}> <span>Contact Us</span></Link>
-        <Link href={'/contactus'} className={` border-b border-action-900 w-full  pb-4 font-thin text-center flex items-center  hover:decoration-action-900 text-${textColor?textColor:'main'}   `}> <span>Get a Quote now</span></Link>
+        {/* <Link href={'/contactus'} className={` border-b border-action-900 w-full  pb-4 font-thin text-center flex items-center  hover:decoration-action-900 text-${textColor?textColor:'main'}   `}> <span>Get a Quote now</span></Link> */}
       </div>
     </div>
     </>

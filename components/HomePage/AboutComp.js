@@ -36,8 +36,8 @@ function AboutComp(props) {
              </Slide>}
                </div>
             <div className='lg:px-32 lg:h-[80vh] py-20 lg:py-0 sm:px-10 px-0 sm:grid sm:grid-cols-2 flex flex-row flex-wrap sm:grid-rows-2 sm:gap-5 space-y-5 '>
-                <div className='sm:col-start-2 w-11/12 sm:w-full mx-auto sm:row-start-2 sm:col-span-1 sm:row-span-1 shadow-xl relative bg-green-200 '>
-                <div className='bg-gray-400 px-2 py-1 absolute -left-3 -top-3 text-main z-10'>Testimonials</div>
+                <div className='sm:col-start-2 w-11/12 sm:w-full mx-auto sm:row-start-2 sm:col-span-1 sm:row-span-1 shadow-xl relative bg-gray-900 '>
+                <div className='bg-footerColor px-2 py-1 absolute -left-3 -top-3 text-main z-10'>Testimonials</div>
                     <Carousel
                         // indicators={false}
                         slideInterval={7000}
@@ -52,7 +52,7 @@ function AboutComp(props) {
               <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
           </svg> 
           <blockquote>
-              <p class="text-md font-thin text-gray-900 dark:text-white">"Ordered my first IT brand building project like mobile app & web
+              <p class="text-md font-thin text-gray-200">"Ordered my first IT brand building project like mobile app & web
 development to RamRaj Associates. I was an inexperienced contractor
 but they carefully listened to my request and try to deliver the best
 quality of service. All phone calls and emails are answered very
@@ -61,7 +61,7 @@ professionally. "</p>
           <figcaption class="flex items-center justify-center mt-6 space-x-3">
               {/* <Image class="w-6 h-6 rounded-full" src={"https://d1efbx4910ct8i.cloudfront.net/Images2/abt1.webp"} width={50} height={50} alt="profile picture"></Image> */}
               <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                  <div class="pr-3 font-medium text-gray-900 dark:text-white">Sailesh Shukla</div>
+                  <div class="pr-3 font-medium text-gray-200 ">Sailesh Shukla</div>
                   <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Business Head</div>
               </div>
           </figcaption>
@@ -75,13 +75,13 @@ professionally. "</p>
               <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
           </svg> 
           <blockquote>
-              <p class="text-md font-thin text-gray-900 dark:text-white">"I am running my social media campaigns through Ramraj Associates, I
+              <p class="text-md font-thin text-gray-200">"I am running my social media campaigns through Ramraj Associates, I
 am getting good outcomes for my social campaigns"</p>
           </blockquote>
           <figcaption class="flex items-center justify-center mt-6 space-x-3">
               {/* <Image class="w-6 h-6 rounded-full" src={"https://d1efbx4910ct8i.cloudfront.net/Images2/abt1.webp"} width={50} height={50} alt="profile picture"></Image> */}
               <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                  <div class="pr-3 font-medium text-gray-900 dark:text-white">Kuldeep Singh</div>
+                  <div class="pr-3 font-medium text-gray-200 ">Kuldeep Singh</div>
                   <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Jan Sewak</div>
               </div>
           </figcaption>
@@ -95,14 +95,14 @@ am getting good outcomes for my social campaigns"</p>
               <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
           </svg> 
           <blockquote>
-              <p class="text-md font-thin text-gray-900 dark:text-white">"We assigned them Rajasthan government project and their team work
+              <p class="text-md font-thin text-gray-200">"We assigned them Rajasthan government project and their team work
 hard 24X7 to deliver value for us and we are so delighted with their
 handwork, now we are getting desired outcomes"</p>
           </blockquote>
           <figcaption class="flex items-center justify-center mt-6 space-x-3">
               {/* <Image class="w-6 h-6 rounded-full" src={"https://d1efbx4910ct8i.cloudfront.net/Images2/abt1.webp"} width={50} height={50} alt="profile picture"></Image> */}
               <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                  <div class="pr-3 font-medium text-gray-900 dark:text-white">Himanshu Sharma</div>
+                  <div class="pr-3 font-medium text-gray-200 ">Himanshu Sharma</div>
                   <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Project Head</div>
               </div>
           </figcaption>
@@ -116,13 +116,13 @@ handwork, now we are getting desired outcomes"</p>
               <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
           </svg> 
           <blockquote>
-              <p class="text-md font-thin text-gray-900 dark:text-white">"They are handling my online brand image nicely and generating
+              <p class="text-md font-thin text-gray-200">"They are handling my online brand image nicely and generating
 business for us by creating awareness about yoga and its benefits."</p>
           </blockquote>
           <figcaption class="flex items-center justify-center mt-6 space-x-3">
               {/* <Image class="w-6 h-6 rounded-full" src={"https://d1efbx4910ct8i.cloudfront.net/Images2/abt1.webp"} width={50} height={50} alt="profile picture"></Image> */}
               <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                  <div class="pr-3 font-medium text-gray-900 dark:text-white">Dhakaram (Yogapeace)</div>
+                  <div class="pr-3 font-medium text-gray-200 ">Dhakaram (Yogapeace)</div>
                   <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Yogacharya</div>
               </div>
           </figcaption>
@@ -134,7 +134,7 @@ business for us by creating awareness about yoga and its benefits."</p>
                     
                 </div>       
 <div class="w-11/12 mx-auto sm:w-full bg-white border  border-gray-200 relative  shadow-xl dark:bg-gray-800 dark:border-gray-700 sm:col-start-1 sm:col-span-2 sm:row-span-1 sm:row-start-1 p-4 pt-8 sm:p-auto">
-                    <div className='bg-gray-400 px-2 py-1 absolute -left-3 -top-3 text-main'>By Numbers</div>
+                    <div className='bg-footerColor px-2 py-1 absolute -left-3 -top-3 text-main'>By Numbers</div>
   <div class="mx-auto flex flex-row items-center flex-wrap space-y-3 sm:space-y-0 [&>*]:py-1 text-center w-full h-full">
   
       <div class="sm:w-1/4 w-full border border-gray-200 rounded-lg sm:rounded-none sm:border-none p-2  ">
@@ -176,7 +176,7 @@ business for us by creating awareness about yoga and its benefits."</p>
 </div>
 
                 <div className='sm:col-start-1 w-11/12 sm:w-full mx-auto sm:row-start-2 sm:col-span-1 sm:row-span-1 row-start-4 relative'>
-                    <div className='bg-gray-400 px-2 py-1 absolute -left-3 -top-4 text-main'>Follow Us</div>
+                    <div className='bg-footerColor px-2 py-1 absolute -left-3 -top-4 text-main'>Follow Us</div>
                     <div className='w-full h-full grid grid-cols-2 grid-rows-2 gap-2'>
                         <Link href={'https://www.facebook.com/RamRaj-Associates/'} className='hover:!shadow-inner-lg group flex flex-col justify-center items-start row-span-1 cursor-pointer gap-5 col-span-1 col-start-1 row-start-2 border-l border-b p-5 bg-[#585caa]'>
                             <FiFacebook className='text-white text-start  text-4xl group-hover:text-white transition-all duration-300  ease-in-out'>
