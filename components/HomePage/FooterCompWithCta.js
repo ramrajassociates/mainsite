@@ -3,6 +3,7 @@ import CallToActionComp from '../CallToActionComp'
 import FooterComp from '../FooterComp'
 import NavbarCompHomePage from './NavBarCompHomePage'
 import { Slide } from "react-reveal";
+import ClientComponent from '../ClientComponent';
 function FooterCompWithCta({ FooterCompWithCtaRef, height }) {
   const [animate, setanimate] = useState(false)
   useEffect(() => {
@@ -16,9 +17,10 @@ function FooterCompWithCta({ FooterCompWithCtaRef, height }) {
     <div className='relative snap-start snap-always' ref={FooterCompWithCtaRef}>
       <div className='min-h-[110px] NavbarComp lg:block hidden absolute top-0 z-[30] w-full'>
             {animate && <Slide top spy={animate} appear duration={700}>
-              <NavbarCompHomePage theme='dark' textColor='main' />
+              <NavbarCompHomePage theme='light' textColor='gray-900' />
           </Slide>}
-               </div>
+      </div>
+      <ClientComponent/>
           <CallToActionComp />
           <FooterComp />
     </div>

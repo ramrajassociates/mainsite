@@ -7,9 +7,15 @@ import Link from 'next/link';
 import { BiSolidLeftArrow } from 'react-icons/bi';
 import SeoComp from '@/components/SeoComp';
 import FaqsSectionComp from '@/components/FAQS/FaqsSectionComp';
+import ContentComp1 from '@/components/ContentComp1';
 import axios from 'axios'
 function index({seoInformation,faqs}) {
   const [show, setShow] = useState(false);
+  const ContentComp = {
+    title: 'WHAT WE DO AS A MARKETING AGENCY',
+    Bigtitle: 'SOLUTIONS FOR INCREASED TRAFFIC AND HIGHER SALES',
+    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore accusamus suscipit ut reiciendis similique quod reprehenderit, hic numquam dignissimos nihil fugit voluptas, unde a!'
+  }
     return (
         <>
               <SeoComp seoInformation={seoInformation}>
@@ -17,7 +23,7 @@ function index({seoInformation,faqs}) {
 </SeoComp>
 <NavbarComp />
 <NavbarComp />
-        <div >
+        <div>
             <div className='object-contain  relative h-[100vh]  '>
         <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/web-design-and-development.webp'} width={1920} height={1080} className='w-full h-full object-cover sm:object-top object-center  '></Image>
                 <div className='bg-gray-600 backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10  bg-opacity-20 lg:left-24 w-10/12 m-3 top-1/3 lg:max-w-[30vw] '>
@@ -30,7 +36,9 @@ function index({seoInformation,faqs}) {
                     </Fade>
                     </div>
       </div>
-            </div>
+          </div>
+      <ContentComp1 title={ContentComp.title} BigTitle={ContentComp.Bigtitle} content={ContentComp.content}/>
+          
             <div className='sm:px-24 px-1 py-5'>
         <div className={`sm:grid sm:grid-cols-3 ${show?'sm:grid-rows-4':'sm:grid-rows-2'} gap-5 flex flex-row flex-wrap mt-10`}>
 

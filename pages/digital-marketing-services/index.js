@@ -8,9 +8,16 @@ import { BiSolidLeftArrow } from 'react-icons/bi';
 import SeoComp from '@/components/SeoComp';
 import FaqsSectionComp from '@/components/FAQS/FaqsSectionComp';
 import axios from 'axios'
+import ContentComp1 from '@/components/ContentComp1';
+import ClientComponent from '@/components/ClientComponent';
 
 function index({seoInformation,faqs}) {
   const [show, setShow] = useState(false);
+  const ContentComp = {
+    title: 'WHAT WE DO AS A MARKETING AGENCY',
+    Bigtitle: 'SOLUTIONS FOR INCREASED TRAFFIC AND HIGHER SALES',
+    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore accusamus suscipit ut reiciendis similique quod reprehenderit, hic numquam dignissimos nihil fugit voluptas, unde a!'
+  }
   return (<>
     <SeoComp seoInformation={seoInformation}>
       <meta property="og:title" content="Digital Marketing Services | Digital Marketing Agency in India" />
@@ -39,7 +46,7 @@ function index({seoInformation,faqs}) {
       <meta name="revisit-after" content="7 days" />
       <meta name="language" content="English" />
       </SeoComp>
-<NavbarComp />
+    <NavbarComp />
         <div>
             <div className='object-contain  relative h-[100vh]  '>
         <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp'} width={1920} height={1080} className='w-full h-full object-cover sm:object-top object-center  '></Image>
@@ -53,7 +60,8 @@ function index({seoInformation,faqs}) {
                     </Fade>
                     </div>
       </div>
-            </div>
+      </div>
+      <ContentComp1 title={ContentComp.title} BigTitle={ContentComp.Bigtitle} content={ContentComp.content}/>
             <div className='sm:px-24 px-1 py-5'>
         <div className={`sm:grid sm:grid-cols-3 ${show?'sm:grid-rows-4':'sm:grid-rows-2'} gap-5 flex flex-row flex-wrap mt-10`}>
 
@@ -118,16 +126,16 @@ function index({seoInformation,faqs}) {
         </section>
         <section className='shadow-xl ImageWithContent col-span-2 col-start-2 row-start-2 flex sm:flex-row flex-col sm:min-h-full h-full w-full'>
             <div className='Image object-cover sm:w-1/2 w-full !min-h-full '>
-              <Image className='w-full h-full object-cover'src={'https://d1efbx4910ct8i.cloudfront.net/Images2/w-d.webp'} alt="Search engine optimization" width={520} height={500} ></Image>
+              <Image className='w-full h-full object-cover'src={'https://d1efbx4910ct8i.cloudfront.net/Images2/ppc-marketing.webp'} alt="ppc marketing" width={520} height={500} ></Image>
             </div>
             <div className='content sm:w-1/2 w-full relative bg-main hover:bg-gray-200 transition-all duration-300 group sm:p-10 p-5 !min-h-full'>
               <BiSolidLeftArrow className='text-main group-hover:text-gray-200 absolute transition-all duration-300  sm:-left-8 sm:top-10 left-10 -top-8 rotate-90 sm:rotate-0 ' size={50}></BiSolidLeftArrow>
-              <h2 className='text-xl font-semibold'>Web Development</h2>
+              <h2 className='text-xl font-semibold'>PPC Marketing</h2>
               <div className='w-full py-3'>
               <div className="w-full h-fit relative overflow-hidden flex justify-center items-center ">
                                     
                                     <p className=" font-thin text-sm  pl-5 overflow-y-scroll scrollbar-hidden">
-                                    Transform your ideas into digital reality with our web development expertise. We design and develop responsive, user-friendly websites and web applications tailored to your needs. From e-commerce sites to interactive web platforms, we blend creativity and technology to deliver seamless online experiences that drive business growth. Your online presence, our passion.
+                                    PPC marketing is a highly effective online advertising strategy where advertisers pay a fee each time their ad is clicked. This model is commonly used on search engines and social media platforms. It offers businesses the opportunity to display their ads to a highly targeted audience, ensuring that they only pay when their ad is clicked, making it a cost-effective and measurable method of driving traffic to websites and achieving marketing goals.
                                   </p>
                                   <Fade bottom delay={1200} >
                         <span className=" border-l border-action-900 h-full  absolute left-2 top-0 "></span>
@@ -225,7 +233,8 @@ function index({seoInformation,faqs}) {
           </div>
          
             </div>
-            </div>
+    </div>
+    <ClientComponent />
 <FaqsSectionComp faqs={faqs?faqs:[]}/>
             </>
   )
@@ -247,7 +256,7 @@ export async function getStaticProps() {
       },
     };
   } catch (error) {
-    console.error("Error fetching data:", error);
+    // console.error("Error fetching data:", error);
     return {
       props: {
         seoInformation:null,

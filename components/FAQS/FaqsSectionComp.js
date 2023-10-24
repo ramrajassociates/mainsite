@@ -39,7 +39,7 @@ function FaqsSectionComp({ faqs,className ,FaqsSectionCompRef,SlideNavbarComp,he
   } else {
     
     return (
-        <div className={`flex lg:flex-row flex-col lg:min-h-[100vh] bg-gray-200 gap-5 items-start lg:pt-20 pt-5 overflow-y-scroll ${className}`}id='FaqsSection' ref={FaqsSectionCompRef}>
+        <div className={`lg:px-10 px-5 flex lg:flex-row flex-col lg:min-h-[100vh] bg-gray-200 gap-5 items-start lg:pt-20 pt-5 overflow-y-scroll ${className}`}id='FaqsSection' ref={FaqsSectionCompRef}>
         <div className="headingwithImage flex flex-col lg:w-1/2 justify-center items-start gap-5 p-4 ">
           <div className="heading ">
             <h2 className="text-4xl text-action-900 font-bold">(FAQs) Frequently Asked Questions ?</h2>
