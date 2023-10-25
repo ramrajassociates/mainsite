@@ -11,6 +11,7 @@ import axios from 'axios'
 import ContentComp1 from '@/components/ContentComp1';
 import ClientComponent from '@/components/ClientComponent';
 import ProgressSteps from '@/components/ProgreeSteps';
+import ContentComp4 from '@/components/ContentComp4';
 
 function index({seoInformation,faqs}) {
   const [show, setShow] = useState(false);
@@ -249,6 +250,10 @@ function index({seoInformation,faqs}) {
          
             </div>
     </div>
+    {/* Content Component */}
+    <ContentComp4 />
+    {/* Content Component */}
+    {/* Progress Steps */}
     <div className='lg:px-24 px-5 space-y-7 flex lg:flex-row bg-gray-900 flex-col items-center lg:min-h-screen  '>
       <div className='lg:w-1/3 w-full space-y-7 p-4 '>
         <h1 className='text-6xl font-extrabold text-gray-200'>Digital Marketing Process</h1>
@@ -263,6 +268,8 @@ function index({seoInformation,faqs}) {
         
     </div>
     </div>
+    {/* Progress Steps */}
+
   <ClientComponent />
 <FaqsSectionComp faqs={faqs?faqs:[]}/>
             </>
