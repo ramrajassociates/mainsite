@@ -8,8 +8,16 @@ import { BiSolidLeftArrow } from 'react-icons/bi';
 import SeoComp from '@/components/SeoComp';
 import FaqsSectionComp from '@/components/FAQS/FaqsSectionComp';
 import axios from 'axios'
+import ContentComp2 from '@/components/ContentComp2';
+import LetsConnectComp from '@/components/LetsConnectComp';
 function index({seoInformation,faqs}) {
   const [show, setShow] = useState(false);
+  const content = {
+    serviceName: 'Serach Engine Optimization',
+    explanation: 'SEO (Search Engine Optimization) is the practice of optimizing a website and its content to improve its visibility and ranking on search engines like Google, Bing, and Yahoo. The primary goal of SEO is to increase organic (non-paid) traffic to a website by achieving higher search engine rankings for relevant keywords and phrases.In the ever-evolving landscape of technology, success hinges on connecting with your audience where they are most active—online. Tech-savvy buyers embark on their journeys through digital pathways, often beginning with a simple Google search or engaging with brands through social media platforms. To effectively capture today\'s tech buyer, you must align with their digital voyage from start to finish.',
+    description: 'Digital marketing encompasses a myriad of essential disciplines, spanning the creation of your website to the intricacies of SEO and the power of paid search. It extends further into the realm of eMarketing, leveraging the potential of social media, and the impact of paid advertising. As an integrated B2B marketing agency, we\'ve honed our expertise in each of these facets, and, more importantly, we\'ve mastered the art of weaving them together into a comprehensive 360-degree marketing approach designed to deliver tangible results.',    
+    extras:' Digital marketing spans many disciplines from your website to SEO and paid search, from eMarketing through to social and paid media. As an Integrated B2B Agency, we have built expertise in each of these areas. And more importantly, we know how to blend all the aspects of digital marketing to take a 360-degree marketing approach that drives results.'
+  }
     return (
         <>
            <SeoComp seoInformation={seoInformation}>
@@ -33,6 +41,8 @@ function index({seoInformation,faqs}) {
             </div>
             
         </div>
+        <ContentComp2 content={content} />
+        <LetsConnectComp/>
         <FaqsSectionComp faqs={faqs?faqs:[]}/>
       </>
   )

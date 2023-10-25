@@ -21,7 +21,7 @@ function BlogAndTeamComponent({ BlogAndTeamComponentRef, height }) {
        </div>
         <div className="flex flex-col lg:flex-row lg:px-24  ">
           {/* Blog Section */}
-          <div className="w-full lg:w-1/2 ">
+          <div className="w-full lg:w-1/2 p-4 lg:p-0">
             <div className="bg-white bg-opacity-20 p-6 ">
               <Image
                               src={"https://d1efbx4910ct8i.cloudfront.net/Images2/c-w.webp"}
@@ -39,7 +39,7 @@ function BlogAndTeamComponent({ BlogAndTeamComponentRef, height }) {
           </div>
 
           {/* Team Section */}
-          <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
+          <div className="w-full lg:w-1/2 mt-8 lg:mt-0 p-4 lg:p-0">
             <div className="bg-white bg-opacity-20 p-6 ">
             <Image
                               src={"https://d1efbx4910ct8i.cloudfront.net/Images2/abt1.webp"}
