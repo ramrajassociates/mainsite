@@ -270,8 +270,8 @@ function index({seoInformation,faqs}) {
     </div>
     {/* Progress Steps */}
 
-  <ClientComponent />
 <FaqsSectionComp faqs={faqs?faqs:[]}/>
+  <ClientComponent />
             </>
   )
 }
