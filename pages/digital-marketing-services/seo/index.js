@@ -10,14 +10,31 @@ import FaqsSectionComp from '@/components/FAQS/FaqsSectionComp';
 import axios from 'axios'
 import ContentComp2 from '@/components/ContentComp2';
 import LetsConnectComp from '@/components/LetsConnectComp';
+import ContentComp3 from '@/components/ContentComp3';
 function index({seoInformation,faqs}) {
   const [show, setShow] = useState(false);
-  const content = {
+  const content2 = {
     serviceName: 'Serach Engine Optimization',
     explanation: 'SEO (Search Engine Optimization) is the practice of optimizing a website and its content to improve its visibility and ranking on search engines like Google, Bing, and Yahoo. The primary goal of SEO is to increase organic (non-paid) traffic to a website by achieving higher search engine rankings for relevant keywords and phrases.In the ever-evolving landscape of technology, success hinges on connecting with your audience where they are most active—online. Tech-savvy buyers embark on their journeys through digital pathways, often beginning with a simple Google search or engaging with brands through social media platforms. To effectively capture today\'s tech buyer, you must align with their digital voyage from start to finish.',
     description: 'Digital marketing encompasses a myriad of essential disciplines, spanning the creation of your website to the intricacies of SEO and the power of paid search. It extends further into the realm of eMarketing, leveraging the potential of social media, and the impact of paid advertising. As an integrated B2B marketing agency, we\'ve honed our expertise in each of these facets, and, more importantly, we\'ve mastered the art of weaving them together into a comprehensive 360-degree marketing approach designed to deliver tangible results.',    
     extras:' Digital marketing spans many disciplines from your website to SEO and paid search, from eMarketing through to social and paid media. As an Integrated B2B Agency, we have built expertise in each of these areas. And more importantly, we know how to blend all the aspects of digital marketing to take a 360-degree marketing approach that drives results.'
   }
+  const content3 = [
+    {
+      question: 'What is SEO?',
+      answer: 'SEO (Search Engine Optimization) is the practice of optimizing a website and its content to improve its visibility and ranking on search engines like Google, Bing, and Yahoo. The primary goal of SEO is to increase organic (non-paid) traffic to a website by achieving higher search engine rankings for relevant keywords and phrases.',
+    },
+    {
+      question: 'Why is SEO important?',
+      answer: 'SEO is important because it helps people find information and discover pages on the world wide web. SEO is especially important for businesses as it ensures they\'re answering their audience\'s biggest questions on search engines, while driving traffic to their products and services.',
+    }, {
+      question: 'What is the difference between SEO and SEM?',
+      answer: 'SEO is the practice of optimizing websites to make them reach a high position in Google\'s - or another search engine\'s - search results. SEM is an umbrella term that covers SEO and PPC (which is paid).',
+    }, {
+      question: 'What is the difference between SEO and PPC?',
+      answer: 'SEO is the practice of optimizing websites to make them reach a high position in Google\'s - or another search engine\'s - search results. SEM is an umbrella term that covers SEO and PPC (which is paid).',
+    }
+  ]
     return (
         <>
            <SeoComp seoInformation={seoInformation}>
@@ -41,7 +58,8 @@ function index({seoInformation,faqs}) {
             </div>
             
         </div>
-        <ContentComp2 content={content} />
+        <ContentComp2 content={content2} />
+        <ContentComp3 content={content3} />
         <LetsConnectComp/>
         <FaqsSectionComp faqs={faqs?faqs:[]}/>
       </>
