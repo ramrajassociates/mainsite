@@ -1,8 +1,14 @@
 import React from 'react'
 
-function ContentComp3() {
+function ContentComp3({content}) {
   return (
-    <div>ContentComp3</div>
+      <div className='flex flex-col space-y-3'>
+          {content.map((item, index) => {
+              return (<>
+              </>)
+          }
+          )}
+      </div>
   )
 }
 
