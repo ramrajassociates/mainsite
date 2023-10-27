@@ -7,9 +7,38 @@ import Link from 'next/link';
 import { BiSolidLeftArrow } from 'react-icons/bi';
 import SeoComp from '@/components/SeoComp';
 import FaqsSectionComp from '@/components/FAQS/FaqsSectionComp';
-import axios from 'axios'
+import axios from 'axios';
+import ContentComp2 from '@/components/ContentComp2';
+import LetsConnectComp from '@/components/LetsConnectComp';
+import ContentComp3 from '@/components/ContentComp3';
 function index({seoInformation,faqs}) {
   const [show, setShow] = useState(false);
+  const content2 = {
+    serviceName: 'Graphic Design',
+    explanation: 'Graphic design is the art of creating visual content to communicate messages effectively. It involves the use of various elements such as images, typography, and colors to create designs that can be used in various mediums, including print and digital. Graphic designers use their creative skills to convey ideas, information, and emotions through visually appealing designs.',
+    description: 'Graphic design is a crucial aspect of branding and marketing. It plays a significant role in creating a strong visual identity for businesses. Whether it\'s designing logos, marketing materials, or website graphics, graphic design helps companies establish a consistent and memorable image that resonates with their target audience.',
+    extras: 'Graphic designers are skilled in a wide range of tools and techniques, from Adobe Photoshop and Illustrator to layout design and color theory. They work closely with clients to understand their design needs and transform concepts into stunning visuals. Graphic design is not just about aesthetics; it\'s about conveying messages effectively through captivating and memorable designs.'
+  };
+  
+  const content3 = [
+    {
+      question: 'What is Graphic Design?',
+      answer: 'Graphic design is the art of creating visual content to communicate messages effectively. It involves the use of various elements such as images, typography, and colors to create designs that can be used in various mediums, including print and digital. Graphic designers use their creative skills to convey ideas, information, and emotions through visually appealing designs.',
+    },
+    {
+      question: 'Why is Graphic Design important?',
+      answer: 'Graphic design is important because it helps businesses and individuals create a visual identity that stands out and leaves a lasting impression. It\'s a powerful tool for conveying messages, building brand recognition, and connecting with an audience on an emotional level.',
+    },
+    {
+      question: 'What skills do Graphic Designers possess?',
+      answer: 'Graphic designers have a diverse skill set that includes proficiency in design software such as Adobe Creative Suite, an understanding of layout design, typography, color theory, and the ability to turn abstract ideas into compelling visual representations.',
+    },
+    {
+      question: 'How does Graphic Design contribute to branding?',
+      answer: 'Graphic design plays a crucial role in branding by creating logos, marketing materials, and visual elements that define a company\'s identity. A well-designed brand image helps establish trust, recognition, and differentiation in the market.',
+    }
+  ];
+  
     return (
         <>
              <SeoComp seoInformation={seoInformation}>
@@ -33,6 +62,9 @@ function index({seoInformation,faqs}) {
             </div>
             
         </div>
+        <ContentComp2 content={content2} />
+        <ContentComp3 content={content3} />
+        <LetsConnectComp/>
         <FaqsSectionComp faqs={faqs?faqs:[]}/>
       </>
   )
