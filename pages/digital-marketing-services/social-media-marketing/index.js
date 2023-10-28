@@ -8,8 +8,37 @@ import { BiSolidLeftArrow } from 'react-icons/bi';
 import SeoComp from '@/components/SeoComp';
 import FaqsSectionComp from '@/components/FAQS/FaqsSectionComp';
 import axios from 'axios'
+import ContentComp2 from '@/components/ContentComp2';
+import LetsConnectComp from '@/components/LetsConnectComp';
+import ContentComp3 from '@/components/ContentComp3';
 function index({seoInformation,faqs}) {
   const [show, setShow] = useState(false);
+  const content2 = {
+    serviceName: 'Social Media Marketing',
+    explanation: 'Social media marketing is a digital marketing strategy that leverages social media platforms to connect with the target audience and build a brand\'s online presence. It involves creating and sharing engaging content on social networks like Facebook, Instagram, Twitter, and LinkedIn to achieve marketing and branding goals. Social media marketing is essential in today\'s digital landscape, as it enables businesses to interact with customers and prospects directly, fostering relationships and driving engagement.',
+    description: 'Social media marketing encompasses various activities, including content creation, community management, advertising, and analytics. It\'s a versatile tool for businesses to increase brand awareness, drive website traffic, and generate leads. Successful social media marketing campaigns are built on a solid understanding of the target audience, strategic content planning, and regular monitoring and optimization.',
+    extras: 'The dynamic nature of social media requires businesses to adapt and stay current with the latest trends and algorithms on each platform. Social media marketing is not just about posting content but also about actively engaging with the community, responding to comments, and leveraging user-generated content to build trust and credibility.'
+  };
+  
+  const content3 = [
+    {
+      question: 'What is Social Media Marketing?',
+      answer: 'Social media marketing is a digital marketing strategy that leverages social media platforms to connect with the target audience and build a brand\'s online presence. It involves creating and sharing engaging content on social networks like Facebook, Instagram, Twitter, and LinkedIn to achieve marketing and branding goals.',
+    },
+    {
+      question: 'Why is Social Media Marketing important?',
+      answer: 'Social media marketing is important because it provides businesses with a direct channel to interact with their audience, build brand loyalty, and drive engagement. It\'s a cost-effective way to reach a wide range of potential customers and foster community around your brand.',
+    },
+    {
+      question: 'What are some key components of a successful social media strategy?',
+      answer: 'A successful social media strategy includes target audience research, content planning, posting schedules, engagement with the community, data analytics, and regular optimization. Businesses should also consider platform-specific strategies as different social networks have unique features and audience behaviors.',
+    },
+    {
+      question: 'Which social media platforms are commonly used for marketing?',
+      answer: 'Commonly used social media platforms for marketing include Facebook, Instagram, Twitter, LinkedIn, Pinterest, and TikTok. The choice of platform depends on the nature of the business, its target audience, and its marketing objectives.',
+    }
+  ];
+  
     return (
       <>
         <SeoComp seoInformation={seoInformation}>
@@ -33,6 +62,9 @@ function index({seoInformation,faqs}) {
             </div>
             
         </div>
+        <ContentComp2 content={content2} />
+        <ContentComp3 content={content3} />
+        <LetsConnectComp/>
         <FaqsSectionComp faqs={faqs?faqs:[]}/>
       </>
   )
