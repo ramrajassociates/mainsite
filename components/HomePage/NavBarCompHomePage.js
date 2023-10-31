@@ -38,7 +38,7 @@ function NavbarCompHomePage(props) {
               <li>
                 <Link href={'/digital-marketing-services'} className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900 ">Digital Marketing Services</Link>
-                <ul className="list-decimal pl-6">
+                <ul className="list-disc pl-6">
                   <li>  <Link href={'/digital-marketing-services/seo'} className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900">Search Engine Optimization</Link></li>
                   <li>  <Link href={'/digital-marketing-services/graphic-design'} className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
@@ -54,7 +54,7 @@ hover:decoration-action-900">Social media marketing</Link></li>
               <li>
                 <Link href={'/web-design-and-development'} className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900">Web design and development</Link>
-                <ul className="list-decimal pl-6">
+                <ul className="list-disc pl-6">
                   <li>  <Link href={'/web-design-and-development/custom-web-development'} className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900">Custom web development</Link></li>
                   <li>  <Link href={'/web-design-and-development/e-commerce-website-development'} className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
