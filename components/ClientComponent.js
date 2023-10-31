@@ -15,49 +15,90 @@ const ClientComponent = () => {
           Trusted by enterprise like -
         </h2>
       </div>
-      {/* End Title */}
-        {/* Grid */}
+  {/* lg screens */}
         <Carousel
-            slideInterval={7000}
-          className="w-[100vw] h-[30vh] [&>*]:rounded-none "
+            slideInterval={1500}
+          className="w-[100vw] h-[30vh] [&>*]:rounded-none hidden lg:block "
         >
      
-      {/* <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-3 lg:gap-6"> */}
-        <div className="p-4 md:p-7 flex justify-center">
+        <div className="p-4 md:p-7 flex justify-center gap-32 ">
        <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/1.webp'} width={100} height={100}></Image>
-        </div>
-        <div className="p-4 md:p-7 flex justify-center">
        <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/2.webp'} width={100} height={100}></Image>
-        </div>
-        <div className="p-4 md:p-7 flex justify-center">
        <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/3.webp'} width={100} height={100}></Image>
-        </div>
-        <div className="p-4 md:p-7 flex justify-center">
        <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/4.webp'} width={100} height={100}></Image>
-        </div>
-        <div className="p-4 md:p-7 flex justify-center">
        <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/5.webp'} width={100} height={100}></Image>
         </div>
-        <div className="p-4 md:p-7 flex justify-center">
+        
+        <div className="p-4 md:p-7 flex justify-center gap-32 ">
        <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/6.webp'} width={100} height={100}></Image>
-        </div>
-        <div className="p-4 md:p-7 flex justify-center">
-       <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/7.webp'} width={100} height={100}></Image>
-        </div>
-        <div className="p-4 md:p-7 flex justify-center">
+       <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/7.webp'} width={100} height={100} className="bg-white p-1 rounded-lg"></Image>
        <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/8.webp'} width={100} height={100}></Image>
-        </div>
-        <div className="p-4 md:p-7 flex justify-center">
        <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/9.webp'} width={100} height={100}></Image>
-        </div>
-        <div className="p-4 md:p-7 flex justify-center">
        <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/10.webp'} width={100} height={100}></Image>
         </div>
+     
       
-          {/* </div> */}
                
         </Carousel>
-      {/* End Grid */}
+   {/* lg screens */}
+  {/* sm screens */}
+        <Carousel
+            slideInterval={1500}
+          className="w-[100vw] h-[30vh] [&>*]:rounded-none hidden sm:block lg:hidden "
+        >
+     
+        <div className="p-4 md:p-7 flex justify-center gap-32 ">
+       <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/1.webp'} width={100} height={100}></Image>
+       <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/2.webp'} width={100} height={100}></Image>
+       <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/3.webp'} width={100} height={100}></Image>
+            <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/4.webp'} width={100} height={100}></Image>
+          </div>
+          <div className="p-4 md:p-7 flex justify-center gap-32 ">
+       <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/5.webp'} width={100} height={100}></Image>
+       <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/6.webp'} width={100} height={100}></Image>
+       <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/7.webp'} width={100} height={100} className="bg-white p-1 rounded-lg"></Image>
+            <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/8.webp'} width={100} height={100}></Image>
+          </div>
+          <div className="p-4 md:p-7 flex justify-center gap-32 ">
+       <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/9.webp'} width={100} height={100}></Image>
+       <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/10.webp'} width={100} height={100}></Image>
+        </div>
+     
+      
+               
+        </Carousel>
+   {/* sm screens */}
+  {/* sm screens */}
+        <Carousel
+            slideInterval={1500}
+          className="w-[100vw] h-[30vh] [&>*]:rounded-none block sm:hidden "
+        >
+     
+        <div className="p-4 md:p-7 flex justify-center gap-10 ">
+       <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/1.webp'} width={100} height={100}></Image>
+            <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/2.webp'} width={100} height={100}></Image>
+          </div>
+          <div className="p-4 md:p-7 flex justify-center gap-10 ">
+       <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/3.webp'} width={100} height={100}></Image>
+       <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/4.webp'} width={100} height={100}></Image>
+          </div>
+          <div className="p-4 md:p-7 flex justify-center gap-10 ">
+       <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/5.webp'} width={100} height={100}></Image>
+            <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/6.webp'} width={100} height={100}></Image>
+          </div>
+          <div className="p-4 md:p-7 flex justify-center gap-10 ">
+       <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/7.webp'} width={100} height={100} className="bg-white p-1 rounded-lg"></Image>
+            <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/8.webp'} width={100} height={100}></Image>
+          </div>
+          <div className="p-4 md:p-7 flex justify-center gap-10 ">
+       <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/9.webp'} width={100} height={100}></Image>
+       <Image src={'https://d1efbx4910ct8i.cloudfront.net/Customer/10.webp'} width={100} height={100}></Image>
+        </div>
+     
+      
+               
+        </Carousel>
+   {/* sm screens */}
     </div>
     {/* End Clients */}
   </div>
