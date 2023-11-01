@@ -16,8 +16,8 @@ function ContentComp2({content}) {
                   </p>
               </div>
               <div className='lg:w-2/3 w-full relative flex justify-center '>
-                  <div class="sm:w-96 sm:h-96 w-48 h-48 bg-transparent border border-white rounded-full z-10 absolute sm:top-10 sm:right-32 right-5"></div>
-                  <div class="sm:w-96 sm:h-96 w-48 h-48 bg-gray-700 rounded-full"></div>
+                  <div className="sm:w-96 sm:h-96 w-48 h-48 bg-transparent border border-white rounded-full z-10 absolute sm:top-10 sm:right-32 right-5"></div>
+                  <div className="sm:w-96 sm:h-96 w-48 h-48 bg-gray-700 rounded-full"></div>
                   <div className='sm:w-96 sm:h-96 w-48 h-48 z-[5] absolute top-10 left-20 rounded-full'>
                   <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/search-engine-optimization.webp'} width={500} height={500} className='w-full h-full object-cover sm:object-top object-center rounded-full  '></Image>
                     </div>

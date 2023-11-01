@@ -47,6 +47,8 @@ hover:decoration-action-900">Graphics Design</Link></li>
 hover:decoration-action-900">PPC marketing</Link></li>
                   <li>  <Link href={'/digital-marketing-services/social-media-marketing'} className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900">Social media marketing</Link></li>
+                  <li>  <Link href={'/digital-marketing-services/social-media-optimization'} className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900">Social media optimization</Link></li>
                 </ul>
               </li>
             </ul>

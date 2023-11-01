@@ -46,6 +46,8 @@ hover:decoration-action-900">Graphics Design</Link></li>
 hover:decoration-action-900">PPC marketing</Link></li>
                   <li>  <Link href={'/digital-marketing-services/social-media-marketing'} className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900">Social media marketing</Link></li>
+                  <li>  <Link href={'/digital-marketing-services/social-media-optimization'} className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900">Social media Optimization</Link></li>
                 </ul>
               </li>
             </ul>
@@ -108,10 +110,13 @@ hover:decoration-action-900">Graphics Design</Link></li>
 hover:decoration-action-900">PPC marketing</Link></li>
                   <li>  <Link href={'/digital-marketing-services/social-media-marketing'} className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900">Social media marketing</Link></li>
+                  <li>  <Link href={'/digital-marketing-services/social-media-optimization'} className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900">Social media optimization</Link></li>
+              
                 </ul>
             <Link href={'/web-design-and-development'} className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900">Web design and development</Link>
-            <ul className="list-disc pl-6 [&>*]:text-xs">
+            <ul className=" pl-6 [&>*]:text-xs">
                   <li>  <Link href={'/web-design-and-development/custom-web-development'} className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900">Custom web development</Link></li>
                   <li>  <Link href={'/web-design-and-development/e-commerce-website-development'} className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
