@@ -8,6 +8,7 @@ import SeoComp from '@/components/SeoComp';
 import FaqsSectionComp from '@/components/FAQS/FaqsSectionComp'
 import ClientComponent from '@/components/ClientComponent'
 import BlogAndTeamComponent from '@/components/HomePage/BlogAndTeamComponent'
+import TeamComp from '@/components/AboutusPage/TeamComp'
 function index({ data,seoInformation,faqs }) {
   if (data) {
     
@@ -48,7 +49,8 @@ function index({ data,seoInformation,faqs }) {
       <div className='overflow-x-hidden'>
       <AboutHeaderComp />
       <TimeLine />
-      <BlogAndTeamComponent/>
+      {/* <BlogAndTeamComponent/> */}
+      <TeamComp/>
       <FaqsSectionComp faqs={faqs?faqs:[]}/>
       <ClientComponent/>
     </div >
