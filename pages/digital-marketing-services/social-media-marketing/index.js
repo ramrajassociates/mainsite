@@ -45,7 +45,6 @@ function index({seoInformation,faqs}) {
 
 </SeoComp>
 <NavbarComp />
-<NavbarComp />
         <div >
             <div className='object-contain  relative h-[100vh]  '>
         <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/social-media-marketing.webp'} width={1920} height={1080} className='w-full h-full object-cover sm:object-top object-center  '></Image>
@@ -86,7 +85,7 @@ export async function getStaticProps() {
       },
     };
   } catch (error) {
-    console.error("Error fetching data:", error);
+    // console.error("Error fetching data:", error);
     return {
       props: {
         seoInformation:null,

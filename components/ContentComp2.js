@@ -12,7 +12,7 @@ function ContentComp2({content}) {
                   <h2 className='text-4xl font-semibold'>A <span className='text-action-900'>{content.serviceName}</span> that Delivers </h2>
                   <p>{content.description }</p>
                   <p className='font-light text-sm'>
-                  Digital marketing spans many disciplines from your website to SEO and paid search, from eMarketing through to social and paid media. As an Integrated B2B Agency, we have built expertise in each of these areas. And more importantly, we know how to blend all the aspects of digital marketing to take a 360-degree marketing approach that drives results.
+                 {content.extras}
                   </p>
               </div>
               <div className='lg:w-2/3 w-full relative flex justify-center '>
