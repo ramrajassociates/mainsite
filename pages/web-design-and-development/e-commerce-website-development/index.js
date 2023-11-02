@@ -7,9 +7,39 @@ import Link from 'next/link';
 import { BiSolidLeftArrow } from 'react-icons/bi';
 import SeoComp from '@/components/SeoComp';
 import FaqsSectionComp from '@/components/FAQS/FaqsSectionComp';
+import LetsConnectComp from '@/components/LetsConnectComp';
+import ContentComp2 from '@/components/ContentComp2';
+import ContentComp3 from '@/components/ContentComp3';
 import axios from 'axios'
 function index({seoInformation,faqs}) {
   const [show, setShow] = useState(false);
+  const content2 = {
+    serviceName: 'E-commerce Website Development',
+    explanation: 'E-commerce website development is the process of creating online stores and platforms to facilitate buying and selling products or services over the internet. It involves designing and building websites with features like product listings, shopping carts, secure payment gateways, and inventory management. E-commerce development ensures a seamless and secure shopping experience for both businesses and consumers.',
+    description: 'E-commerce websites are essential for businesses looking to expand their reach and increase sales in the digital age. They provide a platform to showcase products, manage orders, and offer a convenient shopping experience to customers. E-commerce development includes customization, integration of e-commerce tools, and optimization for search engines and user experience.',
+    extras: 'E-commerce website development empowers businesses to reach a global audience, improve customer engagement, and boost revenue. It offers features like easy product management, order tracking, secure transactions, and the ability to adapt to evolving e-commerce trends.'
+  };
+  
+  const content3 = [
+    {
+      question: 'What is E-commerce Website Development?',
+      answer: 'E-commerce website development is the process of creating online platforms that enable businesses to sell products or services over the internet. It involves building websites with features like product listings, shopping carts, secure payment processing, and inventory management.',
+    },
+    {
+      question: 'Why is E-commerce Website Development important?',
+      answer: 'E-commerce website development is crucial for businesses seeking to expand their online presence and increase sales. It provides a platform for showcasing products, managing orders, and offering a convenient shopping experience to customers.',
+    },
+    {
+      question: 'What are the key features of E-commerce Website Development?',
+      answer: 'Key features of e-commerce website development include product management, order tracking, secure transactions, easy checkout processes, and optimization for search engines and user experience. It empowers businesses to reach a broader customer base and drive revenue growth.',
+    },
+    {
+      question: 'How does E-commerce Development benefit businesses?',
+      answer: 'E-commerce development benefits businesses by improving customer engagement, reaching a global audience, and boosting revenue. It offers a convenient shopping experience for customers and adapts to changing e-commerce trends.',
+    }
+  ];
+  
+  
     return (
         <>
               <SeoComp seoInformation={seoInformation}>
@@ -33,6 +63,9 @@ function index({seoInformation,faqs}) {
             </div>
             
         </div>
+        <ContentComp2 content={content2} />
+        <ContentComp3 content={content3} />
+        <LetsConnectComp/>
       <FaqsSectionComp faqs={faqs?faqs:[]}/>
         
       </>
@@ -55,7 +88,7 @@ export async function getStaticProps() {
       },
     };
   } catch (error) {
-    console.error("Error fetching data:", error);
+    // console.error("Error fetching data:", error);
     return {
       props: {
         seoInformation:null,

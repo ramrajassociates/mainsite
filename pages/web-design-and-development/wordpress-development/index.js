@@ -7,9 +7,38 @@ import Link from 'next/link';
 import { BiSolidLeftArrow } from 'react-icons/bi';
 import SeoComp from '@/components/SeoComp';
 import FaqsSectionComp from '@/components/FAQS/FaqsSectionComp';
+import LetsConnectComp from '@/components/LetsConnectComp';
+import ContentComp2 from '@/components/ContentComp2';
+import ContentComp3 from '@/components/ContentComp3';
 import axios from 'axios'
 function index({seoInformation,faqs}) {
   const [show, setShow] = useState(false);
+  const content2 = {
+    serviceName: 'WordPress Development',
+    explanation: 'WordPress development involves creating websites and online platforms using the WordPress content management system (CMS). It is a versatile and user-friendly platform that allows for the efficient development of websites, blogs, and e-commerce stores. WordPress development includes themes, plugins, customization, and optimization to achieve the desired functionality and design.',
+    description: 'WordPress is a popular choice for businesses and individuals looking to establish an online presence quickly. It offers a wide range of themes and plugins, making it highly customizable to meet specific requirements. WordPress development encompasses design, content creation, and technical aspects to deliver websites that are easy to manage and update.',
+    extras: 'WordPress development provides the advantage of scalability, SEO optimization, and a user-friendly interface. It is suitable for various types of websites, from blogs and small business sites to large e-commerce platforms.'
+  };
+  
+  const content3 = [
+    {
+      question: 'What is WordPress Development?',
+      answer: 'WordPress development involves creating websites and online platforms using the WordPress content management system (CMS). It encompasses the customization of themes, integration of plugins, and optimization to achieve specific design and functionality goals.',
+    },
+    {
+      question: 'Why is WordPress Development important?',
+      answer: 'WordPress development is important because it offers a versatile and user-friendly platform for building websites, blogs, and e-commerce stores. It allows for customization, scalability, and easy management, making it a popular choice for online presence.',
+    },
+    {
+      question: 'What are the key features of WordPress Development?',
+      answer: 'Key features of WordPress development include a wide range of themes and plugins, scalability, SEO optimization, and a user-friendly interface. It is suitable for various types of websites and allows for easy content management.',
+    },
+    {
+      question: 'How can businesses benefit from WordPress Development?',
+      answer: 'Businesses can benefit from WordPress development by quickly establishing an online presence, customizing websites to their specific needs, and optimizing for search engines. It offers a user-friendly content management system and is suitable for various business types.',
+    }
+  ];
+  
     return (
         <>
      <SeoComp seoInformation={seoInformation}>
@@ -33,6 +62,9 @@ function index({seoInformation,faqs}) {
             </div>
             
         </div>
+        <ContentComp2 content={content2} />
+        <ContentComp3 content={content3} />
+        <LetsConnectComp/>
         <FaqsSectionComp faqs={faqs?faqs:[]}/>
       </>
   )
@@ -53,7 +85,7 @@ export async function getStaticProps() {
       },
     };
   } catch (error) {
-    console.error("Error fetching data:", error);
+    // console.error("Error fetching data:", error);
     return {
       props: {
         seoInformation:null,
