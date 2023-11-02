@@ -55,7 +55,7 @@ function index({seoInformation,faqs}) {
       <ContentComp1 title={ContentComp.title} BigTitle={ContentComp.Bigtitle} content={ContentComp.content}/>
           
             <div className='sm:px-24 px-1 py-5'>
-        <div className={`sm:grid sm:grid-cols-3 ${show?'sm:grid-rows-4':'sm:grid-rows-2'} gap-5 flex flex-row flex-wrap mt-10`}>
+        <div className={`sm:grid sm:grid-cols-3 ${show?'sm:grid-rows-2':'sm:grid-rows-1'} gap-5 flex flex-row flex-wrap mt-10`}>
 
         <section className='shadow-xl ImageWithContent col-span-2 col-start-1 row-start-1 flex sm:flex-row flex-col sm:min-h-full h-full w-full'>
             <div className='Image object-cover sm:w-1/2 w-full !min-h-full '>
@@ -98,7 +98,7 @@ function index({seoInformation,faqs}) {
             <Link href={'/web-design-and-development/e-commerce-website-development'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
             </div>
         </section>
-          <section className='shadow-xl Normal col-span-1 col-start-1 row-start-2   w-full sm:h-full h-64 object-cover relative bg-main'>
+          <section className={`shadow-xl Normal col-span-1 col-start-1 row-start-2   w-full sm:h-full h-64 object-cover relative bg-main ${show?'block':'hidden'}`}>
             <div className='sm:p-10 p-5 '>
 
         <h2 className='text-xl font-semibold text-gray-700'>Wordpress Development</h2>
@@ -139,9 +139,9 @@ function index({seoInformation,faqs}) {
         </section> */}
       
         </div>
-          {/* <div className="flex flex-row justify-center items-center py-4 w-full cursor-pointer ">
+          <div className="flex flex-row justify-center items-center py-4 w-full cursor-pointer ">
           <span className='bg-action-900 text-main px-2 py-1 font-thin text-sm' onClick={()=>setShow(e=>!e)}>{show ?'Load less':'Load more'}</span>
-          </div> */}
+          </div>
          
             </div>
         </div>
