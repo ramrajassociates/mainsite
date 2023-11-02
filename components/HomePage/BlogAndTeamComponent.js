@@ -50,7 +50,7 @@ function BlogAndTeamComponent({ BlogAndTeamComponentRef, height }) {
               />
               <h3 className="text-2xl font-bold mt-4">Our Team</h3>
               <p className="text-gray-200">Meet our amazing team members.</p>
-              <button className="mt-4 bg-gray-900 text-white py-2 px-4 hover:opacity-80 transition-all duration-300 " onClick={()=>{window.location='/aboutus#for'}}>
+              <button className="mt-4 bg-gray-900 text-white py-2 px-4 hover:opacity-80 transition-all duration-300 " onClick={()=>{window.location='/aboutus#teamSection'}}>
                 Team
               </button>
             </div>
