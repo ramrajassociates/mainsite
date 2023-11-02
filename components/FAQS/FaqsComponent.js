@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BsArrowDownCircle, BsArrowUpCircle } from 'react-icons/bs';
 import {IoIosArrowDown,IoIosArrowUp} from 'react-icons/io';
-function FaqsComp({ faqs,Activeindex}) {
+function FaqsComponent({ faqs,Activeindex}) {
     const [activeIndex, setActiveIndex] = useState(Activeindex);
 
     const onQuestionClick = (index) => {
@@ -15,7 +15,7 @@ function FaqsComp({ faqs,Activeindex}) {
             <li key={index} className={`cursor-pointer transition-all duration-300  ${active ?'bg-gray-800 rounded-lg p-4':''}`} >
                 <div className={`question py-4 transition-all duration-300 ${!active?'bg-action-900  rounded-lg my-1 px-4':'bg-transparent '} flex justify-between items-center` } onClick={() => onQuestionClick(index)}>
                     {faq.question}
-                    <span className='transition duration-300'>
+                    <span className='transition  duration-300'>
                     {active ? <IoIosArrowUp className="text-main ml-2"></IoIosArrowUp>: <IoIosArrowDown className="text-main ml-2"></IoIosArrowDown> }
 
                     </span>
@@ -34,4 +34,4 @@ function FaqsComp({ faqs,Activeindex}) {
     );
 }
 
-export default FaqsComp;
+export default FaqsComponent;

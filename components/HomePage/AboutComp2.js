@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from "react";
 import { Tabs, Carousel } from "flowbite-react";
-import FaqsComp from "../FAQS/FaqsComp";
+import FaqsComponent from "../FAQS/FaqsComponent";
 import NavbarCompHomePage from './NavBarCompHomePage';
 import { Slide } from "react-reveal";
 function AboutComp2({AboutComp2Ref,height}) {
@@ -67,10 +67,10 @@ function AboutComp2({AboutComp2Ref,height}) {
               
     
               <Tabs.Item title="WHO WE ARE" active={true} className="bg-white" >
-                           <FaqsComp faqs={who_we_are} Activeindex={0} />
+                           <FaqsComponent faqs={who_we_are} Activeindex={0} />
               </Tabs.Item>
               <Tabs.Item  title="WHY CHOOSE US" >
-             <FaqsComp faqs={why_choose_us} Activeindex={0} />
+             <FaqsComponent faqs={why_choose_us} Activeindex={0} />
               </Tabs.Item>
               
             </Tabs.Group>

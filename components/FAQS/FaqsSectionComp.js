@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import FaqsComp from './FaqsComp';
+import FaqsComponent from '@/components/FAQS/FaqsComponent';
 import Slide from 'react-reveal/Slide';
 import NavbarCompHomePage from '../HomePage/NavBarCompHomePage';
 function FaqsSectionComp({ faqs,className ,FaqsSectionCompRef,SlideNavbarComp,height}) {
@@ -30,7 +30,7 @@ function FaqsSectionComp({ faqs,className ,FaqsSectionCompRef,SlideNavbarComp,he
         </div>
       </div>
       <div className="lg:w-1/2 p-4 min-h-full w-full">
-        {faqs && <FaqsComp faqs={faqs} Activeindex={0} />}
+        {faqs && <FaqsComponent faqs={faqs} Activeindex={0} />}
          
       </div>
         </div>
@@ -49,7 +49,7 @@ function FaqsSectionComp({ faqs,className ,FaqsSectionCompRef,SlideNavbarComp,he
           </div>
         </div>
         <div className="lg:w-1/2 p-4 min-h-full w-full">
-          {faqs && <FaqsComp faqs={faqs} Activeindex={0} />}
+          {faqs && <FaqsComponent faqs={faqs} Activeindex={0} />}
            
         </div>
       </div>
