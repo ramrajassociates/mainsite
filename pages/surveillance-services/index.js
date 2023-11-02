@@ -7,9 +7,38 @@ import Link from 'next/link';
 import { BiSolidLeftArrow } from 'react-icons/bi';
 import SeoComp from '@/components/SeoComp';
 import FaqsSectionComp from '@/components/FAQS/FaqsSectionComp';
+import LetsConnectComp from '@/components/LetsConnectComp';
+import ContentComp2 from '@/components/ContentComp2';
+import ContentComp3 from '@/components/ContentComp3';
 import axios from 'axios'
 function index({seoInformation,faqs}) {
   const [show, setShow] = useState(false);
+  const content2 = {
+    serviceName: 'Surveillance Services',
+    explanation: 'Surveillance services encompass a range of solutions designed to monitor and secure various environments and assets. These services utilize advanced technology to capture, analyze, and manage data related to security and surveillance. The primary objective is to provide a secure environment and protect against unauthorized access, theft, and threats to people and property.',
+    description: 'Surveillance services may include CCTV (Closed-Circuit Television) systems, access control systems, alarm monitoring, and video analytics. These services are essential for various industries, from commercial and residential properties to government facilities and critical infrastructure. Surveillance technology continues to evolve, incorporating innovations like artificial intelligence and cloud-based solutions for more effective security management.',
+    extras: 'Effective surveillance services help organizations and individuals enhance security, deter criminal activities, and respond quickly to incidents. They provide peace of mind and safeguard assets, making them an essential component of comprehensive security solutions.'
+  };
+  
+  const content3 = [
+    {
+      question: 'What are Surveillance Services?',
+      answer: 'Surveillance services encompass a range of solutions designed to monitor and secure various environments and assets. They utilize advanced technology to capture, analyze, and manage data related to security and surveillance, with the primary objective of providing a secure environment and protecting against threats and unauthorized access.',
+    },
+    {
+      question: 'Why are Surveillance Services important?',
+      answer: 'Surveillance services are crucial for enhancing security in a wide range of settings, including commercial and residential properties, government facilities, and critical infrastructure. They provide essential tools for monitoring and responding to security threats and protecting assets and people.',
+    },
+    {
+      question: 'What are some common components of Surveillance Services?',
+      answer: 'Common components of surveillance services include CCTV (Closed-Circuit Television) systems, access control systems, alarm monitoring, and video analytics. These technologies work together to create comprehensive security solutions tailored to the needs of each environment.',
+    },
+    {
+      question: 'How has surveillance technology evolved over time?',
+      answer: 'Surveillance technology has evolved with advancements like artificial intelligence and cloud-based solutions. These innovations enable more efficient and effective security management, including real-time analysis and remote monitoring of surveillance data.',
+    }
+  ];
+  
     return (
         <>
             <SeoComp seoInformation={seoInformation}>
@@ -32,6 +61,9 @@ function index({seoInformation,faqs}) {
             </div>
             
         </div>
+        <ContentComp2 content={content2} />
+        <ContentComp3 content={content3} />
+        <LetsConnectComp/>
         <FaqsSectionComp faqs={faqs?faqs:[]}/>
       </>
   )
@@ -52,7 +84,7 @@ export async function getStaticProps() {
         },
       };
     } catch (error) {
-      console.error("Error fetching data:", error);
+      // console.error("Error fetching data:", error);
       return {
         props: {
           seoInformation:null,
