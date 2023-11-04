@@ -2,9 +2,9 @@
 
 export default function handler(req, res) {
   console.log('webhook received', req.body)
-  if (req.model.entry.URL) {
+  if (req.body.entry.URL) {
 
-      res.revalidate(`/${req.model.entry.URL }`);
+      res.revalidate(`${req.body.entry.URL }`);
   }
   res.json({message:"success"})
     
