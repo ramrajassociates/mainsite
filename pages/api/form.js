@@ -15,7 +15,7 @@ export default function handler(req, res) {
   }
   axios.post(`${process.env.NEXT_PUBLIC_ADMIN_URL}/api/contactforms`, body, config).then(
     (res) => {
-      console.log('Response from backend', res.data);
+      // console.log('Response from backend', res.data);
     }
   )
     res.status(200).json({ Message: 'Response Recorded' })
