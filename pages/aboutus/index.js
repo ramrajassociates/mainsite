@@ -10,12 +10,12 @@ import ClientComponent from '@/components/ClientComponent'
 import BlogAndTeamComponent from '@/components/HomePage/BlogAndTeamComponent'
 import TeamComp from '@/components/AboutusPage/TeamComp'
 function index({ data,seoInformation,faqs }) {
-  if (data) {
+  // if (data) {
     
-    console.log("Data from about us page", data)
-  } else {
-    console.log("Something went wrong");
-  }
+  //   console.log("Data from about us page", data)
+  // } else {
+  //   console.log("Something went wrong");
+  // }
   return (<>
     <SeoComp seoInformation={seoInformation}>
       <meta property="og:title" content="Digital Marketing Services | Digital Marketing Agency in India" />
