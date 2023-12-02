@@ -52,3 +52,17 @@
       display: none;
     }
   }
+
+  .TabsCustom button:focus{
+    @apply border-gray-800;
+    @apply ring-0;
+    @apply bg-gray-300;
+    @apply text-gray-800;
+  }
+
+  .TabsCustom button[aria-selected="true"]{
+    @apply bg-gray-300;
+    @apply text-gray-800;
+    @apply border-gray-800;
+
+  }
