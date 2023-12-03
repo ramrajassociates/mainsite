@@ -1,96 +1,139 @@
-import NavbarComp from '@/components/NavbarComp'
-import React,{useState} from 'react'
-import Image from 'next/image'
-import { Fade } from 'react-reveal'
-import Head from 'next/head';
-import Link from 'next/link';
-import { BiSolidLeftArrow } from 'react-icons/bi';
-import SeoComp from '@/components/SeoComp';
-import FaqsSectionComp from '@/components/FAQS/FaqsSectionComp';
-import axios from 'axios'
-import ContentComp2 from '@/components/ContentComp2';
-import LetsConnectComp from '@/components/LetsConnectComp';
-import ContentComp3 from '@/components/ContentComp3';
-function index({seoInformation,faqs}) {
+import NavbarComp from "@/components/NavbarComp";
+import React, { useState } from "react";
+import Image from "next/image";
+import { Fade } from "react-reveal";
+import Head from "next/head";
+import Link from "next/link";
+import { BiSolidLeftArrow } from "react-icons/bi";
+import SeoComp from "@/components/SeoComp";
+import FaqsSectionComp from "@/components/FAQS/FaqsSectionComp";
+import axios from "axios";
+import ContentComp2 from "@/components/ContentComp2";
+import LetsConnectComp from "@/components/LetsConnectComp";
+import ContentComp3 from "@/components/ContentComp3";
+function index({ seoInformation, faqs }) {
   const [show, setShow] = useState(false);
   const content2 = {
-    serviceName: 'Social Media Optimization (SMO)',
-    explanation: 'Social Media Optimization (SMO) is the practice of enhancing and optimizing a brand\'s presence on social media platforms to increase visibility, engagement, and brand awareness. SMO involves a set of strategies and techniques to make the most of social media channels for marketing and branding. It focuses on optimizing social media profiles, content, and interactions to connect with the target audience effectively.',
-    description: 'SMO plays a vital role in creating a strong online presence and fostering a positive brand image. It includes activities like profile optimization, content sharing, community building, and audience engagement. Successful SMO strategies lead to increased organic reach, better user engagement, and a more significant impact on social media platforms. It\'s a valuable tool for businesses looking to enhance their online visibility and reputation.',
-    extras: 'Effective SMO strategies encompass activities like creating shareable content, building relationships with followers, utilizing social media analytics, and adapting to platform-specific features. By optimizing social media presence, businesses can enhance their online reputation, attract a loyal following, and encourage brand advocacy among their audience.'
+    headingText:
+      "All You Need to Know About <strong>Social Media Optimization</strong>",
+    explanation:
+      "The process of optimizing social media platforms for promoting brands and services is known as social media optimization. To capture the digital market, social media channels are the best and easiest way. It gives brands amazing opportunities to target their audiences. This is why social media optimization is necessary to boost sales.",
+    subHeadingText:
+      "<span style='color: rgb(197 146 90 / var(--tw-text-opacity));'>Building Connections Between Brands and Audiences</span> With Our SMO Services",
+    description:
+      "Want to boost your brand reach with the help of our experts? Get our <strong>best social media optimization services</strong> in Jaipur. Ramraj helps you maximize your online impact and elevate your brand visibility with our strategic social media optimization. So, if you are looking for tailored solutions for your business, book a free consultation with our experts.",
+    extras:
+      "Ramraj Associates always uses the latest technology to give you 100 percent results. Apart from that, our hiring process is simple, and our team is 24x7 available to provide instant support. Thus, get our experts advice at an affordable price and propel your business forward.",
   };
-  
   const content3 = [
     {
-      question: 'What is Social Media Optimization (SMO)?',
-      answer: 'Social Media Optimization (SMO) is the practice of enhancing and optimizing a brand\'s presence on social media platforms to increase visibility, engagement, and brand awareness. It focuses on strategies to maximize the impact of social media channels for marketing and branding.',
+      question: "How Can SMO Help Boost the Website's Traffic?",
+      answer: `Today, half of the population is available on social media platforms. It is the most convenient way to advertise your website and create brand awareness among people. Also, you can boost traffic on your website, which helps you convert visitors into customers. Through social media optimization, this entire process becomes easy and simple for you.`,
     },
     {
-      question: 'Why is Social Media Optimization (SMO) important?',
-      answer: 'SMO is important because it helps businesses build a strong online presence and connect effectively with their target audience on social media platforms. It enhances organic reach, user engagement, and reputation, contributing to a positive brand image.',
-    },
-    {
-      question: 'What are some key SMO strategies?',
-      answer: 'Key SMO strategies include optimizing social media profiles, creating shareable content, fostering audience engagement, and utilizing analytics to measure performance. Businesses can tailor their strategies to each social media platform to maximize results.',
-    },
-    {
-      question: 'Which social media platforms are commonly optimized through SMO?',
-      answer: 'SMO can be applied to various social media platforms, including but not limited to Facebook, Instagram, Twitter, LinkedIn, Pinterest, and TikTok. The choice of platforms depends on the brand\'s target audience and marketing goals.',
-    }
-  ];
-  
-  
-    return (
-      <>
-        <SeoComp seoInformation={seoInformation}>
+      question: "Why Do SMO Services Need Of An Hour?",
+      answer: `Nowadays, social media optimization has become a necessity for small businesses. SMO impacts brand visibility, audience engagement, and the online presence of your brand. There are more reasons, which are as follows:
+      <ol class="list-decimal">
+      <li>SMO increases brand exposure and awareness.</li>
+      <li>For online promotion SMO service is a cost-effective marketing option.</li>
+      <li>It helps with brand credibility and trust.</li>
+      <li>It allows one-on-one interactions with the audience via comments, messages, and shares.</li>
+      <li>It gives you exposure to reach both local and global audiences.</li>
+      <li>It is also helpful for SEO as it increases brand visibility on search engine result pages.</li>
 
-</SeoComp>
-<NavbarComp />
-        <div >
-            <div className='object-contain  relative h-[100vh]  '>
-        <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/Social-media-optimization.webp'} width={1920} height={1080} className='w-full h-full object-cover sm:object-top object-center  '></Image>
-                <div className='bg-gray-600 backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10 p-4  bg-opacity-20 lg:left-24 w-10/12 m-3 top-1/3 lg:max-w-[35vw] '>
-              <p className='text-main bg-footerColor px-2 py-1 absolute -top-2 -left-2'>Services{' > '}Digital Marketing Services</p>
-                    <p className='text-main font-bold text-2xl pt-5'>Social Media Optimization</p>
-                    <div className='relative h-fit pl-5'>
-<p className='text-xs text-main'>Social Media Optimization is the process of optimizing your website and content to make it more shareable and visible on social media platforms. This can help you to reach a wider audience, increase brand awareness, and drive traffic to your website.</p>
-                    <Fade bottom delay={1200} >
-                    <span className="md:border-l-2 border-l border-action-900 h-full absolute left-2 top-0"></span>
-                    </Fade>
-                    </div>
-      </div>
+     
+      </ol>
+      There are many more impactful reasons why you should opt for a <strong>social media optimization service</strong>. If you want to give it a try, then you can contact us.`,
+    },
+    {
+      question: "How to Start Social Media Optimization?",
+      answer: `Our professionals know the right steps for starting social media optimization. Here are the steps that our social media professionals follow to give you the best results:
+      <ul class="list-disc list-inside flex flex-col ">
+      <li>First, define the goals as per your requirements.</li>
+      <li>Second, match the requirements as per the available resources.</li>
+      <li>Third, create engaging content as per the targeted audiences.</li>
+      <li>Prepare a social media calendar.</li>
+      <li>Run a trial campaign to see the response.</li>
+      <li>Make changes and again run the campaign for more results.</li>
+
+      </ul>
+      This is the process that our experts follow to give you drastic results. If you are also looking for a <strong>social media optimization service</strong>, you can hire Ramraj Associates experts.
+      `,
+    },
+  ];
+
+  return (
+    <>
+      <SeoComp seoInformation={seoInformation}></SeoComp>
+      <NavbarComp />
+      <div>
+        <div className="object-contain  relative h-[100vh]  ">
+          <Image
+            src={
+              "https://d1efbx4910ct8i.cloudfront.net/Images2/Social-media-optimization.webp"
+            }
+            width={1920}
+            height={1080}
+            className="w-full h-full object-cover sm:object-top object-center  "
+          ></Image>
+          <div className="bg-gray-600 backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10 p-4  bg-opacity-20 lg:left-24 w-10/12 m-3 top-1/3 lg:max-w-[35vw] ">
+            <p className="text-main bg-footerColor px-2 py-1 absolute -top-2 -left-2">
+              Services{" > "}Digital Marketing Services
+            </p>
+            <p className="text-main font-bold text-2xl pt-5">
+              Social Media Optimization(SMO) Service
+            </p>
+            <div className="relative h-fit pl-5">
+              <p className="text-xs text-main">
+                Elevate your business with our strategic{" "}
+                <strong>SMO service</strong>. Ramraj Associates experts have
+                knowledge of social media optimization. They know how to prepare
+                a unique marketing strategy according to your products, goals,
+                and targeted audiences. So, start creating your social media
+                presence on all the popular channels with us. We provide
+                affordable and the{" "}
+                <strong>best social media optimization services</strong> in
+                Jaipur. Thus, enhance your business visibility on the internet
+                with our team. We put all our efforts into promoting your brand
+                online.
+              </p>
+              <Fade bottom delay={1200}>
+                <span className="md:border-l-2 border-l border-action-900 h-full absolute left-2 top-0"></span>
+              </Fade>
             </div>
-            
+          </div>
         </div>
-        <ContentComp2 content={content2} />
-        <ContentComp3 content={content3} />
-        <LetsConnectComp/>
-        <FaqsSectionComp faqs={faqs?faqs:[]}/>
-      </>
-  )
+      </div>
+      <ContentComp2 content={content2} />
+      <ContentComp3 content={content3} />
+      <LetsConnectComp />
+      <FaqsSectionComp faqs={faqs ? faqs : []} />
+    </>
+  );
 }
 
-export default index
-
+export default index;
 
 export async function getStaticProps() {
   try {
-    const res = await axios.get(process.env.NEXT_PUBLIC_ADMIN_URL + "/api/social-media-optimization");
+    const res = await axios.get(
+      process.env.NEXT_PUBLIC_ADMIN_URL + "/api/social-media-optimization"
+    );
     const data = res.data;
     const seoInformation = data.data.attributes.seoInformation;
     const faqs = data.data.attributes.faqs.questionAnswer;
     return {
       props: {
         seoInformation,
-        faqs
+        faqs,
       },
     };
   } catch (error) {
     // console.error("Error fetching data:", error);
     return {
       props: {
-        seoInformation:null,
-        faqs:null
+        seoInformation: null,
+        faqs: null,
       },
     };
   }
