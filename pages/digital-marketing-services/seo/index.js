@@ -1,92 +1,130 @@
-import NavbarComp from '@/components/NavbarComp'
-import React,{useState} from 'react'
-import Image from 'next/image'
-import { Fade } from 'react-reveal'
-import Head from 'next/head';
-import Link from 'next/link';
-import { BiSolidLeftArrow } from 'react-icons/bi';
-import SeoComp from '@/components/SeoComp';
-import FaqsSectionComp from '@/components/FAQS/FaqsSectionComp';
-import axios from 'axios'
-import ContentComp2 from '@/components/ContentComp2';
-import LetsConnectComp from '@/components/LetsConnectComp';
-import ContentComp3 from '@/components/ContentComp3';
-function index({seoInformation,faqs}) {
+import NavbarComp from "@/components/NavbarComp";
+import React, { useState } from "react";
+import Image from "next/image";
+import { Fade } from "react-reveal";
+import Head from "next/head";
+import Link from "next/link";
+import { BiSolidLeftArrow } from "react-icons/bi";
+import SeoComp from "@/components/SeoComp";
+import FaqsSectionComp from "@/components/FAQS/FaqsSectionComp";
+import axios from "axios";
+import ContentComp2 from "@/components/ContentComp2";
+import LetsConnectComp from "@/components/LetsConnectComp";
+import ContentComp3 from "@/components/ContentComp3";
+function index({ seoInformation, faqs }) {
   const [show, setShow] = useState(false);
   const content2 = {
-    serviceName: 'Serach Engine Optimization',
-    explanation: 'SEO (Search Engine Optimization) is the practice of optimizing a website and its content to improve its visibility and ranking on search engines like Google, Bing, and Yahoo. The primary goal of SEO is to increase organic (non-paid) traffic to a website by achieving higher search engine rankings for relevant keywords and phrases.In the ever-evolving landscape of technology, success hinges on connecting with your audience where they are most active—online. Tech-savvy buyers embark on their journeys through digital pathways, often beginning with a simple Google search or engaging with brands through social media platforms. To effectively capture today\'s tech buyer, you must align with their digital voyage from start to finish.',
-    description: 'Digital marketing encompasses a myriad of essential disciplines, spanning the creation of your website to the intricacies of SEO and the power of paid search. It extends further into the realm of eMarketing, leveraging the potential of social media, and the impact of paid advertising. As an integrated B2B marketing agency, we\'ve honed our expertise in each of these facets, and, more importantly, we\'ve mastered the art of weaving them together into a comprehensive 360-degree marketing approach designed to deliver tangible results.',    
-    extras:' Digital marketing spans many disciplines from your website to SEO and paid search, from eMarketing through to social and paid media. As an Integrated B2B Agency, we have built expertise in each of these areas. And more importantly, we know how to blend all the aspects of digital marketing to take a 360-degree marketing approach that drives results.'
-  }
+    serviceName: "Serach Engine Optimization",
+    explanation:
+      "In this digital world, search engine optimization is a strong pillar for online success. The reason is that the SEO-oriented content available on websites improves their ranking on search engine result pages. This is why many organizations ask for <strong> SEO services </strong> to increase organic traffic on their websites.",
+    description:
+      "Undoubtedly, countless websites provide <strong> professional seo services </strong> in Jaipur. But if you hire Ramraj Associates experts, then this will be an amazing experience for you. The reason is that our team believes in delivering results in no time. Thus, without further delay, take one step ahead to make your website more visible on online platforms. Also, more visibility gives more traffic and immense opportunities to convert visitors into customers",
+    extras:
+      " Apart from that, there are certainly more questions that may arise in your mind. So, here on this page, you will get all the answers related to search engine optimization. This post delves into the intricacies of SEO, its fundamental workings, and why it is important for the growth and development of all businesses.",
+  };
   const content3 = [
     {
-      question: 'What is SEO?',
-      answer: 'SEO (Search Engine Optimization) is the practice of optimizing a website and its content to improve its visibility and ranking on search engines like Google, Bing, and Yahoo. The primary goal of SEO is to increase organic (non-paid) traffic to a website by achieving higher search engine rankings for relevant keywords and phrases.',
+      question: "How Does Search Engine Optimization Work?",
+      answer:
+        "Search engine optimization (SEO) is the process of making a website more visible on search engines such as Google. To index and rank websites based on a variety of characteristics, search engines use various algorithms. Here are certain other elements like mobile friendliness and site speed, user experience, relevancy, and authority. Moreover, a website can be made to more prominently appear in search results by strategically aligning it with these criteria using SEO.",
     },
     {
-      question: 'Why is SEO important?',
-      answer: 'SEO is important because it helps people find information and discover pages on the world wide web. SEO is especially important for businesses as it ensures they\'re answering their audience\'s biggest questions on search engines, while driving traffic to their products and services.',
-    }, {
-      question: 'What is the difference between SEO and SEM?',
-      answer: 'SEO is the practice of optimizing websites to make them reach a high position in Google\'s - or another search engine\'s - search results. SEM is an umbrella term that covers SEO and PPC (which is paid).',
-    }, {
-      question: 'What is the difference between SEO and PPC?',
-      answer: 'SEO is the practice of optimizing websites to make them reach a high position in Google\'s - or another search engine\'s - search results. SEM is an umbrella term that covers SEO and PPC (which is paid).',
-    }
-  ]
-    return (
-        <>
-           <SeoComp seoInformation={seoInformation}>
-
-</SeoComp>
-<NavbarComp />
-<NavbarComp />
-        <div >
-            <div className='object-contain  relative h-[100vh]  '>
-        <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/search-engine-optimization.webp'} width={1920} height={1080} className='w-full h-full object-cover sm:object-top object-center  '></Image>
-                <div className='bg-gray-600 backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10 p-4  bg-opacity-20 lg:left-24 w-10/12 m-3 top-1/3 lg:max-w-[35vw] '>
-              <p className='text-main bg-footerColor px-2 py-1 absolute -top-2 -left-2'>Services{' > '}Digital Marketing Services</p>
-                    <p className='text-main font-bold text-2xl pt-5'>Search Engine Optimization</p>
-                    <div className='relative h-fit pl-5'>
-<p className='text-xs text-main'>Boost your online presence with our SEO expertise. We optimize your website, improve search engine rankings, and drive organic traffic to enhance your digital visibility. Stay ahead in the digital landscape with our proven SEO strategies.</p>
-                    <Fade bottom delay={1200} >
-                    <span className="md:border-l-2 border-l border-action-900 h-full absolute left-2 top-0"></span>
-                    </Fade>
-                    </div>
-      </div>
+      question: "What Is the Importance of SEO for Businesses?",
+      answer:
+        "Today, there is no life without the Internet. When anything tickles your mind, you start searching for it on the search engines. So, when anyone searches online for your services, they will find your website in the top 5 search results. The majority of online experiences start with a search engine query. If your website doesn't appear in the search results, you're missing out on potential visitors, customers, and opportunities. SEO not only increases your website's visibility but also establishes credibility, trust, and a positive user experience.",
+    },
+    {
+      question: "Is SEO Necessary for Every Kind of Business?",
+      answer:
+        "Yes, but the marketing strategies may vary from business to business. If a business uses a strong and well-executed SEO strategy, then this can make a substantial difference. Moreover, when our experts work for local business owners, they focus on local SEO and location-specific keywords. Whereas for large businesses, our experts emphasize broader and industry-related keywords. Behind this approach, there is a strong strategy: to connect their business with their targeted audiences.",
+    },
+    {
+      question: "Can An Online Business Quit SEO After It Attains Success?",
+      answer:
+        "Search Engine Optimization is a long-term process, not a one-time task. To get success on online platforms is dynamic, and search engines continually update their algorithms. That's why stopping SEO may result in a gradual decline in rankings. Also, competitors have a higher chance of success on online platforms. Thus, we can say that “consistency is key.” So, if you maintain and adapt the SEO strategy for the long term, then you will achieve sustainable growth and success.",
+    },
+    {
+      question: "How Do You Find the Genuine SEO Services Company?",
+      answer:
+        "Finding a genuine <strong> SEO service </strong>provider is essential to your digital success. So, if you are seeking the right <strong> SEO services company </strong> in Jaipur, you must check their proven track record. Also, they follow transparent practices and a result-oriented approach to drive results. Apart from that, before hiring their specialized experts, view their client reports, testimonials, and pricing. Therefore, building effective communication with the <strong> best local seo company</strong> is necessary for a strong partnership.",
+    },
+    {
+      question:
+        "What Other Digital Marketing Services Are Required Apart from SEO to Get Success on Online Platforms?",
+      answer:
+        "Apart from <strong> seo services for small businesses </strong>, social media marketing services, PPC marketing services, and social media optimization services are also necessary. This helps all businesses attain a higher position in search engine result pages (SERP).",
+    },
+  ];
+  return (
+    <>
+      <SeoComp seoInformation={seoInformation}></SeoComp>
+      <NavbarComp />
+      <NavbarComp />
+      <div>
+        <div className="object-contain  relative h-[100vh]  ">
+          <Image
+            src={
+              "https://d1efbx4910ct8i.cloudfront.net/Images2/search-engine-optimization.webp"
+            }
+            width={1920}
+            height={1080}
+            className="w-full h-full object-cover sm:object-top object-center  "
+          ></Image>
+          <div className="bg-gray-600 backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10 p-4  bg-opacity-20 lg:left-24 w-10/12 m-3 top-1/3 lg:max-w-[35vw] ">
+            <p className="text-main bg-footerColor px-2 py-1 absolute -top-2 -left-2">
+              Services{" > "}Digital Marketing Services
+            </p>
+            <p className="text-main font-bold text-2xl pt-5">
+              Search Engine Optimization(SEO) Service
+            </p>
+            <div className="relative h-fit pl-5">
+              <p className="text-xs text-main">
+                Every second, n number of websites are indexed on Google, and if
+                your website is not available there, then you are missing out on
+                a large number of customers. So, don't lose your earning
+                potential and give us a chance to develop an SEO-optimized
+                website for you. We are industry leaders and provide the{" "}
+                <strong> best search engine optimization service</strong> in
+                Jaipur. Thus, for lead generation and to improve your website's
+                ranking, hire our professionals.
+              </p>
+              <Fade bottom delay={1200}>
+                <span className="md:border-l-2 border-l border-action-900 h-full absolute left-2 top-0"></span>
+              </Fade>
             </div>
-            
+          </div>
         </div>
-        <ContentComp2 content={content2} />
-        <ContentComp3 content={content3} />
-        <LetsConnectComp/>
-        <FaqsSectionComp faqs={faqs?faqs:[]}/>
-      </>
-  )
+      </div>
+      <ContentComp2 content={content2} />
+      <ContentComp3 content={content3} />
+      <LetsConnectComp />
+      <FaqsSectionComp faqs={faqs ? faqs : []} />
+    </>
+  );
 }
 
-export default index
-
+export default index;
 
 export async function getStaticProps() {
   try {
-    const res = await axios.get(process.env.NEXT_PUBLIC_ADMIN_URL + "/api/seo-service");
+    const res = await axios.get(
+      process.env.NEXT_PUBLIC_ADMIN_URL + "/api/seo-service"
+    );
     const data = res.data;
     const seoInformation = data.data.attributes.seoInformation;
     const faqs = data.data.attributes.faqs.questionAnswer;
     return {
       props: {
         seoInformation,
-        faqs
+        faqs,
       },
     };
   } catch (error) {
     // console.error("Error fetching data:", error);
     return {
       props: {
-        seoInformation:null,
-        faqs:null
+        seoInformation: null,
+        faqs: null,
       },
     };
   }
