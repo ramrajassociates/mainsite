@@ -17,6 +17,8 @@ function index({ seoInformation, faqs }) {
     headingText: "What Is <strong> Search Engine Optimization?</strong>",
     explanation:
       "In this digital world, search engine optimization is a strong pillar for online success. The reason is that the SEO-oriented content available on websites improves their ranking on search engine result pages. This is why many organizations ask for <strong> SEO services </strong> to increase organic traffic on their websites.",
+    subHeadingText:
+      "Ramraj is the <span style='color: rgb(197 146 90 / var(--tw-text-opacity));'>One-Stop Solution</span> for Search Engine Optimization",
     description:
       "Undoubtedly, countless websites provide <strong> professional seo services </strong> in Jaipur. But if you hire Ramraj Associates experts, then this will be an amazing experience for you. The reason is that our team believes in delivering results in no time. Thus, without further delay, take one step ahead to make your website more visible on online platforms. Also, more visibility gives more traffic and immense opportunities to convert visitors into customers",
     extras:

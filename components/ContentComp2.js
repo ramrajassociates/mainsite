@@ -15,12 +15,10 @@ function ContentComp2({ content }) {
       </div>
       <div className="flex lg:flex-row flex-col bg-gray-900 lg:space-x-5 space-y-5 relative py-14 p-10 items-center">
         <div className="lg:w-2/3 w-full [&>*]:text-main flex flex-col justify-start space-y-4">
-          <h2 className="text-4xl font-semibold">
-            <span className="text-action-900">
-              Ramraj Is the One-Stop Solution{" "}
-            </span>{" "}
-            for Search Engine Optimization
-          </h2>
+          <h2
+            className="text-4xl font-semibold"
+            dangerouslySetInnerHTML={{ __html: content.subHeadingText }}
+          ></h2>
           <p dangerouslySetInnerHTML={{ __html: content.description }}></p>
           <p
             className="font-light text-sm"
