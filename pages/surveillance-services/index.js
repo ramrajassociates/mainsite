@@ -55,7 +55,6 @@ function index({ seoInformation, faqs }) {
 
 
       </ul>
-      This is the process that our experts follow to give you drastic results. If you are also looking for a <strong>social media optimization service</strong>, you can hire Ramraj Associates experts.
       `,
     },
     {
