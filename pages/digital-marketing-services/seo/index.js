@@ -14,7 +14,7 @@ import ContentComp3 from "@/components/ContentComp3";
 function index({ seoInformation, faqs }) {
   const [show, setShow] = useState(false);
   const content2 = {
-    serviceName: "Serach Engine Optimization",
+    headingText: "What Is <strong> Search Engine Optimization?</strong>",
     explanation:
       "In this digital world, search engine optimization is a strong pillar for online success. The reason is that the SEO-oriented content available on websites improves their ranking on search engine result pages. This is why many organizations ask for <strong> SEO services </strong> to increase organic traffic on their websites.",
     description:

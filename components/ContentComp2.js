@@ -4,10 +4,10 @@ function ContentComp2({ content }) {
   return (
     <>
       <div className="bg-action-900 p-10 py-12 space-y-4">
-        <h1 className="text-3xl text-center text-main ">
-          What is{" "}
-          <span className=" font-semibold ">{content.serviceName}?</span>
-        </h1>
+        <h1
+          className="text-3xl text-center text-main "
+          dangerouslySetInnerHTML={{ __html: content.headingText }}
+        ></h1>
         <p
           className="text-main"
           dangerouslySetInnerHTML={{ __html: content.explanation }}
