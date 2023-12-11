@@ -24,6 +24,8 @@ function index({ seoInformation, faqs }) {
       "Pay Per Click is the most common and popular digital marketing service. If you know how to use it effectively, you can win the online market. But one mistake can also put your brand at stake. This is why it is very essential to make the correct move and hire a professional PPC management service provider. They will help you generate leads and increase your return on investment.",
     extras:
       "Ramraj Associates is one of the most trusted PPC marketing service providers in Jaipur. They never fail to deliver results, as their team knows the correct PPC strategies. Apart from that, the professionals first create the analysis report before starting any project by using tools such as Google Adwords, Facebook Business, and Yahoo Search Marketing.",
+    imageUrl:
+      "https://d1efbx4910ct8i.cloudfront.net/Images2/ppc-marketing.webp",
   };
 
   const content3 = [

@@ -25,6 +25,7 @@ function index({ seoInformation, faqs }) {
       "Seeking someone who can transform your ideas into WordPress wonders? We can do it for you. Our professionals can craft seamless designs with powerful functionality. From sleek designs to a magical user experience, we can turn everything into reality. We can give you assurance that your website stands out from the crowd. So, be ready to elevate your brand with our WordPress mastery and empower your brand to shine. Let's begin your journey with us.",
     extras:
       "Book your free consultation with our experts now and craft a digital masterpiece with WordPress magic.",
+    imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/wordpress.webp",
   };
 
   const content3 = [

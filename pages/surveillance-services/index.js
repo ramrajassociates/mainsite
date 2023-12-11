@@ -24,6 +24,7 @@ function index({ seoInformation, faqs }) {
       "We understand the importance of maintaining safety in your work and living spaces, and that’s why we are here to offer our top-notch Surveillance Service. Our goal is to ensure the safety and security of your premises while providing valuable insights and peace of mind. We provide total security and surveillance to secure your valuable facilities around the clock, using cutting-edge technology and high-quality video footage.",
     extras:
       "We understand the importance of maintaining a secure environment, and our dedicated approach is geared toward meeting and exceeding your expectations. With our Surveillance Service, you can trust that your valued premises are under constant watch, allowing you to focus on your activities with confidence and assurance.",
+    imageUrl:"https://d1efbx4910ct8i.cloudfront.net/Images2/surveillance-services.webp"
   };
   const content3 = [
     {

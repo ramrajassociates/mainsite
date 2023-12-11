@@ -25,6 +25,7 @@ function index({ seoInformation, faqs }) {
       "In today's scenario,<strong> social media advertising services</strong> have become so popular that it gives business owners a chance to make connections with their targeted audiences, which was quite impossible earlier. But are you doing it in the right way? No? Then, it is best to outsource your work to a trusted <strong>social media marketing agency</strong>. They will handle all your social media accounts and run different marketing campaigns to increase engagement on your accounts. So, if you also want to outsource your work to grow your business quickly on online platforms, then you can hire our professionals.",
     extras:
       "Ramraj Associates has a team of experienced <strong> social media marketing experts</strong>. They will not only increase the visibility of your channel but also increase the conversion ratio and ROI.",
+    imageUrl:"https://d1efbx4910ct8i.cloudfront.net/Images2/social-media-marketing.webp"
   };
   const content3 = [
     {

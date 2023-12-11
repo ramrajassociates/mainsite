@@ -24,6 +24,7 @@ function index({ seoInformation, faqs }) {
       "Want to create an appealing digital webstore? Also, want to strengthen your brand's online presence? Don't worry! It is easy for us, as for the last 10 years we have been catering to people and helping them build their brand online. With the skills and knowledge of our professionals, we are able to complete our projects on time without hampering their quality. So, if you are planning to launch your business online, come and join hands with us.",
     extras:
       " We plan and build an amazing webstore for you. Get a digitally strong e-commerce website by taking advantage of our best eCommerce web development service.",
+    imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/e-comm.webp",
   };
 
   const content3 = [

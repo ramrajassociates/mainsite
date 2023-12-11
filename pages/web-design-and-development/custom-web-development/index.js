@@ -33,6 +33,7 @@ function index({ seoInformation, faqs }) {
       <li>End-to-End Development</li>
       </ul>
       `,
+    imageUrl:"https://d1efbx4910ct8i.cloudfront.net/Images2/cs1.webp"
   };
   const content3 = [
     {

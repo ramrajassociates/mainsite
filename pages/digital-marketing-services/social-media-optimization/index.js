@@ -25,6 +25,8 @@ function index({ seoInformation, faqs }) {
       "Want to boost your brand reach with the help of our experts? Get our <strong>best social media optimization services</strong> in Jaipur. Ramraj helps you maximize your online impact and elevate your brand visibility with our strategic social media optimization. So, if you are looking for tailored solutions for your business, book a free consultation with our experts.",
     extras:
       "Ramraj Associates always uses the latest technology to give you 100 percent results. Apart from that, our hiring process is simple, and our team is 24x7 available to provide instant support. Thus, get our experts advice at an affordable price and propel your business forward.",
+    imageUrl:
+      "https://d1efbx4910ct8i.cloudfront.net/Images2/Social-media-optimization.webp",
   };
   const content3 = [
     {

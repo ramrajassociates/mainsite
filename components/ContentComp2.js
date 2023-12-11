@@ -3,13 +3,13 @@ import Image from "next/image";
 function ContentComp2({ content }) {
   return (
     <>
-      <div className="bg-action-900 p-10 py-12 space-y-4">
+      <div className="bg-main p-10 py-12 space-y-4">
         <h1
-          className="text-3xl text-center text-main "
+          className="text-3xl text-center  "
           dangerouslySetInnerHTML={{ __html: content.headingText }}
         ></h1>
         <p
-          className="text-main"
+          className=""
           dangerouslySetInnerHTML={{ __html: content.explanation }}
         ></p>
       </div>
@@ -28,14 +28,13 @@ function ContentComp2({ content }) {
         <div className="lg:w-2/3 w-full relative flex justify-center ">
           <div className="sm:w-96 sm:h-96 w-48 h-48 bg-transparent border border-white rounded-full z-10 absolute sm:top-10 sm:right-32 right-5"></div>
           <div className="sm:w-96 sm:h-96 w-48 h-48 bg-gray-700 rounded-full"></div>
-          <div className="sm:w-96 sm:h-96 w-48 h-48 z-[5] absolute top-10 left-20 rounded-full">
+          <div className="sm:w-96 sm:h-96 w-48 h-48 z-[10] absolute top-10 left-20 rounded-full">
             <Image
-              src={
-                "https://d1efbx4910ct8i.cloudfront.net/Images2/search-engine-optimization.webp"
-              }
+              src={content?.imageUrl}
+              alt="Image"
               width={500}
               height={500}
-              className="w-full h-full object-cover sm:object-top object-center rounded-full  "
+              className="w-full h-full object-cover sm:object-top object-center rounded-full "
             ></Image>
           </div>
         </div>

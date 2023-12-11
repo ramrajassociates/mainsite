@@ -24,6 +24,8 @@ function index({ seoInformation, faqs }) {
       "Undoubtedly, countless websites provide <strong> professional seo services </strong> in Jaipur. But if you hire Ramraj Associates experts, then this will be an amazing experience for you. The reason is that our team believes in delivering results in no time. Thus, without further delay, take one step ahead to make your website more visible on online platforms. Also, more visibility gives more traffic and immense opportunities to convert visitors into customers",
     extras:
       " Apart from that, there are certainly more questions that may arise in your mind. So, here on this page, you will get all the answers related to search engine optimization. This post delves into the intricacies of SEO, its fundamental workings, and why it is important for the growth and development of all businesses.",
+    imageUrl:
+      "https://d1efbx4910ct8i.cloudfront.net/Images2/search-engine-optimization.webp",
   };
   const content3 = [
     {
