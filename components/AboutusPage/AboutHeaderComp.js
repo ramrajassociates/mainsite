@@ -42,7 +42,7 @@ function AboutHeaderComp() {
             width={1920}
             height={1080}
             className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-96 md:rounded-none md:rounded-l-lg"
-            src="https://d1efbx4910ct8i.cloudfront.net/Images2/abt1.webp"
+            src="https://d1efbx4910ct8i.cloudfront.net/Images2/our-mission.webp"
             alt=""
           />
           <div className="flex flex-col justify-between p-4 leading-normal">

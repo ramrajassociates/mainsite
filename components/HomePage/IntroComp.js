@@ -76,7 +76,7 @@ function IntroComp({ IntroCompRef, height }) {
             <Image
               height={1080}
               width={1920}
-              src={"/Images2/abt1.webp"}
+              src={"https://d1efbx4910ct8i.cloudfront.net/Images2/team.webp"}
               className="object-cover  w-full h-full rounded-lg shadow-lg"
             ></Image>
           </div>
