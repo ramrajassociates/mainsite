@@ -10,9 +10,12 @@ import FaqsSectionComp from "@/components/FAQS/FaqsSectionComp";
 import LetsConnectComp from "@/components/LetsConnectComp";
 import ContentComp2 from "@/components/ContentComp2";
 import ContentComp3 from "@/components/ContentComp3";
+import { MdOutlineDashboardCustomize } from "react-icons/md";
 import axios from "axios";
 function index({ seoInformation, faqs }) {
-  const [show, setShow] = useState(false);
+  const logo = (
+    <MdOutlineDashboardCustomize className="text-4xl text-action-900" />
+  );
   const content2 = {
     headingText: "Understand <strong>  Web Design and Development </strong>",
     explanation:
@@ -92,7 +95,7 @@ function index({ seoInformation, faqs }) {
         </div>
       </div>
       <ContentComp2 content={content2} />
-      <ContentComp3 content={content3} />
+      <ContentComp3 content={content3} logo={logo} />
       <LetsConnectComp />
       <FaqsSectionComp faqs={faqs ? faqs : []} />
     </>

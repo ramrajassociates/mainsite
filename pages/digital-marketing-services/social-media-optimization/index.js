@@ -11,9 +11,9 @@ import axios from "axios";
 import ContentComp2 from "@/components/ContentComp2";
 import LetsConnectComp from "@/components/LetsConnectComp";
 import ContentComp3 from "@/components/ContentComp3";
-import { GrOptimize } from "react-icons/gr";
+import { SiGoogleoptimize } from "react-icons/si";
 function index({ seoInformation, faqs }) {
-  const logo = <GrOptimize className="text-5xl text-action-900" />;
+  const logo = <SiGoogleoptimize className="text-5xl text-action-900" />;
   const content2 = {
     headingText:
       "All You Need to Know About <strong>Social Media Optimization</strong>",
