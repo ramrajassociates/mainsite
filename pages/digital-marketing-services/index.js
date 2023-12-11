@@ -22,6 +22,31 @@ function index({ seoInformation, faqs }) {
     content:
       "Ramraj's main aim is to build scalable and result-driven campaigns. We also help small and medium-sized businesses grow their businesses on online platforms. But, how? So, here is the answer. We are industry leaders in creating effective campaigns that drive results. Our experts are best in strategy development, search engine optimization, lead generation, and e-commerce web development. Thus, unlock your potential and hire our multi-talented and smart professionals now. For the details, click on the below tab",
   };
+  const TabsContent = [
+    {
+      title: "Specialized Experts",
+      content:
+        "We have a team of professionals who have uncountable qualities and have the expertise to work as per client requirements. They know recent trends and all the digital marketing strategies that can grow your business. Moreover, by implementing our plans and innovative strategies, you can boost your online presence. Thus, hire our experts and avail world-class digital marketing services in Jaipur.",
+      imageUrl:
+        "https://d1efbx4910ct8i.cloudfront.net/Images2/search-engine-optimization.webp",
+    },
+    {
+      title: "Affordability",
+      content:
+        "This is the biggest thing that most small businesses demand. The reason is that they are mostly low on budget and can’t invest to promote their business online. So, for those small business owners, we are here for you. Ramraj is one of the most affordable digital marketing service providers in Jaipur. Thus, if you need budget-friendly services, then get in touch with us.",
+      imageUrl:
+        "https://d1efbx4910ct8i.cloudfront.net/Images2/search-engine-optimization.webp",
+    },
+    {
+      title: "Customized and Result-Driven Solutions",
+      content:
+        "Ramraj Associates always uses a result-driven approach so that we can give you a high ROI. Our experts use recent technology to bring your business online so that it reaches a large number of audiences. Therefore, come and be a part of our family to enter the digital world. We ensure you will get solutions as per your preference and that the project will be completed on time.",
+      imageUrl:
+        "https://d1efbx4910ct8i.cloudfront.net/Images2/search-engine-optimization.webp",
+    },
+  ];
+  const TabsTitle =
+    " Why Should Small Businesses Choose Our Digital Marketing Service?";
   const stepsContent = [
     {
       title: "Research",
@@ -237,26 +262,6 @@ function index({ seoInformation, faqs }) {
                 </Link>
               </div>
             </section>
-            {/* <section className='shadow-xl Normal col-span-1 col-start-3  row-start-1 w-full sm:h-full h-64 object-cover relative'>
-            <Image className="absolute w-full h-full object-cover object-center " src={'https://d1efbx4910ct8i.cloudfront.net/Images2/c-w.webp'} alt="content" width={520} height={500}></Image>
-            <div className='absolute w-full h-full z-0 bg-black bg-opacity-50'></div>
-            <div className='sm:p-10 p-5 absolute top-0 z-10'>
-
-        <h2 className='text-xl font-semibold text-main'>Content Writing</h2>
-              <div className='w-full py-3'>
-              <div className="w-full h-fit relative overflow-hidden flex justify-center items-center ">
-                                    
-                                    <p className=" font-thin text-sm  pl-5 overflow-y-scroll scrollbar-hidden text-main">
-                                    Boost your online presence with our SEO expertise. We optimize your website, improve search engine rankings, and drive organic traffic to enhance your digital visibility. Stay ahead in the digital landscape with our proven SEO strategies.
-                                  </p>
-                                  <Fade bottom delay={1200} >
-                        <span className=" border-l border-action-900 h-full  absolute left-2 top-0 "></span>
-                        </Fade>
-                                  </div>
-                                  </div>
-            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
-            </div>
-        </section> */}
 
             <section
               className={`shadow-xl Normal col-span-1 w-full sm:h-full h-64 object-cover relative `}
@@ -385,49 +390,6 @@ function index({ seoInformation, faqs }) {
                 </Link>
               </div>
             </section>
-            {/* <section className={`shadow-xl ImageWithContent col-span-2  flex sm:flex-row flex-col sm:min-h-full h-full w-full ${show?'block':'hidden'}`}>
-            <div className='Image object-cover sm:w-1/2 w-full !min-h-full '>
-              <Image className='w-full h-full object-cover'src={'https://d1efbx4910ct8i.cloudfront.net/Images2/p-a-v.webp'} alt="Search engine optimization" width={520} height={500} ></Image>
-            </div>
-            <div className='content sm:w-1/2 w-full relative bg-main hover:bg-gray-200 transition-all duration-300 group sm:p-10 p-5 !min-h-full'>
-              <BiSolidLeftArrow className='text-main group-hover:text-gray-200 absolute transition-all duration-300  sm:-left-8 sm:top-10 left-10 -top-8 rotate-90 sm:rotate-0 ' size={50}></BiSolidLeftArrow>
-              <h2 className='text-xl font-semibold'>Photo & Videography</h2>
-              <div className='w-full py-3'>
-              <div className="w-full h-fit relative overflow-hidden flex justify-center items-center ">
-                                    
-                                    <p className=" font-thin text-sm  pl-5 overflow-y-scroll scrollbar-hidden">
-                                    Bring your brand to life with captivating visuals. Our expert photographers and videographers capture the essence of your business, products, and services. From stunning images to compelling videos, we create content that resonates with your audience. Whether it's for marketing campaigns, events, or your website, let us tell your story through the lens.
-                                  </p>
-                                  <Fade bottom delay={1200} >
-                        <span className=" border-l border-action-900 h-full  absolute left-2 top-0 "></span>
-                        </Fade>
-                                  </div>
-                                  </div>
-            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
-            </div>
-        </section> */}
-
-            {/* <section className={`shadow-xl ImageWithContent col-span-2 flex sm:flex-row flex-col sm:min-h-full h-full w-full ${show?'block':'hidden'}`}>
-            <div className='Image object-cover sm:w-1/2 w-full !min-h-full '>
-              <Image className='w-full h-full object-cover'src={'https://d1efbx4910ct8i.cloudfront.net/Images2/s-e-m.webp'} alt="Search engine optimization" width={520} height={500} ></Image>
-            </div>
-            <div className='content sm:w-1/2 w-full relative bg-main hover:bg-gray-200 transition-all duration-300 group sm:p-10 p-5 !min-h-full'>
-              <BiSolidLeftArrow className='text-main group-hover:text-gray-200 absolute transition-all duration-300  sm:-left-8 sm:top-10 left-10 -top-8 rotate-90 sm:rotate-0 ' size={50}></BiSolidLeftArrow>
-              <h2 className='text-xl font-semibold'>Search Engine Marketing</h2>
-              <div className='w-full py-3'>
-              <div className="w-full h-fit relative overflow-hidden flex justify-center items-center ">
-                                    
-                                    <p className=" font-thin text-sm  pl-5 overflow-y-scroll scrollbar-hidden">
-                                    Elevate your online visibility and reach your target audience with our results-driven Search Engine Marketing strategies. We specialize in pay-per-click (PPC) advertising, optimizing your ad campaigns to deliver maximum ROI. Harness the power of search engines to drive qualified traffic and boost your business. Stay ahead of the competition and achieve measurable results with our SEM solutions.
-                                  </p>
-                                  <Fade bottom delay={1200} >
-                        <span className=" border-l border-action-900 h-full  absolute left-2 top-0 "></span>
-                        </Fade>
-                                  </div>
-                                  </div>
-            <Link href={'/contactus'} className='flex flex-row justify-end'> <Image src={'https://d1efbx4910ct8i.cloudfront.net/Images2/arrow_icon_yellow.svg'} width={20} height={20}></Image></Link>
-            </div>
-        </section> */}
           </div>
           <div className="flex flex-row justify-center items-center py-4 w-full cursor-pointer ">
             <span
@@ -440,7 +402,7 @@ function index({ seoInformation, faqs }) {
         </div>
       </div>
       {/* Content Component */}
-      <ContentComp4 />
+      <ContentComp4 TabsContent={TabsContent} TabsTitle={TabsTitle} />
       {/* Content Component */}
       {/* Progress Steps */}
       <div className="lg:px-24 px-5 py-5 space-y-7 flex lg:flex-row bg-gray-900 flex-col items-start lg:relative lg:min-h-screen  ">

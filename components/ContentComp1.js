@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-function ContentComp1({ title, BigTitle, content }) {
+function ContentComp1({ title, BigTitle, content, ctaTitle }) {
   return (
     <>
       <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:min-h-screen lg:py-1 py-10 lg:px-20 px-5 bg-gray-900 justify-center items-center">
@@ -14,7 +14,7 @@ function ContentComp1({ title, BigTitle, content }) {
             href={"/contactus"}
             className="px-3 py-2 bg-action-900 text-black text-lg"
           >
-            Talk With Our Experts
+            {ctaTitle ? ctaTitle : "Talk With Our Experts"}
           </Link>
         </div>
       </div>
