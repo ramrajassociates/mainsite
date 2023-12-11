@@ -27,7 +27,8 @@ function index({ seoInformation, faqs }) {
       title: "Quick and Reliable Plans",
       content:
         "We are one of the finest web design and development companies in India. Thus, we are offering quick and reliable website hosting plans to our clients at an affordable price. ",
-      imageUrl: "/Images/quick-and-reliable-plans.jpg",
+      imageUrl:
+        "https://d1efbx4910ct8i.cloudfront.net/Images2/quick-and-reliable-plans.webp",
     },
     {
       title: "SEO-Friendly Website",
@@ -40,7 +41,8 @@ function index({ seoInformation, faqs }) {
       title: "Responsive Web Designs",
       content:
         "We develop fully functional and responsive websites for our clients. The website is compatible with all devices, either desktop, laptop, or smartphone.",
-      imageUrl: "/Images/responsive-web-design.jpg",
+      imageUrl:
+        "https://d1efbx4910ct8i.cloudfront.net/Images2/responsive-web-design.webp",
     },
   ];
   const TabsTitle =
@@ -50,73 +52,80 @@ function index({ seoInformation, faqs }) {
       title: "Understanding Requirements",
       description:
         "We start web development after understanding our clients' requirements, like business goals, target audience, and other related functionalities.",
-      imageUrl: "/Images/requirements.jpg",
+      imageUrl:
+        "https://d1efbx4910ct8i.cloudfront.net/Images2/requirements.webp",
     },
     {
       title: "Planning ",
       description:
         "Our profound developers create a project plan as per your project.        ",
-      imageUrl: "/Images/planning.jpg",
+      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/planning.webp",
     },
     {
       title: "Design ",
       description:
         "With the help of our web designers, you will get a visually appealing layout.",
-      imageUrl: "/Images/design.jpg",
+      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/design.webp",
     },
     {
       title: "Front-End Development ",
       description:
         "Our team of front-end developers focuses on designs using HTML, CSS, and Javascript. Also, ensure the website is user-friendly and responsive across all platforms and devices. ",
-      imageUrl: "/Images/front-end-dev.jpg",
+      imageUrl:
+        "https://d1efbx4910ct8i.cloudfront.net/Images2/front-end-dev.webp",
     },
     {
       title: "Back-End Development      ",
       description:
         "The server side of the website is managed by our back-end developers. Also handles the data storage, server configuration, and business logic.",
-      imageUrl: "/Images/back-end-dev.jpg",
+      imageUrl:
+        "https://d1efbx4910ct8i.cloudfront.net/Images2/back-end-dev.webp",
     },
     {
       title: "Database Integration",
       description:
         "Integration of a database to store and manage dynamic content. To establish connections between the server and the database, our developers design and implement the database schema.",
-      imageUrl: "/Images/database.jpg",
+      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/database.webp",
     },
     {
       title: "Functionality Implementation",
       description:
         "Web developers create a fully functional website that includes user authentication, inquiry forms, e-commerce capabilities, and other essentials. This will bring more visitors to your website and increase the conversion ratio.",
-      imageUrl: "/Images/functionality.jpg",
+      imageUrl:
+        "https://d1efbx4910ct8i.cloudfront.net/Images2/functionality.webp",
     },
     {
       title: "Testing",
       description:
         "Next, our testers begin the testing process and fix bugs to make the website more compatible. During this process, both manual and automated testing tools are used.",
-      imageUrl: "/Images/testing.jpg",
+      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/testing.webp",
     },
     {
       title: "Deployment",
       description:
         "Once the website is completed and checked by the testers, it is deployed to a live server.",
-      imageUrl: "/Images/deployment.jpg",
+      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/deployment.webp",
     },
     {
       title: "Optimization",
       description:
         "Now, the developers are starting optimization to improve website performance and speed. Optimization is necessary before the website is live on the server.",
-      imageUrl: "/Images/optimization.jpg",
+      imageUrl:
+        "https://d1efbx4910ct8i.cloudfront.net/Images2/optimization.webp",
     },
     {
       title: "Maintenance and Updates",
       description:
         "Once the website is live, developers begin the ongoing maintenance and monitoring of the website. Also, check if the clients are getting inquiries through forms or not and receiving online payments. ",
-      imageUrl: "/Images/maintenance.jpg",
+      imageUrl:
+        "https://d1efbx4910ct8i.cloudfront.net/Images2/maintenance.webp",
     },
     {
       title: "Documentation",
       description:
         "During the entire process, our web developers create a document to note down the technical aspects of the project. This will later help them with updates and maintenance of the website.",
-      imageUrl: "/Images/documentation.jpg",
+      imageUrl:
+        "https://d1efbx4910ct8i.cloudfront.net/Images2/documentation.webp",
     },
   ];
   return (

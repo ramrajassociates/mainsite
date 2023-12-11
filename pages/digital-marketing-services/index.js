@@ -27,19 +27,21 @@ function index({ seoInformation, faqs }) {
       title: "Specialized Experts",
       content:
         "We have a team of professionals who have uncountable qualities and have the expertise to work as per client requirements. They know recent trends and all the digital marketing strategies that can grow your business. Moreover, by implementing our plans and innovative strategies, you can boost your online presence. Thus, hire our experts and avail world-class digital marketing services in Jaipur.",
-      imageUrl: "/Images/specialized-experts.jpg",
+      imageUrl:
+        "https://d1efbx4910ct8i.cloudfront.net/Images2/specialized-experts.webp",
     },
     {
       title: "Affordability",
       content:
         "This is the biggest thing that most small businesses demand. The reason is that they are mostly low on budget and can’t invest to promote their business online. So, for those small business owners, we are here for you. Ramraj is one of the most affordable digital marketing service providers in Jaipur. Thus, if you need budget-friendly services, then get in touch with us.",
-      imageUrl: "/Images/affordable.jpg",
+      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/affordable.webp",
     },
     {
       title: "Customized and Result-Driven Solutions",
       content:
         "Ramraj Associates always uses a result-driven approach so that we can give you a high ROI. Our experts use recent technology to bring your business online so that it reaches a large number of audiences. Therefore, come and be a part of our family to enter the digital world. We ensure you will get solutions as per your preference and that the project will be completed on time.",
-      imageUrl: "/Images/result-driven.jpg",
+      imageUrl:
+        "https://d1efbx4910ct8i.cloudfront.net/Images2/result-driven.webp",
     },
   ];
   const TabsTitle =
@@ -49,43 +51,45 @@ function index({ seoInformation, faqs }) {
       title: "Research",
       description:
         "<strong>Research</strong> your requirements, targeted audiences, goals, and objectives",
-      imageUrl: "/Images/research.jpg",
+      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/research.webp",
     },
     {
       title: "Analyze ",
       description:
         "<strong>Analyze</strong> your online presence if you have any existing accounts",
-      imageUrl: "/Images/analyze.jpg",
+      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/analyze.webp",
     },
     {
       title: "Recommend ",
       description:
         "<strong>Recommend</strong> you solutions and some actionable plans",
-      imageUrl: "/Images/recommend.jpg",
+      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/recommend.webp",
     },
     {
       title: "Implement  ",
       description:
         "<strong>Implement </strong> our strategies to see the responses of audiences",
-      imageUrl: "/Images/implement.jpg",
+      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/implement.webp",
     },
     {
       title: "Review ",
       description:
         "<strong>Review  </strong> the live post on a daily, weekly, and monthly basis",
-      imageUrl: "/Images/review.jpg",
+      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/review.webp",
     },
     {
       title: "Modifications",
       description:
         "Do the <strong>  modifications</strong> if required for lead generation",
-      imageUrl: "/Images/modification.jpg",
+      imageUrl:
+        "https://d1efbx4910ct8i.cloudfront.net/Images2/modification.webp",
     },
     {
       title: "Optimization",
       description:
         "<strong>Optimization</strong> of all your accounts by making changes as per market preferences",
-      imageUrl: "/Images/optimization.jpg",
+      imageUrl:
+        "https://d1efbx4910ct8i.cloudfront.net/Images2/optimization.webp",
     },
   ];
   return (
