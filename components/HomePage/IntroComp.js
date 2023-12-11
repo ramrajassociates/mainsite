@@ -45,9 +45,9 @@ function IntroComp({ IntroCompRef, height }) {
           </Slide>
         )}
       </div>
-      <div className="Content mx-auto overflow-x-hidden lg:px-36 px-10 py-24 lg:py-0">
+      <div className="Content mx-auto overflow-x-hidden lg:px-36 px-5 py-24 lg:py-0">
         <div className="flex flex-col-reverse lg:flex-row justify-between pt-10">
-          <div className="w-full lg:w-1/2 p-10 flex flex-col space-y-3">
+          <div className="w-full lg:w-1/2 lg:p-10 flex flex-col space-y-3">
             <h2 className="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white ">
               About <span className="text-action-900"> Ramraj Associates </span>
               - No. 1 Digital Marketing Agency in India
