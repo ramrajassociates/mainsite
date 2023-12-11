@@ -20,10 +20,7 @@ function ContentComp2({ content }) {
             dangerouslySetInnerHTML={{ __html: content.subHeadingText }}
           ></h2>
           <p dangerouslySetInnerHTML={{ __html: content.description }}></p>
-          <p
-            className="font-light text-sm"
-            dangerouslySetInnerHTML={{ __html: content.extras }}
-          ></p>
+          <p dangerouslySetInnerHTML={{ __html: content.extras }}></p>
         </div>
         <div className="lg:w-2/3 w-full relative flex justify-center ">
           <div className="sm:w-96 sm:h-96 w-48 h-48 bg-transparent border border-white rounded-full z-10 absolute sm:top-10 sm:right-32 right-5"></div>
