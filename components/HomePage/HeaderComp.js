@@ -48,7 +48,9 @@ function HeaderComp({ HeaderCompRef, height }) {
           <div className="w-[100vw] h-[100vh] ">
             <Image
               alt="Image..."
-              src={"https://d1efbx4910ct8i.cloudfront.net/Images2/bg1.webp"}
+              src={
+                "https://d1efbx4910ct8i.cloudfront.net/Images2/bg1-updated.webp"
+              }
               layout="fill"
               objectFit="cover"
               objectPosition="center"
