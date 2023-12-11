@@ -11,8 +11,10 @@ import axios from "axios";
 import ContentComp2 from "@/components/ContentComp2";
 import LetsConnectComp from "@/components/LetsConnectComp";
 import ContentComp3 from "@/components/ContentComp3";
+import { MdOutlineDesignServices } from "react-icons/md";
 function index({ seoInformation, faqs }) {
-  const [show, setShow] = useState(false);
+  const logo = <MdOutlineDesignServices className="text-5xl text-action-900" />;
+
   let classname = "text-action-900";
   const content2 = {
     headingText: "What is the need for <strong>Graphic Design</strong>?",
@@ -69,13 +71,12 @@ There are a lot more in the row. You can contact Ramraj Associates to get more i
       <li>Banners Making</li>
       <li>Posters Making</li>
       <li>Infographics Creation</li>
-
+      
       </ul>
-
+      
       There are many more types of graphics that we can create for you. Contact us now and enjoy our graphic design services.`,
     },
   ];
-
   return (
     <>
       <SeoComp seoInformation={seoInformation}></SeoComp>
@@ -117,7 +118,7 @@ There are a lot more in the row. You can contact Ramraj Associates to get more i
         </div>
       </div>
       <ContentComp2 content={content2} />
-      <ContentComp3 content={content3} />
+      <ContentComp3 content={content3} logo={logo} />
       <LetsConnectComp />
       <FaqsSectionComp faqs={faqs ? faqs : []} />
     </>

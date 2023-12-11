@@ -27,8 +27,7 @@ function index({ seoInformation, faqs }) {
       title: "Quick and Reliable Plans",
       content:
         "We are one of the finest web design and development companies in India. Thus, we are offering quick and reliable website hosting plans to our clients at an affordable price. ",
-      imageUrl:
-        "https://d1efbx4910ct8i.cloudfront.net/Images2/search-engine-optimization.webp",
+      imageUrl: "/Images/quick-and-reliable-plans.jpg",
     },
     {
       title: "SEO-Friendly Website",
@@ -41,8 +40,7 @@ function index({ seoInformation, faqs }) {
       title: "Responsive Web Designs",
       content:
         "We develop fully functional and responsive websites for our clients. The website is compatible with all devices, either desktop, laptop, or smartphone.",
-      imageUrl:
-        "https://d1efbx4910ct8i.cloudfront.net/Images2/search-engine-optimization.webp",
+      imageUrl: "/Images/responsive-web-design.jpg",
     },
   ];
   const TabsTitle =

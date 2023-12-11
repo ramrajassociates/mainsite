@@ -11,8 +11,9 @@ import axios from "axios";
 import ContentComp2 from "@/components/ContentComp2";
 import LetsConnectComp from "@/components/LetsConnectComp";
 import ContentComp3 from "@/components/ContentComp3";
+import { FaSearchengin } from "react-icons/fa6";
 function index({ seoInformation, faqs }) {
-  const [show, setShow] = useState(false);
+  const logo = <FaSearchengin className="text-4xl text-action-900" />;
   const content2 = {
     headingText: "What Is <strong> Search Engine Optimization?</strong>",
     explanation:
@@ -98,7 +99,7 @@ function index({ seoInformation, faqs }) {
         </div>
       </div>
       <ContentComp2 content={content2} />
-      <ContentComp3 content={content3} />
+      <ContentComp3 content={content3} logo={logo} />
       <LetsConnectComp />
       <FaqsSectionComp faqs={faqs ? faqs : []} />
     </>
