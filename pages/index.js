@@ -13,6 +13,7 @@ import BlogAndTeamComponent from "@components/HomePage/BlogAndTeamComponent";
 import FaqsSectionComp from "@components/FAQS/FaqsSectionComp";
 import FooterCompWithCta from "@/components/HomePage/FooterCompWithCta";
 import { Main } from "next/document";
+import IntroComp from "@/components/HomePage/IntroComp";
 export default function Home({ seoInformation, faqs }) {
   const serviceFaqs = [
     {
@@ -45,14 +46,16 @@ export default function Home({ seoInformation, faqs }) {
   const MainDivRef = useRef(null);
   const [isSticky, setIsSticky] = useState(false);
   const [HeaderCompHeight, setHeaderCompHeight] = useState(0);
+  const [IntroCompHeight, setIntroCompHeight] = useState(0);
   const [ServiceCompHeight, setServiceCompHeight] = useState(0);
   const [AboutCompHeight, setAboutCompHeight] = useState(0);
   const [AboutComp2Height, setAboutComp2Height] = useState(0);
   const [ServiceCarouselHeight, setServiceCarouselHeight] = useState(0);
-  const [BlogAndTeamComponentHeight, setBlogAndTeamComponentHeight] = useState(0);
+  const [BlogAndTeamComponentHeight, setBlogAndTeamComponentHeight] =useState(0);
   const [FaqsSectionCompHeight, setFaqsSectionCompHeight] = useState(0);
   const [FooterCompWithCtaHeight, setFooterCompWithCtaHeight] = useState(0);
   const HeaderCompRef = useRef();
+  const IntroCompRef = useRef();
   const ServiceCompRef = useRef();
   const AboutCompRef = useRef();
   const AboutComp2Ref = useRef();
@@ -68,11 +71,12 @@ export default function Home({ seoInformation, faqs }) {
     // console.log("service Component height",top); // logs the distance from the top of the page to the ServiceCompParent component
     // ================== Example ====================
     setHeaderCompHeight(HeaderCompRef.current.getBoundingClientRect().top);
+    setIntroCompHeight(IntroCompRef.current.getBoundingClientRect().top);
     setServiceCompHeight(ServiceCompRef.current.getBoundingClientRect().top);
     setAboutCompHeight(AboutCompRef.current.getBoundingClientRect().top);
     setAboutComp2Height(AboutComp2Ref.current.getBoundingClientRect().top);
-    setServiceCarouselHeight(ServiceCarouselRef.current.getBoundingClientRect().top);
-    setBlogAndTeamComponentHeight(BlogAndTeamComponentRef.current.getBoundingClientRect().top);
+    setServiceCarouselHeight(ServiceCarouselRef.current.getBoundingClientRect().top );
+    setBlogAndTeamComponentHeight(BlogAndTeamComponentRef.current.getBoundingClientRect().top );
     setFaqsSectionCompHeight(FaqsSectionCompRef.current.getBoundingClientRect().top);
     setFooterCompWithCtaHeight(FooterCompWithCtaRef.current.getBoundingClientRect().top);
     console.log("Service comp height", ServiceCompHeight);
@@ -110,15 +114,30 @@ export default function Home({ seoInformation, faqs }) {
         ref={MainDivRef}
         onScroll={handleScroll}
       >
-        <NavbarComp position={isSticky} className="lg:hidden sm:grid lg:grid-cols-12 sm:grid-cols-7 hidden" />
-        <HeaderComp HeaderCompRef={HeaderCompRef} height={ HeaderCompHeight} />
-        <ServiceCompParent ServiceCompRef={ServiceCompRef} height={ ServiceCompHeight}/>
-        <AboutComp className=" " AboutCompRef={AboutCompRef} height={ AboutCompHeight}/>
-        <AboutComp2 AboutComp2Ref={AboutComp2Ref} height={ AboutComp2Height}/>
-        <ServiceCarousel className="" ServiceCarouselRef={ServiceCarouselRef} height={ ServiceCarouselHeight}  />
+        <NavbarComp
+          position={isSticky}
+          className="lg:hidden sm:grid lg:grid-cols-12 sm:grid-cols-7 hidden"
+        />
+        <HeaderComp HeaderCompRef={HeaderCompRef} height={HeaderCompHeight} />
+        <IntroComp IntroCompRef={IntroCompRef} height={IntroCompHeight} />
+        <ServiceCompParent
+          ServiceCompRef={ServiceCompRef}
+          height={ServiceCompHeight}
+        />
+        <AboutComp
+          className=" "
+          AboutCompRef={AboutCompRef}
+          height={AboutCompHeight}
+        />
+        <AboutComp2 AboutComp2Ref={AboutComp2Ref} height={AboutComp2Height} />
+        <ServiceCarousel
+          className=""
+          ServiceCarouselRef={ServiceCarouselRef}
+          height={ServiceCarouselHeight}
+        />
         <BlogAndTeamComponent
           BlogAndTeamComponentRef={BlogAndTeamComponentRef}
-          height={ BlogAndTeamComponentHeight}
+          height={BlogAndTeamComponentHeight}
         />
         <FaqsSectionComp
           faqs={faqs}
@@ -127,8 +146,10 @@ export default function Home({ seoInformation, faqs }) {
           height={FaqsSectionCompHeight}
           SlideNavbarComp={true}
         />
-        <FooterCompWithCta   FooterCompWithCtaRef={FooterCompWithCtaRef}
-          height={FooterCompWithCtaHeight} />
+        <FooterCompWithCta
+          FooterCompWithCtaRef={FooterCompWithCtaRef}
+          height={FooterCompWithCtaHeight}
+        />
       </main>
     </div>
   );
