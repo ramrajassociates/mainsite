@@ -50,73 +50,73 @@ function index({ seoInformation, faqs }) {
       title: "Understanding Requirements",
       description:
         "We start web development after understanding our clients' requirements, like business goals, target audience, and other related functionalities.",
-      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp",
+      imageUrl: "/Images/requirements.jpg",
     },
     {
       title: "Planning ",
       description:
         "Our profound developers create a project plan as per your project.        ",
-      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp",
+      imageUrl: "/Images/planning.jpg",
     },
     {
       title: "Design ",
       description:
         "With the help of our web designers, you will get a visually appealing layout.",
-      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp",
+      imageUrl: "/Images/design.jpg",
     },
     {
       title: "Front-End Development ",
       description:
         "Our team of front-end developers focuses on designs using HTML, CSS, and Javascript. Also, ensure the website is user-friendly and responsive across all platforms and devices. ",
-      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp",
+      imageUrl: "/Images/front-end-dev.jpg",
     },
     {
       title: "Back-End Development      ",
       description:
         "The server side of the website is managed by our back-end developers. Also handles the data storage, server configuration, and business logic.",
-      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp",
+      imageUrl: "/Images/back-end-dev.jpg",
     },
     {
       title: "Database Integration",
       description:
         "Integration of a database to store and manage dynamic content. To establish connections between the server and the database, our developers design and implement the database schema.",
-      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp",
+      imageUrl: "/Images/database.jpg",
     },
     {
       title: "Functionality Implementation",
       description:
         "Web developers create a fully functional website that includes user authentication, inquiry forms, e-commerce capabilities, and other essentials. This will bring more visitors to your website and increase the conversion ratio.",
-      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp",
+      imageUrl: "/Images/functionality.jpg",
     },
     {
       title: "Testing",
       description:
         "Next, our testers begin the testing process and fix bugs to make the website more compatible. During this process, both manual and automated testing tools are used.",
-      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp",
+      imageUrl: "/Images/testing.jpg",
     },
     {
       title: "Deployment",
       description:
         "Once the website is completed and checked by the testers, it is deployed to a live server.",
-      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp",
+      imageUrl: "/Images/deployment.jpg",
     },
     {
       title: "Optimization",
       description:
         "Now, the developers are starting optimization to improve website performance and speed. Optimization is necessary before the website is live on the server.",
-      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp",
+      imageUrl: "/Images/optimization.jpg",
     },
     {
       title: "Maintenance and Updates",
       description:
         "Once the website is live, developers begin the ongoing maintenance and monitoring of the website. Also, check if the clients are getting inquiries through forms or not and receiving online payments. ",
-      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp",
+      imageUrl: "/Images/maintenance.jpg",
     },
     {
       title: "Documentation",
       description:
         "During the entire process, our web developers create a document to note down the technical aspects of the project. This will later help them with updates and maintenance of the website.",
-      imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp",
+      imageUrl: "/Images/documentation.jpg",
     },
   ];
   return (

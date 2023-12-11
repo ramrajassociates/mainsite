@@ -23,7 +23,7 @@ function ContentComp4({ TabsContent, TabsTitle }) {
                 key={item.title}
               >
                 <div className="flex flex-col spacey-5 md:flex-row md:space-x-5">
-                  <div className="Image md:w-1/3 w-full object-cover ">
+                  <div className="Image md:w-1/3 h-[14rem] w-full object-contain ">
                     <Image
                       src={item.imageUrl}
                       width={1920}
