@@ -1,29 +1,25 @@
 import React from "react";
 
 const CallToActionComp = () => {
+  function handleSmoothScroll(e) {
+    if (window.location.pathname == "/") {
+      e.preventDefault(); // Prevent the default behavior of jumping to the anchor.
 
-    function handleSmoothScroll(e) {
-        if (window.location.pathname == '/') {
-            
-            e.preventDefault(); // Prevent the default behavior of jumping to the anchor.
-          
-            const targetId = e.currentTarget.getAttribute("href").split('#')[1]; // Get the target id without the '#'.
-          
-            const targetElement = document.getElementById(targetId);
-          
-            if (targetElement) {
-              targetElement.scrollIntoView({
-                behavior: "smooth", // This triggers smooth scrolling.
-                block: "start", // This aligns the top of the target element with the top of the viewport.
-              });
-            }
-        }
-        else {
-            return;
-        }
+      const targetId = e.currentTarget.getAttribute("href").split("#")[1]; // Get the target id without the '#'.
+
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: "smooth", // This triggers smooth scrolling.
+          block: "start", // This aligns the top of the target element with the top of the viewport.
+        });
       }
-      
-      
+    } else {
+      return;
+    }
+  }
+
   return (
     <>
       <section className="py-20 lg:py-[120px] bg-gray-900">
@@ -34,26 +30,27 @@ const CallToActionComp = () => {
             <div className="flex flex-wrap items-center -mx-4">
               <div className="w-full px-4 lg:w-1/2">
                 <span className="mb-2 text-base font-semibold text-white">
-                  Find Your Next Dream Project with us
+                  Start Your Next Project with Us
                 </span>
                 <h2 className="mb-6 text-3xl w-2/3 font-bold leading-tight text-white sm:mb-8 sm:text-[38px] lg:mb-0">
-                  Get started with our free wide Range of Services
+                  Let's Take the Biggest Step Towards Your Business
+                  Digitalization
                 </h2>
               </div>
               <div className="w-full px-4 lg:w-1/2">
                 <div className="flex flex-wrap space-x-4 lg:justify-end">
                   <a
-                    href="/contactus"
-                    className={`my-1 cursor-pointer inline-block rounded bg-info py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9 border border-action-900`}
+                    href="/#Services"
+                    onClick={handleSmoothScroll}
+                    className={`my-1 cursor-pointer inline-block rounded bg-white py-4 px-6 text-base font-medium text-black transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9 `}
                   >
-                    Contanct Us
+                    Book Slot Now!
                   </a>
                   <a
-                  href="/#Services"
-                    onClick={handleSmoothScroll}
-                    className={`my-1 cursor-pointer inline-block rounded bg-white py-4 px-6 text-base font-medium text-black transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9`}
+                    href="/contactus"
+                    className={`my-1 cursor-pointer inline-block rounded bg-info py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9 border border-action-900 hover:bg-action-900 `}
                   >
-                    Learn More
+                    Contanct Us
                   </a>
                 </div>
               </div>
