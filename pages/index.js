@@ -51,7 +51,8 @@ export default function Home({ seoInformation, faqs }) {
   const [AboutCompHeight, setAboutCompHeight] = useState(0);
   const [AboutComp2Height, setAboutComp2Height] = useState(0);
   const [ServiceCarouselHeight, setServiceCarouselHeight] = useState(0);
-  const [BlogAndTeamComponentHeight, setBlogAndTeamComponentHeight] =useState(0);
+  const [BlogAndTeamComponentHeight, setBlogAndTeamComponentHeight] =
+    useState(0);
   const [FaqsSectionCompHeight, setFaqsSectionCompHeight] = useState(0);
   const [FooterCompWithCtaHeight, setFooterCompWithCtaHeight] = useState(0);
   const HeaderCompRef = useRef();
@@ -75,10 +76,18 @@ export default function Home({ seoInformation, faqs }) {
     setServiceCompHeight(ServiceCompRef.current.getBoundingClientRect().top);
     setAboutCompHeight(AboutCompRef.current.getBoundingClientRect().top);
     setAboutComp2Height(AboutComp2Ref.current.getBoundingClientRect().top);
-    setServiceCarouselHeight(ServiceCarouselRef.current.getBoundingClientRect().top );
-    setBlogAndTeamComponentHeight(BlogAndTeamComponentRef.current.getBoundingClientRect().top );
-    setFaqsSectionCompHeight(FaqsSectionCompRef.current.getBoundingClientRect().top);
-    setFooterCompWithCtaHeight(FooterCompWithCtaRef.current.getBoundingClientRect().top);
+    setServiceCarouselHeight(
+      ServiceCarouselRef.current.getBoundingClientRect().top
+    );
+    setBlogAndTeamComponentHeight(
+      BlogAndTeamComponentRef.current.getBoundingClientRect().top
+    );
+    setFaqsSectionCompHeight(
+      FaqsSectionCompRef.current.getBoundingClientRect().top
+    );
+    setFooterCompWithCtaHeight(
+      FooterCompWithCtaRef.current.getBoundingClientRect().top
+    );
     console.log("Service comp height", ServiceCompHeight);
     if (MainDivRef.current.scrollTop > 50) {
       setIsSticky(true);

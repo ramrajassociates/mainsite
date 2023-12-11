@@ -15,8 +15,8 @@ export default function ProgressSteps({ content }) {
               {/* <Timeline.Title className='text-gray-200'>
                         {contentItem.title}
                       </Timeline.Title> */}
-              <Timeline.Body className="flex flex-col sm:flex-row space-x-2 items-center mt-9">
-                <div className="rounded-full object-cover w-72 h-72">
+              <Timeline.Body className="flex flex-col sm:flex-row md:space-x-2 space-y-4 items-center mt-9">
+                <div className="rounded-full object-cover w-48 h-48">
                   {" "}
                   <Image
                     src={contentItem.imageUrl}
@@ -25,7 +25,7 @@ export default function ProgressSteps({ content }) {
                     className="w-full h-full object-cover rounded-full"
                   ></Image>
                 </div>
-                <div className="w-1/2 flex flex-col space-y-3">
+                <div className="sm:w-1/2 flex flex-col space-y-3 text-main">
                   <p className="text-4xl font-bold">{contentItem.title}</p>
                   <p
                     dangerouslySetInnerHTML={{
