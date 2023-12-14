@@ -32,13 +32,13 @@ const CallToActionComp = () => {
                 <span className="mb-2 text-base font-semibold text-white">
                   Start Your Next Project with Us
                 </span>
-                <h2 className="mb-6 text-3xl w-2/3 font-bold leading-tight text-white sm:mb-8 sm:text-[38px] lg:mb-0">
+                <h2 className="mb-6 text-3xl lg:w-2/3 font-bold leading-tight text-white sm:mb-8 sm:text-[38px] lg:mb-0">
                   Let's Take the Biggest Step Towards Your Business
                   Digitalization
                 </h2>
               </div>
               <div className="w-full px-4 lg:w-1/2">
-                <div className="flex flex-wrap space-x-4 lg:justify-end">
+                <div className="flex flex-wrap lg:space-x-4 lg:justify-end gap-2 ">
                   <a
                     href="/#Services"
                     onClick={handleSmoothScroll}
