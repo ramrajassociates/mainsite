@@ -77,7 +77,7 @@ function HeaderComp({ HeaderCompRef, height }) {
                     Grow Your Brand with Ramraj
                   </p>
                   <Link
-                    href={"/contactus"}
+                    href={"https://calendly.com/ramrajassociates/book-your-appointment"}
                     className=" text-main ml-10 w-fit flex flex-row justify-center items-center bg-action-900 mt-4 text-s md:font-thin font-semibold py-1 px-3 "
                   >
                     Book Your Appointment!{" "}
@@ -121,7 +121,9 @@ function HeaderComp({ HeaderCompRef, height }) {
                     Grow Your Brand with Ramraj
                   </p>
                   <Link
-                    href={"/contactus"}
+                    href={
+                      "https://calendly.com/ramrajassociates/book-your-appointment"
+                    }
                     className=" text-main ml-10 w-fit flex flex-row justify-center items-center bg-action-900 mt-4 text-s md:font-thin font-semibold py-1 px-3 "
                   >
                     Book Your Appointment!{" "}

@@ -40,14 +40,14 @@ const CallToActionComp = () => {
               <div className="w-full px-4 lg:w-1/2">
                 <div className="flex flex-wrap lg:space-x-4 lg:justify-end gap-2 ">
                   <a
-                    href="/#Services"
-                    onClick={handleSmoothScroll}
+                    href="/contactus"
+                    // onClick={handleSmoothScroll}
                     className={`my-1 cursor-pointer inline-block rounded bg-white py-4 px-6 text-base font-medium text-black transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9 `}
                   >
-                    Learn More
+                    Contact Us
                   </a>
                   <a
-                    href="/contactus"
+                    href="https://calendly.com/ramrajassociates/book-your-appointment"
                     className={`my-1 cursor-pointer inline-block rounded bg-info py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9 border border-action-900 hover:bg-action-900 `}
                   >
                     Book Your Appointment!
