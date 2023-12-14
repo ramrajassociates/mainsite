@@ -18,24 +18,24 @@ function ServiceCompParent({ ServiceCompRef, height }) {
 
   return (
     <div
-      className=" min-h-screen  w-screen snap-start relative"
+      className=" min-h-screen  w-screen snap-start relative bg-gray-900"
       id="Services"
       ref={ServiceCompRef}
     >
       <div className="min-h-[110px] NavbarComp lg:block hidden sticky top-0 z-40">
         {animate && (
           <Slide top spy={animate} appear duration={700}>
-            <NavbarCompHomePage theme="light" textColor="gray-900" />
+            <NavbarCompHomePage />
             {/* <p>tect</p> */}
           </Slide>
         )}
       </div>
       <div className="Content mx-auto overflow-x-hidden lg:px-36 px-10 py-24 lg:py-0">
         <div className="max-w-screen-md mb-8 lg:mb-16">
-          <h2 className="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">
+          <h2 className="mb-4 text-4xl tracking-tight font-bold  text-white">
             What We Offer:
           </h2>
-          <p className="text-gray-500 sm:text-md dark:text-gray-400">
+          <p className="text-gray-200 sm:text-md">
             Ramraj is one of the best digital marketing company in Jaipur that
             focuses on providing results-driven growth with our powerful
             services. We have a team of multi-talented experts who will work for
@@ -46,7 +46,7 @@ function ServiceCompParent({ ServiceCompRef, height }) {
         <div className="flex flex-row gap-4 ">
           <div className="flex flex-col lg:w-1/3 w-full gap-2">
             <div
-              className={`menuItems select-none cursor-pointer flex justify-between ${
+              className={`menuItems select-none rounded-xl  cursor-pointer flex justify-between ${
                 itemNumber === 0
                   ? "bg-footerColor text-main"
                   : " text-active bg-white"
@@ -80,7 +80,7 @@ function ServiceCompParent({ ServiceCompRef, height }) {
               )}
             </div>
             <div
-              className={`menuItems select-none cursor-pointer flex justify-between ${
+              className={`menuItems select-none rounded-xl  cursor-pointer flex justify-between ${
                 itemNumber === 1
                   ? "bg-footerColor text-main"
                   : " text-active bg-white"
@@ -114,7 +114,7 @@ function ServiceCompParent({ ServiceCompRef, height }) {
               )}
             </div>
             <div
-              className={`menuItems select-none cursor-pointer flex justify-between  ${
+              className={`menuItems select-none rounded-xl  cursor-pointer flex justify-between  ${
                 itemNumber === 2
                   ? "bg-footerColor text-main"
                   : " text-active bg-white"

@@ -4,7 +4,7 @@ import { Carousel } from "flowbite-react";
 const ClientComponent = () => {
   return (
     <>
-      <div className="slider-container bg-gray-900 overflow-x-hidden ">
+      <div className="slider-container  overflow-x-hidden lg:py-20 ">
         <div className="slider flex flex-row gap-20 p-10">
           <Image
             src={"https://d1efbx4910ct8i.cloudfront.net/Customer/1.webp"}

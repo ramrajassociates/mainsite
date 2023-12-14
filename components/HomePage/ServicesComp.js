@@ -74,13 +74,10 @@ function ServicesComp(props) {
         {data[itemNumber].map((item, index) => {
           return (
             <Pulse key={index} spy={itemNumber + 1} appear={true}>
-              <div className="bg-gray-200 px-3 py-7 shadow-lg relative ">
-                <div className="flex justify-center items-center mb-4 w-10 h-10 absolute -top-5  rounded-full bg-gray-200 lg:h-12 lg:w-12 dark:bg-primary-900">
+              <div className="bg-gray-700 px-3 py-7 shadow-lg relative rounded-lg">
+                <div className="flex justify-center items-center mb-4 w-10 h-10 absolute -top-5  rounded-full bg-gray-700 lg:h-12 lg:w-12 dark:bg-primary-900">
                   <Link href={item.url}>
-                    <LiaExternalLinkAltSolid
-                      className="text-footerColor"
-                      size={25}
-                    />
+                    <LiaExternalLinkAltSolid className="text-main" size={25} />
                   </Link>
                 </div>
                 <h3 className="mb-2  text-main bg-footerColor px-2 py-1 absolute -top-2 -right-2">
@@ -88,7 +85,7 @@ function ServicesComp(props) {
                 </h3>
                 <div className="w-full h-full relative overflow-hidden">
                   <p
-                    className="text-gray-600 dark:text-gray-400 pl-5 text-left"
+                    className="text-main  pl-5 text-left"
                     dangerouslySetInnerHTML={{ __html: item.description }}
                   ></p>
                   <Fade bottom delay={1200}>
