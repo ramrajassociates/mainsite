@@ -44,13 +44,13 @@ const CallToActionComp = () => {
                     onClick={handleSmoothScroll}
                     className={`my-1 cursor-pointer inline-block rounded bg-white py-4 px-6 text-base font-medium text-black transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9 `}
                   >
-                    Book Slot Now!
+                    Learn More
                   </a>
                   <a
                     href="/contactus"
                     className={`my-1 cursor-pointer inline-block rounded bg-info py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9 border border-action-900 hover:bg-action-900 `}
                   >
-                    Contanct Us
+                    Book Your Appointment!
                   </a>
                 </div>
               </div>

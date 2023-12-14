@@ -80,7 +80,7 @@ function HeaderComp({ HeaderCompRef, height }) {
                     href={"/contactus"}
                     className=" text-main ml-10 w-fit flex flex-row justify-center items-center bg-action-900 mt-4 text-s md:font-thin font-semibold py-1 px-3 "
                   >
-                    Contact Us{" "}
+                    Book Your Appointment!{" "}
                     <Fade right cascade spy={reveal} appear={true} delay={100}>
                       <BsArrowRight className="ml-2"></BsArrowRight>{" "}
                     </Fade>{" "}
@@ -124,7 +124,7 @@ function HeaderComp({ HeaderCompRef, height }) {
                     href={"/contactus"}
                     className=" text-main ml-10 w-fit flex flex-row justify-center items-center bg-action-900 mt-4 text-s md:font-thin font-semibold py-1 px-3 "
                   >
-                    Contact Us{" "}
+                    Book Your Appointment!{" "}
                     <Fade right cascade spy={reveal} appear={true} delay={100}>
                       <BsArrowRight className="ml-2"></BsArrowRight>{" "}
                     </Fade>{" "}

@@ -9,9 +9,9 @@ function AboutHeaderComp() {
           src={"https://d1efbx4910ct8i.cloudfront.net/Images2/abtbg.webp"}
           width={1920}
           height={1080}
-          className="w-full h-full object-cover sm:object-top   "
+          className="w-full h-full object-cover lg:object-top   "
         ></Image>
-        <div className="bg-gray-600 backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10 p-4 bg-opacity-20 sm:left-24  w-10/12 m-3 top-1/3   sm:max-w-[30vw] ">
+        <div className="bg-gray-600 backdrop-blur rounded-lg absolute h-fit gap-4  lg:top-32 flex flex-col justify-center items-center lg:p-10 p-4 bg-opacity-20 lg:left-24  w-10/12 m-3 top-1/3   lg:max-w-[30vw] ">
           <p className="text-main bg-footerColor px-2 py-1 absolute -top-2 -left-2">
             About Us
           </p>
@@ -36,7 +36,7 @@ function AboutHeaderComp() {
           </div>
         </div>
       </div>
-      <div className="content mx-auto sm:px-24">
+      <div className="content mx-auto lg:px-24 py-10 p-4">
         <div className="flex flex-col items-center  md:flex-row gap-5 sm:max-w-full">
           <Image
             width={1920}
@@ -126,6 +126,37 @@ function AboutHeaderComp() {
               achieving your business objectives.
             </p>
           </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col lg:flex-row justify-center items-center lg:py-20 lg:px-10 px-4 py-4 gap-10 p-5">
+        <div className="flex flex-wrap lg:w-1/2 w-full object-cover">
+          <Image
+            width={1920}
+            height={1080}
+            className="object-cover w-full h-full "
+            src="https://d1efbx4910ct8i.cloudfront.net/Images2/our-mission.webp"
+            alt=""
+          />
+        </div>
+        <div className="flex flex-col gap-5 lg:w-1/2 p-4">
+          <p className="bg-gray-900 px-5 py-1 w-fit rounded-full text-main">
+            Director's Note
+          </p>
+          <p className="text-4xl font-bold">
+            We partner with you to enable your technology so you focus on your
+            organization's mission leverage our talent.{" "}
+          </p>
+          <p>
+            Welcome to Ram Raj Associates! We are dedicated to helping
+            businesses thrive in the digital age. Our team of experts is
+            committed to providing innovative solutions and exceptional service
+            to our clients. With our cutting-edge technology and talented
+            professionals, we empower organizations to focus on their mission
+            while we handle their technology needs. Together, let's achieve
+            greatness and make a lasting impact in the digital world.
+          </p>
+          <p>- John Doe, CEO</p>
         </div>
       </div>
     </div>

@@ -68,7 +68,7 @@ hover:decoration-action-900">Wordpress Development</Link></li>
             <ul className='list-disc text-start col-start-3 col-span-1'>
               <li>
                 <Link href={'/surveillance-services'} className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
-hover:decoration-action-900">Servilance services </Link>
+hover:decoration-action-900">Surveillance services </Link>
               </li>
             </ul>
            

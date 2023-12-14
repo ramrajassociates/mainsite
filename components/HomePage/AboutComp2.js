@@ -66,7 +66,7 @@ function AboutComp2({ AboutComp2Ref, height }) {
             />
           </div>
         </div>
-        <div className="lg:w-1/2 p-4 min-h-full w-full">
+        <div className="lg:w-1/2 p-4 min-h-full w-full TabsCustom">
           <Tabs.Group aria-label="Tabs with icons" style="pills">
             <Tabs.Item title="WHO WE ARE" active={true} className="bg-white">
               <FaqsComponent faqs={who_we_are} Activeindex={0} />

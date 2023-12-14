@@ -63,7 +63,7 @@ function index({ seoInformation }) {
       <NavbarComp />
       <div className="overflow-x-hidden">
         <AboutHeaderComp />
-        <TimeLine />
+        {/* <TimeLine /> */}
         {/* <BlogAndTeamComponent/> */}
         <TeamComp />
         {/* <FaqsSectionComp faqs={faqs?faqs:[]}/> */}
