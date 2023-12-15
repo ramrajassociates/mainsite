@@ -119,14 +119,11 @@ export default function Home({ seoInformation, faqs }) {
       </SeoComp>
 
       <main
-        className="w-screen h-screen snap-y lg:snap-mandatory snap-proximity overflow-y-scroll overflow-x-hidden "
+        // className={`w-screen h-screen snap-y lg:snap-mandatory snap-proximity overflow-y-scroll overflow-x-hidden `}
+        className={`w-screen h-screen  overflow-y-scroll overflow-x-hidden `}
         ref={MainDivRef}
         onScroll={handleScroll}
       >
-        <NavbarComp
-          position={isSticky}
-          className="lg:hidden sm:grid lg:grid-cols-12 sm:grid-cols-7 hidden"
-        />
         <HeaderComp HeaderCompRef={HeaderCompRef} height={HeaderCompHeight} />
         <IntroComp IntroCompRef={IntroCompRef} height={IntroCompHeight} />
         <ServiceCompParent
