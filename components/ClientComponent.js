@@ -15,13 +15,13 @@ const ClientComponent = () => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 5,
       slidesToSlide: 1, // optional, default to 1.
       partialVisibilityGutter: 40, // this is needed to tell the amount of px that should be visible.
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 3,
       slidesToSlide: 1, // optional, default to 1.
       partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
     },
