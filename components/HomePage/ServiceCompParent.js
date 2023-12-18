@@ -18,7 +18,7 @@ function ServiceCompParent({ ServiceCompRef, height }) {
 
   return (
     <div
-      className=" min-h-screen  w-screen snap-start relative bg-gray-900"
+      className=" lg:min-h-screen  w-screen snap-start relative bg-gray-900"
       id="Services"
       ref={ServiceCompRef}
     >

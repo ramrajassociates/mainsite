@@ -34,7 +34,7 @@ function IntroComp({ IntroCompRef, height }) {
   }
   return (
     <div
-      className=" min-h-screen  w-screen snap-start relative"
+      className=" min-h-screen  w-screen snap-start relative lg:py-10"
       ref={IntroCompRef}
     >
       <div className="min-h-[110px] NavbarComp lg:block hidden sticky top-0 z-40">

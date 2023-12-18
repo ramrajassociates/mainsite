@@ -8,6 +8,7 @@ import {
   FaTwitter,
   FaLinkedinIn,
 } from "react-icons/fa6";
+import { IoMdMail } from "react-icons/io";
 import { IoCall } from "react-icons/io5";
 function FooterComp() {
   return (
@@ -29,7 +30,9 @@ function FooterComp() {
               </li>
               <li>
                 <Link
-                  href={"https://www.facebook.com/RamRaj-Associates"}
+                  href={
+                    "https://www.facebook.com/people/RamRaj-Associates/100090712463855/"
+                  }
                   className="  "
                 >
                   <FaFacebookF
@@ -84,13 +87,24 @@ function FooterComp() {
               </Link>
             </li>
             <li>
-              <Link href={"tel:+919414001803"} className="text-footerColor">
+              <Link
+                href={"tel:+919413194723"}
+                className="text-footerColor hover:underline"
+              >
                 {" "}
                 <IoCall className="text-footerColor mr-2 inline-block"></IoCall>{" "}
-                +91 9414001803{" "}
+                +91 9413194723{" "}
               </Link>
             </li>
-            {/* <li><Link href={'tel:+919116145123'} className='text-footerColor'> <IoCall className='text-footerColor mr-2 inline-block'></IoCall> +91 91161 45123 </Link></li> */}
+            <li>
+              <Link
+                href={"mailto:info@ramrajassociates.com"}
+                className="text-footerColor hover:underline"
+              >
+                <IoMdMail className="text-footerColor mr-2 inline-block"></IoMdMail>
+                info@ramraj associates.com
+              </Link>
+            </li>
           </ul>
           <p className=" font-bold text-footerColor text-start pt-10">
             Open Hours :

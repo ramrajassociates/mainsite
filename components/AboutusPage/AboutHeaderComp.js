@@ -143,20 +143,28 @@ function AboutHeaderComp() {
           <p className="bg-gray-900 px-5 py-1 w-fit rounded-full text-main">
             Director's Note
           </p>
-          <p className="text-4xl font-bold">
+          {/* <p className="text-4xl font-bold">
             We partner with you to enable your technology so you focus on your
             organization's mission leverage our talent.{" "}
-          </p>
+          </p> */}
           <p>
-            Welcome to Ram Raj Associates! We are dedicated to helping
-            businesses thrive in the digital age. Our team of experts is
-            committed to providing innovative solutions and exceptional service
-            to our clients. With our cutting-edge technology and talented
-            professionals, we empower organizations to focus on their mission
-            while we handle their technology needs. Together, let's achieve
-            greatness and make a lasting impact in the digital world.
+            As the founder and director of Ramraj Associates, I am thrilled to
+            introduce you to our world of digital creativity and innovation. We
+            started this company with a big idea: to make a genuine difference
+            in digital marketing by using modern technology and innovative
+            thinking. At Ramraj Associates, we're not just any digital marketing
+            team. We're a group of passionate storytellers, technologists,
+            creative designers, and marketing professionals. Every day, we work
+            hard to create digital content that speaks to people and gives our
+            clients the outcomes they want. Our approach is based on a thorough
+            awareness of digital trends, customer preferences, and the
+            ever-changing world of marketing. We believe strongly in teamwork,
+            both within our team and with our clients. That's how we come up
+            with amazing and unique concepts which stand out on the internet.
           </p>
-          <p>- John Doe, CEO</p>
+          <p className="font-semibold text-lg">
+            - Ram Ratan Sharma, Director & CEO
+          </p>
         </div>
       </div>
     </div>
