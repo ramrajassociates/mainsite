@@ -50,7 +50,7 @@ function IntroComp({ IntroCompRef, height }) {
           <div className="w-full lg:w-1/2 lg:p-10 flex flex-col space-y-3">
             <h2 className="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white ">
               About <span className="text-action-900"> Ramraj Associates </span>
-              - No. 1 Digital Marketing Agency in India
+              - Best digital marketing solution Company In Jaipur
             </h2>
             <hr className="my-5" />
             <p className="text-gray-500 sm:text-md dark:text-gray-400 py-10">
@@ -65,8 +65,8 @@ function IntroComp({ IntroCompRef, height }) {
               you achieve your business goals.
             </p>
             <Link
-              href="/#Services"
-              onClick={handleSmoothScroll}
+              href="/aboutus"
+              // onClick={handleSmoothScroll}
               className={`my-1 cursor-pointer inline-block rounded bg-info py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9 border border-action-900 bg-action-900 w-fit`}
             >
               Explore More

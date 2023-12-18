@@ -145,9 +145,9 @@ function ServiceCarousel(props) {
             className="h-full w-full group-hover:brightness-50"
             alt="image..."
           ></Image>
-          <p className="text-main text-sm absolute text-center z-40 top-0 p-10  hidden group-hover:block font-semibold">
+          {/* <p className="text-main text-sm absolute text-center z-40 top-0 p-10  hidden group-hover:block font-semibold">
             Our Work
-          </p>
+          </p> */}
         </div>
         <div
           className="sm:w-48 sm:h-24 w-48 h-20 group cursor-pointer object-contain relative hover:-translate-y-3 transition-all duration-500"
@@ -170,9 +170,9 @@ function ServiceCarousel(props) {
             className="h-full w-full group-hover:brightness-50"
             alt="image..."
           ></Image>
-          <p className="text-main text-sm absolute text-center z-40 top-0 p-10  hidden group-hover:block font-semibold">
+          {/* <p className="text-main text-sm absolute text-center z-40 top-0 p-10  hidden group-hover:block font-semibold">
             Our Work
-          </p>
+          </p> */}
         </div>
         <div
           className="sm:w-48 sm:h-24 w-48 h-20 group cursor-pointer object-contain relative hover:-translate-y-3 transition-all duration-500"
@@ -195,9 +195,9 @@ function ServiceCarousel(props) {
             className="h-full w-full group-hover:brightness-50"
             alt="image..."
           ></Image>
-          <p className="text-main text-sm absolute text-center z-40 top-0 p-10  hidden group-hover:block font-semibold">
+          {/* <p className="text-main text-sm absolute text-center z-40 top-0 p-10  hidden group-hover:block font-semibold">
             Our Work
-          </p>
+          </p> */}
         </div>
         <div
           className="sm:w-48 sm:h-24 w-48 h-20 group cursor-pointer object-contain relative hover:-translate-y-3 transition-all duration-500"
@@ -220,9 +220,9 @@ function ServiceCarousel(props) {
             className="h-full w-full group-hover:brightness-50"
             alt="image..."
           ></Image>
-          <p className="text-main text-sm absolute text-center z-40 top-0 p-10  hidden group-hover:block font-semibold">
+          {/* <p className="text-main text-sm absolute text-center z-40 top-0 p-10  hidden group-hover:block font-semibold">
             Our Work
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

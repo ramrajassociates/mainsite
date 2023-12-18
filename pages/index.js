@@ -136,6 +136,12 @@ export default function Home({ seoInformation, faqs }) {
           height={AboutCompHeight}
         />
         <AboutComp2 AboutComp2Ref={AboutComp2Ref} height={AboutComp2Height} />
+        <div className="flex flex-col justify-center items-center py-10">
+          <h2 className="text-4xl font-bold">Our Work</h2>
+          <h3 className="text-3xl text-action-900 font-bold">
+            Grow Your Business
+          </h3>
+        </div>
         <ServiceCarousel
           className=""
           ServiceCarouselRef={ServiceCarouselRef}

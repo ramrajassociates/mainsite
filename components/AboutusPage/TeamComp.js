@@ -15,15 +15,7 @@ function TeamComp() {
         </div>
         <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
           <div className="items-center rounded-lg shadow sm:flex bg-gray-800 :border-gray-700">
-            <a href="#">
-              <Image
-                width={200}
-                height={200}
-                className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
-                alt="Ram Ratan Sharma"
-              ></Image>
-            </a>
+            
             <div className="p-5">
               <h3 className="text-xl font-bold tracking-tight text-white">
                 <a href="#">Ram Ratan Sharma</a>
@@ -112,15 +104,7 @@ function TeamComp() {
             </div>
           </div>
           <div className="items-center rounded-lg shadow sm:flex bg-gray-800 :border-gray-700">
-            <a href="#">
-              <Image
-                width={200}
-                height={200}
-                className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
-                alt="Jese Avatar"
-              ></Image>
-            </a>
+          
             <div className="p-5">
               <h3 className="text-xl font-bold tracking-tight text-white">
                 <a href="#">Some Name</a>
@@ -207,15 +191,7 @@ function TeamComp() {
             </div>
           </div>
           <div className="items-center rounded-lg shadow sm:flex bg-gray-800 :border-gray-700">
-            <a href="#">
-              <Image
-                width={200}
-                height={200}
-                className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
-                alt="Michael Avatar"
-              ></Image>
-            </a>
+            
             <div className="p-5">
               <h3 className="text-xl font-bold tracking-tight text-white">
                 <a href="#">Some Name</a>
@@ -304,15 +280,7 @@ function TeamComp() {
             </div>
           </div>
           <div className="items-center rounded-lg shadow sm:flex bg-gray-800 :border-gray-700">
-            <a href="#">
-              <Image
-                width={200}
-                height={200}
-                className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
-                alt="Sofia Avatar"
-              ></Image>
-            </a>
+          
             <div className="p-5">
               <h3 className="text-xl font-bold tracking-tight text-white">
                 <a href="#">Some Name</a>

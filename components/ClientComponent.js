@@ -12,6 +12,7 @@ const ClientComponent = () => {
   } else if (isBrowser) {
     deviceType = "desktop";
   }
+  const ClientLogos = 34;
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -62,67 +63,21 @@ const ClientComponent = () => {
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px flex flex-row justify-center py-5"
         >
-          <Image
-            src={"https://d1efbx4910ct8i.cloudfront.net/Customer/1.webp"}
-            width={100}
-            height={100}
-            className="w-30 h-30"
-          ></Image>
-          <Image
-            src={"https://d1efbx4910ct8i.cloudfront.net/Customer/2.webp"}
-            width={100}
-            height={100}
-            className="w-30 h-30"
-          ></Image>
-          <Image
-            src={"https://d1efbx4910ct8i.cloudfront.net/Customer/3.webp"}
-            width={100}
-            height={100}
-            className="w-30 h-30"
-          ></Image>
-          <Image
-            src={"https://d1efbx4910ct8i.cloudfront.net/Customer/4.webp"}
-            width={100}
-            height={100}
-            className="w-30 h-30"
-          ></Image>
-          <Image
-            src={"https://d1efbx4910ct8i.cloudfront.net/Customer/5.webp"}
-            width={100}
-            height={100}
-            className="w-30 h-30"
-          ></Image>
-
-          <Image
-            src={"https://d1efbx4910ct8i.cloudfront.net/Customer/6.webp"}
-            width={100}
-            height={100}
-            className="w-30 h-30"
-          ></Image>
-          <Image
-            src={"https://d1efbx4910ct8i.cloudfront.net/Customer/7.webp"}
-            width={100}
-            height={100}
-            className="w-30 h-30"
-          ></Image>
-          <Image
-            src={"https://d1efbx4910ct8i.cloudfront.net/Customer/8.webp"}
-            width={100}
-            height={100}
-            className="w-30 h-30"
-          ></Image>
-          <Image
-            src={"https://d1efbx4910ct8i.cloudfront.net/Customer/9.webp"}
-            width={100}
-            height={100}
-            className="w-30 h-30"
-          ></Image>
-          <Image
-            src={"https://d1efbx4910ct8i.cloudfront.net/Customer/10.webp"}
-            width={100}
-            height={100}
-            className="w-30 h-30"
-          ></Image>
+          {Array(ClientLogos)
+            .fill(0)
+            .map((_, i) => (
+              <div className="w-40 h-30 object-contain">
+                <Image
+                  key={i}
+                  src={`https://d1efbx4910ct8i.cloudfront.net/Customer/${
+                    i + 1
+                  }.png`}
+                  width={200}
+                  height={100}
+                  className=" object-contain w-full h-full"
+                ></Image>
+              </div>
+            ))}
         </Carousel>
         {/* lg screens */}
       </div>

@@ -21,7 +21,7 @@ function AboutComp2({ AboutComp2Ref, height }) {
   const why_choose_us = [
     {
       question:
-        "What sets Ramraj Associates apart from other real estate companies?",
+        "Strategic Solutions for Digital Success: Your Business, Our Focus",
       answer:
         "We have expertise in conquering the complexities of online marketing. Moreover, we excel at leveraging digital platforms, employing data-driven strategies, and delivering tangible results. Our proven track record showcases a mastery of the dynamic digital landscape, ensuring clients thrive amidst evolving trends.",
     },
