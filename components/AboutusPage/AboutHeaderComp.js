@@ -135,7 +135,7 @@ function AboutHeaderComp() {
             width={1920}
             height={1080}
             className="object-cover w-full h-full "
-            src="https://d1efbx4910ct8i.cloudfront.net/Images2/our-mission.webp"
+            src="https://d1efbx4910ct8i.cloudfront.net/Images2/director.webp"
             alt=""
           />
         </div>
