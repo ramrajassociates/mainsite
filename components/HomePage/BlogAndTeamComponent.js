@@ -36,7 +36,7 @@ function BlogAndTeamComponent({ BlogAndTeamComponentRef, height }) {
               className="w-full h-auto rounded-md"
             />
             <h3 className="text-2xl font-bold mt-4">Our Blogs</h3>
-            <p className="text-gray-200">Short description of the blog.</p>
+            <p className="text-gray-200">Read our latest articles.</p>
             <button className="mt-4   bg-gray-900 text-white py-2 px-4 hover:opacity-80 transition-all duration-300">
               Blog
             </button>

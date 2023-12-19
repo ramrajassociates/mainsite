@@ -8,6 +8,7 @@ import {
 import { HiBuildingOffice2 } from "react-icons/hi2";
 import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
+import Link from "next/link";
 function ContactHeaderComp() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -60,23 +61,33 @@ function ContactHeaderComp() {
             className="absolute  -z-10 opacity-20 object-cover object-bottom h-full"
           ></Image>
           <div className="flex flex-col gap-2 px-2">
-            <div className="flex flex-col justify-center items-start max-w-sm p-6 bg-[#d1d5db] rounded-lg shadow ">
+            <Link
+              className="flex flex-col justify-center items-start hover:scale-105 transition-all duration-300 hover:opacity-90 active:scale-95 max-w-sm p-6 bg-[#d1d5db] rounded-lg shadow "
+              href={"https://goo.gl/maps/S7MhVqZj68racWKYA"}
+            >
               <HiBuildingOffice2 size={30}></HiBuildingOffice2>
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 Office Address
               </h5>
               <p className="font-normal text-gray-700 dark:text-gray-400">
-                32, Shastri Nagar, Jaipur
+                Shop 32, Kanwatia Cir, near Imperial Hospital, Shastri Nagar,
+                Jaipur, Rajasthan 302016
               </p>
-            </div>
-            <div className="flex flex-col justify-center items-start max-w-sm p-6 bg-[#307fe2] text-main rounded-lg shadow  ">
+            </Link>
+            <Link
+              className="flex flex-col justify-center items-start hover:scale-105 transition-all duration-300 hover:opacity-90 active:scale-95 max-w-sm p-6 bg-[#307fe2] text-main rounded-lg shadow  "
+              href={"tel:+919413194723"}
+            >
               <MdPhoneInTalk size={30}></MdPhoneInTalk>
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-main">
                 Telephone number
               </h5>
-              <p className="font-normal text-main">+91-9116145123</p>
-            </div>
-            <div className="flex flex-col justify-center items-start max-w-sm p-6 text-gray-600 bg-yellow-300 rounded-lg shadow ">
+              <p className="font-normal text-main">+91-9413194723</p>
+            </Link>
+            <Link
+              className="flex flex-col justify-center items-start hover:scale-105 transition-all duration-300 hover:opacity-90 active:scale-95 max-w-sm p-6 text-gray-600 bg-yellow-300 rounded-lg shadow "
+              href={"mailto: info@ramrajassociates.com"}
+            >
               <MdMarkEmailUnread size={30}></MdMarkEmailUnread>
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-600">
                 Mail address
@@ -84,7 +95,7 @@ function ContactHeaderComp() {
               <p className="font-normal text-gray-600">
                 info@ramrajassociates.com
               </p>
-            </div>
+            </Link>
           </div>
           <div className="md:w-1/2 w-full px-2">
             <form onSubmit={SumbitForm}>

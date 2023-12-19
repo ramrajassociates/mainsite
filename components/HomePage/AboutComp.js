@@ -268,7 +268,9 @@ function AboutComp(props) {
           </div>
           <div className="w-full h-full grid grid-cols-2 grid-rows-2 gap-2">
             <Link
-              href={"https://www.facebook.com/RamRaj-Associates/"}
+              href={
+                "https://www.facebook.com/people/RamRaj-Associates/100090712463855/"
+              }
               className="hover:!shadow-inner-lg group flex flex-col justify-center items-start row-span-1 cursor-pointer gap-5 col-span-1 col-start-1 row-start-2 border-l border-b p-5 bg-[#585caa]"
             >
               <FiFacebook className="text-white text-start  text-4xl group-hover:text-white transition-all duration-300  ease-in-out"></FiFacebook>

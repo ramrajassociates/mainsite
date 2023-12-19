@@ -49,7 +49,7 @@ function AboutHeaderComp() {
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
               Our Mission
             </h5>
-            <p className="mb-3  text-gray-700 dark:text-gray-400 font-thin text-xl p-5">
+            <p className="mb-3  text-gray-700 dark:text-gray-400      p-5">
               At Ram Raj Associates, our mission is to provide tailored digital
               marketing strategies that align with your unique business goals.
               We believe in a client-centric approach, where your success
@@ -77,7 +77,7 @@ function AboutHeaderComp() {
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
               Our Vision
             </h5>
-            <p className="mb-3  text-gray-700 dark:text-gray-400 font-thin text-xl p-5">
+            <p className="mb-3  text-gray-700 dark:text-gray-400      p-5">
               We see a future in which Ram Raj Associates is an established name
               in digital marketing. We aim to stay current with the evolving
               internet world by using new technology and ideas to give the
@@ -103,7 +103,7 @@ function AboutHeaderComp() {
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
               Our Value
             </h5>
-            <p className="mb-3  text-gray-700 dark:text-gray-400 font-thin  text-xl p-5 flex flex-col space-y-3 py-3">
+            <p className="mb-3  text-gray-700 dark:text-gray-400       p-5 flex flex-col space-y-3 py-3">
               <strong>Innovation:</strong>
               At Ram Raj Associates, innovation is the cornerstone of our
               approach. We are committed to staying ahead of the competition by

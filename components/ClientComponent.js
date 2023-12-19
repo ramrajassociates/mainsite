@@ -12,7 +12,7 @@ const ClientComponent = () => {
   } else if (isBrowser) {
     deviceType = "desktop";
   }
-  const ClientLogos = 34;
+  const ClientLogos = 33;
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },

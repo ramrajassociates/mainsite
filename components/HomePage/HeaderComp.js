@@ -70,14 +70,17 @@ function HeaderComp({ HeaderCompRef, height }) {
             <Fade bottom spy={reveal} appear={true} delay={500}>
               <div className="md:w-[40vw] w-[70vw] h-[100vh] md:h-[70vh] md:mt-20 md:ml-32 ml-14  flex flex-col justify-center  items-start space-y-3 z-20 absolute">
                 <span className="text-5xl text-white font-bold">
-                  India's Best Digital Marketing Solutions Providers
+                  Elevate Your Brand with the Best Digital Marketing Agency in
+                  Jaipur
                 </span>
                 <div className="relative h-fit">
                   <p className="md:text-xl text-white md:font-thin  ml-10 text-md font-normal">
                     Grow Your Brand with Ramraj
                   </p>
                   <Link
-                    href={"https://calendly.com/ramrajassociates/book-your-appointment"}
+                    href={
+                      "https://calendly.com/ramrajassociates/book-your-appointment"
+                    }
                     className=" text-main ml-10 w-fit flex flex-row justify-center items-center bg-action-900 mt-4 text-s md:font-thin font-semibold py-1 px-3 "
                   >
                     Book Your Appointment!{" "}
@@ -114,7 +117,8 @@ function HeaderComp({ HeaderCompRef, height }) {
             <Fade bottom spy={reveal} appear={true} delay={500}>
               <div className="md:w-[40vw] w-[70vw] h-[100vh] md:h-[70vh] md:mt-20 md:ml-32 ml-14  flex flex-col justify-center  items-start space-y-3 z-20 absolute">
                 <span className="text-5xl text-white font-bold">
-                  India's Best Digital Marketing Solutions Providers
+                  Elevate Your Brand with the Best Digital Marketing Agency in
+                  Jaipur
                 </span>
                 <div className="relative h-fit">
                   <p className="md:text-xl text-white md:font-thin  ml-10 text-md font-normal">
