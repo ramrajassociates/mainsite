@@ -57,7 +57,7 @@ function NavbarCompHomePage(props) {
           <span>Home</span>
         </a>
         <Link
-          href={"/aboutus"}
+          href={"/about"}
           className={`col-span-1 font-thin  mx-auto hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action-900 text-${
             textColor ? textColor : "main"
           }   `}
@@ -209,7 +209,7 @@ hover:decoration-action-900"
           </div>
         </div>
         <Link
-          href={"/contactus"}
+          href={"/contact"}
           className={`col-span-1 font-thin mx-auto hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action-900  text-${
             textColor ? textColor : "main"
           }  `}
@@ -217,7 +217,7 @@ hover:decoration-action-900"
           {" "}
           <span>Contact Us</span>
         </Link>
-        {/* <Link href={'/contactus'} className={`col-span-1 font-thin mx-auto hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action-900 text-${textColor ? textColor : 'main'}   `}> <span>Get a Quote now</span></Link> */}
+        {/* <Link href={'/contact'} className={`col-span-1 font-thin mx-auto hover:underline hover:underline-offset-8 flex items-center  hover:decoration-action-900 text-${textColor ? textColor : 'main'}   `}> <span>Get a Quote now</span></Link> */}
       </div>
     </>
   );

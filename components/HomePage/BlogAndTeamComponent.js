@@ -58,7 +58,7 @@ function BlogAndTeamComponent({ BlogAndTeamComponentRef, height }) {
             <button
               className="mt-4 bg-gray-900 text-white py-2 px-4 hover:opacity-80 transition-all duration-300 "
               onClick={() => {
-                window.location = "/aboutus#teamSection";
+                window.location = "/about#teamSection";
               }}
             >
               Team

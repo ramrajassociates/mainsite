@@ -40,7 +40,7 @@ const CallToActionComp = () => {
               <div className="w-full px-4 lg:w-1/2">
                 <div className="flex flex-wrap lg:space-x-4 lg:justify-end gap-2 ">
                   <a
-                    href="/contactus"
+                    href="/contact"
                     // onClick={handleSmoothScroll}
                     className={`my-1 cursor-pointer inline-block rounded bg-white py-4 px-6 text-base font-medium text-black transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9 `}
                   >

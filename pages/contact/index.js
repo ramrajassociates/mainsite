@@ -27,7 +27,7 @@ function index({ seoInformation, faqs }) {
         />
         <meta
           property="og:url"
-          content="https://www.ramrajassociates.com/contactus"
+          content="https://www.ramrajassociates.com/contact"
         />
         {/* <meta property="og:image" content="https://www.ramrajassociates.comhttps://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp" /> */}
         <meta property="og:type" content="website" />

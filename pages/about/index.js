@@ -23,7 +23,7 @@ function index({ seoInformation }) {
         />
         <meta
           property="og:url"
-          content="https://www.ramrajassociates.com/aboutus"
+          content="https://www.ramrajassociates.com/about"
         />
         <meta
           property="og:image"

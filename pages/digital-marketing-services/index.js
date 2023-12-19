@@ -379,7 +379,7 @@ function index({ seoInformation, faqs }) {
                     </Fade>
                   </div>
                 </div>
-                <Link href={"/contactus"} className="flex flex-row justify-end">
+                <Link href={"/contact"} className="flex flex-row justify-end">
                   {" "}
                   <Image
                     src={
@@ -423,7 +423,7 @@ function index({ seoInformation, faqs }) {
           </p>
           <div>
             <Link
-              href={"/contactus"}
+              href={"/contact"}
               className="px-6 py-2 border border-action-900 transition-all duration-300 hover:bg-action-900  text-main "
             >
               Getting started !

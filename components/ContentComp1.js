@@ -11,7 +11,7 @@ function ContentComp1({ title, BigTitle, content, ctaTitle }) {
         <div className="lg:w-1/2 w-full flex flex-col justify-center items-start space-y-5 px-4">
           <p className="text-gray-300">{content}</p>
           <Link
-            href={"/contactus"}
+            href={"/contact"}
             className="px-3 py-2 bg-action-900 text-black text-lg"
           >
             {ctaTitle ? ctaTitle : "Talk With Our Experts"}
