@@ -20,18 +20,7 @@ function HeaderComp({ HeaderCompRef, height }) {
     }
   }, [height]);
   return (
-    <div
-      className="relative w-screen min-h-screen snap-start snap-always"
-      ref={HeaderCompRef}
-    >
-      <div className="NavbarComp lg:block hidden absolute top-0 z-50 w-full">
-        {animate && (
-          <Slide top spy={animate} appear duration={700}>
-            <NavbarCompHomePage theme="dark" textColor="main" />
-            {/* <p>tect</p> */}
-          </Slide>
-        )}
-      </div>
+    <div className="relative w-screen min-h-screen " ref={HeaderCompRef}>
       <div className="relative h-[100vh]">
         <Carousel
           indicators={false}

@@ -64,47 +64,47 @@ export default function Home({ seoInformation, faqs }) {
   const BlogAndTeamComponentRef = useRef();
   const FaqsSectionCompRef = useRef();
   const FooterCompWithCtaRef = useRef();
-  const handleScroll = () => {
-    // console.log("Scrolling inside div , height :", MainDivRef.current.scrollTop);
-    // ================== Example ====================
-    // const serviceCompParentRef = ServiceCompRef.current;
-    // const { top } = serviceCompParentRef.getBoundingClientRect();
-    // console.log("service Component height",top); // logs the distance from the top of the page to the ServiceCompParent component
-    // ================== Example ====================
-    setHeaderCompHeight(HeaderCompRef.current.getBoundingClientRect().top);
-    setIntroCompHeight(IntroCompRef.current.getBoundingClientRect().top);
-    setServiceCompHeight(ServiceCompRef.current.getBoundingClientRect().top);
-    setAboutCompHeight(AboutCompRef.current.getBoundingClientRect().top);
-    setAboutComp2Height(AboutComp2Ref.current.getBoundingClientRect().top);
-    setServiceCarouselHeight(
-      ServiceCarouselRef.current.getBoundingClientRect().top
-    );
-    setBlogAndTeamComponentHeight(
-      BlogAndTeamComponentRef.current.getBoundingClientRect().top
-    );
-    setFaqsSectionCompHeight(
-      FaqsSectionCompRef.current.getBoundingClientRect().top
-    );
-    setFooterCompWithCtaHeight(
-      FooterCompWithCtaRef.current.getBoundingClientRect().top
-    );
-    console.log("Service comp height", ServiceCompHeight);
-    if (MainDivRef.current.scrollTop > 50) {
-      setIsSticky(true);
-    } else {
-      setIsSticky(false);
-    }
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  // const handleScroll = () => {
+  //   // console.log("Scrolling inside div , height :", MainDivRef.current.scrollTop);
+  //   // ================== Example ====================
+  //   // const serviceCompParentRef = ServiceCompRef.current;
+  //   // const { top } = serviceCompParentRef.getBoundingClientRect();
+  //   // console.log("service Component height",top); // logs the distance from the top of the page to the ServiceCompParent component
+  //   // ================== Example ====================
+  //   setHeaderCompHeight(HeaderCompRef.current.getBoundingClientRect().top);
+  //   setIntroCompHeight(IntroCompRef.current.getBoundingClientRect().top);
+  //   setServiceCompHeight(ServiceCompRef.current.getBoundingClientRect().top);
+  //   setAboutCompHeight(AboutCompRef.current.getBoundingClientRect().top);
+  //   setAboutComp2Height(AboutComp2Ref.current.getBoundingClientRect().top);
+  //   setServiceCarouselHeight(
+  //     ServiceCarouselRef.current.getBoundingClientRect().top
+  //   );
+  //   setBlogAndTeamComponentHeight(
+  //     BlogAndTeamComponentRef.current.getBoundingClientRect().top
+  //   );
+  //   setFaqsSectionCompHeight(
+  //     FaqsSectionCompRef.current.getBoundingClientRect().top
+  //   );
+  //   setFooterCompWithCtaHeight(
+  //     FooterCompWithCtaRef.current.getBoundingClientRect().top
+  //   );
+  //   console.log("Service comp height", ServiceCompHeight);
+  //   if (MainDivRef.current.scrollTop > 50) {
+  //     setIsSticky(true);
+  //   } else {
+  //     setIsSticky(false);
+  //   }
+  // };
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   // For Navbar
   return (
-    <div>
+    <>
       <SeoComp seoInformation={seoInformation}>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://ramrajassociates.com/"></link>
@@ -117,53 +117,25 @@ export default function Home({ seoInformation, faqs }) {
           href="https://d1efbx4910ct8i.cloudfront.net/Images2/favicon.png"
         />
       </SeoComp>
-
-      <main
-        // className={`w-screen h-screen snap-y lg:snap-mandatory snap-proximity overflow-y-scroll overflow-x-hidden `}
-        className={`w-screen h-screen  overflow-y-scroll overflow-x-hidden `}
-        ref={MainDivRef}
-        onScroll={handleScroll}
-      >
-        <HeaderComp HeaderCompRef={HeaderCompRef} height={HeaderCompHeight} />
-        <IntroComp IntroCompRef={IntroCompRef} height={IntroCompHeight} />
-        <ServiceCompParent
-          ServiceCompRef={ServiceCompRef}
-          height={ServiceCompHeight}
-        />
-        <AboutComp
-          className=" "
-          AboutCompRef={AboutCompRef}
-          height={AboutCompHeight}
-        />
-        <AboutComp2 AboutComp2Ref={AboutComp2Ref} height={AboutComp2Height} />
+      <NavbarComp />
+      <div className="overflow-x-hidden overflow-y-hidden">
+        <HeaderComp />
+        <IntroComp />
+        <ServiceCompParent />
+        <AboutComp />
+        <AboutComp2 />
         <div className="flex flex-col justify-center items-center py-10">
           <h2 className="text-4xl font-bold">Our Work</h2>
           <h3 className="text-3xl text-action-900 font-bold">
             Grow Your Business
           </h3>
         </div>
-        <ServiceCarousel
-          className=""
-          ServiceCarouselRef={ServiceCarouselRef}
-          height={ServiceCarouselHeight}
-        />
-        <BlogAndTeamComponent
-          BlogAndTeamComponentRef={BlogAndTeamComponentRef}
-          height={BlogAndTeamComponentHeight}
-        />
-        <FaqsSectionComp
-          faqs={faqs}
-          className="w-screen lg:min-h-screen snap-start"
-          FaqsSectionCompRef={FaqsSectionCompRef}
-          height={FaqsSectionCompHeight}
-          SlideNavbarComp={true}
-        />
-        <FooterCompWithCta
-          FooterCompWithCtaRef={FooterCompWithCtaRef}
-          height={FooterCompWithCtaHeight}
-        />
-      </main>
-    </div>
+        <ServiceCarousel />
+        <BlogAndTeamComponent />
+        <FaqsSectionComp faqs={faqs} SlideNavbarComp={true} />
+        <FooterCompWithCta />
+      </div>
+    </>
   );
 }
 

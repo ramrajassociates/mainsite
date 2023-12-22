@@ -69,7 +69,7 @@ function NavbarComp(props) {
           <IoIosArrowDown className="ml-1 group-hover:rotate-180 transition-all transform duration-300"></IoIosArrowDown>
           <div
             id="dropdownHover1"
-            className="w-full h-fit -z-10 !absolute right-0 pt-72 pb-5 transition-all origin-top duration-300 transform scale-y-0 opacity-0 group-hover:opacity-100 group-hover:scale-y-100 bg-gray-900 divide-y sm:px-10 lg:px-48 mx-auto shadow "
+            className="w-full h-fit -z-10 !absolute right-0 pt-[22rem] lg:pt-[20rem] pb-5 transition-all origin-top duration-300 transform scale-y-0 opacity-0 group-hover:opacity-100 group-hover:scale-y-100 bg-gray-900 divide-y sm:px-10 lg:px-48 mx-auto shadow "
           >
             <div className="w-full h-full grid grid-cols-3 border-t-2 border-gray-600 mt-5">
               <ul className="list-disc text-start col-start-1 col-span-1">

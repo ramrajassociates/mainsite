@@ -7,7 +7,7 @@ import axios from "axios";
 function index({ seoInformation, faqs }) {
   // console.log("Data from contactus page", seoInformation, faqs)
   return (
-    <div>
+    <>
       <SeoComp seoInformation={seoInformation}>
         <link
           rel="icon"
@@ -62,7 +62,7 @@ function index({ seoInformation, faqs }) {
 
       <ContactHeaderComp />
       {/* <FaqsSectionComp faqs={faqs?faqs:[]}/> */}
-    </div>
+    </>
   );
 }
 
