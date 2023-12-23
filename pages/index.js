@@ -107,6 +107,10 @@ export default function Home({ seoInformation, faqs }) {
     <>
       <SeoComp seoInformation={seoInformation}>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="google-site-verification"
+          content="WgDzxripQiv3a90_Hbm8maInLnNAgmJpp2ENQXc9AcQ"
+        />
         <link rel="canonical" href="https://ramrajassociates.com/"></link>
         <meta
           property="og:title"
