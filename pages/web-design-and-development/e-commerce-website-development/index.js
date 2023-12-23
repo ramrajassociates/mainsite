@@ -12,6 +12,7 @@ import ContentComp2 from "@/components/ContentComp2";
 import ContentComp3 from "@/components/ContentComp3";
 import { FaCartShopping } from "react-icons/fa6";
 import axios from "axios";
+import { BsArrowRight } from "react-icons/bs";
 function index({ seoInformation, faqs }) {
   const logo = <FaCartShopping className="text-5xl text-action-900" />;
   const content2 = {
@@ -84,6 +85,15 @@ function index({ seoInformation, faqs }) {
                 then call us now and book a free slot for a one-to-one
                 discussion.
               </p>
+              <Link
+                href={
+                  "https://calendly.com/ramrajassociates/book-your-appointment"
+                }
+                className=" text-main w-fit flex flex-row justify-center items-center bg-action-900 mt-4 text-s md:font-thin font-semibold py-1 px-3 "
+              >
+                Book Your Appointment!{" "}
+                <BsArrowRight className="ml-2"></BsArrowRight>{" "}
+              </Link>
               <Fade bottom delay={1200}>
                 <span className="md:border-l-2 border-l border-action-900 h-full absolute left-2 top-0"></span>
               </Fade>

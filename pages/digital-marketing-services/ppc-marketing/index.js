@@ -12,6 +12,7 @@ import ContentComp2 from "@/components/ContentComp2";
 import LetsConnectComp from "@/components/LetsConnectComp";
 import ContentComp3 from "@/components/ContentComp3";
 import { GiClick } from "react-icons/gi";
+import { BsArrowRight } from "react-icons/bs";
 function index({ seoInformation, faqs }) {
   const logo = <GiClick className="text-5xl text-action-900" />;
   const content2 = {
@@ -95,6 +96,15 @@ function index({ seoInformation, faqs }) {
                 bring amazing advantages to the table. Their right strategies
                 and result-driven approach can be beneficial for your business.
               </p>
+              <Link
+                href={
+                  "https://calendly.com/ramrajassociates/book-your-appointment"
+                }
+                className=" text-main w-fit flex flex-row justify-center items-center bg-action-900 mt-4 text-s md:font-thin font-semibold py-1 px-3 "
+              >
+                Book Your Appointment!{" "}
+                <BsArrowRight className="ml-2"></BsArrowRight>{" "}
+              </Link>
               <Fade bottom delay={1200}>
                 <span className="md:border-l-2 border-l border-action-900 h-full absolute left-2 top-0"></span>
               </Fade>

@@ -11,6 +11,7 @@ import LetsConnectComp from "@/components/LetsConnectComp";
 import ContentComp2 from "@/components/ContentComp2";
 import ContentComp3 from "@/components/ContentComp3";
 import { GiCctvCamera } from "react-icons/gi";
+import { BsArrowRight } from "react-icons/bs";
 import axios from "axios";
 function index({ seoInformation, faqs }) {
   const logo = <GiCctvCamera className="text-5xl text-action-900" />;
@@ -24,7 +25,8 @@ function index({ seoInformation, faqs }) {
       "We understand the importance of maintaining safety in your work and living spaces, and that’s why we are here to offer our top-notch Surveillance Service. Our goal is to ensure the safety and security of your premises while providing valuable insights and peace of mind. We provide total security and surveillance to secure your valuable facilities around the clock, using cutting-edge technology and high-quality video footage.",
     extras:
       "We understand the importance of maintaining a secure environment, and our dedicated approach is geared toward meeting and exceeding your expectations. With our Surveillance Service, you can trust that your valued premises are under constant watch, allowing you to focus on your activities with confidence and assurance.",
-    imageUrl:"https://d1efbx4910ct8i.cloudfront.net/Images2/surveillance-services.webp"
+    imageUrl:
+      "https://d1efbx4910ct8i.cloudfront.net/Images2/surveillance-services.webp",
   };
   const content3 = [
     {
@@ -103,6 +105,15 @@ function index({ seoInformation, faqs }) {
                 service, including CCTV installations and real-time monitoring
                 for an enhanced security cover that you can trust.
               </p>
+              <Link
+                href={
+                  "https://calendly.com/ramrajassociates/book-your-appointment"
+                }
+                className=" text-main w-fit flex flex-row justify-center items-center bg-action-900 mt-4 text-s md:font-thin font-semibold py-1 px-3 "
+              >
+                Book Your Appointment!{" "}
+                <BsArrowRight className="ml-2"></BsArrowRight>{" "}
+              </Link>
               <Fade bottom delay={1200}>
                 <span className="md:border-l-2 border-l border-action-900 h-full absolute left-2 top-0"></span>
               </Fade>

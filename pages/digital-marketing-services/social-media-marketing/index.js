@@ -12,6 +12,7 @@ import ContentComp2 from "@/components/ContentComp2";
 import LetsConnectComp from "@/components/LetsConnectComp";
 import ContentComp3 from "@/components/ContentComp3";
 import { TbSocial } from "react-icons/tb";
+import { BsArrowRight } from "react-icons/bs";
 function index({ seoInformation, faqs }) {
   const logo = <TbSocial className="text-5xl text-action-900" />;
   const content2 = {
@@ -132,6 +133,15 @@ function index({ seoInformation, faqs }) {
                 <strong> best social media marketing service </strong> at an
                 affordable price
               </p>
+              <Link
+                href={
+                  "https://calendly.com/ramrajassociates/book-your-appointment"
+                }
+                className=" text-main w-fit flex flex-row justify-center items-center bg-action-900 mt-4 text-s md:font-thin font-semibold py-1 px-3 "
+              >
+                Book Your Appointment!{" "}
+                <BsArrowRight className="ml-2"></BsArrowRight>{" "}
+              </Link>
               <Fade bottom delay={1200}>
                 <span className="md:border-l-2 border-l border-action-900 h-full absolute left-2 top-0"></span>
               </Fade>

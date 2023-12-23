@@ -12,7 +12,7 @@ import ContentComp1 from "@/components/ContentComp1";
 import ClientComponent from "@/components/ClientComponent";
 import ProgressSteps from "@/components/ProgreeSteps";
 import ContentComp4 from "@/components/ContentComp4";
-
+import { BsArrowRight } from "react-icons/bs";
 function index({ seoInformation, faqs }) {
   const [show, setShow] = useState(false);
   const ContentComp = {
@@ -161,6 +161,15 @@ function index({ seoInformation, faqs }) {
                 communication. Thus, partner with us today to begin your online
                 journey toward digital success in Jaipur and beyond.
               </p>
+              <Link
+                href={
+                  "https://calendly.com/ramrajassociates/book-your-appointment"
+                }
+                className=" text-main w-fit flex flex-row justify-center items-center bg-action-900 mt-4 text-s md:font-thin font-semibold py-1 px-3 "
+              >
+                Book Your Appointment!{" "}
+                <BsArrowRight className="ml-2"></BsArrowRight>{" "}
+              </Link>
               <Fade bottom delay={1200}>
                 <span className="md:border-l-2 border-l border-action-900 h-full absolute left-2 top-0"></span>
               </Fade>
