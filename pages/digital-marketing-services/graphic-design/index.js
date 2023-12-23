@@ -27,7 +27,8 @@ function index({ seoInformation, faqs }) {
       "We are a growing graphic designing service provider in Jaipur. Our graphic designers can create out-of-the-box visuals for your brand. We always give our best to match your standards and goals and provide you the different results. So, if you need innovative ideas and graphics for your brand, then join hands with us. We have great experience in designing logos, brochures, posters, and much more as per your requirements. So, if you want to give tough competition to your competitors, you can choose our professional graphic design services. Thus, invest a very small amount to get professional designs.",
     extras:
       "Apart from that, the software we use for graphic design are Adobe Photoshop, Canva, Corel Draw, and much more. For more information, you can get in touch with Ramraj Associates to avail of the best graphic design services.",
-    imageUrl:"https://d1efbx4910ct8i.cloudfront.net/Images2/graphic-design.webp"
+    imageUrl:
+      "https://d1efbx4910ct8i.cloudfront.net/Images2/graphic-design.webp",
   };
 
   const content3 = [
@@ -115,12 +116,10 @@ There are a lot more in the row. You can contact Ramraj Associates to get more i
                 contact us today!
               </p>
               <Link
-                href={
-                  "https://calendly.com/ramrajassociates/book-your-appointment"
-                }
+                href={"/contact"}
                 className=" text-main w-fit flex flex-row justify-center items-center bg-action-900 mt-4 text-s md:font-thin font-semibold py-1 px-3 "
               >
-                Book Your Appointment!{" "}
+                Talk With Our Experts{" "}
                 <BsArrowRight className="ml-2"></BsArrowRight>{" "}
               </Link>
               <Fade bottom delay={1200}>

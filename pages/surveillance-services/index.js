@@ -108,12 +108,10 @@ function index({ seoInformation, faqs }) {
                 for an enhanced security cover that you can trust.
               </p>
               <Link
-                href={
-                  "https://calendly.com/ramrajassociates/book-your-appointment"
-                }
+                href={"/contact"}
                 className=" text-main w-fit flex flex-row justify-center items-center bg-action-900 mt-4 text-s md:font-thin font-semibold py-1 px-3 "
               >
-                Book Your Appointment!{" "}
+                Talk With Our Experts{" "}
                 <BsArrowRight className="ml-2"></BsArrowRight>{" "}
               </Link>
               <Fade bottom delay={1200}>
