@@ -40,6 +40,7 @@ function HeaderComp({ HeaderCompRef, height }) {
               src={
                 "https://d1efbx4910ct8i.cloudfront.net/Images2/bg1-updated.webp"
               }
+              priority={true}
               layout="fill"
               objectFit="cover"
               objectPosition="center"
@@ -51,6 +52,7 @@ function HeaderComp({ HeaderCompRef, height }) {
                 "https://d1efbx4910ct8i.cloudfront.net/Images2/bg-dotted.webp"
               }
               layout="fill"
+              priority={true}
               objectFit="cover"
               objectPosition="center"
               className=" z-10 absolute top-10 "
@@ -86,19 +88,21 @@ function HeaderComp({ HeaderCompRef, height }) {
           </div>
           <div className="w-[100vw] h-[100vh] ">
             <Image
-              alt="Ramraj Associates"
+              alt="Ramraj Associates| Digital Marketing Agency in Jaipur"
               src={"https://d1efbx4910ct8i.cloudfront.net/Images2/bg2.webp"}
               layout="fill"
               objectFit="cover"
               objectPosition="center"
+              priority={true}
               className="filter brightness-50"
             ></Image>
             <Image
-              alt="Ramraj Associates"
+              alt="Ramraj Associates | Digital Marketing Agency in Jaipur"
               src={
                 "https://d1efbx4910ct8i.cloudfront.net/Images2/bg-dotted.webp"
               }
               layout="fill"
+              priority={true}
               objectFit="cover"
               objectPosition="center"
               className=" z-10 absolute top-10 "
