@@ -46,6 +46,7 @@ function ContactHeaderComp() {
           src={"https://d1efbx4910ct8i.cloudfront.net/Images2/contactus.webp"}
           width={1920}
           height={1080}
+          priority={true}
           alt="contact us"
           className="w-full h-full object-cover sm:object-top   "
         ></Image>

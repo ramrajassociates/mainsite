@@ -9,6 +9,8 @@ function AboutHeaderComp() {
           src={"https://d1efbx4910ct8i.cloudfront.net/Images2/abtbg.webp"}
           width={1920}
           height={1080}
+          alt="about us"
+          priority={true}
           className="w-full h-full object-cover lg:object-top   "
         ></Image>
         <div className="bg-gray-600 backdrop-blur rounded-lg absolute h-fit gap-4  lg:top-32 flex flex-col justify-center items-center lg:p-10 p-4 bg-opacity-20 lg:left-24  w-10/12 m-3 top-1/3   lg:max-w-[30vw] ">

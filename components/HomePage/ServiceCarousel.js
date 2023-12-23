@@ -28,7 +28,7 @@ function ServiceCarousel(props) {
           </Slide>
         )}
       </div>
-      <div className="relative overflow-hidden h-[17rem] sm:h-[40vh] lg:h-[100vh]  ">
+      <div className="relative overflow-hidden h-[30rem] sm:h-[40vh] lg:h-[100vh]  object-cover">
         <div
           className="hidden duration-700 ease-in-out relative"
           data-carousel-item
@@ -40,7 +40,7 @@ function ServiceCarousel(props) {
             width={1920}
             height={1080}
             alt="portfolio image..."
-            className="absolute block w-full -translate-x-1/2  top-1/2 left-1/2 brightness-50"
+            className="absolute block  -translate-x-1/2  top-1/2 left-1/2 brightness-50 object-cover h-[27rem] sm:h-[40vh] lg:h-[100vh]"
           ></Image>
           <div className="absolute top-0 w-full h-full z-30 md:p-48 ">
             {/* <span className="font-semibold text-action-900 px-3 py-1 bg-gray-100 text-center w-fit ">
@@ -63,7 +63,7 @@ function ServiceCarousel(props) {
             width={1920}
             height={1080}
             alt="Porfolio image"
-            className="absolute block w-full -translate-x-1/2  top-1/2 left-1/2 brightness-50"
+            className="absolute block  -translate-x-1/2  top-1/2 left-1/2 brightness-50 object-cover h-[27rem] sm:h-[40vh] lg:h-[100vh]"
           ></Image>
           <div className="absolute top-0 w-full h-full z-30 md:p-48 ">
             {/* <span className="font-semibold text-action-900 px-3 py-1 bg-gray-100 text-center w-fit ">
@@ -86,7 +86,7 @@ function ServiceCarousel(props) {
             width={1920}
             height={1080}
             alt="Porfolio image"
-            className="absolute block w-full -translate-x-1/2  top-1/2 left-1/2 brightness-50"
+            className="absolute block  -translate-x-1/2  top-1/2 left-1/2 brightness-50 object-cover h-[27rem] sm:h-[40vh] lg:h-[100vh]"
           ></Image>
           <div className="absolute top-0 w-full h-full z-30 md:p-48 ">
             {/* <span className="font-semibold text-action-900 px-3 py-1 bg-gray-100 text-center w-fit ">
@@ -109,7 +109,7 @@ function ServiceCarousel(props) {
             width={1920}
             height={1080}
             alt="Porfolio image"
-            className="absolute block w-full -translate-x-1/2  top-1/2 left-1/2 brightness-50"
+            className="absolute block  -translate-x-1/2  top-1/2 left-1/2 brightness-50  object-cover h-[27rem] sm:h-[40vh] lg:h-[100vh]"
           ></Image>
           <div className="absolute top-0 w-full h-full z-30 md:p-48 ">
             {/* <span className="font-semibold text-action-900 px-3 py-1 bg-gray-100 text-center w-fit ">
