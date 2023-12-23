@@ -17,7 +17,7 @@ function ServiceCarousel(props) {
   }, [height]);
   return (
     <div
-      className="relative w-screen lg:min-h-screen lg:snap-start lg:snap-always hidden lg:block"
+      className="relative w-screen lg:min-h-screen h-fit"
       data-carousel="slide"
       ref={ServiceCarouselRef}
     >
@@ -28,7 +28,7 @@ function ServiceCarousel(props) {
           </Slide>
         )}
       </div>
-      <div className="relative overflow-hidden lg:h-[100vh] h:[30vh] ">
+      <div className="relative overflow-hidden h-[17rem] sm:h-[40vh] lg:h-[100vh]  ">
         <div
           className="hidden duration-700 ease-in-out relative"
           data-carousel-item
@@ -123,9 +123,9 @@ function ServiceCarousel(props) {
           </div>
         </div>
       </div>
-      <div className="absolute z-30 h-24 sm:h-auto sm:flex hidden space-x-3 flex-row overflow-x-scroll  overflow-y-hidden sm:overflow-hidden  bottom-0 justify-center pb-2 w-fit sm:w-full bg-gray-600 bg-opacity-40 sm:pt-10 pt-5 px-10">
+      <div className="absolute z-30 h-auto flex  space-x-3 flex-row overflow-x-scroll scrollbar-hidden  overflow-y-hidden bottom-0 justify-center pb-2 w-full bg-black sm:bg-gray-600 sm:bg-opacity-40 sm:pt-10 pt-5 px-10 ">
         <div
-          className="sm:w-48 sm:h-24  w-48 h-20 group cursor-pointer object-contain relative hover:-translate-y-3 transition-all duration-500"
+          className="sm:w-48 sm:h-24  min-h-20 group cursor-pointer object-contain relative hover:-translate-y-3 transition-all duration-500"
           aria-current="true"
           aria-label="Slide 2"
           data-carousel-slide-to="1"
@@ -150,7 +150,7 @@ function ServiceCarousel(props) {
           </p> */}
         </div>
         <div
-          className="sm:w-48 sm:h-24 w-48 h-20 group cursor-pointer object-contain relative hover:-translate-y-3 transition-all duration-500"
+          className="sm:w-48 sm:h-24 min-h-20 group cursor-pointer object-contain relative hover:-translate-y-3 transition-all duration-500"
           aria-current="true"
           aria-label="Slide 3"
           data-carousel-slide-to="2"
@@ -175,7 +175,7 @@ function ServiceCarousel(props) {
           </p> */}
         </div>
         <div
-          className="sm:w-48 sm:h-24 w-48 h-20 group cursor-pointer object-contain relative hover:-translate-y-3 transition-all duration-500"
+          className="sm:w-48 sm:h-24 min-h-20 group cursor-pointer object-contain relative hover:-translate-y-3 transition-all duration-500"
           aria-current="true"
           aria-label="Slide 4"
           data-carousel-slide-to="3"
@@ -200,7 +200,7 @@ function ServiceCarousel(props) {
           </p> */}
         </div>
         <div
-          className="sm:w-48 sm:h-24 w-48 h-20 group cursor-pointer object-contain relative hover:-translate-y-3 transition-all duration-500"
+          className="sm:w-48 sm:h-24 min-h-20 group cursor-pointer object-contain relative hover:-translate-y-3 transition-all duration-500"
           aria-current="true"
           aria-label="Slide 5"
           data-carousel-slide-to="4"
