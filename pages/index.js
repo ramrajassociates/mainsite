@@ -120,6 +120,17 @@ export default function Home({ seoInformation, faqs }) {
           rel="icon"
           href="https://d1efbx4910ct8i.cloudfront.net/Images2/favicon.png"
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-NJQZ3VP2');
+        `,
+          }}
+        />
       </SeoComp>
       <NavbarComp />
       <div className="overflow-x-hidden overflow-y-hidden">
@@ -139,6 +150,14 @@ export default function Home({ seoInformation, faqs }) {
         <FaqsSectionComp faqs={faqs} SlideNavbarComp={true} />
         <FooterCompWithCta />
       </div>
+      <noscript>
+        <iframe
+         src="https://www.googletagmanager.com/ns.html?id=GTM-NJQZ3VP2"
+          height="0"
+          width="0"
+          style={{ display: "none", visibility: "hidden" }}
+        ></iframe>
+      </noscript>
     </>
   );
 }

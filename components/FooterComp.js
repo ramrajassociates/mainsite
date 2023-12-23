@@ -52,14 +52,14 @@ function FooterComp() {
                   ></FaTwitter>
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href={"#"} className="  ">
                   <FaLinkedinIn
                     className="hover:text-blue-600 hover:-translate-y-2 hover:shadow-lg transition-all duration-300 "
                     size={25}
                   ></FaLinkedinIn>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           <Image
