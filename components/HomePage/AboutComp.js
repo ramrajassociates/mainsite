@@ -74,7 +74,7 @@ function AboutComp(props) {
                     </p>
                   </blockquote>
                   <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                    {/* <Image className="w-6 h-6 rounded-full" src={"https://d1efbx4910ct8i.cloudfront.net/Images2/abt1.webp"} width={50} height={50} alt="profile picture"></Image> */}
+                   
                     <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                       <div className="pr-3 font-medium text-gray-200 ">
                         Sailesh Shukla

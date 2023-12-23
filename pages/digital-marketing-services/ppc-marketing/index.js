@@ -16,6 +16,7 @@ import { BsArrowRight } from "react-icons/bs";
 function index({ seoInformation, faqs }) {
   const logo = <GiClick className="text-5xl text-action-900" />;
   const content2 = {
+    serviceName: "PPC Marketing",
     headingText:
       "What is <strong>PPC</strong> or <strong> Pay Per Click</strong> in Digital Marketing?",
     explanation: `This is another type of online marketing. The term "pay-per-click" means that whenever any visitor clicks on an ad, the advertiser has to pay a certain amount of fee for that. This is paid marketing; instead of driving visitors organically, you are paying a certain amount of money to promote your website. This is the most commonly used method to make the website more visible to the targeted audience.`,
@@ -77,6 +78,7 @@ function index({ seoInformation, faqs }) {
             src={
               "https://d1efbx4910ct8i.cloudfront.net/Images2/ppc-marketing.webp"
             }
+            alt="PPC Marketing"
             width={1920}
             height={1080}
             className="w-full h-full object-cover object-center  "

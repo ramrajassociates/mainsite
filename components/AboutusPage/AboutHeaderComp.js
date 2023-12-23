@@ -43,7 +43,7 @@ function AboutHeaderComp() {
             height={1080}
             className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-96 md:rounded-none md:rounded-l-lg"
             src="https://d1efbx4910ct8i.cloudfront.net/Images2/our-mission.webp"
-            alt=""
+            alt="our mission"
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
@@ -71,7 +71,7 @@ function AboutHeaderComp() {
             height={1080}
             className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-96 md:rounded-none md:rounded-l-lg"
             src="https://d1efbx4910ct8i.cloudfront.net/Images2/abt2.webp"
-            alt=""
+            alt="our vision"
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
@@ -97,7 +97,7 @@ function AboutHeaderComp() {
             height={1080}
             className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-96 md:rounded-none md:rounded-l-lg"
             src="https://d1efbx4910ct8i.cloudfront.net/Images2/abt3.webp"
-            alt=""
+            alt="our value"
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
@@ -136,7 +136,7 @@ function AboutHeaderComp() {
             height={1080}
             className="object-cover w-full h-full "
             src="https://d1efbx4910ct8i.cloudfront.net/Images2/director.webp"
-            alt=""
+            alt="Director"
           />
         </div>
         <div className="flex flex-col gap-5 lg:w-1/2 p-4">

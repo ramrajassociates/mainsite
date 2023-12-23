@@ -36,7 +36,7 @@ function HeaderComp({ HeaderCompRef, height }) {
         >
           <div className="w-[100vw] h-[100vh] ">
             <Image
-              alt="Image..."
+              alt="Ramraj Associates"
               src={
                 "https://d1efbx4910ct8i.cloudfront.net/Images2/bg1-updated.webp"
               }
@@ -46,7 +46,7 @@ function HeaderComp({ HeaderCompRef, height }) {
               className="filter contrast-100 brightness-50"
             ></Image>
             <Image
-              alt="Image..."
+              alt="Ramraj Associates"
               src={
                 "https://d1efbx4910ct8i.cloudfront.net/Images2/bg-dotted.webp"
               }
@@ -86,7 +86,7 @@ function HeaderComp({ HeaderCompRef, height }) {
           </div>
           <div className="w-[100vw] h-[100vh] ">
             <Image
-              alt="Image..."
+              alt="Ramraj Associates"
               src={"https://d1efbx4910ct8i.cloudfront.net/Images2/bg2.webp"}
               layout="fill"
               objectFit="cover"
@@ -94,7 +94,7 @@ function HeaderComp({ HeaderCompRef, height }) {
               className="filter brightness-50"
             ></Image>
             <Image
-              alt="Image..."
+              alt="Ramraj Associates"
               src={
                 "https://d1efbx4910ct8i.cloudfront.net/Images2/bg-dotted.webp"
               }

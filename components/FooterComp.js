@@ -66,6 +66,7 @@ function FooterComp() {
             src={"https://d1efbx4910ct8i.cloudfront.net/Images2/logo.webp"}
             width={400}
             height={400}
+            alt="logo"
           ></Image>
         </div>
         <div className="flex flex-col space-y-4 pt-10 md:w-1/3 w-full  ">

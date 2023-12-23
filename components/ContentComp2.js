@@ -28,7 +28,7 @@ function ContentComp2({ content }) {
           <div className="sm:w-96 sm:h-96 w-48 h-48 z-[10] absolute top-10 left-20 rounded-full">
             <Image
               src={content?.imageUrl}
-              alt="Image"
+              alt={content?.serviceName}
               width={500}
               height={500}
               className="w-full h-full object-cover sm:object-top object-center rounded-full "

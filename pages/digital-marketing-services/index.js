@@ -143,6 +143,7 @@ function index({ seoInformation, faqs }) {
             src={"https://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp"}
             width={1920}
             height={1080}
+            alt="Digital Marketing Services"
             className="w-full h-full object-cover sm:object-top object-center  "
           ></Image>
           <div className="bg-gray-600 backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10 p-4  bg-opacity-20 lg:left-24 w-10/12 m-3 top-1/3 lg:max-w-[30vw] ">
@@ -231,6 +232,7 @@ function index({ seoInformation, faqs }) {
                     }
                     width={20}
                     height={20}
+                    alt="arrow icon"
                   ></Image>
                 </Link>
               </div>
@@ -268,6 +270,7 @@ function index({ seoInformation, faqs }) {
                     }
                     width={20}
                     height={20}
+                    alt="arrow icon"
                   ></Image>
                 </Link>
               </div>
@@ -279,7 +282,7 @@ function index({ seoInformation, faqs }) {
               <Image
                 className="absolute w-full h-full object-cover object-center "
                 src={"https://d1efbx4910ct8i.cloudfront.net/Images2/g-d.webp"}
-                alt="content"
+                alt="graphic design"
                 width={520}
                 height={500}
               ></Image>
@@ -313,6 +316,7 @@ function index({ seoInformation, faqs }) {
                     }
                     width={20}
                     height={20}
+                    alt="arrow icon"
                   ></Image>
                 </Link>
               </div>
@@ -360,6 +364,7 @@ function index({ seoInformation, faqs }) {
                     }
                     width={20}
                     height={20}
+                    alt="arrow icon"
                   ></Image>
                 </Link>
               </div>
@@ -396,6 +401,7 @@ function index({ seoInformation, faqs }) {
                     }
                     width={20}
                     height={20}
+                    alt="arrow icon"
                   ></Image>
                 </Link>
               </div>

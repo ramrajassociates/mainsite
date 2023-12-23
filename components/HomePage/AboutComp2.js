@@ -3,6 +3,7 @@ import { Tabs, Carousel } from "flowbite-react";
 import FaqsComponent from "../FAQS/FaqsComponent";
 import NavbarCompHomePage from "./NavBarCompHomePage";
 import { Slide } from "react-reveal";
+import Image from "next/image";
 function AboutComp2({ AboutComp2Ref, height }) {
   const who_we_are = [
     {
@@ -59,11 +60,13 @@ function AboutComp2({ AboutComp2Ref, height }) {
             <h2 className="text-4xl text-main">Best Solution Provider</h2>
           </div>
           <div className="image ">
-            <img
+            <Image
               src="https://d1efbx4910ct8i.cloudfront.net/Images2/web.webp"
-              alt="our vision"
+              alt="Best Solution Provider"
               className="rounded-lg"
-            />
+              width={1920}
+              height={1080}
+            ></Image>
           </div>
         </div>
         <div className="lg:w-1/2 p-4 min-h-full w-full TabsCustom">

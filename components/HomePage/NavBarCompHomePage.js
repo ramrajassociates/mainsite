@@ -31,7 +31,7 @@ function NavbarCompHomePage(props) {
         {theme === "dark" && (
           <a href={"/"} className="lg:col-span-3 sm:col-span-2 mx-auto">
             <Image
-              alt="Image..."
+              alt="logo"
               src={"https://d1efbx4910ct8i.cloudfront.net/Images2/logow.webp"}
               width={120}
               height={120}
@@ -41,7 +41,7 @@ function NavbarCompHomePage(props) {
         {theme === "light" && (
           <a href={"/"} className="lg:col-span-3 sm:col-span-2 mx-auto">
             <Image
-              alt="Image..."
+              alt="logo"
               src={"https://d1efbx4910ct8i.cloudfront.net/Images2/logo.webp"}
               width={120}
               height={120}

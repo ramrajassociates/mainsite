@@ -16,6 +16,7 @@ import axios from "axios";
 function index({ seoInformation, faqs }) {
   const logo = <GiCctvCamera className="text-5xl text-action-900" />;
   const content2 = {
+    serviceName: "Surveillance Services",
     headingText: "What are <strong>Surveillance Services?</strong>",
     explanation:
       "Surveillance services generally refer to the activities and systems designed to monitor and observe people, places, or activities for different reasons. They cover a wide range of activities and technologies meant to gather information and maintain security. These systems have become popular for security and monitoring in a wide range of locations including residences, companies, public areas, and government sites. The fundamental goal is to offer a safe environment that is free of unwanted access, theft, and dangers to persons and property.",
@@ -85,6 +86,7 @@ function index({ seoInformation, faqs }) {
             }
             width={1920}
             height={1080}
+            alt="Surveillance Services"
             className="w-full h-full object-cover sm:object-top object-center  "
           ></Image>
           <div className="bg-gray-600 backdrop-blur rounded-lg absolute h-fit gap-4 sm:top-32 flex flex-col justify-center items-center sm:p-10 p-4  bg-opacity-20 lg:left-24 w-10/12 m-3 top-1/3 lg:max-w-[30vw] ">

@@ -12,12 +12,13 @@ import ContentComp2 from "@/components/ContentComp2";
 import ContentComp3 from "@/components/ContentComp3";
 import { MdOutlineDashboardCustomize } from "react-icons/md";
 import axios from "axios";
-import {BsArrowRight} from "react-icons/bs"
+import { BsArrowRight } from "react-icons/bs";
 function index({ seoInformation, faqs }) {
   const logo = (
     <MdOutlineDashboardCustomize className="text-4xl text-action-900" />
   );
   const content2 = {
+    serviceName: " Custom Web Development Service",
     headingText: "Understand <strong>  Web Design and Development </strong>",
     explanation:
       "The visual elements, layout, color, typography, and everything related to designing available on the website are covered in web design. It is important for businesses to have a well-designed website to attract a large number of visitors to their page. Apart from designing the website, development is also important. Thus, ensure your website is user-friendly and responsive. For the best web design and development, you can hire our experts, and they will work as per your demands.",
@@ -34,7 +35,7 @@ function index({ seoInformation, faqs }) {
       <li>End-to-End Development</li>
       </ul>
       `,
-    imageUrl:"https://d1efbx4910ct8i.cloudfront.net/Images2/cs1.webp"
+    imageUrl: "https://d1efbx4910ct8i.cloudfront.net/Images2/cs1.webp",
   };
   const content3 = [
     {
@@ -70,6 +71,7 @@ function index({ seoInformation, faqs }) {
             src={"https://d1efbx4910ct8i.cloudfront.net/Images2/cs1.webp"}
             width={1920}
             height={1080}
+            alt="Custom Web Development Service"
             className="w-full h-full object-cover sm:object-top object-center scale-x-[-1]"
           ></Image>
           <div className="bg-gray-600 backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10 p-4  bg-opacity-20 lg:left-24 w-10/12 m-3 top-1/3 lg:max-w-[30vw] ">

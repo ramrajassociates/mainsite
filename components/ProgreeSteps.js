@@ -20,6 +20,7 @@ export default function ProgressSteps({ content }) {
                   {" "}
                   <Image
                     src={contentItem.imageUrl}
+                    alt={contentItem.title}
                     width={1920}
                     height={1080}
                     className="w-full h-full object-cover rounded-full"

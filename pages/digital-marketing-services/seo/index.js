@@ -16,6 +16,7 @@ import { BsArrowRight } from "react-icons/bs";
 function index({ seoInformation, faqs }) {
   const logo = <FaSearchengin className="text-4xl text-action-900" />;
   const content2 = {
+    serviceName: "Search Engine Optimization",
     headingText: "What Is <strong> Search Engine Optimization?</strong>",
     explanation:
       "In this digital world, search engine optimization is a strong pillar for online success. The reason is that the SEO-oriented content available on websites improves their ranking on search engine result pages. This is why many organizations ask for <strong> SEO services </strong> to increase organic traffic on their websites.",
@@ -74,6 +75,7 @@ function index({ seoInformation, faqs }) {
             }
             width={1920}
             height={1080}
+            alt="seo"
             className="w-full h-full object-cover sm:object-top object-center  "
           ></Image>
           <div className="bg-gray-600 backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10 p-4  bg-opacity-20 lg:left-24 w-10/12 m-3 top-1/3 lg:max-w-[35vw] ">

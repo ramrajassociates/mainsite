@@ -18,6 +18,7 @@ function index({ seoInformation, faqs }) {
 
   let classname = "text-action-900";
   const content2 = {
+    serviceName: "Graphic Design",
     headingText: "What is the need for <strong>Graphic Design</strong>?",
     explanation: `"Design is thinking made visual." Visuals can convey your thoughts better than your words. The more powerful your visuals are, the more you can attract your targeted audiences. This is why graphic design services for every kind of business are necessary. A well-designed logo shows your professionalism and credibility. Moreover, if you consistently share appealing visuals, it helps in branding and stands out your business in a competitive market. Thus, no matter if you are a startup or a renowned business owner, investing in professional graphic design services can benefit you a lot.`,
     subHeadingText:
@@ -92,6 +93,7 @@ There are a lot more in the row. You can contact Ramraj Associates to get more i
             }
             width={1920}
             height={1080}
+            alt="Digital Marketing Services"
             className="w-full h-full object-cover sm:object-top object-center  "
           ></Image>
           <div className="bg-gray-600 backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10 p-4  bg-opacity-20 lg:left-24 w-10/12 m-3 top-1/3 lg:max-w-[35vw] ">

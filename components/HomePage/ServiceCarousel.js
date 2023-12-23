@@ -39,7 +39,7 @@ function ServiceCarousel(props) {
             }
             width={1920}
             height={1080}
-            alt="image..."
+            alt="portfolio image..."
             className="absolute block w-full -translate-x-1/2  top-1/2 left-1/2 brightness-50"
           ></Image>
           <div className="absolute top-0 w-full h-full z-30 md:p-48 ">
@@ -62,7 +62,7 @@ function ServiceCarousel(props) {
             }
             width={1920}
             height={1080}
-            alt="image..."
+            alt="Porfolio image"
             className="absolute block w-full -translate-x-1/2  top-1/2 left-1/2 brightness-50"
           ></Image>
           <div className="absolute top-0 w-full h-full z-30 md:p-48 ">
@@ -85,7 +85,7 @@ function ServiceCarousel(props) {
             }
             width={1920}
             height={1080}
-            alt="image..."
+            alt="Porfolio image"
             className="absolute block w-full -translate-x-1/2  top-1/2 left-1/2 brightness-50"
           ></Image>
           <div className="absolute top-0 w-full h-full z-30 md:p-48 ">
@@ -108,7 +108,7 @@ function ServiceCarousel(props) {
             }
             width={1920}
             height={1080}
-            alt="image..."
+            alt="Porfolio image"
             className="absolute block w-full -translate-x-1/2  top-1/2 left-1/2 brightness-50"
           ></Image>
           <div className="absolute top-0 w-full h-full z-30 md:p-48 ">
@@ -134,6 +134,7 @@ function ServiceCarousel(props) {
             src={"uparrow.svg"}
             width={50}
             height={100}
+            alt="up arrow"
             className="absolute w-full brightness-50 group-hover:-translate-y-3 hidden group-hover:block"
           ></Image>
           <Image
@@ -143,7 +144,7 @@ function ServiceCarousel(props) {
             width={1920}
             height={1080}
             className="h-full w-full group-hover:brightness-50"
-            alt="image..."
+            alt="Porfolio image"
           ></Image>
           {/* <p className="text-main text-sm absolute text-center z-40 top-0 p-10  hidden group-hover:block font-semibold">
             Our Work
@@ -159,6 +160,7 @@ function ServiceCarousel(props) {
             src={"uparrow.svg"}
             width={50}
             height={100}
+            alt="up arrow"
             className="absolute w-full brightness-50 group-hover:-translate-y-3 hidden group-hover:block"
           ></Image>
           <Image
@@ -168,7 +170,7 @@ function ServiceCarousel(props) {
             width={1920}
             height={1080}
             className="h-full w-full group-hover:brightness-50"
-            alt="image..."
+            alt="Porfolio image"
           ></Image>
           {/* <p className="text-main text-sm absolute text-center z-40 top-0 p-10  hidden group-hover:block font-semibold">
             Our Work
@@ -184,6 +186,7 @@ function ServiceCarousel(props) {
             src={"uparrow.svg"}
             width={50}
             height={100}
+            alt="up arrow"
             className="absolute w-full brightness-50 group-hover:-translate-y-3 hidden group-hover:block"
           ></Image>
           <Image
@@ -193,7 +196,7 @@ function ServiceCarousel(props) {
             width={1920}
             height={1080}
             className="h-full w-full group-hover:brightness-50"
-            alt="image..."
+            alt="Porfolio image"
           ></Image>
           {/* <p className="text-main text-sm absolute text-center z-40 top-0 p-10  hidden group-hover:block font-semibold">
             Our Work
@@ -209,6 +212,7 @@ function ServiceCarousel(props) {
             src={"uparrow.svg"}
             width={50}
             height={100}
+            alt="up arrow"
             className="absolute w-full brightness-50 group-hover:-translate-y-3 hidden group-hover:block"
           ></Image>
           <Image
@@ -218,7 +222,7 @@ function ServiceCarousel(props) {
             width={1920}
             height={1080}
             className="h-full w-full group-hover:brightness-50"
-            alt="image..."
+            alt="Porfolio image"
           ></Image>
           {/* <p className="text-main text-sm absolute text-center z-40 top-0 p-10  hidden group-hover:block font-semibold">
             Our Work

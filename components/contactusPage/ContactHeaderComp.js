@@ -46,6 +46,7 @@ function ContactHeaderComp() {
           src={"https://d1efbx4910ct8i.cloudfront.net/Images2/contactus.webp"}
           width={1920}
           height={1080}
+          alt="contact us"
           className="w-full h-full object-cover sm:object-top   "
         ></Image>
         <div className="bg-gray-600 backdrop-blur rounded-lg absolute sm:h-32 h-fit py-5 gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-5 sm:w-96 w-11/12  bg-opacity-20 sm:left-24 top-20">
@@ -58,6 +59,7 @@ function ContactHeaderComp() {
             src={"https://d1efbx4910ct8i.cloudfront.net/Images2/ctbg1.webp"}
             width={1920}
             height={1080}
+            alt="contact us"
             className="absolute  -z-10 opacity-20 object-cover object-bottom h-full"
           ></Image>
           <div className="flex flex-col gap-2 px-2">

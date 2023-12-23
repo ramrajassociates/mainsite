@@ -16,6 +16,7 @@ import { BsArrowRight } from "react-icons/bs";
 function index({ seoInformation, faqs }) {
   const logo = <FaWordpress className="text-5xl text-action-900" />;
   const content2 = {
+    serviceName: "WordPress Development",
     headingText:
       "What Do You Know About <strong>WordPress Development?</strong>",
     explanation: `WordPress is one of the most renowned and commonly used content management systems. To build a highly functional website, you can choose WordPress, as it's free, easy to install, and easy to upgrade. Our professional team knows the current trends and how to use them to raise your brand's popularity. Moreover, our main motto is to serve all small, medium, and large businesses; this is why we provide pocket-friendly WordPress development services online.
@@ -101,6 +102,7 @@ function index({ seoInformation, faqs }) {
             src={"https://d1efbx4910ct8i.cloudfront.net/Images2/wordpress.webp"}
             width={1920}
             height={1080}
+            alt="WordPress Development Service"
             className="w-full h-full object-cover sm:object-top object-center  "
           ></Image>
           <div className="bg-gray-600 backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10 p-4  bg-opacity-20 lg:left-24 w-10/12 m-3 top-1/3 lg:max-w-[35vw] ">

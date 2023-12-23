@@ -75,6 +75,7 @@ const ClientComponent = () => {
                   width={200}
                   height={100}
                   className=" object-contain w-full h-full"
+                  alt="Client Logo"
                 ></Image>
               </div>
             ))}

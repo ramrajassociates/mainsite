@@ -16,6 +16,7 @@ import { BsArrowRight } from "react-icons/bs";
 function index({ seoInformation, faqs }) {
   const logo = <FaCartShopping className="text-5xl text-action-900" />;
   const content2 = {
+    serviceName: "E-Commerce Web Development",
     headingText:
       "Do You Know What <strong>eCommerce Web Services</strong>  Are?",
     explanation: `E-commerce websites allow users to display their products or services online over the internet. There is no requirement for the physical appearance of the stop. You can easily sell your goods or products online. Moreover, the buyer can easily place the order, make an online payment, and get tracking details on your website. This whole process is managed through e-commerce websites. So, build a strong e-commerce website with us.`,
@@ -64,6 +65,7 @@ function index({ seoInformation, faqs }) {
             src={"https://d1efbx4910ct8i.cloudfront.net/Images2/e-comm.webp"}
             width={1920}
             height={1080}
+            alt="E-Commerce Web Development Service"
             className="w-full h-full object-cover sm:object-top object-center  "
           ></Image>
           <div className="bg-gray-600 backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10 p-4  bg-opacity-20 lg:left-24 w-10/12 m-3 top-1/3 lg:max-w-[35vw] ">

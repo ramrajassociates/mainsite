@@ -16,6 +16,7 @@ import { BsArrowRight } from "react-icons/bs";
 function index({ seoInformation, faqs }) {
   const logo = <SiGoogleoptimize className="text-5xl text-action-900" />;
   const content2 = {
+    serviceName: "Social media Optimization",
     headingText:
       "All You Need to Know About <strong>Social Media Optimization</strong>",
     explanation:
@@ -78,6 +79,7 @@ function index({ seoInformation, faqs }) {
             }
             width={1920}
             height={1080}
+            alt="Social Media Optimization"
             className="w-full h-full object-cover sm:object-top object-center  "
           ></Image>
           <div className="bg-gray-600 backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10 p-4  bg-opacity-20 lg:left-24 w-10/12 m-3 top-1/3 lg:max-w-[35vw] ">
