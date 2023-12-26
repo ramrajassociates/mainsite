@@ -2,7 +2,7 @@ const sitemap = require("nextjs-sitemap-generator");
 const path = require("path");
 
 sitemap({
-  baseUrl: "https://www.ramrajassociates.com",
+  baseUrl: "https://ramrajassociates.com",
   pagesDirectory: path.resolve(__dirname, "pages"),
   targetDirectory: "public/",
   ignoreIndexFiles: true,

@@ -93,7 +93,7 @@ function index({ seoInformation, faqs }) {
   return (
     <>
       <SeoComp seoInformation={seoInformation}>
-         <script
+        <script
           dangerouslySetInnerHTML={{
             __html: `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -111,13 +111,16 @@ function index({ seoInformation, faqs }) {
       <div>
         <div className="object-contain  relative h-[100vh]  ">
           <Image
-            src={"https://d1efbx4910ct8i.cloudfront.net/Images2/wordpress.webp"}
+            src={
+              "https://d1efbx4910ct8i.cloudfront.net/Images2/wordpress2.webp"
+            }
+            // src={"/Images/wordpress2.jpg"}
             width={1920}
             height={1080}
             alt="WordPress Development Service"
             className="w-full h-full object-cover sm:object-top object-center  "
           ></Image>
-          <div className="bg-gray-600 backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10 p-4  bg-opacity-20 lg:left-24 w-10/12 m-3 top-1/3 lg:max-w-[35vw] ">
+          <div className="bg-gray-900 backdrop-blur rounded-lg absolute h-fit gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-10 p-4  bg-opacity-40 lg:left-24 w-10/12 m-3 top-1/3 lg:max-w-[35vw] ">
             <p className="text-main bg-footerColor px-2 py-1 absolute -top-2 -left-2">
               Services{" > "}Web Design And Development Services
             </p>
@@ -153,9 +156,9 @@ function index({ seoInformation, faqs }) {
       <ContentComp3 content={content3} logo={logo} />
       <LetsConnectComp />
       <FaqsSectionComp faqs={faqs ? faqs : []} />
-         <noscript>
+      <noscript>
         <iframe
-         src="https://www.googletagmanager.com/ns.html?id=GTM-NJQZ3VP2"
+          src="https://www.googletagmanager.com/ns.html?id=GTM-NJQZ3VP2"
           height="0"
           width="0"
           style={{ display: "none", visibility: "hidden" }}
