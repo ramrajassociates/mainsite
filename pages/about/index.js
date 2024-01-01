@@ -25,10 +25,7 @@ function index({ seoInformation }) {
           property="og:url"
           content="https://www.ramrajassociates.com/about"
         />
-        <meta
-          property="og:image"
-          content="https://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp"
-        />
+        
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_IN" />
         <meta property="og:site_name" content="Ramraj Associates" />

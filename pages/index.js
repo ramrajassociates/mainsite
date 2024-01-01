@@ -116,10 +116,7 @@ export default function Home({ seoInformation, faqs }) {
           property="og:title"
           content="Leading IT Solutions and Consultation firm India | RamRaj Associates"
         />
-        <link
-          rel="icon"
-          href="https://d1efbx4910ct8i.cloudfront.net/Images2/favicon.png"
-        />
+
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -152,7 +149,7 @@ export default function Home({ seoInformation, faqs }) {
       </div>
       <noscript>
         <iframe
-         src="https://www.googletagmanager.com/ns.html?id=GTM-NJQZ3VP2"
+          src="https://www.googletagmanager.com/ns.html?id=GTM-NJQZ3VP2"
           height="0"
           width="0"
           style={{ display: "none", visibility: "hidden" }}
