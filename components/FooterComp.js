@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -11,6 +11,14 @@ import {
 import { IoMdMail } from "react-icons/io";
 import { IoCall } from "react-icons/io5";
 function FooterComp() {
+  const [year, setYear] = useState(0);
+  useEffect(() => {
+    // get the current year and set it to footer
+    const date = new Date();
+    const year = date.getFullYear();
+    setYear(year);
+  }, []);
+
   return (
     <div className="md:h-[70vh] bg-gray-300 md:px-24 px-5 pt-10 relative ">
       <div className="flex md:flex-row-reverse flex-col-reverse  w-full  sm:justify-around ">
@@ -103,7 +111,7 @@ function FooterComp() {
                 className="text-footerColor hover:underline"
               >
                 <IoMdMail className="text-footerColor mr-2 inline-block"></IoMdMail>
-                info@ramraj associates.com
+                info@ramrajassociates.com
               </Link>
             </li>
           </ul>
@@ -161,7 +169,8 @@ function FooterComp() {
         </div>
       </div>
       <div className="text-footerColor text-center mt-5 font-thin text-sm ">
-        © 2023-2024 Ramraj Associates Private Limited. All Rights Reserved.
+        © {year}-{year + 1} Ramraj Associates Private Limited. All Rights
+        Reserved.
       </div>
     </div>
   );

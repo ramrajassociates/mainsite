@@ -61,7 +61,7 @@ function HeaderComp({ HeaderCompRef, height }) {
             <Fade bottom spy={reveal} appear={true} delay={500}>
               <div className="md:w-[40vw] w-[70vw] h-[100vh] md:h-[70vh] md:mt-20 md:ml-32 ml-14  flex flex-col justify-center  items-start space-y-3 z-20 absolute">
                 <span className="text-5xl text-white font-bold">
-                  Elevate Your Brand with the Best Digital Marketing Agency in
+                  Elevate Your Brand with the Best Digital Solution Agency in
                   Jaipur
                 </span>
                 <div className="relative h-fit">
@@ -88,8 +88,9 @@ function HeaderComp({ HeaderCompRef, height }) {
           </div>
           <div className="w-[100vw] h-[100vh] ">
             <Image
-              alt="Ramraj Associates| Digital Marketing Agency in Jaipur"
-              src={"https://d1efbx4910ct8i.cloudfront.net/Images2/bg2.webp"}
+              alt="Ramraj Associates| Digital Solution Agency in Jaipur"
+              src={"https://d1efbx4910ct8i.cloudfront.net/Images2/bg3.webp"}
+              // src={"/Images/bg3.jpg"}
               layout="fill"
               objectFit="cover"
               objectPosition="center"
@@ -97,7 +98,7 @@ function HeaderComp({ HeaderCompRef, height }) {
               className="filter brightness-50"
             ></Image>
             <Image
-              alt="Ramraj Associates | Digital Marketing Agency in Jaipur"
+              alt="Ramraj Associates | Digital Solution Agency in Jaipur"
               src={
                 "https://d1efbx4910ct8i.cloudfront.net/Images2/bg-dotted.webp"
               }
@@ -110,7 +111,7 @@ function HeaderComp({ HeaderCompRef, height }) {
             <Fade bottom spy={reveal} appear={true} delay={500}>
               <div className="md:w-[40vw] w-[70vw] h-[100vh] md:h-[70vh] md:mt-20 md:ml-32 ml-14  flex flex-col justify-center  items-start space-y-3 z-20 absolute">
                 <span className="text-5xl text-white font-bold">
-                  Elevate Your Brand with the Best Digital Marketing Agency in
+                  Elevate Your Brand with the Best Digital Solution Agency in
                   Jaipur
                 </span>
                 <div className="relative h-fit">
