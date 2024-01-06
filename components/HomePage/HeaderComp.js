@@ -60,14 +60,14 @@ function HeaderComp({ HeaderCompRef, height }) {
 
             <Fade bottom spy={reveal} appear={true} delay={500}>
               <div className="md:w-[40vw] w-[70vw] h-[100vh] md:h-[70vh] md:mt-20 md:ml-32 ml-14  flex flex-col justify-center  items-start space-y-3 z-20 absolute">
-                <span className="text-5xl text-white font-bold">
+                <h1 className="text-5xl text-white font-bold">
                   Elevate Your Brand with the Best Digital Solution Agency in
                   Jaipur
-                </span>
+                </h1>
                 <div className="relative h-fit">
-                  <p className="md:text-xl text-white md:font-thin  ml-10 text-md font-normal">
+                  <h3 className="md:text-xl text-white md:font-thin  ml-10 text-md font-normal">
                     Grow Your Brand with Ramraj
-                  </p>
+                  </h3>
                   <Link
                     href={
                       "https://calendly.com/ramrajassociates/book-your-appointment"
@@ -110,14 +110,14 @@ function HeaderComp({ HeaderCompRef, height }) {
             ></Image>
             <Fade bottom spy={reveal} appear={true} delay={500}>
               <div className="md:w-[40vw] w-[70vw] h-[100vh] md:h-[70vh] md:mt-20 md:ml-32 ml-14  flex flex-col justify-center  items-start space-y-3 z-20 absolute">
-                <span className="text-5xl text-white font-bold">
+                <h1 className="text-5xl text-white font-bold">
                   Elevate Your Brand with the Best Digital Solution Agency in
                   Jaipur
-                </span>
+                </h1>
                 <div className="relative h-fit">
-                  <p className="md:text-xl text-white md:font-thin  ml-10 text-md font-normal">
+                  <h3 className="md:text-xl text-white md:font-thin  ml-10 text-md font-normal">
                     Grow Your Brand with Ramraj
-                  </p>
+                  </h3>
                   <Link
                     href={
                       "https://calendly.com/ramrajassociates/book-your-appointment"
