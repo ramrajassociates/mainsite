@@ -68,6 +68,10 @@ function index({ seoInformation, faqs }) {
         `,
           }}
         />
+        <link
+          rel="canonical"
+          href="https://ramrajassociates.com/web-design-and-development/e-commerce-website-development"
+        ></link>
       </SeoComp>
       <NavbarComp />
       <NavbarComp />

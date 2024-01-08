@@ -142,7 +142,12 @@ function index({ seoInformation, faqs }) {
             })(window,document,'script','dataLayer','GTM-NJQZ3VP2');
         `,
           }}
+          
         />
+         <link
+          rel="canonical"
+          href="https://ramrajassociates.com/web-design-and-development"
+        ></link>
       </SeoComp>
       <NavbarComp />
       <NavbarComp />

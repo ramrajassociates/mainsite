@@ -88,6 +88,10 @@ function index({ seoInformation, faqs }) {
         `,
           }}
         />
+        <link
+          rel="canonical"
+          href="https://ramrajassociates.com/surveillance-services"
+        ></link>
       </SeoComp>
       <NavbarComp />
       <div>

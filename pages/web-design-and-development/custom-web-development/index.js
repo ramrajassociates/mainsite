@@ -74,6 +74,10 @@ function index({ seoInformation, faqs }) {
         `,
           }}
         />
+        <link
+          rel="canonical"
+          href="https://ramrajassociates.com/web-design-and-development/custom-web-development"
+        ></link>
       </SeoComp>
       <NavbarComp />
       <NavbarComp />

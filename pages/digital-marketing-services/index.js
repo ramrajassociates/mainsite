@@ -123,18 +123,7 @@ function index({ seoInformation, faqs }) {
           content="We offer a wide range of digital services in India including Social Media Marketing, Search Engine Optimization, Email Marketing, Graphic Design, Content Writing, Content Marketing, Website Design & Development, Application Development, Paid Marketing, Corporate Photoshoot and Others."
         />
         {/* <meta name="twitter:image" content="https://www.ramrajassociates.comhttps://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp" /> */}
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" />
-        <meta name="bingbot" content="index, follow" />
-        <meta name="slurp" content="index, follow" />
-        <meta name="rating" content="general" />
-        <meta name="referrer" content="always" />
-        <meta name="distribution" content="global" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="target" content="all" />
-        <meta name="audience" content="all" />
-        <meta name="revisit-after" content="7 days" />
-        <meta name="language" content="English" />
+        <link rel="canonical" href="https://ramrajassociates.com/digital-marketing-services"></link>
         <script
           dangerouslySetInnerHTML={{
             __html: `

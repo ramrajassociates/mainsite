@@ -95,6 +95,10 @@ There are a lot more in the row. You can contact Ramraj Associates to get more i
         `,
           }}
         />
+        <link
+          rel="canonical"
+          href="https://ramrajassociates.com/digital-marketing-services/graphic-design"
+        ></link>
       </SeoComp>
       <NavbarComp />
       <NavbarComp />

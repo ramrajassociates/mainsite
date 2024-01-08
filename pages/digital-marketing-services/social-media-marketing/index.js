@@ -106,7 +106,7 @@ function index({ seoInformation, faqs }) {
   return (
     <>
       <SeoComp seoInformation={seoInformation}>
-         <script
+        <script
           dangerouslySetInnerHTML={{
             __html: `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -117,6 +117,10 @@ function index({ seoInformation, faqs }) {
         `,
           }}
         />
+        <link
+          rel="canonical"
+          href="https://ramrajassociates.com/digital-marketing-services/social-media-marketing"
+        ></link>
       </SeoComp>
       <NavbarComp />
       <div>
@@ -166,9 +170,9 @@ function index({ seoInformation, faqs }) {
       <ContentComp3 content={content3} logo={logo} />
       <LetsConnectComp />
       <FaqsSectionComp faqs={faqs ? faqs : []} />
-         <noscript>
+      <noscript>
         <iframe
-         src="https://www.googletagmanager.com/ns.html?id=GTM-NJQZ3VP2"
+          src="https://www.googletagmanager.com/ns.html?id=GTM-NJQZ3VP2"
           height="0"
           width="0"
           style={{ display: "none", visibility: "hidden" }}

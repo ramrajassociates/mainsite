@@ -25,7 +25,7 @@ function index({ seoInformation }) {
           property="og:url"
           content="https://www.ramrajassociates.com/about"
         />
-        
+
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_IN" />
         <meta property="og:site_name" content="Ramraj Associates" />
@@ -68,6 +68,7 @@ function index({ seoInformation }) {
         `,
           }}
         />
+        <link rel="canonical" href="https://ramrajassociates.com/about"></link>
       </SeoComp>
       <NavbarComp />
       <div className="overflow-x-hidden">

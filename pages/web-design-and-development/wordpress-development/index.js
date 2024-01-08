@@ -104,6 +104,10 @@ function index({ seoInformation, faqs }) {
         `,
           }}
         />
+        <link
+          rel="canonical"
+          href="https://ramrajassociates.com/web-design-and-development/wordpress-development"
+        ></link>
       </SeoComp>
 
       <NavbarComp />

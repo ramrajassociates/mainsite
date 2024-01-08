@@ -81,6 +81,10 @@ function index({ seoInformation, faqs }) {
         `,
           }}
         />
+        <link
+          rel="canonical"
+          href="https://ramrajassociates.com/digital-marketing-services/social-media-optimization"
+        ></link>
       </SeoComp>
       <NavbarComp />
       <div>
