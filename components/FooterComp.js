@@ -78,10 +78,10 @@ function FooterComp() {
           ></Image>
         </div>
         <div className="flex flex-col space-y-4 pt-10 md:w-1/3 w-full  ">
-          <h1 className="text-2xl text-footerColor text-start font-semibold ">
+          <p className="text-2xl text-footerColor text-start font-semibold ">
             {" "}
             Official Info :
-          </h1>
+          </p>
 
           <ul className="[&>*]:text-sm font-semibold space-y-2  ">
             <li>
@@ -125,9 +125,9 @@ function FooterComp() {
         </div>
         <div className="flex flex-col space-y-4 pt-10  md:w-1/3 w-full  md:pl-10">
           {" "}
-          <h1 className="text-2xl text-footerColor text-start font-semibold ">
+          <p className="text-2xl text-footerColor text-start font-semibold ">
             Services :
-          </h1>
+          </p>
           <div>
             <ul className="[&>*]:text-footerColor text-md space-y-2">
               <li>
