@@ -51,7 +51,7 @@ function ContactHeaderComp() {
           className="w-full h-full object-cover sm:object-top   "
         ></Image>
         <div className="bg-gray-600 backdrop-blur rounded-lg absolute sm:h-32 h-fit py-5 gap-4  sm:top-32 flex flex-col justify-center items-center sm:p-5 sm:w-96 w-11/12  bg-opacity-20 sm:left-24 top-20">
-          <p className="text-main font-bold text-4xl">Contact Us</p>
+          <h1 className="text-main font-bold text-4xl">Contact Us</h1>
         </div>
       </div>
       <div className="py-5">

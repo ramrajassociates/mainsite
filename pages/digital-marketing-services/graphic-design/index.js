@@ -117,9 +117,9 @@ There are a lot more in the row. You can contact Ramraj Associates to get more i
             <p className="text-main bg-footerColor px-2 py-1 absolute -top-2 -left-2">
               Services{" > "}Digital Marketing Services
             </p>
-            <p className="text-main font-bold text-2xl pt-5">
+            <h1 className="text-main font-bold text-2xl pt-5">
               Graphic Design Service
-            </p>
+            </h1>
             <div className="relative h-fit pl-5">
               <p className="text-xs text-main">
                 "Design is not just what it looks like and feels like. Design is

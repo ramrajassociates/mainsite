@@ -5,9 +5,9 @@ import { HiDocumentPlus } from "react-icons/hi2";
 function LetsConnectComp() {
   return (
     <>
-      <h1 className="sm:text-3xl text-xl text-center font-semibold py-4 text-action-900 ">
+      <h2 className="sm:text-3xl text-xl text-center font-semibold py-4 text-action-900 ">
         Lets Start your project with us
-      </h1>
+      </h2>
       <div className="flex sm:flex-row flex-col justify-around gap-10  lg:px-24 px-10 sm:py-24 py-4">
         <Link
           href={"/contact"}

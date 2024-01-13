@@ -33,9 +33,9 @@ function ContentComp4({ TabsContent, TabsTitle }) {
                     ></Image>
                   </div>
                   <div className="Content md:w-2/3 w-full py-5 md:py-0">
-                    <h1 className="text-2xl font-semibold text-action-900">
+                    <h3 className="text-2xl font-semibold text-action-900">
                       {item?.title}
-                    </h1>
+                    </h3>
                     <p className="pt-5">{item?.content}</p>
                   </div>
                 </div>

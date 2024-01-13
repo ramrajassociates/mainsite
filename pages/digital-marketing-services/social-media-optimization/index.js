@@ -102,9 +102,9 @@ function index({ seoInformation, faqs }) {
             <p className="text-main bg-footerColor px-2 py-1 absolute -top-2 -left-2">
               Services{" > "}Digital Marketing Services
             </p>
-            <p className="text-main font-bold text-2xl pt-5">
+            <h1 className="text-main font-bold text-2xl pt-5">
               Social Media Optimization(SMO) Service
-            </p>
+            </h1>
             <div className="relative h-fit pl-5">
               <p className="text-xs text-main">
                 Elevate your business with our strategic{" "}

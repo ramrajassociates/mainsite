@@ -4,10 +4,10 @@ function ContentComp2({ content }) {
   return (
     <>
       <div className="bg-main p-10 py-12 space-y-4">
-        <h1
+        <h2
           className="text-3xl text-center  "
           dangerouslySetInnerHTML={{ __html: content.headingText }}
-        ></h1>
+        ></h2>
         <p
           className=""
           dangerouslySetInnerHTML={{ __html: content.explanation }}

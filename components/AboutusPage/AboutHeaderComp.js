@@ -17,7 +17,7 @@ function AboutHeaderComp() {
           <p className="text-main bg-footerColor px-2 py-1 absolute -top-2 -left-2">
             About Us
           </p>
-          <p className="text-main font-bold text-2xl pt-5">Ramraj Associates</p>
+          <h1 className="text-main font-bold text-2xl pt-5">About Us</h1>
           <div className="relative h-fit pl-5">
             <p className="text-xs text-main">
               At Ramraj Associates, we're here to help you with Digital
@@ -48,9 +48,9 @@ function AboutHeaderComp() {
             alt="our mission"
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
+            <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
               Our Mission
-            </h5>
+            </h2>
             <p className="mb-3  text-gray-700 dark:text-gray-400      p-5">
               At Ram Raj Associates, our mission is to provide tailored digital
               marketing strategies that align with your unique business goals.
@@ -76,9 +76,9 @@ function AboutHeaderComp() {
             alt="our vision"
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
+            <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
               Our Vision
-            </h5>
+            </h2>
             <p className="mb-3  text-gray-700 dark:text-gray-400      p-5">
               We see a future in which Ram Raj Associates is an established name
               in digital marketing. We aim to stay current with the evolving
@@ -102,31 +102,41 @@ function AboutHeaderComp() {
             alt="our value"
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
+            <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
               Our Value
-            </h5>
-            <p className="mb-3  text-gray-700 dark:text-gray-400       p-5 flex flex-col space-y-3 py-3">
-              <strong>Innovation:</strong>
+            </h2>
+            <div className="mb-3  text-gray-700 dark:text-gray-400       p-5 flex flex-col space-y-3 py-3">
+              <h3>
+                <strong>Innovation:</strong>
+              </h3>
               At Ram Raj Associates, innovation is the cornerstone of our
               approach. We are committed to staying ahead of the competition by
               implementing cutting-edge technologies and new marketing methods.
-              <strong> Integrity:</strong> Integrity forms the foundation of
-              every relationship we build. We practice transparency and honesty
-              in all our interactions, ensuring our clients have complete trust
-              in our strategies and methods. <br />
-              <strong>Collaboration:</strong> We believe that great things are
-              achieved through collaboration. Our culture is built on teamwork,
-              not just within our own agency, but also in partnership with our
-              clients. We work closely with you to understand your unique
-              challenges and goals, integrating your insights into our
-              strategies. <br />
-              <strong>Customer-Centric:</strong>At the heart of our values is a
-              customer-centric approach. We understand that our success is
-              intrinsically linked to yours. Therefore, we focus on creating
-              substantial value for our clients in every project. We listen to
-              your needs, adapt to your requirements, and are committed to
-              achieving your business objectives.
-            </p>
+              <h3>
+                <strong> Integrity:</strong>
+              </h3>{" "}
+              Integrity forms the foundation of every relationship we build. We
+              practice transparency and honesty in all our interactions,
+              ensuring our clients have complete trust in our strategies and
+              methods. <br />
+              <h3>
+                <strong>Collaboration:</strong>
+              </h3>{" "}
+              We believe that great things are achieved through collaboration.
+              Our culture is built on teamwork, not just within our own agency,
+              but also in partnership with our clients. We work closely with you
+              to understand your unique challenges and goals, integrating your
+              insights into our strategies. <br />
+              <h3>
+                <strong>Customer-Centric:</strong>
+              </h3>
+              At the heart of our values is a customer-centric approach. We
+              understand that our success is intrinsically linked to yours.
+              Therefore, we focus on creating substantial value for our clients
+              in every project. We listen to your needs, adapt to your
+              requirements, and are committed to achieving your business
+              objectives.
+            </div>
           </div>
         </div>
       </div>

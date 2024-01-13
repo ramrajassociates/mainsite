@@ -142,9 +142,8 @@ function index({ seoInformation, faqs }) {
             })(window,document,'script','dataLayer','GTM-NJQZ3VP2');
         `,
           }}
-          
         />
-         <link
+        <link
           rel="canonical"
           href="https://ramrajassociates.com/web-design-and-development"
         ></link>
@@ -166,9 +165,9 @@ function index({ seoInformation, faqs }) {
             <p className="text-main bg-footerColor px-2 py-1 absolute -top-2 -left-2">
               Services
             </p>
-            <p className="text-main font-bold text-2xl pt-5">
+            <h1 className="text-main font-bold text-2xl pt-5">
               Web Design and Development Service
-            </p>
+            </h1>
             <div className="relative h-fit pl-5">
               <p className="text-xs text-main">
                 In this fast-paced digital scenario, a strong and compelling
@@ -360,9 +359,9 @@ function index({ seoInformation, faqs }) {
       {/* Progress Steps */}
       <div className="lg:px-24 px-5 space-y-7 flex lg:flex-row bg-gray-900 flex-col items-start lg:relative  lg:min-h-screen  ">
         <div className="lg:w-1/3 w-full space-y-7 p-4 lg:sticky lg:top-24">
-          <h1 className="text-5xl font-extrabold text-gray-200">
+          <h2 className="text-5xl font-extrabold text-gray-200">
             12-Step Website Development Process Follows By Our Experts
-          </h1>
+          </h2>
           <p className="text-gray-200">
             Our web developers follow a 12-step process of web development to
             create a functional and visually appealing website for your brand.

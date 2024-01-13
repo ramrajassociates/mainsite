@@ -88,9 +88,9 @@ function index({ seoInformation, faqs }) {
             <p className="text-main bg-footerColor px-2 py-1 absolute -top-2 -left-2">
               Services{" > "}Web Design And Development Services
             </p>
-            <p className="text-main font-bold text-2xl pt-5">
+            <h1 className="text-main font-bold text-2xl pt-5">
               E-Commerce Web Development Service
-            </p>
+            </h1>
             <div className="relative h-fit pl-5">
               <p className="text-xs text-main">
                 Ramraj is a digital marketing and web development company. We

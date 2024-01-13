@@ -56,7 +56,7 @@ function ServiceCompParent({ ServiceCompRef, height }) {
               }}
             >
               <div className="flex gap-2">
-                Digital Marketing Services{" "}
+                <h2> Digital Marketing Services </h2>
                 <Link href={"/digital-marketing-services"}>
                   <LiaExternalLinkAltSolid className="text-main" size={25} />
                 </Link>
@@ -90,7 +90,7 @@ function ServiceCompParent({ ServiceCompRef, height }) {
               }}
             >
               <div className="flex gap-2">
-                Web development
+                <h2> Web development</h2>
                 <Link href={"/web-design-and-development"}>
                   <LiaExternalLinkAltSolid className="text-main" size={25} />
                 </Link>
@@ -124,7 +124,7 @@ function ServiceCompParent({ ServiceCompRef, height }) {
               }}
             >
               <div className="flex gap-2">
-                Surveillance services
+                <h2> Surveillance services</h2>
                 <Link href={"/surveillance-services"}>
                   <LiaExternalLinkAltSolid className="text-main" size={25} />
                 </Link>

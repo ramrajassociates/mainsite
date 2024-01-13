@@ -6,7 +6,7 @@ function ContentComp1({ title, BigTitle, content, ctaTitle }) {
       <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:min-h-screen lg:py-1 py-10 lg:px-20 px-5 bg-gray-900 justify-center items-center">
         <div className="lg:w-1/2 w-full h-full flex-col justify-center items-center lg:px-10 px-2 space-y-5">
           <p className="bg-gray-500 w-fit px-4 rounded-lg text-main">{title}</p>
-          <p className="lg:text-5xl text-4xl text-gray-200">{BigTitle}</p>
+          <h2 className="lg:text-5xl text-4xl text-gray-200">{BigTitle}</h2>
         </div>
         <div className="lg:w-1/2 w-full flex flex-col justify-center items-start space-y-5 px-4">
           <p className="text-gray-300">{content}</p>

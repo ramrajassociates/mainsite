@@ -123,7 +123,10 @@ function index({ seoInformation, faqs }) {
           content="We offer a wide range of digital services in India including Social Media Marketing, Search Engine Optimization, Email Marketing, Graphic Design, Content Writing, Content Marketing, Website Design & Development, Application Development, Paid Marketing, Corporate Photoshoot and Others."
         />
         {/* <meta name="twitter:image" content="https://www.ramrajassociates.comhttps://d1efbx4910ct8i.cloudfront.net/Images2/digital.webp" /> */}
-        <link rel="canonical" href="https://ramrajassociates.com/digital-marketing-services"></link>
+        <link
+          rel="canonical"
+          href="https://ramrajassociates.com/digital-marketing-services"
+        ></link>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -150,9 +153,9 @@ function index({ seoInformation, faqs }) {
             <p className="text-main bg-footerColor px-2 py-1 absolute -top-2 -left-2">
               Services
             </p>
-            <p className="text-main font-bold text-2xl pt-5">
+            <h1 className="text-main font-bold text-2xl pt-5">
               Digital Marketing Services
-            </p>
+            </h1>
             <div className="relative h-fit pl-5">
               <p className="text-xs text-main">
                 Ramraj is one of Jaipur's leading digital marketing service

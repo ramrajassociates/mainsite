@@ -27,7 +27,7 @@ export default function ProgressSteps({ content }) {
                   ></Image>
                 </div>
                 <div className="sm:w-1/2 flex flex-col space-y-3 text-main">
-                  <p className="text-4xl font-bold">{contentItem.title}</p>
+                  <h3 className="text-4xl font-bold">{contentItem.title}</h3>
                   <p
                     dangerouslySetInnerHTML={{
                       __html: contentItem.description,
